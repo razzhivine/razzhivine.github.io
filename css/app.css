@@ -708,6 +708,11 @@ h2,
   cursor: pointer;
   transition: all .3s ease;
 }
+@media (max-width: 767px) {
+  .slider__arrow{
+    display: none;
+  }
+}
 .slider__arrow:hover{
   background: #15A3D7;
 }
