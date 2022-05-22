@@ -1,0 +1,107 @@
+.hamburger-menu-icon
+    width: 50px
+    height: 50px
+    cursor: pointer
+.hamburger-menu
+    position: fixed
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100vh
+    background: var(--second-background)
+    z-index: 1000
+    display: flex
+    flex-direction: column
+    transition: top .2s ease-in
+    &_active
+        top: 0
+    &__top
+        display: flex
+        justify-content: space-between
+        padding: 35px 0 25px
+    &__close
+        padding: 8px
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__item
+        display: block
+        color: var(--color)
+        font-size: 14px
+        letter-spacing: .1px
+        // padding-bottom: 5px
+        width: fit-content
+        transition: color .2s ease-in
+        cursor: pointer
+        position: relative
+        margin-bottom: 5px
+        &_sub
+            font-size: 12px
+            line-height: 16px
+        &_with-submenu
+            padding-right: 20px
+            &::after
+                content: ""
+                width: 10px
+                height: 7px
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 1.4375L5 5.4375L9 1.4375' stroke='%231D324E' stroke-width='1.5'/%3E %3C/svg%3E ")
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                transition: background-image .2s ease-in
+            &:hover,
+            &:focus
+                &::after
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 1.4375L5 5.4375L9 1.4375' stroke='%235472D3' stroke-width='1.5'/%3E %3C/svg%3E ")
+        &:hover,
+        &:focus
+            color: var(--accent-color)
+    &__submenu
+        height: 0
+        opacity: 0
+        visibility: hidden
+        transition: opacity .2s ease-in
+        &_active
+            opacity: 1
+            height: auto
+            visibility: visible
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-bottom: 25px
+        height: calc( 100% - 110px)
+    &__contacts
+        display: flex
+        flex-direction: column
+        padding-top: 7px
+        &-phone            
+            color: var(--color)
+            font-size: 17px
+            font-weight: 600
+            padding-bottom: 6px
+            transition: color .2s ease-in
+            letter-spacing: 0.3px
+            &:hover
+                color: var(--accent-color)
+        &-email
+            color: var(--color)
+            font-size: 14px
+            position: relative
+            &::before
+                content: ""
+                width: 100%
+                height: 1px
+                background: var(--line-color)
+                position: absolute
+                left: 0
+                bottom: -5px
+                opacity: 0
+                transition: opacity .2s ease-in
+            &:hover
+                color: var(--accent-color)
+                &::before
+                    opacity: 1

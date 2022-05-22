@@ -1,0 +1,21 @@
+.breadcrumbs
+    // display: flex
+    // flex-wrap: wrap
+    &__item
+        font: var(--breadcrumbs-font)
+        color: var(--second-accent-color)
+        padding: 0 20px 0 15px
+        position: relative
+        &::before
+            content: ""
+            width: 4px
+            height: 8px
+            background-image: url("data:image/svg+xml,%3Csvg width='4' height='8' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 9L5 5L1 1' stroke='%23AEBED2' stroke-width='1.5'/%3E %3C/svg%3E ")
+            position: absolute
+            bottom: 4px
+            right: -1px
+        &:last-child
+            color: var(--accent-color)
+            padding-right: 0
+            &::before
+                content: none

@@ -1,0 +1,127 @@
+.products
+    background: var(--background)
+    &__inner
+        padding: 76px 41px 47px 115px
+        @media (max-width: 1365px)
+            padding: 76px 0 100px 57px
+        @media (max-width: 1279px)
+            padding: 76px 0 100px
+        @media (max-width: 767px)
+            padding: 30px 0
+            
+    &__text
+        max-width: 1092px
+        margin-bottom: 66px
+        @media (max-width: 767px)
+            margin-bottom: 30px
+    &__content
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -30px
+    &__pagination-slider
+        position: relative
+        width: 43%
+        padding: 0 30px
+        @media (max-width: 1023px)
+            width: 100%
+        &-slide
+            margin-bottom: 60px
+            cursor: pointer
+            @media (max-width: 1365px)
+                margin-bottom: 20px
+
+            &-title
+                font: 500 34px 'Manrope', sans-serif
+                color: var(--second-accent-color)
+                margin-bottom: 16px
+                line-height: 50px
+                @media (max-width: 1365px)
+                    font: 500 28px 'Manrope', sans-serif
+                    margin-bottom: 10px
+                @media (max-width: 767px)
+                    font: 500 22px 'Manrope', sans-serif
+            &-description
+                font: var(--second-text-font)
+                margin-bottom: 15px
+                line-height: 25px
+                letter-spacing: .15px
+                height: 0
+                opacity: 0
+                transition: opacity .2s ease-in
+            &:last-child
+                @media (min-width: 1023px)
+                    margin-bottom: 0
+        .swiper-slide-thumb-active
+            .products__pagination-slider-slide-title
+                color: var(--accent-color)
+            .products__pagination-slider-slide-description
+                height: 100%
+                opacity: 1
+
+        &-swiper-pagination
+            position: absolute
+            top: 50%
+            left: calc(-100% - 3px) !important
+            z-index: 1000
+            width: fit-content
+            height: fit-content
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            @media (max-width: 1279px)
+                display: none
+            .swiper-pagination-bullet
+                width: 27px
+                height: 2px
+                background: var(--second-accent-color)
+                transition: width .2s ease-in
+                margin-bottom: 20px !important
+                border-radius: 0
+                display: block
+
+                &.swiper-pagination-bullet-active
+                    width: 54px
+                    background: var(--accent-color)
+    &__slider
+        width: 57%
+        padding: 0 30px
+        @media (max-width: 1023px)
+            width: 100%
+        &-slide
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            &-advantages
+                display: flex
+                flex-wrap: wrap
+                max-width: 605px
+                margin-bottom: 50px
+                @media (max-width: 1023px)
+                    max-width: 100%
+                @media (max-width: 767px)
+                    margin-bottom: 20px
+                &-item
+                    width: 50%
+                    padding: 0 25px 5px 45px
+                    margin-bottom: 20px
+                    position: relative
+                    font: var(--second-text-font)
+                    line-height: 25px
+                    @media (min-width: 1023px) and (max-width: 1279px)
+                        width: 100%
+                    @media (max-width: 767px)
+                        width: 100%
+                        padding: 0 0 5px 45px
+
+                    &::before
+                        content: ""
+                        width: 20px 
+                        height: 20px
+                        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M9.5 0.5V9.5H0.5V11H9.5V20H11V11H20V9.5H11V0.5H9.5Z' fill='%23AEBED2'/%3E %3C/svg%3E ")                          
+                        position: absolute
+                        left: 0
+                        top: 4px
+            &-image
+                max-width: 680px
+                @media (max-width: 1023px)
+                    margin: 0 auto

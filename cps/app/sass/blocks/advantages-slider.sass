@@ -1,0 +1,53 @@
+.advantages-slider
+    &__inner
+        overflow: visible
+    &__slide
+        border: 1px solid var(--line-color)
+        padding: 25px 23px 22px 40px
+        width: 450px
+        height: 500px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: #fff
+        @media (max-width: 767px)
+            padding: 20px 30px
+        @media (max-width: 467px)
+            width: calc(100vw - 15px)
+            height: 450px
+
+        &-title
+            font: 400 34px 'Manrope', sans-serif
+            color: var(--accent-color)
+            margin-bottom: 24px
+            @media (max-width: 767px)
+                font: 400 26px 'Manrope', sans-serif
+                margin-bottom: 10px
+
+        &-text
+            font: var(--second-text-font)
+            line-height: 25px
+            @media (max-width: 767px)
+                line-height: 22px
+        &-marker
+            display: flex
+            justify-content: flex-end
+            position: relative
+            &-default
+                position: absolute
+                bottom: 0
+                right: 0
+                opacity: 1
+                transition: opacity .3s ease-in
+            &-hover
+                position: absolute
+                bottom: 0
+                right: 0
+                opacity: 0
+                transition: opacity .3s ease-in
+        &:hover
+            .advantages-slider__slide-marker
+                .advantages-slider__slide-marker-default
+                    opacity: 0
+                .advantages-slider__slide-marker-hover
+                    opacity: 1

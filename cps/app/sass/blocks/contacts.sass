@@ -1,0 +1,67 @@
+.contacts
+    &_page
+        .contacts__inner
+            padding: 35px 0 140px
+            @media (max-width: 1023px)
+                padding: 15px 0 30px
+    &__inner
+        padding: 60px 8px 150px
+        @media (max-width: 1023px)
+            padding: 0 0 30px
+    &__content
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -15px
+    &__block
+        width: 50%
+        padding: 0 15px
+        display: flex
+        flex-direction: column
+        @media (max-width: 1023px)
+            width: 100%
+            padding-bottom: 30px
+    &__phone,
+    &__adress
+        font: 400 34px 'Manrope', sans-serif
+        color: var(--color)
+        line-height: 50px
+        margin-bottom: 16px
+        transition: color .2s ease-in
+        @media (max-width: 767px)
+            font: 400 26px 'Manrope', sans-serif
+        @media (max-width: 467px)
+            font: 400 22px 'Manrope', sans-serif
+
+        &:hover
+            color: var(--accent-color)
+    &__adress
+        margin-bottom: 30px
+        &:hover
+            color: inherit
+    &__email,
+    &__requisites
+        position: relative
+        margin-bottom: 16px
+        width: fit-content
+        &::before
+            content: ''
+            width: 100%
+            height: 1px
+            background: var(--line-color)
+            position: absolute
+            bottom: 0
+            left: 0
+            transition: background .2s ease-in
+        &:hover
+            &::before
+                background: var(--accent-color)
+    &__requisites
+        margin-bottom: 62px
+        @media (max-width: 767px)
+            margin-bottom: 30px
+    &__work-time
+        font: 400 16px 'Manrope', sans-serif
+        letter-spacing: .15px
+        line-height: 25px
+    &__form
+        max-width: 540px

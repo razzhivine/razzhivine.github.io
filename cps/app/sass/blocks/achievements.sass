@@ -1,0 +1,37 @@
+.achievements
+    max-width: 1360px
+    margin: 0 auto
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 -15px
+        @media (max-width: 1361px)
+            justify-content: center
+    &__item
+        // width: 33.33333%
+        padding: 0 15px 30px
+        @media (max-width: 1361px)
+            width: 100%
+            padding: 0 0 30px
+            text-align: center
+        @media (max-width: 767px)
+            padding: 0 0 15px
+        
+        &-title
+            font: 600 70px 'Manrope', sans-serif
+            color: var(--second-accent-color)
+            margin-bottom: 5px
+            @media (max-width: 1023px)
+                font: 600 45px 'Manrope', sans-serif
+            @media (max-width: 767px)
+                font: 600 30px 'Manrope', sans-serif
+
+        &-text
+            font: var(--second-text-font)
+            letter-spacing: .15px
+            max-width: 273px
+            margin: 0 auto
+            text-align: center
+            line-height: 25px
+            @media (max-width: 1361px)

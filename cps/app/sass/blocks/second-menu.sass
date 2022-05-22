@@ -1,0 +1,30 @@
+.second-menu
+    font: 500 14px 'Manrope', sans-serif
+    &__list
+        display: flex
+        flex-wrap: wrap
+        // flex-direction: column
+        margin: 0 -60px
+        @media (max-width: 1365px)
+            margin: 0 -30px
+        @media (max-width: 1279px)
+            margin: 0 -15px
+    &__block
+        display: flex
+        flex-direction: column
+        padding: 0 60px
+        @media (max-width: 1365px)
+            padding: 0 30px
+        @media (max-width: 1279px)
+            padding: 0 15px
+    &__with-subitems
+        display: flex
+        flex-direction: column
+    &__item
+        color: var(--second-accent-color)
+        margin-bottom: 5px
+        line-height: 24px
+        &_sub
+            font-weight: 400
+            font-size: 12px
+            margin-bottom: 0

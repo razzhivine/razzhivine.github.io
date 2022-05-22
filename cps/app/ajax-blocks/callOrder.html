@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+<link rel="stylesheet" href="../css/app.min.css">
+
+<div class="popup">
+    <div class="popup__inner">
+        <form class="popup__form form">
+            <div class="form__inner">
+                <div class="form__title">Задать вопрос</div>
+                <div class="form__description">Оставьте свою заявку и наш менеджер свяжется с вами.</div>
+                <!-- <div class="form__description form__description_success">Ваша заявка отправлена! Мы скоро свяжемся с вами.</div> -->
+				<!-- <div class="form__description form__description_error">Ошибка!</div> -->
+                <div class="form__fields">
+                    <div class="form__block">
+                        <label for="name" class="form__label">
+                            <span class="form__label-text">Как к вам обращаться?</span>
+                            <input type="text" name="name" id="name" class="form__input">
+                        </label>
+                        <label for="phone" class="form__label">
+                            <span class="form__label-text">Телефон</span>
+                            <input type="text" name="phone" id="phone" placeholder="+7 ___ ___ __ __" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__block">
+                        <label for="comment" class="form__label form__label_w-100">
+                            <span class="form__label-text">Комментарий</span>
+                            <textarea name="comment" id="comment" class="form__textarea"></textarea>
+                        </label>
+                    </div>
+                    <div class="form__block form__block_m-0">
+                        <img src="../images/dest/recaptcha.png" alt="">
+                    </div>
+                    <div class="form__block">
+                        <label for="policy" class="form__label form__label_w-100 form__label_checkbox">
+                            <input type="checkbox" name="policy" id="policy" class="form__checkbox">
+                            <span class="form__label-checkbox">Я даю свое согласие на обработку моих персональных данных,<br> в соответствии с <a href="javascript:void(0)">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <div class="form__block form__block_m-0">
+                        <button type="submit" class="form__button button">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="../js/app.min.js"></script>

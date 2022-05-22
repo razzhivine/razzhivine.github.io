@@ -1,0 +1,130 @@
+.catalog-detail
+    padding-bottom: 150px
+    @media (max-width: 767px)
+            padding-bottom: 100px
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-bottom: 70px
+        @media (max-width: 767px)
+            padding-bottom: 50px
+    &__content
+        width: 50%
+        font: var(--second-text-font)
+        line-height: 25px
+        @media (max-width: 1023px)
+            width: 100%
+            margin-bottom: 30px
+    &__block
+        width: 50%
+        display: flex
+        justify-content: center
+        @media (max-width: 1023px)
+            width: 100%
+    &__slider
+        width: 70%
+        padding-top: 35px
+        @media (max-width: 1023px)
+            width: 100%
+        &-inner
+            padding-bottom: 23px
+        &-image
+            text-align: center
+            img
+                max-width: 502px
+        &-pagination
+            position: relative
+            &-item
+                text-align: center
+                img
+                    max-width: 117px
+            &-arrow
+                position: absolute
+                top: 50%
+                transform: translateY(-50%) 
+                z-index: 100
+                width: 15px
+                height: 30px
+                background-image: url("data:image/svg+xml,%3Csvg width='15' height='30' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 9L5 5L1 1' stroke='%235472D3' stroke-width='1'/%3E %3C/svg%3E ")
+                opacity: 1
+                transition: opacity .2s ease-in
+                cursor: pointer
+                &.swiper-button-disabled
+                    background-image: url("data:image/svg+xml,%3Csvg width='15' height='30' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 9L5 5L1 1' stroke='%23AEBED2' stroke-width='1'/%3E %3C/svg%3E ")
+                &_next
+                    right: -20px
+                    @media (max-width: 1023px)
+                        right: -10px
+                &_prev
+                    left: -20px
+                    @media (max-width: 1023px)
+                        left: -10px
+                    transform: translateY(-50%) rotate(180deg)
+    &__buttons
+        margin-top: 28px
+    &__description
+        &-inner
+            display: flex
+            flex-wrap: wrap
+            margin: 0 -50px 100px
+            @media (max-width: 767px)
+                margin: 0 -50px 50px
+
+        &-content
+            width: 50%
+            font: 400 16px 'Manrope', sans-serif
+            padding: 0 50px
+            @media (max-width: 1023px)
+                width: 100%
+        &-title
+            font: 400 34px 'Manrope', sans-serif
+            color: var(--accent-color)
+            margin-bottom: 20px
+        &-text
+            margin-bottom: 97px
+            @media (max-width: 1367px)
+                margin-bottom: 30px
+
+        &-advantages
+           display: flex
+           flex-wrap: wrap
+           max-width: 605px
+           margin-bottom: 50px
+           @media (max-width: 1023px)
+               max-width: 100%
+           @media (max-width: 767px)
+               margin-bottom: 20px
+           &-item
+               width: 50%
+               padding: 0 25px 5px 45px
+               margin-bottom: 20px
+               position: relative
+               font: var(--second-text-font)
+               line-height: 25px
+               @media (min-width: 1023px) and (max-width: 1279px)
+                   width: 100%
+               @media (max-width: 767px)
+                   width: 100%
+                   padding: 0 0 5px 45px
+               &::before
+                   content: ""
+                   width: 20px 
+                   height: 20px
+                   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M9.5 0.5V9.5H0.5V11H9.5V20H11V11H20V9.5H11V0.5H9.5Z' fill='%23AEBED2'/%3E %3C/svg%3E ")                          
+                   position: absolute
+                   left: 0
+                   top: 4px
+        &-instruction
+            width: 50%
+            padding: 0 50px
+            @media (max-width: 1023px)
+                width: 100%
+            &-video
+                margin-bottom: 50px
+    &__gallery
+        &-inner
+            overflow: visible
+        &-image
+            width: 250px
+            height: 250px

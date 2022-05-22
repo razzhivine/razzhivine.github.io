@@ -1,0 +1,67 @@
+.menu
+    margin: 0 -30px
+    &__item
+        display: inline-block
+        margin: 0 30px
+        color: var(--color)
+        font-size: 14px
+        letter-spacing: .1px
+        transition: color .2s ease-in
+        cursor: pointer
+        position: relative
+        &_with-submenu
+            padding-right: 20px
+            position: relative
+            &::after
+                content: ""
+                width: 10px
+                height: 7px
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 1.4375L5 5.4375L9 1.4375' stroke='%231D324E' stroke-width='1.5'/%3E %3C/svg%3E ")
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                transition: background-image .2s ease-in
+            &:hover
+                &::after
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1 1.4375L5 5.4375L9 1.4375' stroke='%235472D3' stroke-width='1.5'/%3E %3C/svg%3E ")
+        &::before
+            content: ""
+            width: 100%
+            height: 1px
+            background: var(--line-color)
+            position: absolute
+            left: 0
+            bottom: -6px
+            opacity: 0
+            transition: opacity .2s ease-in
+        &:hover
+            color: var(--accent-color)
+            &::before
+                opacity: .8
+        &_sub
+            margin: 0
+            font-size: 12px
+            line-height: 20px
+            padding-bottom: 5px
+            &::before
+                content: none
+    &__submenu
+        position: absolute
+        background: #fff
+        z-index: 100
+        width: 400px
+        padding: 15px
+        display: flex
+        flex-direction: column
+        height: 0
+        opacity: 0
+        overflow: hidden
+        // visibility: hidden
+        transition: opacity .4s ease
+        &_active
+            height: auto
+            opacity: 1
+            overflow: auto
+
+            // visibility: visible

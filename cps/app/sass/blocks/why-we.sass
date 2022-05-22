@@ -1,0 +1,86 @@
+.why-we
+    overflow: hidden
+    &__inner
+        padding: 120px 7px 60px
+        @media (max-width: 1023px)
+            padding: 60px 0
+        @media (max-width: 767px)
+            padding: 30px 0
+    &__content
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -25px
+        @media (max-width: 1365px)
+            margin: 0 -15px
+        @media ( max-width: 1023px )
+            margin: 0
+    &__block
+        width: 50%
+        padding: 0 25px 
+        @media (max-width: 1365px)
+            padding: 0 15px
+        @media ( max-width: 1023px )
+            width: 100%
+            padding: 0 0 30px 
+
+    &__history
+        &-year
+            font: 600 70px 'Manrope', sans-serif
+            color: var(--second-accent-color)
+            margin-bottom: 2px
+            @media (max-width: 1023px)
+                font: 600 45px 'Manrope', sans-serif
+                margin-bottom: 0
+            @media (max-width: 767px)
+                font: 600 30px 'Manrope', sans-serif
+        &-content
+            display: flex
+            flex-wrap: wrap
+            margin: 0 -40px
+            @media (max-width: 1365px)
+                margin: 0 -20px
+        &-text
+            width: 42%
+            padding: 0 40px
+            @media (max-width: 1365px)
+                padding: 0 20px
+            @media (max-width: 1023px)
+                width: 100%
+                margin-bottom: 30px
+        &-advantages
+            width: 58%
+            padding: 22px 0 47px
+            display: flex
+            flex-wrap: wrap
+            margin: 0 -15px
+            @media (max-width: 1365px)
+                padding: 0 20px
+            @media (max-width: 1023px)
+                width: 100%
+            &-item
+                width: 50%
+                padding: 0 15px 68px
+                display: flex
+                align-items: center
+                @media (max-width: 767px)
+                    width: 100%
+                    padding-bottom: 30px
+                &-icon
+                    padding: 0 25px 0 0
+                    @media (max-width: 767px)
+                        padding-right: 15px
+                        svg
+                            width: 30px
+                &-text
+                    font: var(--second-text-font)
+                    line-height: 25px
+    &__gallery
+        &-inner
+            overflow: visible
+        &-slide
+            width: 450px
+            height: 500px
+            @media ( max-width: 767px )
+                width: 225px
+                height: 250px
+                

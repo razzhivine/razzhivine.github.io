@@ -1,0 +1,162 @@
+.banner
+    z-index: 10
+    &__inner
+        position: relative
+    &__label
+        position: absolute
+        transform: rotate(-90deg)
+        font: var(--side-title-font)
+        line-height: 1
+        bottom: 73px
+        left: -63px
+        letter-spacing: 1.5px
+        text-transform: uppercase
+        @media (max-width: 767px)
+            line-height: .5
+            left: -52px
+        &::before
+            content: "" 
+            width: 100%
+            height: 4px
+            background: var(--accent-color)
+            position: absolute
+            left: 0
+            bottom: -10.5px
+    &__top
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 69px
+        @media (max-width: 767px)
+            padding-bottom: 0
+    &__content
+        width: 56%
+        padding: 84px 15px 0 116px
+        @media (max-width: 1365px)
+            width: 100%
+        @media (max-width: 1023px)
+            padding: 84px 0 0 0
+        @media (max-width: 767px)
+            padding: 0
+    &__title
+        font: var(--banner-title-font)
+        line-height: 80px
+        padding-bottom: 50px
+        letter-spacing: 0
+        @media (max-width: 1779px)
+            line-height: 70px
+        @media (max-width: 1585px)
+            line-height: 60px
+        @media (max-width: 767px)
+            line-height: 50px
+            padding-bottom: 15px
+        @media (max-width: 414px)
+            line-height: 35px
+    &__slider
+        // padding: 0 75px 0 15px
+        padding: 61px 85px 0 15px
+        width: 44%
+        @media (max-width: 1365px)
+            width: 100%
+            padding: 61px 0 15px
+            max-width: 500px
+            width: 100%
+            margin: 0 auto
+        @media (max-width: 767px)
+            padding: 50px 0 15px
+            
+        &-pagination
+            // display: flex
+            position: relative
+            font: 500 10px 'Roboto', sans-serif
+            text-transform: uppercase
+            width: 35%
+            overflow: hidden
+            padding: 5px 20px 2px
+            // margin-right: 10px
+            @media (max-width: 1365px)
+                margin: 0 auto 50px
+                width: 100%
+                max-width: 500px
+            &-item 
+                // margin: 0 25px
+                padding-top: 12px
+                position: relative
+                // width: 100px !important
+                cursor: pointer
+                text-align: left
+                letter-spacing: 1.5px
+                &::before
+                    content: ""
+                    width: 120px
+                    height: 1px
+                    background: var(--line-color)
+                    position: absolute
+                    // top: -8px
+                    top: 0
+                    left: 0
+                    transition: background, height .2s ease-in
+                    @media (max-width: 767px)
+                        width: 100%
+                &:last-child
+                    margin-right: 0 !important
+            .swiper-slide-thumb-active
+                &::before
+                    background: var(--accent-color)
+                    height: 2px
+            &-arrow
+                position: absolute
+                top: 50%
+                transform: translateY(-50%) 
+                z-index: 100
+                &_next
+                    right: 5px
+                &_prev
+                    left: 5px
+                    transform: translateY(-50%) rotate(180deg)
+
+    &__bottom
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 69px
+        align-items: flex-end
+        @media (max-width: 1365px)
+            flex-direction: column-reverse
+    &__advantages
+        display: flex
+        width: 65%
+        // margin: 0 -9px
+        flex-wrap: wrap
+
+        @media (max-width: 1365px)
+            width: 100%
+        &-item
+            // min-width: 320px
+            // max-width: 406px
+            width: 33.33333%
+            padding: 0 9px
+            display: flex
+            @media (max-width: 1499px)
+                width: 50%
+            @media (max-width: 1366px)
+                width: 33.33333%
+            @media (max-width: 1279px)
+                min-width: 100%
+                max-width: 100%
+                padding: 0 0 30px
+            &-image
+                max-width: 44px
+                width: 100%
+                margin-right: 20px
+                @media (max-width: 767px)
+                    max-width: 30px
+            &-title
+                font-size: 24px
+                font-weight: 600
+                color: var(--accent-color)
+                padding-bottom: 18px
+                @media (max-width: 767px)
+                    font-size: 20px
+                    padding-bottom: 10px
+            &-text
+                font-size: 14px
+                line-height: 20px
