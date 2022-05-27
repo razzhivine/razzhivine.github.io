@@ -1,0 +1,18 @@
+.contacts
+    font: var(--contacts-font)
+    line-height: 171%
+    &__inner
+        display: flex
+        margin: 0 -30px
+        @media (max-width: 767px)
+            flex-direction: column
+    &__block
+        padding: 0 30px
+        min-width: 184px
+        @media (max-width: 767px)
+            padding-bottom: 10px
+    &__item
+        color: var(--second-accent-color)
+        display: flex
+        flex-direction: column
+        font-weight: 400

@@ -1,0 +1,84 @@
+.tabs
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    margin: 30px -15px
+    @media (max-width: 1023px)
+        flex-direction: column-reverse
+    &__content
+        width: calc( 70% - 30px )
+        padding: 0 15px
+        @media (max-width: 1023px)
+            width: calc( 100% - 30px )
+    &__list
+        width: calc( 30% - 30px )
+        padding: 0 15px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @media (max-width: 1023px)
+            width: calc( 100% - 30px )
+            margin-bottom: 50px
+    &__item
+        margin-bottom: 35px
+        position: relative
+        width: fit-content
+        cursor: pointer
+        transition: font-weight var(--transition-duration) var(--transition-function)
+        &:last-child
+            margin-bottom: 0
+        &::before
+            content: ""
+            width: 100%
+            height: 1px
+            background: var(--border-color)
+            position: absolute
+            bottom: -5px
+            left: 0
+            opacity: 0
+            transition: opacity var(--transition-duration) var(--transition-function)
+        &:hover
+            font-weight: 700
+            &::before
+                opacity: 1
+    &__tab
+        height: 0
+        visibility: hidden
+        font-size: 0
+        opacity: 0
+        transition: opacity calc(var(--transition-duration) * 3.33333) var(--transition-function)
+        &_active
+            height: 100%
+            visibility: visible
+            font-size: inherit
+            opacity: 1
+        &-content
+            display: flex
+            align-items: center
+            @media (max-width: 1023px)
+                justify-content: space-between
+                flex-direction: row-reverse
+            @media (max-width: 767px)
+                justify-content: flex-end
+                
+        &-icon
+            padding-right: 100px
+            @media (max-width: 1023px)
+                padding-right: 0
+            @media (max-width: 767px)
+                display: none
+        &-svg
+            max-width: 171px
+        &-text
+            line-height: 140%
+            max-width: 400px
+        &-title
+            font: var(--steps-item-title-font)
+            margin-bottom: 40px
+            @media (max-width: 767px)
+                margin-bottom: 20px
+        &-description
+            margin-bottom: 40px
+        &-link
+            &_second
+                color: var(--second-accent-color)

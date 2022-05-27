@@ -1,0 +1,24 @@
+.header
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    &__logo
+        padding-right: 60px
+        @media (max-width: 1279px)
+            padding-right: 20px
+    &__main
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &__menu,
+    &__communication
+        @media (max-width: 1023px)
+            display: none
+    &__hamburger-menu-icon
+        display: none
+        width: 50px
+        height: 50px
+        overflow: hidden
+        @media (max-width: 1023px)
+            display: block

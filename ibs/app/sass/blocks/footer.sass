@@ -1,0 +1,23 @@
+.footer
+    background: var(--second-background)
+    color: var(--second-accent-color)
+    padding: 60px 0 85px
+    @media (max-width: 767px)
+        padding: 60px 0 40px
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin: 0 -15px
+        @media (max-width: 767px)
+            flex-direction: column
+        & > *
+            padding: 0 15px
+    &__logo
+        margin-top: -15px
+        @media (max-width: 767px)
+            padding-bottom: 10px
+    &__menu
+        @media (max-width: 1023px)
+            display: none

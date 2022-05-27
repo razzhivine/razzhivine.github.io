@@ -1,0 +1,18 @@
+.heading
+    display: flex
+    justify-content: space-between
+    padding-bottom: 83px
+    @media (max-width: 767px)
+        flex-direction: column
+        padding-bottom: 40px
+
+    &__title
+        color: var(--accent-color)
+        font: var(--title-font)
+        @media (max-width: 767px)
+            margin-bottom: 5px
+        &_second
+            color: var(--second-accent-color)
+    &__description
+        max-width: 400px
+        line-height: 140%
