@@ -37,4 +37,12 @@ document.addEventListener('DOMContentLoaded', function(){
         hamburgerMenu.classList.remove(activeClass);
     }
 
+    let arrPhones = document.querySelectorAll('input[name="phone"]');
+    let maskOptions = {
+        mask: '+{7} 000 000 00 00'
+    };
+    arrPhones.forEach(phone => {
+        IMask(phone, maskOptions);
+    });
+
 });

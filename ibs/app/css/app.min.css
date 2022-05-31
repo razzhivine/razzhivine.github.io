@@ -142,6 +142,8 @@ table {
   --menu-font: 400 0.7778rem "Manrope",sans-serif;
   --communication-font: 600 0.7778rem "Manrope",sans-serif;
   --banner-font: 700 3.8889rem "Manrope",sans-serif;
+  --input-label-font: 400 0.625rem "Manrope",sans-serif;
+  --checkbox-label-font: 400 0.7rem "Manrope",sans-serif;
   --tagline-font: 400 1.3889rem "Manrope",sans-serif;
   --title-font: 500 1.3889rem "Manrope",sans-serif;
   --service-item-title-font: 500 1.3889rem "Manrope",sans-serif;
@@ -189,6 +191,26 @@ section {
 }
 .link:hover {
   font-weight: 700
+}
+.button {
+  background: 0 0;
+  padding: 17px 57px;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in;
+  font: var(--second-text-font);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+  display: inline-block;
+  cursor: pointer
+}
+.button:hover {
+  background: var(--accent-color);
+  color: #fff
 }
 .menu {
   margin: 0 -30px;
@@ -260,7 +282,8 @@ section {
 }
 .communication__call-order {
   position: relative;
-  cursor: pointer
+  cursor: pointer;
+  color: var(--second-accent-color)
 }
 .communication__call-order::before {
   content: "";
@@ -874,6 +897,162 @@ section {
 }
 .news__item-description {
   line-height: 140%
+}
+.form__inner {
+  padding-top: 12px
+}
+.form__title {
+  font: 400 34px/50px Manrope,sans-serif;
+  color: var(--accent-color);
+  margin-bottom: 22px;
+  font: var(--title-font)
+}
+.form__description {
+  font: var(--default-font);
+  margin-bottom: 40px;
+  line-height: 25px
+}
+.form__description_error,
+.form__description_success {
+  padding-left: 36px;
+  position: relative
+}
+.form__description_error::before,
+.form__description_success::before {
+  content: "";
+  width: 19px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M17.293 0.292969L6 11.5859L1.70703 7.29297L0.292969 8.70703L6 14.4141L18.707 1.70703L17.293 0.292969Z' fill='%235472D3'/%3E %3C/svg%3E");
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.form__description_error::before {
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.94108 7.00175L0 12.9428L1.06066 14.0035L7.00173 8.06241L12.9428 14.0035L14.0035 12.9428L8.06239 7.00175L14.0034 1.06066L12.9428 0L7.00173 5.94108L1.06068 0L1.87439e-05 1.06066L5.94108 7.00175Z' fill='%235472D3'/%3E %3C/svg%3E");
+  background-repeat: no-repeat
+}
+.form__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -10px 20px
+}
+.form__block_m-0 {
+  margin: 0 0 20px;
+  max-width: 378px
+}
+.form__label {
+  width: 50%;
+  padding: 0 10px;
+  position: relative
+}
+@media (max-width:550px) {
+  .form__label {
+    width: 100%;
+    margin-bottom: 20px
+  }
+}
+.form__label_w-100 {
+  width: 100%
+}
+.form__label_checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.form__label-text {
+  font: var(--input-label-font);
+  padding: 8px 10px;
+  background: #fff;
+  position: absolute;
+  top: -15px;
+  left: 20px
+}
+.form__label-checkbox {
+  position: relative;
+  padding-left: 44px;
+  font: var(--checkbox-label-font);
+  color: #6b7685;
+  cursor: pointer
+}
+.form__label-checkbox::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Crect x='0.75' y='0.75' width='18.5' height='18.5' rx='4.25' stroke='%232128AF' stroke-width='1.5'/%3E %3C/svg%3E");
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.form__label-checkbox::after {
+  content: "";
+  width: 8px;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M1.56056 2.25173C1.28537 1.94214 0.811314 1.91425 0.501727 2.18944C0.19214 2.46463 0.164254 2.93869 0.439443 3.24827L1.56056 2.25173ZM3 5L2.43944 5.49827C2.57667 5.65266 2.7715 5.74361 2.97797 5.74968C3.18444 5.75574 3.38427 5.67639 3.53033 5.53033L3 5ZM7.53033 1.53033C7.82322 1.23744 7.82322 0.762563 7.53033 0.46967C7.23744 0.176777 6.76256 0.176777 6.46967 0.46967L7.53033 1.53033ZM0.439443 3.24827L2.43944 5.49827L3.56056 4.50173L1.56056 2.25173L0.439443 3.24827ZM3.53033 5.53033L7.53033 1.53033L6.46967 0.46967L2.46967 4.46967L3.53033 5.53033Z' fill='%232128AF'/%3E %3C/svg%3E");
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in
+}
+.form__label-checkbox:checked {
+  background: 0 0
+}
+.form__label-checkbox:checked::after {
+  opacity: 1
+}
+.form__input,
+.form__textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  padding: 0 21px
+}
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  color: var(--color)
+}
+.form__input::-moz-placeholder,
+.form__textarea::-moz-placeholder {
+  color: var(--color)
+}
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  color: var(--color)
+}
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  color: var(--color)
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--color)
+}
+.form__textarea {
+  padding: 21px;
+  height: 120px
+}
+.form__checkbox {
+  position: absolute;
+  opacity: 0
+}
+.form__checkbox:checked + .form__label-checkbox::after {
+  opacity: 1
 }
 .footer {
   background: var(--second-background);
