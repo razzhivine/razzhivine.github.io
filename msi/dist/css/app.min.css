@@ -533,6 +533,11 @@ img {
   -o-transition: width 0.5s ease;
   transition: width 0.5s ease;
 }
+@media (max-width: 767px) {
+  .filter__step {
+    width: 100%;
+  }
+}
 .filter__step.-active {
   width: 100%;
 }
