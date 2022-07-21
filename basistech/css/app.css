@@ -1095,6 +1095,7 @@ b {
   position: absolute;
   top: 26px;
   right: 40px;
+  white-space: nowrap;
 }
 @media (max-width: 1757px) {
   .header__btn {
