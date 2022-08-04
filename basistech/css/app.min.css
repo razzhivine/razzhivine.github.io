@@ -2029,6 +2029,12 @@ ul li::before {
   color: var(--breadcrumbs-color);
   padding-right: 24px;
   position: relative;
+  -webkit-transition: color var(--transition-duration) var(--transition-function);
+  -o-transition: color var(--transition-duration) var(--transition-function);
+  transition: color var(--transition-duration) var(--transition-function);
+}
+.breadcrumbs__item:hover {
+  color: var(--main-accent-color);
 }
 .breadcrumbs__item::after {
   content: "";
@@ -2044,6 +2050,9 @@ ul li::before {
 }
 .breadcrumbs__item:last-child {
   padding-right: 0;
+}
+.breadcrumbs__item:last-child:hover {
+  color: var(--breadcrumbs-color);
 }
 .breadcrumbs__item:last-child::after {
   content: none;
