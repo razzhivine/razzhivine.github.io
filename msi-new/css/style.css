@@ -221,7 +221,7 @@ img {
     height: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in;
-
+    overflow: hidden;
 }
 .step-two.-active{
     visibility: visible;
@@ -285,7 +285,7 @@ img {
     height: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in;
-
+    overflow: hidden;
 }
 .step-three.-active{
     visibility: visible;
@@ -297,6 +297,8 @@ img {
     height: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in;
+    overflow: hidden;
+
 }
 .step-four.-active{
     visibility: visible;
@@ -309,6 +311,7 @@ img {
     height: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in;
+    overflow: hidden;
 
 }
 .step-five.-active{
