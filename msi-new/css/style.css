@@ -236,6 +236,20 @@ img {
     height: auto;
     opacity: 1;
 }
+
+.step-five{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+}
+.step-five.-active{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+}
+
 .filter__row-three{
     display: flex;
     /* flex-wrap: wrap; */
@@ -280,7 +294,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
     margin-bottom: 30px;
 }
 .filter__tech-charachteristics-item-image {
@@ -288,11 +303,13 @@ img {
     width: 59px;
 }
 .filter__tech-charachteristics-item-image > img {
-    width: initial;
+    /* width: initial; */
 }
 .filter__tech-charachteristics-item-text {
-    /* width: calc(100% - 77px); */
     width: 100%;
+}
+.filter__tech-charachteristics-item-text.w-i {
+    width: calc(100% - 77px);
 }
 
 .room{

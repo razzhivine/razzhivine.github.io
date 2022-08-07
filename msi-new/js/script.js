@@ -10,7 +10,14 @@ document.addEventListener("DOMContentLoaded", function(){
     let stepThreeArr = document.querySelectorAll(".step-three .filter__item");
 
     let stepFourBlockArr = document.querySelectorAll(".step-four");
-    let stepFourArr = document.querySelectorAll(".filter__tech-item");
+    let stepFourArr = document.querySelectorAll(".step-four .filter__item");
+
+    let stepFiveBlockArr = document.querySelectorAll(".step-five");
+
+
+    let items = document.querySelectorAll(".filter__tech-item");
+
+
 
     let room = document.querySelector(".room");
 
@@ -49,8 +56,17 @@ document.addEventListener("DOMContentLoaded", function(){
             stepFourBlockArr.forEach(item6 =>{
                 item6.classList.remove("-active");
             })
+            stepFourArr.forEach(item9 =>{
+                item9.classList.remove("-active");
+            })
 
-            stepFourArr.forEach(item7 =>{
+            stepFiveBlockArr.forEach(item8 =>{
+                item8.classList.remove("-active");
+            })
+
+            
+
+            items.forEach(item7 =>{
                 item7.classList.remove("-active");
             })
             room.classList.remove("-active");
@@ -112,7 +128,18 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                 })
 
-                stepFourArr.forEach(item7 =>{
+                stepFourArr.forEach(item9 =>{
+                    item9.classList.remove("-active");
+                })
+
+                stepFiveBlockArr.forEach(item2 =>{
+                    item2.classList.remove("-active");
+                    if(item.dataset.step == item2.dataset.step){
+                        item2.classList.add("-active");
+                    }
+                })
+
+                items.forEach(item7 =>{
                     item7.classList.remove("-active");
                 })
                 room.classList.remove("-active")
@@ -138,7 +165,17 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                 })
 
-                stepFourArr.forEach(item7 =>{
+                stepFiveBlockArr.forEach(item2 =>{
+                    item2.classList.remove("-active");
+                    if(item.dataset.step == item2.dataset.step){
+                        item2.classList.add("-active");
+                    }
+                })
+                stepFourArr.forEach(item9 =>{
+                    item9.classList.remove("-active");
+                })
+
+                items.forEach(item7 =>{
                     item7.classList.remove("-active");
                 })
 
@@ -147,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         )
     })
+
 
     stepFourArr.forEach(item =>{
         item.addEventListener(
@@ -158,7 +196,33 @@ document.addEventListener("DOMContentLoaded", function(){
                 item.classList.remove("-disable");
                 item.classList.add("-active");
 
-                // room.parentElement.source.srcset = '1213'
+                stepFiveBlockArr.forEach(item2 =>{
+                    item2.classList.remove("-active");
+                    if(item.dataset.step == item2.dataset.step){
+                        item2.classList.add("-active");
+                    }
+                })
+
+                items.forEach(item7 =>{
+                    item7.classList.remove("-active");
+                })
+
+                room.classList.remove("-active")
+
+            }
+        )
+    })
+
+    items.forEach(item =>{
+        item.addEventListener(
+            'click',
+            () => {
+                items.forEach(item1 =>{
+                    item1.classList.remove("-active");
+                })
+                item.classList.remove("-disable");
+                item.classList.add("-active");
+
                 room.firstElementChild.firstElementChild.srcset = item.dataset.imagemob
                 room.firstElementChild.lastElementChild.src = item.dataset.image
 
