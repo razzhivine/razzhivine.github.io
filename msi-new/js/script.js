@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let stepFiveBlockArr = document.querySelectorAll(".step-five");
 
+    let arrow = document.querySelector(".arrow-down-new");
 
     let items = document.querySelectorAll(".filter__tech-item");
 
@@ -63,8 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
             stepFiveBlockArr.forEach(item8 =>{
                 item8.classList.remove("-active");
             })
-
-            
+            arrow.classList.remove("-active")
 
             items.forEach(item7 =>{
                 item7.classList.remove("-active");
@@ -142,6 +142,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 items.forEach(item7 =>{
                     item7.classList.remove("-active");
                 })
+                arrow.classList.remove("-active")
+
                 room.classList.remove("-active")
 
             }
@@ -179,6 +181,12 @@ document.addEventListener("DOMContentLoaded", function(){
                     item7.classList.remove("-active");
                 })
 
+                if(item.dataset.arrow == 'Y'){
+                    arrow.classList.add("-active")
+                } else {
+                    arrow.classList.remove("-active")
+                }
+
                 room.classList.remove("-active")
 
             }
@@ -207,6 +215,10 @@ document.addEventListener("DOMContentLoaded", function(){
                     item7.classList.remove("-active");
                 })
 
+                if(item.dataset.arrow == 'Y'){
+                    arrow.classList.add("-active")
+                }
+
                 room.classList.remove("-active")
 
             }
@@ -232,6 +244,252 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         )
     })
+
+      var swiper = new Swiper(".swiper1", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoHeight: true,
+        navigation: {
+            nextEl: ".pag-1-next",
+            prevEl: ".pag-1-prev",
+          },
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper3", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper4", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper5", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper6", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper7", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper8", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper9", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper10", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper11", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper12", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper13", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper14", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper15", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper16", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper17", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper18", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper19", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
+      var swiper = new Swiper(".swiper20", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            767: {
+              slidesPerView: 2,
+            },
+            1279: {
+              slidesPerView: 4,
+            },
+          },
+      });
 
   
   });
