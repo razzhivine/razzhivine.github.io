@@ -197,7 +197,7 @@ td, th {
 body {
   color: #fff;
   font-family: "DINCyr", sans-serif;
-  font-size: 36px;
+  font-size: 26px;
   letter-spacing: normal;
 }
 @media (max-width: 767px) {
@@ -228,10 +228,10 @@ ol li ol li {
 
 .title {
   font-family: "RoadRadio", sans-serif;
-  font-size: 87px;
+  font-size: 66px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 38px;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -243,11 +243,11 @@ ol li ol li {
 
 .sub-title {
   font-family: "DINPro", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.25;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -367,7 +367,7 @@ ol li ol li {
   }
 }
 .discount__inner {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -394,7 +394,7 @@ ol li ol li {
           box-sizing: border-box;
 }
 .games__text {
-  max-width: 1532px;
+  max-width: 1300px;
   margin: 0 auto 100px;
 }
 .games__list {
@@ -526,14 +526,14 @@ ol li ol li {
   }
 }
 .creation__inner {
-  max-width: 1700px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .creation__text {
-  margin-bottom: 131px;
+  margin-bottom: 100px;
 }
 @media (max-width: 767px) {
   .creation__text {
@@ -625,12 +625,14 @@ ol li ol li {
           box-sizing: border-box;
 }
 .rules__text {
+  max-height: 800px;
   height: 800px;
   overflow-y: hidden;
   font-size: 24px;
   line-height: 1.33;
   margin-bottom: 50px;
   position: relative;
+  transition: all .3s ease-in;
 }
 @media (max-width: 767px) {
   .rules__text {
@@ -647,7 +649,8 @@ ol li ol li {
   }
 }
 .rules__text.-active {
-  height: auto;
+  max-height: 100%;
+  height: 2000px;
 }
 .rules__btn {
   margin: 0 auto;
