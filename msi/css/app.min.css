@@ -649,9 +649,9 @@ ol li ol li {
           box-sizing: border-box;
 }
 .rules__text {
-  max-height: 800px;
+  /* max-height: 800px;
   height: 800px;
-  overflow-y: hidden;
+  overflow-y: hidden; */
   font-size: 24px;
   line-height: 1.33;
   margin-bottom: 50px;
@@ -672,11 +672,11 @@ ol li ol li {
     margin-bottom: 15px;
   }
 }
-.rules__text.-active {
+/* .rules__text.-active {
   max-height: fit-content;
   max-height: -moz-fit-content;
   height: 4000px;
-}
+} */
 .rules__btn {
   margin: 0 auto;
 }
