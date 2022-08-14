@@ -189,7 +189,15 @@ td, th {
 @font-face {
   font-family: "DINCyr";
   src: url(../fonts/DINpro/DINPro-Light.otf);
+  font-weight: 400;
 }
+
+@font-face {
+  font-family: "DINCyr";
+  src: url(../fonts/DINpro/DINPro-Medium.otf);
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "RoadRadio";
   src: url(../fonts/RoadRadio.ttf);
@@ -303,11 +311,11 @@ ol li ol li {
 
 .btn-transparent-2 {
   font-family: "DINCyr", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.54px;
   color: #000;
-  padding: 12px 66px;
+  padding: 6px 40px;
   border-radius: 5px;
   border: solid 1px #000;
   background-color: transparent;
@@ -530,7 +538,7 @@ ol li ol li {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 17px;
+  bottom: 10px;
   left: calc(50% + 25px);
   transform: translateX(-50%);
   z-index: 2;
@@ -610,6 +618,7 @@ ol li ol li {
 }
 .creation__item-name {
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .gift {
