@@ -463,13 +463,28 @@ ol li ol li {
       -ms-transform: translateX(100px);
           transform: translateX(100px);
   z-index: 2;
-  text-align: left;
+  /* text-align: left; */
+}
+.games__item:nth-child(2) .games__item-name img {
+  position: relative;
+  right: 50px;
+}
+.games__item:nth-child(2) .games__item-btn {
+  position: relative;
+  right: 50px;
 }
 @media (max-width: 767px) {
   .games__item:nth-child(2) .games__item-name img {
     max-width: 227px;
     width: 100%;
     height: auto;
+  }
+
+  .games__item:nth-child(2) .games__item-name img {
+    position: static;
+  }
+  .games__item:nth-child(2) .games__item-btn {
+    position: static;
   }
 }
 .games__item:nth-child(3) {
