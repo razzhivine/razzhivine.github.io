@@ -94,6 +94,12 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+                        window.scrollBy({
+                          top: item2.getBoundingClientRect().top - 25,
+                          // top: item2.offsetTop - 25,
+                          behavior : "smooth"
+                        });
+                        // item2.scrollIntoView({block: "start", behavior: "smooth"});
                     }
                 })
             }
@@ -118,6 +124,13 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+
+                        // item2.scrollIntoView({block: "start", behavior: "smooth"});
+                        window.scrollBy({
+                          top: item2.getBoundingClientRect().top - 25,
+                          // top: item2.offsetTop - 25,
+                          behavior : "smooth"
+                        });
                     }
                 })
 
@@ -136,11 +149,13 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+
                     }
                 })
 
                 items.forEach(item7 =>{
                     item7.classList.remove("-active");
+
                 })
                 arrow.classList.remove("-active")
 
@@ -164,6 +179,12 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+                        // item2.scrollIntoView({block: "start", behavior: "smooth"});
+                        window.scrollBy({
+                          // top: item2.offsetTop - 25,
+                          top: item2.getBoundingClientRect().top - 25,
+                          behavior : "smooth"
+                        });
                     }
                 })
 
@@ -171,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+                        item2.scrollIntoView({block: "start", behavior: "smooth"});
                     }
                 })
                 stepFourArr.forEach(item9 =>{
@@ -186,7 +208,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 } else {
                     arrow.classList.remove("-active")
                 }
-
                 room.classList.remove("-active")
 
             }
@@ -208,6 +229,12 @@ document.addEventListener("DOMContentLoaded", function(){
                     item2.classList.remove("-active");
                     if(item.dataset.step == item2.dataset.step){
                         item2.classList.add("-active");
+                        // item2.scrollIntoView({block: "start", behavior: "smooth"});
+                        window.scrollBy({
+                          // top: item2.offsetTop - 25,
+                          top: item2.getBoundingClientRect().top - 25,
+                          behavior : "smooth"
+                        });
                     }
                 })
 
@@ -239,7 +266,13 @@ document.addEventListener("DOMContentLoaded", function(){
                 room.firstElementChild.lastElementChild.src = item.dataset.image
 
                 room.classList.add("-active")
+                // room.scrollIntoView({block: "start", behavior: "smooth"});
 
+                window.scrollBy({
+                  // top: room.offsetTop - 25,
+                  top: room.getBoundingClientRect().top - 25,
+                  behavior : "smooth"
+                });
 
             }
         )
