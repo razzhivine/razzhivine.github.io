@@ -336,7 +336,8 @@ img {
     box-sizing: border-box;
     transition: all 0.3s ease;
     cursor: pointer;
-    min-height: 800px;
+    /* min-height: 800px; */
+    height: auto;
 }
 .filter__tech-item.-active,
 .filter__tech-item:hover {
