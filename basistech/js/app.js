@@ -87,14 +87,16 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
-
-    customSelect('.custom-select');
-
+    if(document.querySelector(".custom-select")){
+        customSelect('.custom-select');
+    }
+    
     let phoneInputs = document.querySelectorAll(".form__input[name='phone']")
 
     let maskOptions = {
         mask: '+{7} (000) 000-00-00'
     };
+    
     phoneInputs.forEach(phone => {
         IMask(phone, maskOptions);
     });
@@ -162,5 +164,146 @@ document.addEventListener("DOMContentLoaded", function(){
         popups.forEach(element => {
             element.classList.remove("popup_active")
         });
+        productHamburger.classList.remove("product-header-hamburger-menu_active")
+        productHamburgerIconClose.classList.remove("product-header__hamburger-icon-close_active")
+        productHamburgerIcon.classList.remove("product-header__hamburger-icon_disabled")
    });
+
+    let hamburger = document.getElementById("hamburger");
+    let hamburgerIcon = document.getElementById("hamburger-icon");
+    let hamburgerIconClose = document.getElementById("hamburger-icon-close");
+    if(hamburger && hamburgerIcon && hamburgerIconClose){
+        hamburgerIcon.addEventListener('click', () => {
+            hamburger.classList.add("hamburger_active")
+        });
+        hamburgerIconClose.addEventListener('click', () => {
+            hamburger.classList.remove("hamburger_active")
+        });
+    }
+
+    let overflow = document.getElementById("overflow");
+    let productHamburger = document.getElementById("product-header-hamburger-menu");
+    let productHamburgerIcon = document.getElementById("product-header-hamburger-icon");
+    let productHamburgerIconClose = document.getElementById("product-header-hamburger-icon-close");
+    let productMenuItem = document.querySelectorAll(".product-menu-item");
+    let firstScreen = document.getElementById("first-screen");
+    let productHeader = document.getElementById("product-header");
+
+    if(overflow && productHamburger && productHamburgerIcon && productHamburgerIconClose && productMenuItem && firstScreen && productHeader){
+        console.log(1)
+        productHamburgerIcon.addEventListener('click', () => {
+            productHamburger.classList.add("product-header-hamburger-menu_active")
+            productHamburgerIcon.classList.add("product-header__hamburger-icon_disabled")
+            productHamburgerIconClose.classList.add("product-header__hamburger-icon-close_active")
+            overlay.classList.add("overlay_active")
+            
+        });
+        productHamburgerIconClose.addEventListener('click', () => {
+            productHamburger.classList.remove("product-header-hamburger-menu_active")
+            productHamburgerIconClose.classList.remove("product-header__hamburger-icon-close_active")
+            productHamburgerIcon.classList.remove("product-header__hamburger-icon_disabled")
+            overlay.classList.remove("overlay_active")
+        });
+
+        productMenuItem.forEach(element => {
+            element.addEventListener('click', () => {
+                let href = element.dataset.href
+                let block = document.getElementById(href);
+                window.scrollBy({
+                    top: block.getBoundingClientRect().top - 80,
+                    behavior : "smooth"
+                });
+                productHamburger.classList.remove("product-header-hamburger-menu_active")
+                productHamburgerIconClose.classList.remove("product-header__hamburger-icon-close_active")
+                productHamburgerIcon.classList.remove("product-header__hamburger-icon_disabled")
+                overlay.classList.remove("overlay_active")
+            });
+        });
+
+        document.addEventListener('scroll', () => {
+            console.log(firstScreen.offsetHeight)
+            console.log(scrollY)
+            if(scrollY > firstScreen.offsetHeight){
+                productHeader.classList.add("product-header_active")
+            }else{
+                productHeader.classList.remove("product-header_active")
+                productHamburger.classList.remove("product-header-hamburger-menu_active")
+                productHamburgerIconClose.classList.remove("product-header__hamburger-icon-close_active")
+                productHamburgerIcon.classList.remove("product-header__hamburger-icon_disabled")
+                overlay.classList.remove("overlay_active")
+            }
+        });
+    }
+
+    let tags = document.querySelectorAll("#tags .tags__item");
+    let products = document.querySelectorAll("#products .products__item");
+    let productsSelect = document.querySelector("#products-select");
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            tags.forEach(tag => {
+                tag.classList.remove("tags__item_active")
+            });
+            tag.classList.add("tags__item_active")
+            let type = tag.dataset.type;
+
+            products.forEach(product => {
+                arrType = product.dataset.type.split(" ")
+                product.classList.remove("products__item_active")
+                if(arrType.includes(type)){
+                    product.classList.add("products__item_active")
+                }else if(type == "all"){
+                    product.classList.add("products__item_active")
+                }
+            });
+
+            // productsSelect.forEach(option => {
+            //     arrType = option.dataset.type.split(" ")
+            //     if(arrType.includes(type)){
+            //         option.selected = true
+            //     }
+            // });
+        });
+    });
+
+    productsSelect.addEventListener('change', () => {
+        type = productsSelect.value
+
+        products.forEach(product => {
+            arrType = product.dataset.type.split(" ")
+            product.classList.remove("products__item_active")
+            if(arrType.includes(type)){
+                product.classList.add("products__item_active")
+            }else if(type == "all"){
+                product.classList.add("products__item_active")
+            }
+        });
+    });
+
+    // productsSelect.forEach(option => {
+    //     option.addEventListener('change', () => {
+    //         // productsSelect.forEach(option => {
+    //         //     option.classList.remove("tags__item_active")
+    //         // });
+    //         // option.classList.add("tags__item_active")
+    //         let type = option.dataset.type;
+    //         console.log(type)
+    //         products.forEach(product => {
+    //             arrType = product.dataset.type.split(" ")
+    //             product.classList.remove("products__item_active")
+    //             if(arrType.includes(type)){
+    //                 product.classList.add("products__item_active")
+    //             }else if(type == "all"){
+    //                 product.classList.add("products__item_active")
+    //             }
+    //         });
+
+    //         // productsSelect.forEach(option => {
+    //         //     arrType = option.dataset.type.split(" ")
+    //         //     if(arrType.includes(type)){
+    //         //         option.selected = true
+    //         //     }
+    //         // });
+    //     });
+    // });
 });
