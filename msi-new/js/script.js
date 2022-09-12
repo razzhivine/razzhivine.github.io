@@ -281,11 +281,11 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper1", {
         slidesPerView: 1,
         spaceBetween: 30,
-        autoHeight: true,
+        // autoHeight: true,
         navigation: {
             nextEl: ".pag-1-next",
             prevEl: ".pag-1-prev",
-          },
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -298,6 +298,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper2", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-2-next",
+            prevEl: ".pag-2-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -310,6 +314,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper3", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+          nextEl: ".pag-3-next",
+          prevEl: ".pag-3-prev",
+      },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -322,6 +330,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper4", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+          nextEl: ".pag-4-next",
+          prevEl: ".pag-4-prev",
+      },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -334,6 +346,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper5", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+          nextEl: ".pag-5-next",
+          prevEl: ".pag-5-prev",
+      },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -346,6 +362,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper6", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-6-next",
+            prevEl: ".pag-6-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -358,6 +378,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper7", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+          nextEl: ".pag-7-next",
+          prevEl: ".pag-7-prev",
+      },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -370,6 +394,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper8", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-8-next",
+            prevEl: ".pag-8-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -382,6 +410,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper9", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-9-next",
+            prevEl: ".pag-9-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -394,6 +426,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper10", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-10-next",
+            prevEl: ".pag-10-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -406,6 +442,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper11", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-11-next",
+            prevEl: ".pag-11-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -418,6 +458,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper12", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-12-next",
+            prevEl: ".pag-12-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -430,6 +474,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper13", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-13-next",
+            prevEl: ".pag-13-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -442,6 +490,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper14", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-14-next",
+            prevEl: ".pag-14-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -454,6 +506,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper15", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-15-next",
+            prevEl: ".pag-15-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -466,6 +522,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper16", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-16-next",
+            prevEl: ".pag-16-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -478,6 +538,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper17", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-17-next",
+            prevEl: ".pag-17-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -490,6 +554,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper18", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-18-next",
+            prevEl: ".pag-18-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -502,6 +570,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper19", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-19-next",
+            prevEl: ".pag-19-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,
@@ -514,6 +586,10 @@ document.addEventListener("DOMContentLoaded", function(){
       var swiper = new Swiper(".swiper20", {
         slidesPerView: 1,
         spaceBetween: 30,
+        navigation: {
+            nextEl: ".pag-20-next",
+            prevEl: ".pag-20-prev",
+        },
         breakpoints: {
             767: {
               slidesPerView: 2,

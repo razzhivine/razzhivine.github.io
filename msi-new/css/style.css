@@ -107,10 +107,11 @@ img {
 }
 @media (max-width: 767px) {
     .logo {
-        max-width: 147px;
+        max-width: 200px;
         left: 50%;
         top: 10px;
         transform: translateX(-50%);
+        width: 100%;
     }
 }
 .filter{}
@@ -303,6 +304,7 @@ img {
     visibility: visible;
     height: auto;
     opacity: 1;
+    position: relative;
 }
 
 .step-five{
@@ -317,6 +319,7 @@ img {
     visibility: visible;
     height: auto;
     opacity: 1;
+    position: relative;
 }
 
 .filter__row-three{
@@ -331,7 +334,8 @@ img {
     /* width: calc(33.33333% - 30px);
     margin: 0 15px 30px; */
 
-    padding: 30px 23px 34px;
+    /* padding: 30px 23px 34px; */
+    padding: 30px 23px 75px;
     background: #1e1845;
     box-sizing: border-box;
     transition: all 0.3s ease;
