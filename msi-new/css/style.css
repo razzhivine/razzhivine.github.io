@@ -228,6 +228,7 @@ img {
     visibility: visible;
     height: auto;
     opacity: 1;
+    overflow: initial;
 }
 
 .filter__row-two{
@@ -291,6 +292,7 @@ img {
     visibility: visible;
     height: auto;
     opacity: 1;
+    overflow: initial;
 }
 .step-four{
     visibility: hidden;
@@ -305,6 +307,7 @@ img {
     height: auto;
     opacity: 1;
     position: relative;
+    overflow: initial;
 }
 
 .step-five{
@@ -320,6 +323,7 @@ img {
     height: auto;
     opacity: 1;
     position: relative;
+    overflow: initial;
 }
 
 .filter__row-three{
