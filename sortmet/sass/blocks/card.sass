@@ -1,0 +1,46 @@
+.card
+    position: relative
+    &__image
+        position: relative
+        margin-bottom: 20px
+    &__labels
+        position: absolute
+        left: 20px
+        bottom: 10px
+    &__content
+    &__price
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        &-current
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+        &-old
+            margin-left: 22px
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+            text-decoration-line: line-through
+            color: #7F8A9B
+    &__name
+        line-height: 150%
+        margin-bottom: 9px
+    &__block
+        display: flex
+        justify-content: space-between
+    &__characteristics
+        margin-top: 11px
+    &__actions
+        margin-right: 10px
+    &__buy
+        position: absolute
+        top: 100%
+        width: 100%
+        box-sizing: border-box
+        cursor: pointer
+        opacity: 0
+        transition: .5s all ease
+    &:hover
+        .card__buy
+            opacity: 1

@@ -1,0 +1,56 @@
+.reviews
+    margin: 70px 0
+    position: relative
+    &__list
+        position: relative
+    &__item
+        padding: 30px
+        background: #F7F7F9
+        border-radius: 15px
+        height: auto
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        transition: .3s all ease
+        &:hover
+            box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.1), 0px 16px 26px rgba(0, 0, 0, 0.1), 0px 16px 5px -10px rgba(0, 0, 0, 0.03)
+        &-top
+            display: flex
+            justify-content: space-between
+            margin-bottom: 15px
+        &-title
+            font-weight: 600
+            font-size: 18px
+            line-height: 21px
+            color: #1A1E24
+        &-text
+            line-height: 160%
+            margin-bottom: 20px
+        &-link
+            color: #0F68CE
+            padding: 5px 36px 7px 15px
+            background: #FFFFFF
+            box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.05)
+            border-radius: 7px
+            width: fit-content
+            position: relative
+            transition: .3s all ease
+            &::before
+                content: ""
+                width: 16px
+                height: 16px
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_215_6287)'%3E%3Cpath d='M6.66667 11.3335L10 8.00016L6.66667 4.66683' stroke='%230077FF' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_215_6287'%3E%3Crect width='16' height='16' fill='white' transform='translate(0 16) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+                transition: .3s all ease
+            &:hover
+                color: #FFFFFF
+                background: #0F68CE
+                &::before
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_215_6287)'%3E%3Cpath d='M6.66667 11.3335L10 8.00016L6.66667 4.66683' stroke='%23ffffff' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_215_6287'%3E%3Crect width='16' height='16' fill='white' transform='translate(0 16) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+.reviews__list .swiper
+    margin: -70px
+    padding: 70px

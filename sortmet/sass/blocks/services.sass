@@ -1,0 +1,42 @@
+.services
+    margin: 70px 0 50px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -10px
+    &__item
+        position: relative
+        width: calc( 25% - 20px )
+        margin: 0 10px 20px
+        cursor: pointer
+        overflow: hidden
+        &-image
+            width: 100%
+            height: auto
+            object-fit: cover
+        &-caption
+            position: absolute
+            width: calc( 100% - 40px )
+            left: 20px
+            bottom: 20px
+            font-weight: 600
+            font-size: 18px
+            line-height: 21px
+            color: #FFFFFF
+            z-index: 1
+        &::before
+            opacity: 0
+            transition: .3s opacity ease
+        &:hover
+            &::before
+                content: ""
+                width: 100%
+                height: calc( 100% - 3px )
+                position: absolute
+                top: 0
+                left: 0
+                background: #0077FF
+                mix-blend-mode: normal
+                opacity: 0.8
+                border-radius: 15px
+                z-index: 0

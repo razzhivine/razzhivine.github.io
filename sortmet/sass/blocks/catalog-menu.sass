@@ -1,0 +1,63 @@
+.catalog-menu
+    display: none
+    position: absolute
+    top: 100%
+    z-index: 1000
+    left: 50%
+    transform: translateX(-50%)
+    width: 100vw
+    background: #fff
+    &__inner
+        display: flex
+    &__sections
+        width: 236px
+        position: relative
+        padding: 30px 0
+        // overflow: hidden
+        &::before
+            content: ""
+            width: 100vw
+            height: 100%
+            background: #F7F7F9
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 0
+    &__section
+        padding: 15px 0
+        position: relative
+        z-index: 1
+        &_active
+            &::before
+                content: ""
+                width: 100vw
+                height: 100%
+                background: #F1F1F6
+                position: absolute
+                top: 0
+                right: 0
+                z-index: -1
+            &::after
+                content: ""
+                width: 2px
+                height: 100%
+                background: #0077FF
+                position: absolute
+                top: 0
+                right: 0
+    &__sub-sections
+        padding: 30px 0 75px 56px
+        column-count: 3
+        column-gap: 57px
+    &__sub-section
+        &-block
+            margin-bottom: 30px
+        &-main
+            display: block
+            font-weight: 600
+            color: #1A1E24
+            margin-bottom: 15px
+        &-second
+            display: block
+            color: #626D7D
+            margin-bottom: 15px

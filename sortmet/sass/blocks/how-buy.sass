@@ -1,0 +1,35 @@
+.how-buy
+    margin: 0 0 70px
+    &__list
+        padding-top: 50px
+        display: flex
+        flex-wrap: wrap
+        counter-reset: item
+    &__item
+        width: 25%
+        position: relative
+        &-title
+            margin-top: 15px
+            font-weight: 600
+            line-height: 140%
+        &::before
+            counter-increment: item
+            content:  counter(item)
+            font-weight: 600
+            font-size: 58px
+            line-height: 1
+            color: #EDEEEF
+            position: absolute
+            top: -40px
+            left: 50px
+        &::after
+            content: ""
+            width: 186px
+            height: 16px
+            background-image: url("data:image/svg+xml,%3Csvg width='186' height='16' viewBox='0 0 186 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M185.707 8.70709C186.098 8.31657 186.098 7.6834 185.707 7.29288L179.343 0.928917C178.953 0.538392 178.319 0.538392 177.929 0.928917C177.538 1.31944 177.538 1.95261 177.929 2.34313L183.586 7.99998L177.929 13.6568C177.538 14.0474 177.538 14.6805 177.929 15.0711C178.319 15.4616 178.953 15.4616 179.343 15.0711L185.707 8.70709ZM8.74228e-08 9L185 8.99998L185 6.99998L-8.74228e-08 7L8.74228e-08 9Z' fill='%23DEE1E5'/%3E%3C/svg%3E%0A")
+            position: absolute
+            top: 15px
+            left: 97px
+        &:last-child
+            &::after
+                content: none

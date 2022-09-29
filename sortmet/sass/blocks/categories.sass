@@ -1,0 +1,26 @@
+.categories
+    margin-bottom: 40px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -10px
+    &__item
+        width: calc(25% - 20px)
+        box-sizing: border-box
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        background: #F7F7F9
+        border-radius: 10px
+        margin: 0 10px 20px
+        overflow: hidden
+        color: #1A1E24
+        transition: .3s all ease
+        &-caption
+            max-width: 165px
+            font-weight: 600
+            padding: 0 0 20px 20px
+        &:hover
+            color: #fff
+            background: #0077FF
+            box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.43), 0px 16px 26px rgba(0, 119, 255, 0.26), 0px 16px 5px -10px rgba(0, 79, 170, 0.14)
