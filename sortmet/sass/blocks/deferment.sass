@@ -1,10 +1,28 @@
 .deferment
     position: relative
-    &__content
+    background: #EBF0F6
+    border-radius: 15px
+    max-width: 289px
+    width: 100%
+    min-height: 220px 
+    padding: 26px
+    box-sizing: border-box
+    @media (max-width: 1023px)
+        max-width: 100%
+        min-height: 106px
+        padding: 15px
+    img
         position: absolute
-        top: 25px
-        left: 25px
-        height: calc( 100% - 50px )
+        bottom: 0
+        right: 0
+        @media (max-width: 1023px)
+            width: 103px
+            height: auto
+    &__content
+        // position: absolute
+        // top: 25px
+        // left: 25px
+        height: 100%
         display: flex
         flex-direction: column
         justify-content: space-between  
@@ -16,8 +34,16 @@
         line-height: 140%
         margin-bottom: 10px
         max-width: 170px
+        @media (max-width: 1023px)
+            max-width: 100%
+            font-size: 16px
+            margin-bottom: 5px
     &__text
         line-height: 140%
         max-width: 150px
+        @media (max-width: 1023px)
+            max-width: 100%
+            font-size: 14px
+            margin-bottom: 15px
     &__more
         color: #0C67BD

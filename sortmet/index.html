@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/app.min.css">
 	</head>
 	<body>
+		<div class="overflow">
 		<header class="header">
 			<div class="wrapper">
 				<div class="header__top">
@@ -64,6 +65,7 @@
 							</svg>
 						</a>
 					</div>
+					<div class="header__hamburger hamburger-icon" id="hamburger-icon"></div>
 				</div>
 				<div class="header__bottom">
 					<div class="header__catalog-btn catalog-btn" id="catalog-btn">Каталог</div>
@@ -141,9 +143,8 @@
 							</div>
 						</div>
 					</div>
-
 					<form action="#" class="header__search search">
-						<input type="text" class="search__input">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
 						<button class="search__btn"></button>
 					</form>
 					<div class="header__navbar navbar">
@@ -172,14 +173,14 @@
 		<div class="wrapper">
 			<div class="banners">
 				<div class="banners__banner banner">
-					<img src="images/dest/banner.webp" alt="">
+					<img src="images/dest/banner-1.webp" alt="">
 					<div class="banner__content">
 						<div class="banner__caption">Доставляем металл в день заказа</div>
 						<div class="banner__text">оперативная доставка в день обращения, если заказ был осуществлен до обеда</div>
 					</div>
 				</div>
 				<div class="banners__deferment deferment">
-					<img src="images/dest/deferment.webp" alt="">
+					<img src="images/dest/banner-2.webp" alt="">
 					<div class="deferment__content">
 						<div class="deferment__inner">
 							<div class="deferment__caption">Отсрочка платежа до 30 дней</div>
@@ -191,7 +192,7 @@
 			</div>
 			<section class="categories">
 				<div class="title">В нашем каталоге болеe 12 000 позиций</div>
-				<div class="tags">
+				<div class="categories__tags tags">
 					<div class="tags__item tags__item_active">Сортовой прокат</div>
 					<div class="tags__item">Листовой прокат</div>
 					<div class="tags__item">Трубы</div>
@@ -199,56 +200,80 @@
 					<div class="tags__item">Нержавеющая сталь</div>
 					<div class="tags__item">Цветные металлы</div>
 				</div>
+				<div class="categories__select select">
+					<div class="select__value">Сортовой прокат</div>
+						<div class="select__list">
+							<div class="select__item">Сортовой прокат</div>
+							<div class="select__item">Листовой прокат</div>
+							<div class="select__item">Трубы</div>
+							<div class="select__item">Проволока и сетка</div>
+							<div class="select__item">Нержавеющая сталь</div>
+							<div class="select__item">Цветные металлы</div>
+						</div>
+				</div>
 				<div class="categories__list">
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Арматура</div>
-						<img src="images/dest/section-1.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-1.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-1-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Арматурные каркасы</div>
-						<img src="images/dest/section-2.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-2.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-2-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Балка (Двутавр)</div>
-						<img src="images/dest/section-3.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-3.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-3-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Катанка</div>
-						<img src="images/dest/section-4.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-4.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-4-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Квадрат г/к</div>
-						<img src="images/dest/section-5.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-5.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-5-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Круг г/к</div>
-						<img src="images/dest/section-6.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-6.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-6-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Полоса г/к</div>
-						<img src="images/dest/section-7.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-7.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-7-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Рельс</div>
-						<img src="images/dest/section-8.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-8.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-8-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Уголок</div>
-						<img src="images/dest/section-9.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-9.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-9-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Швеллер</div>
-						<img src="images/dest/section-10.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-10.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-10-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Шестигранник металлический</div>
-						<img src="images/dest/section-11.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-11.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-11-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 					<a href="#" class="categories__item">
 						<div class="categories__item-caption">Шпунт Ларсена</div>
-						<img src="images/dest/section-12.webp" alt="" class="categories__item-image">
+						<img src="images/dest/section-12.webp" alt="" class="categories__item-image categories__item-image_desc">
+						<img src="images/dest/section-12-mob.webp" alt="" class="categories__item-image categories__item-image_mob">
 					</a>
 				</div>
+				<div class="categories__more" id="show-categories">Показать еще 6</div>
 			</section>
 			<form action="" class="form">
 				<div class="form__block">
@@ -257,7 +282,7 @@
 				</div>
 				<div class="form__block">
 					<input type="text" class="form__input" placeholder="+7 999 999 99 99">
-					<button class="form__button">Перезвоните мне</button>
+					<button class="form__button">Отправить</button>
 					<div class="form__policy">Заполняя форму вы соглашаетесь на <a href="#">обработку персональных данных</a></div>	
 				</div>
 			</form>
@@ -303,18 +328,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
 												</svg>
 											</div>
 										</div>	
 									</div>
-									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__buy btn-buy"><span>Купить</span></div>
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -343,18 +397,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
-									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__buy btn-buy"><span>Купить</span></div>
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -386,18 +469,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -426,18 +538,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -471,18 +612,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -511,18 +681,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -554,18 +753,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -594,18 +822,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -639,18 +896,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -679,18 +965,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -722,18 +1037,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -762,18 +1106,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -781,35 +1154,46 @@
 					<div class="arrow arrow_next"></div>
 					<div class="arrow arrow_prev"></div>
 				</div>
-				
 			</section>
 			<section class="advantages">
 				<div class="title">С нами выгодно и удобно работать</div>
 				<div class="advantages__list">
 					<div class="advantages__item">
-						<svg width="42" height="42">
+						<svg class="advantages__item-icon advantages__item-icon_default" width="42" height="42">
 							<use xlink:href="images/dest/sprite.svg#delivery"></use>
+						</svg>
+						<svg class="advantages__item-icon advantages__item-icon_hover" width="42" height="42">
+							<use xlink:href="images/dest/sprite.svg#delivery-white"></use>
 						</svg>
 						<div class="advantages__item-caption">Доставка в день заказа</div>
 						<div class="advantages__item-text">Покупайте сейчас, платите потом!</div>
 					</div>
 					<div class="advantages__item">
-						<svg width="42" height="42">
+						<svg class="advantages__item-icon advantages__item-icon_default" width="42" height="42">
 							<use xlink:href="images/dest/sprite.svg#card"></use>
+						</svg>
+						<svg class="advantages__item-icon advantages__item-icon_hover" width="42" height="42">
+							<use xlink:href="images/dest/sprite.svg#card-white"></use>
 						</svg>
 						<div class="advantages__item-caption">Возможность оплаты на объекте</div>
 						<div class="advantages__item-text">Покупайте сейчас, платите потом!</div>
 					</div>
 					<div class="advantages__item">
-						<svg width="42" height="42">
+						<svg class="advantages__item-icon advantages__item-icon_default" width="42" height="42">
 							<use xlink:href="images/dest/sprite.svg#deferment"></use>
+						</svg>
+						<svg class="advantages__item-icon advantages__item-icon_hover" width="42" height="42">
+							<use xlink:href="images/dest/sprite.svg#deferment-white"></use>
 						</svg>
 						<div class="advantages__item-caption">Отсрочка платежа до 30 дней</div>
 						<div class="advantages__item-text">Покупайте сейчас, платите потом!</div>
 					</div>
 					<div class="advantages__item">
-						<svg width="42" height="42">
+						<svg class="advantages__item-icon advantages__item-icon_default" width="42" height="42">
 							<use xlink:href="images/dest/sprite.svg#gear"></use>
+						</svg>
+						<svg class="advantages__item-icon advantages__item-icon_hover" width="42" height="42">
+							<use xlink:href="images/dest/sprite.svg#gear-white"></use>
 						</svg>
 						<div class="advantages__item-caption">Собственное производство</div>
 						<div class="advantages__item-text">Покупайте сейчас, платите потом!</div>
@@ -818,38 +1202,40 @@
 			</section>
 			<section class="services">
 				<div class="title">Наши услуги</div>
-				<div class="services__list">
-					<div class="services__item">
-						<img src="images/dest/service-1.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Гибка металла</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-2.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Изготовление металлоконструкций</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-3.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Порошковая покраска металла</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-4.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Теплоизоляция труб</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-5.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Резка металла</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-6.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Рубка металла</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-7.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Сварка металла</div>
-					</div>
-					<div class="services__item">
-						<img src="images/dest/service-8.webp" class="services__item-image" alt="">
-						<div class="services__item-caption">Цинкование</div>
+				<div class="services__list swiper" id="services-slider">
+					<div class="swiper-wrapper">
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-1.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Гибка металла</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-2.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Изготовление металлоконструкций</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-3.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Порошковая<br> покраска металла</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-4.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Теплоизоляция труб</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-5.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Резка металла</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-6.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Рубка металла</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-7.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Сварка металла</div>
+						</div>
+						<div class="services__item swiper-slide">
+							<img src="images/dest/service-8.webp" class="services__item-image" alt="">
+							<div class="services__item-caption">Цинкование</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -889,18 +1275,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
 												</svg>
 											</div>
 										</div>	
 									</div>
-									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__buy btn-buy"><span>Купить</span></div>
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -929,18 +1344,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
-									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__buy btn-buy"><span>Купить</span></div>
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -972,18 +1416,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1012,18 +1485,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1057,18 +1559,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1097,18 +1628,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1140,18 +1700,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1180,18 +1769,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1225,18 +1843,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1265,18 +1912,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1308,18 +1984,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card swiper-slide">
@@ -1348,18 +2053,47 @@
 										</div>	
 										<div class="card__actions actions">
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
 												</svg>
 											</div>
 											<div class="actions__item">
-												<svg width="30" height="30">
+												<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
 													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
 												</svg>
+												<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
 											</div>
-										</div>	
+										</div>
 									</div>
 									<div class="card__buy btn-buy"><span>Купить</span></div>	
+									<div class="card__mobile-actions mobile-actions">
+										<div class="mobile-actions__item mobile-actions__item_buy">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+											</svg>
+										</div>
+										<div class="mobile-actions__item">
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+											</svg>
+											<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+												<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+											</svg>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1369,7 +2103,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="gray">
+		 <div class="gray">
 			<div class="wrapper">
 				<section class="how-buy">
 					<div class="title">
@@ -1410,7 +2144,7 @@
 					</div>
 					<div class="form__block">
 						<input type="text" class="form__input" placeholder="+7 999 999 99 99">
-						<button class="form__button">Перезвоните мне</button>
+						<button class="form__button">Отправить</button>
 						<div class="form__policy">Заполняя форму вы соглашаетесь на <a href="#">обработку персональных данных</a></div>	
 					</div>
 				</form>
@@ -1620,40 +2354,43 @@
 				<div class="arrow arrow_prev" id="gallery-prev"></div>
 			</section>
 			<section class="contacts">
-				<div class="contacts__content">
-					<div class="title">Наши контакты</div>
-					<a href="#" class="contacts__phone">8 (495) 123-30-40</a>
-					<a href="#" class="contacts__phone">8 (800) 200-69-40</a>
-					<div class="contacts__work-time">пн-пт 09:00 - 18:00</div>
-					<a href="" class="contacts__email">zakaz@sortmet.ru</a>
-					<div class="contacts__location">
-						<div class="contacts__location-icon">
-							<svg width="24" height="24">
-								<use xlink:href="images/dest/sprite.svg#location"></use>
-							</svg>
+				<div class="contacts__title title">Наши контакты</div>
+				<div class="contacts__inner">
+					<div class="contacts__content">
+						<div class="contacts__content-title title">Наши контакты</div>
+						<a href="#" class="contacts__phone">8 (495) 123-30-40</a>
+						<a href="#" class="contacts__phone">8 (800) 200-69-40</a>
+						<div class="contacts__work-time">пн-пт 09:00 - 18:00</div>
+						<a href="" class="contacts__email">zakaz@sortmet.ru</a>
+						<div class="contacts__location">
+							<div class="contacts__location-icon">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#location"></use>
+								</svg>
+							</div>
+							<div class="contacts__location-text"><b>Люберцы</b> ул. 3-е Почтовое отделение 102, оф. 424</div>
 						</div>
-						<div class="contacts__location-text"><b>Люберцы</b> ул. 3-е Почтовое отделение 102, оф. 424</div>
+						<div class="contacts__social social">
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#tg-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#wa-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#vk-1"></use>
+								</svg>
+							</a>
+						</div>
 					</div>
-					<div class="social">
-						<a href="#" class="social__item">
-							<svg width="32" height="32">
-								<use xlink:href="images/dest/sprite.svg#tg-1"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__item">
-							<svg width="32" height="32">
-								<use xlink:href="images/dest/sprite.svg#wa-1"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__item">
-							<svg width="32" height="32">
-								<use xlink:href="images/dest/sprite.svg#vk-1"></use>
-							</svg>
-						</a>
+					<div class="contacts__map">
+						<img src="images/dest/map.webp" alt="">
 					</div>
-				</div>
-				<div class="contacts__map">
-					<img src="images/dest/map.webp" alt="">
 				</div>
 			</section>
 			<section class="faq">
@@ -1711,18 +2448,20 @@
 			</section>
 			<section class="seo">
 				<div class="title">Тут будет SEO текст</div>
-				<p>Гипермаркет металла «Сортмет» - это крупнейшая площадка в интернете, на который вы можете приобрести широкий ассортимент изделий из черных и цветных металлов. Мы предлагаем качественную продукцию по доступным ценам, которая полностью соответствует международным и российским стандартам качества.</p>
-				<p>Хотите приобрести прокат? Воспользовавшись услугами компании «Сортмет», вам не придется думать об аренде транспортного средства для перевозки металла с места хранения на стройку или производственный склад.</p>
-				<p>Наш гипермаркет располагает собственным парком специализированных грузовых автомобилей, которые адаптированы для перевозки длинного и тяжелого проката. К вашим услугам:</p>
-				<ul>
-					<li>Автомобиль «Газель» грузоподъемностью 3 т, который может перевозить металлопрокат длиной до 6 м. Стоимость услуги по транспортировке составляет 4000 рублей плюс 20 рублей за каждый км пробега, считается в 2е стороны.</li>
-					<li>Автомобиль «Валдай». Грузоподъемность 5 т, максимальная длина загружаемого проката – 6 м. Цена заказа машины 7000 р плюс оплата 25 р за каждый км, считается в 2е стороны</li>
-					<li>Автомобиль МАЗ. Спецтранспорт с кузовом, в который влезает металлический прокат длиной до 12 м. За один рейс можно загрузить 20 т продукции. Цена заказа машины 10000 р плюс оплата 40 р за каждый км, считается в 2е стороны.</li>
-				</ul>
-				<div class="seo__controller">Свернуть текст</div>
+				<div class="seo__content">
+					<p>Гипермаркет металла «Сортмет» - это крупнейшая площадка в интернете, на который вы можете приобрести широкий ассортимент изделий из черных и цветных металлов. Мы предлагаем качественную продукцию по доступным ценам, которая полностью соответствует международным и российским стандартам качества.</p>
+					<p>Хотите приобрести прокат? Воспользовавшись услугами компании «Сортмет», вам не придется думать об аренде транспортного средства для перевозки металла с места хранения на стройку или производственный склад.</p>
+					<p>Наш гипермаркет располагает собственным парком специализированных грузовых автомобилей, которые адаптированы для перевозки длинного и тяжелого проката. К вашим услугам:</p>
+					<ul>
+						<li>Автомобиль «Газель» грузоподъемностью 3 т, который может перевозить металлопрокат длиной до 6 м. Стоимость услуги по транспортировке составляет 4000 рублей плюс 20 рублей за каждый км пробега, считается в 2е стороны.</li>
+						<li>Автомобиль «Валдай». Грузоподъемность 5 т, максимальная длина загружаемого проката – 6 м. Цена заказа машины 7000 р плюс оплата 25 р за каждый км, считается в 2е стороны</li>
+						<li>Автомобиль МАЗ. Спецтранспорт с кузовом, в который влезает металлический прокат длиной до 12 м. За один рейс можно загрузить 20 т продукции. Цена заказа машины 10000 р плюс оплата 40 р за каждый км, считается в 2е стороны.</li>
+					</ul>
+				</div>
+				<div class="seo__controller" id="seo-controller" data-text="Свернуть текст">Развернуть текст</div>
 			</section>
 		</div>
-		<div class="footer">
+		<footer class="footer">
 			<div class="wrapper">
 				<div class="footer__inner">
 					<div class="footer__contacts contacts-second">
@@ -1730,8 +2469,8 @@
 						<a href="#" class="contacts-second__phone">8 (800) 200-69-40</a>
 						<a href="#" class="contacts-second__email">info@sortmet.ru</a>
 						<div class="contacts-second__work-time">пн-пт 09:00 - 18:00</div>
-						<div class="contacts-second__btn btn">Заказать звонок</div>
-						<div class="social">
+						<div class="footer__contacts-btn contacts-second__btn btn">Заказать звонок</div>
+						<div class="footer__social social">
 							<a href="#" class="social__item">
 								<svg width="32" height="32">
 									<use xlink:href="images/dest/sprite.svg#tg-1"></use>
@@ -1785,20 +2524,104 @@
 					<div class="footer__adress adress">
 						<div class="adress__title">Адрес офиса</div>
 						<div class="adress__value">Люберцы ул. 3-е Почтовое отделение 102, офис 424</div>
-						<a href="#" class="adress__map">
-							<svg width="24" height="24">
-								<use xlink:href="images/dest/sprite.svg#gm"></use>
-							</svg>
-							<div class="adress__map-caption">Google Maps</div>
-						</a>
-						<a href="#" class="adress__map">
-							<svg width="24" height="24">
-								<use xlink:href="images/dest/sprite.svg#ym"></use>
-							</svg>
-							<div class="adress__map-caption">Яндекс карты</div>
-						</a>
+						<div class="adress__maps">
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#gm"></use>
+								</svg>
+								<div class="adress__map-caption">Google Maps</div>
+							</a>
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#ym"></use>
+								</svg>
+								<div class="adress__map-caption">Яндекс карты</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__mob">
+						<div class="footer__copy">© 2020, Сортмет. Все права защищены. Копирование информации преследуется по закону.</div>
+						<a href="#" class="footer__policy">Политика конфиденциальности</a>
 					</div>
 				</div>
+			</div>
+		</footer>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="hamburger__city">Санкт-Петербург</div>
+			<div class="hamburger__menu hamburger-menu">
+				<a href="#" class="hamburger-menu__item">Доставка</a>
+				<a href="#" class="hamburger-menu__item">Оплата</a>
+				<a href="#" class="hamburger-menu__item">Акции</a>
+				<a href="#" class="hamburger-menu__item">Прайс-лист</a>
+				<a href="#" class="hamburger-menu__item">О компании</a>
+				<a href="#" class="hamburger-menu__item">Сертификаты</a>
+				<a href="#" class="hamburger-menu__item">Отзывы</a>
+				<a href="#" class="hamburger-menu__item">Контакты</a>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (495) 123-30-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (800) 200-69-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__email email">
+				<a href="#" class="email__value">zakaz@sortmet.ru</a>
+				<div class="email__caption">пн-пт 09:00 - 18:00</div>
+			</div>
+			<div class="hamburger__location location">
+				<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+			</div>
+			<div class="hamburger__social social">
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#tg"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#wa"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-navbar">
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#catalog-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Каталог</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#search-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Поиск</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Сравнение</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Избранное</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#cart-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Корзина</div>
 			</div>
 		</div>
 		<div class="overlay" id="overlay"></div>

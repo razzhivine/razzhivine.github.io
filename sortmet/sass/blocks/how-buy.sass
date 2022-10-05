@@ -1,27 +1,44 @@
 .how-buy
     margin: 0 0 70px
+    @media (max-width: 767px)
+        margin-bottom: 40px
     &__list
         padding-top: 50px
         display: flex
-        flex-wrap: wrap
+        // flex-wrap: wrap
         counter-reset: item
+        overflow: auto
+        &::-webkit-scrollbar
+            width: 0 
     &__item
-        width: 25%
+        // width: 25%
+        min-width: 304px
         position: relative
+        @media (max-width: 767px)
+            min-width: 164px
         &-title
             margin-top: 15px
             font-weight: 600
             line-height: 140%
+        svg
+            @media (max-width: 767px)
+                width: 32px
+                height: 32px
+        
         &::before
             counter-increment: item
             content:  counter(item)
-            font-weight: 600
+            font-weight: 800
             font-size: 58px
             line-height: 1
             color: #EDEEEF
             position: absolute
             top: -40px
             left: 50px
+            @media (max-width: 767px)
+                font-size: 42px
+                line-height: 140%
+                left: 40px
         &::after
             content: ""
             width: 186px
@@ -30,6 +47,11 @@
             position: absolute
             top: 15px
             left: 97px
+            @media (max-width: 767px)
+                width: 80px
+                height: 16px
+                background-image: url("data:image/svg+xml,%3Csvg width='80' height='16' viewBox='0 0 80 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M79.7071 8.70711C80.0976 8.31659 80.0976 7.68342 79.7071 7.2929L73.3431 0.928939C72.9526 0.538414 72.3195 0.538414 71.9289 0.928938C71.5384 1.31946 71.5384 1.95263 71.9289 2.34315L77.5858 8.00001L71.9289 13.6569C71.5384 14.0474 71.5384 14.6805 71.9289 15.0711C72.3194 15.4616 72.9526 15.4616 73.3431 15.0711L79.7071 8.70711ZM-8.74228e-08 9L79 9.00001L79 7.00001L8.74228e-08 7L-8.74228e-08 9Z' fill='%23DEE1E5'/%3E%3C/svg%3E%0A")
+                left: 68px
         &:last-child
             &::after
                 content: none

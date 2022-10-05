@@ -5,21 +5,51 @@
     padding: 40px 61px 27px 50px
     display: flex
     margin-bottom: 60px
+    position: relative
+    @media (max-width: 1214px)
+        padding: 30px 30px 20px 30px
+    @media (max-width: 1023px)
+        flex-direction: column
+        padding: 20px 15px 25px
+    @media (max-width: 767px)
+        margin: 30px 0 40px
     &_blue
         background: #0077FF
         .form__button
             background: #1A1E24
     &__block
         width: calc(50% - 30px)
+        position: relative
+        @media (max-width: 1214px)
+            width: calc(50% - 15px)
+        @media (max-width: 1023px)
+            width: calc(50% - 15px)
         &:first-child
             margin-right: 30px
+            @media (max-width: 1214px)
+                margin-right: 15px
+                width: calc(40% - 15px)
+            @media (max-width: 1023px)
+                margin-right: 0
+                width: 100%
+                margin-bottom: 15px
         &:last-child
             margin-left: 30px
+            @media (max-width: 1214px)
+                margin-left: 15px
+                width: calc(60% - 15px)
+            @media (max-width: 1023px)
+                margin-left: 0
+                width: 100%
+
     &__title
         font-weight: 700
         font-size: 26px
         line-height: 30px
         margin-bottom: 13px
+        @media (max-width: 1023px)
+            font-size: 20px
+            line-height: 23px
     &__input
         max-width: 278px
         width: 100%
@@ -31,6 +61,10 @@
         box-sizing: border-box
         margin-right: 20px
         color: #1A1E24
+        @media (max-width: 1023px)
+            max-width: 100%
+            height: 48px
+            padding: 15px
     &__button
         padding: 20px 30px
         max-width: 210px
@@ -39,6 +73,15 @@
         background: #0077FF
         border-radius: 7px
         border: none
+        @media (max-width: 1023px)
+            width: fit-content
+            height: 40px
+            font-size: 16px
+            line-height: 18px
+            padding: 10px 15px 12px
+            position: absolute
+            top: 4px
+            right: 4px
     &__policy
         margin-top: 12px
         font-size: 14px

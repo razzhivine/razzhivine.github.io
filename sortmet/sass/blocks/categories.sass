@@ -1,5 +1,7 @@
 .categories
-    margin-bottom: 40px
+    margin: 50px 0 60px
+    @media (max-width: 767px)
+        margin: 30px 0
     &__list
         display: flex
         flex-wrap: wrap
@@ -16,11 +18,60 @@
         overflow: hidden
         color: #1A1E24
         transition: .3s all ease
+        &_hide
+            display: none
+        @media (max-width: 1023px)
+            width: calc(33.33333% - 20px)
+        @media (max-width: 767px)
+            width: calc(50% - 20px)
+            flex-direction: column-reverse
+            align-items: center
         &-caption
             max-width: 165px
             font-weight: 600
             padding: 0 0 20px 20px
+            @media (max-width: 767px)
+                padding: 0 15px 15px
+                text-align: center
+        &-image
+            &_desc
+                @media (max-width: 767px)
+                    display: none
+            &_mob
+                display: none
+                @media (max-width: 767px)
+                    display: block
+            
         &:hover
             color: #fff
             background: #0077FF
             box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.43), 0px 16px 26px rgba(0, 119, 255, 0.26), 0px 16px 5px -10px rgba(0, 79, 170, 0.14)
+    &__tags
+        @media (max-width: 767px)
+            display: none
+    &__select
+        display: none
+        @media (max-width: 767px)
+            display: block
+    &__more
+        margin: 0 auto
+        width: fit-content
+        font-weight: 600
+        color: #0077FF
+        padding-right: 34px
+        position: relative
+        cursor: pointer
+        display: none
+        &_disable
+            display: none !important
+        @media (max-width: 767px)
+            display: block
+        &::before
+           content: ""
+           width: 24px
+           height: 24px
+           background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_312_6886)'%3E%3Cpath d='M17 10L12 15L7 10' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_312_6886'%3E%3Crect width='24' height='24' fill='white' transform='matrix(-1 -8.74228e-08 -8.74228e-08 1 24 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+           position: absolute
+           top: 50%
+           right: 0
+           transform: translateY(-50%)

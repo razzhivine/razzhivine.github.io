@@ -1,11 +1,16 @@
 .faq
     margin: 70px 0 50px
+    @media (max-width: 767px)
+        margin: 40px 0
     &__list
         display: flex
+        flex-wrap: wrap
         margin: 0 -10px
     &__row
         width: calc( 50% - 20px )
         margin: 0 10px 
+        @media (max-width: 767px)
+            width: calc( 100% - 20px )
     &__item
         background: #F7F7F9
         border-radius: 15px
@@ -18,6 +23,10 @@
         justify-content: center
         cursor: pointer
         position: relative
+        @media (max-width: 767px)
+            padding: 10px 59px 10px 15px
+            min-height: auto
+            margin-bottom: 10px
         &::before
             content: ""
             width: 32px
@@ -27,6 +36,14 @@
             top: 38px
             right: 30px
             transition: .3s background-image ease
+            @media (max-width: 767px)
+                width: 24px
+                height: 24px
+                background-size: contain
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+
         &_active
             &::before
                 background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_207_4701)'%3E%3Cpath d='M9.3335 18.6667L16.0002 12L22.6668 18.6667' stroke='%230077FF' stroke-width='2.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_207_4701'%3E%3Crect width='32' height='32' fill='white' transform='matrix(1 0 0 -1 0 32)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
@@ -34,5 +51,13 @@
     &__question
         font-weight: 600
         line-height: 150%
+        @media (max-width: 767px)
+            font-weight: 400
+            font-size: 14px
+            line-height: 130%
     &__answer
         display: none
+        line-height: 150%
+        color: #626D7D
+        @media (max-width: 767px)
+            font-size: 14px

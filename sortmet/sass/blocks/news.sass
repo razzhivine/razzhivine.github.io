@@ -1,16 +1,25 @@
 .news
     margin: 70px 0
+    @media (max-width: 767px)
+        margin: 40px 0 
     &__item
         background: #F7F7F9
         border-radius: 15px
         line-height: 150%
         color: #1A1E24
+        width: 289px
         transition: .3s all ease
         &-content
             margin: 15px 20px 20px
-            
+            @media (max-width: 767px)
+                margin: 10px 15px 15px
         &-title
             margin-bottom: 15px
+            font-weight: 600
+            @media (max-width: 767px)
+                font-size: 14px
+                line-height: 150%
+                margin-bottom: 10px
         &-bottom
             display: flex
             justify-content: space-between

@@ -3,3 +3,13 @@
     flex-direction: column
     &__item
         margin-bottom: 25px
+        &-icon
+            cursor: pointer
+            &_hover
+                display: none
+        &:hover
+            .actions__item-icon_default
+                display: none
+            .actions__item-icon_hover
+                display: inline 
+

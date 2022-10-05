@@ -1,14 +1,22 @@
 .tags
     display: flex
     margin: 0 -5px 30px
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 0 
+    @media (max-width: 767px)
+        margin-bottom: 20px
     &__item
         padding: 10px 15px 12px
         color: #626D7D
         border: 1px solid #626D7D
         border-radius: 7px
         margin: 0 5px
+        white-space: nowrap
         cursor: pointer
         transition: .3s all ease
+        @media (max-width: 767px)
+            font-size: 14px
         &_active
             color: #0F68CE
             border-color: #0077FF

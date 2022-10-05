@@ -1,0 +1,25 @@
+.mobile-navbar
+    display: none
+    position: fixed
+    bottom: 0
+    left: 5px
+    width: 100vw
+    background: #EFF3F8
+    justify-content: space-between
+    padding: 15px
+    margin: 0 -5px
+    box-sizing: border-box
+    z-index: 1
+    @media (max-width: 1023px)
+        display: flex
+        
+    &__item
+        margin: 0 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+        cursor: pointer
+        &-caption
+            font-size: 12px
+            line-height: 14px
+            color: #7F8A9B

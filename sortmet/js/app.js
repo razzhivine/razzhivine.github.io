@@ -1,26 +1,79 @@
 document.addEventListener("DOMContentLoaded", function() {
   let catalogSlider = new Swiper("#catalog-slider", {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 20,
       navigation: {
         nextEl: ".arrow_next",
         prevEl: ".arrow_prev",
       },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1215: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+  });
+
+  let servicesSlider = new Swiper("#services-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    grid: {
+      rows: 1,
+      fill: "row"
+    },
+    breakpoints: {
+     1024:{
+      slidesPerView: 4,
+      spaceBetween: 20,
+      grid: {
+        rows: 2,
+        fill: "row"
+      },
+     }
+    },
+
   });
 
   let suppliersSlider = new Swiper("#suppliers-slider", {
-    slidesPerView: 5,
-    spaceBetween: 20,
+    // freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    breakpoints: {
+      767: {
+        spaceBetween: 20,
+      },
+    },
   });
 
   let newsSlider = new Swiper("#news-slider", {
-    slidesPerView: 4,
-    spaceBetween: 20,
+    // freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    breakpoints: {
+      1215: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
   });
 
   let reviewsSlider = new Swiper("#reviews-slider", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1215: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
     navigation: {
       nextEl: "#reviews-next",
       prevEl: "#reviews-prev",
@@ -34,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let gallerySlider = new Swiper("#gallery-slider", {
     slidesPerView: 'auto',
+    freeMode: true,
     navigation: {
       nextEl: "#gallery-next",
       prevEl: "#gallery-prev",
@@ -156,5 +210,48 @@ document.addEventListener("DOMContentLoaded", function() {
   catalogBtn.addEventListener('click', function () {
     fadeToggle(overlay);
     slideToggle(catalogMenu);
+    catalogBtn.classList.toggle('catalog-btn_active');
+  });
+
+  let seoController = document.getElementById('seo-controller');
+  seoController.addEventListener('click', function () {
+    let dataText = seoController.textContent
+    let content = seoController.previousElementSibling
+    console.log(content);
+    seoController.innerText = seoController.dataset.text;
+    seoController.dataset.text = dataText;
+    seoController.classList.toggle('seo__controller_active');
+    content.classList.toggle('seo__content_open');
+  });
+
+  let categories = document.querySelectorAll('.categories__item')
+  function hideCategories(categories) {
+    let i = 0;
+    categories.forEach(element => {
+      if (window.matchMedia("(max-width: 767px)").matches && i > 5) {
+        element.classList.add('categories__item_hide');
+      } else {
+        element.classList.remove('categories__item_hide')
+      }
+      i++;
+    })
+  }
+  hideCategories(categories);
+  
+  let showCategories = document.getElementById('show-categories')
+  showCategories.addEventListener('click', function () {
+    categories.forEach(element => {
+        element.classList.remove('categories__item_hide')
+    })
+    showCategories.classList.add('categories__more_disable')
+  });
+
+  let hamburger = document.getElementById('hamburger')
+  let hamburgerIcon = document.getElementById('hamburger-icon')
+  hamburgerIcon.addEventListener('click', function () {
+    
+    hamburgerIcon.classList.toggle('hamburger-icon_close')
+    hamburger.classList.toggle('hamburger_active')
+    fadeToggle(overlay);
   });
 });

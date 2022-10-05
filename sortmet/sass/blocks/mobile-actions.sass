@@ -1,0 +1,19 @@
+.mobile-actions
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__item
+        padding: 0 15px
+        cursor: pointer
+        &_buy
+            background: #E7F2FF
+            border-radius: 7px
+            padding: 5px 15px 
+        &-icon
+            &_hover
+                display: none
+        &:hover
+            .mobile-actions__item-icon_default
+                display: none
+            .mobile-actions__item-icon_hover
+                display: inline

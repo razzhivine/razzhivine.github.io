@@ -1,6 +1,13 @@
 .banners
     display: flex
     margin: 0 -10px 50px
+    @media (max-width: 1023px)
+        margin-top: 10px
+        flex-wrap: wrap
     &__banner,
     &__deferment
         margin: 0 10px
+    &__banner
+        @media (max-width: 1023px)
+            margin-bottom: 10px
+    

@@ -1,16 +1,49 @@
 .banner
     position: relative
     color: #fff
-    &__content
+    max-width: 907px
+    width: 100%
+    background: #454545
+    border-radius: 15px
+    min-height: 220px
+    display: flex
+    align-items: center
+    padding: 40px 60px 
+    box-sizing: border-box
+    @media (max-width: 1023px)
+        max-width: calc( 100% - 20px )
+        flex-direction: column
+        align-items: flex-start
+        padding: 18px 15px 25px
+    img
         position: absolute
-        top: 40px
-        left: 60px
+        top: 0
+        right: 0
+        z-index: 1
+        @media (max-width: 1023px)
+            position: static
+            height: 151px
+            width: auto
+            object-fit: cover
+    &__content
+        // position: absolute
+        // top: 40px
+        // left: 60px
         max-width: 321px
+        z-index: 2
+        @media (max-width: 1023px)
+            max-width: 100%
+
     &__caption
         font-weight: 600
         font-size: 30px
         line-height: 34px
         color: #FFFFFF
         margin-bottom: 10px
+        @media (max-width: 1023px)
+            font-size: 24px
+            line-height: 28px
     &__text
         line-height: 140%
+        @media (max-width: 1023px)
+            font-size: 14px
