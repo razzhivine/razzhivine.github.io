@@ -910,7 +910,7 @@ ul li::before {
 }
 .banner__content {
   max-width: 321px;
-  z-index: 2;
+  z-index: 1;
 }
 @media (max-width: 1023px) {
   .banner__content {
