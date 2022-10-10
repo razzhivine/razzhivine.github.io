@@ -14,17 +14,29 @@
 			<div class="wrapper">
 				<div class="header__top">
 					<div class="city">
-						<div class="city__title">Санкт-Петербург</div>
+						<div class="city__title" id="city-desk">Санкт-Петербург</div>
+						<!-- <div class="city__check" id="city-block">
+							<div class="city__block">
+								<div class="city__text">Вы находитесь в</div>
+								<div class="city__value">Санкт-Петербург</div>
+								<div class="city__btns">
+									<div class="city__btn btn" id="city-close">Продолжить</div>
+									<div class="city__btn btn btn-second" id="city-change">Изменить</div>
+								</div>
+							</div>
+						</div> -->
 					</div>
 					<nav class="menu">
-						<a href="#" class="menu__item">Доставка</a>
-						<a href="#" class="menu__item">Оплата</a>
-						<a href="#" class="menu__item">Акции</a>
-						<a href="#" class="menu__item">Прайс-лист</a>
-						<a href="#" class="menu__item">О компании</a>
-						<a href="#" class="menu__item">Сертификаты</a>
-						<a href="#" class="menu__item">Отзывы</a>
-						<a href="#" class="menu__item">Контакты</a>
+						<div class="menu__inner">
+							<a href="#" class="menu__item">Доставка</a>
+							<a href="#" class="menu__item">Оплата</a>
+							<a href="#" class="menu__item">Акции</a>
+							<a href="#" class="menu__item">Прайс-лист</a>
+							<a href="#" class="menu__item">О компании</a>
+							<a href="#" class="menu__item">Сертификаты</a>
+							<a href="#" class="menu__item">Отзывы</a>
+							<a href="#" class="menu__item">Контакты</a>
+						</div>
 					</nav>
 				</div>
 				<div class="header__middle">
@@ -295,7 +307,7 @@
 					<div class="tags__item">Хиты</div>
 				</div>
 				<div class="catalog-slider__inner">
-					<div class="swiper" id="catalog-slider">
+					<div class="swiper" id="catalog-slider-1">
 						<div class="swiper-wrapper">
 							<div class="card swiper-slide">
 								<div class="card__image">
@@ -1151,8 +1163,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="arrow arrow_next"></div>
-					<div class="arrow arrow_prev"></div>
+					<div class="arrow arrow_prev" id="catalog-slider-1-arrow-prev"></div>
+					<div class="arrow arrow_next" id="catalog-slider-1-arrow-next"></div>
+					<div class="pagination" id="catalog-slider-1-pagination"></div>
 				</div>
 			</section>
 			<section class="advantages">
@@ -1242,7 +1255,7 @@
 			<section class="catalog-slider">
 				<div class="title">Специальные предложения - 10.09.2022</div>
 				<div class="catalog-slider__inner">
-					<div class="swiper" id="catalog-slider">
+					<div class="swiper" id="catalog-slider-2">
 						<div class="swiper-wrapper">
 							<div class="card swiper-slide">
 								<div class="card__image">
@@ -2098,8 +2111,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="arrow arrow_next"></div>
-					<div class="arrow arrow_prev"></div>
+					<div class="arrow arrow_prev" id="catalog-slider-2-arrow-prev"></div>
+					<div class="arrow arrow_next" id="catalog-slider-2-arrow-next"></div>
+					<div class="pagination" id="catalog-slider-2-pagination"></div>
 				</div>
 			</section>
 		</div>
@@ -2270,12 +2284,61 @@
 									</div>
 									<div class="reviews__item-link">Оригинал отзыва</div>
 								</div>
-							
+								<div class="reviews__item swiper-slide">
+									<div class="reviews__item-content">
+										<div class="reviews__item-top">
+											<div class="reviews__item-title">Олег Васильев</div>
+											<div class="reviews__item-rating rating">
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+											</div>
+										</div>
+										<div class="reviews__item-text">Мне очень нравится работать с компанией Сортамент. После отправки заявки мне всегда сразу перезванивают менеджеры и уточняют детали, товар всегда в наличии</div>
+									</div>
+									<div class="reviews__item-link">Оригинал отзыва</div>
+								</div>
+								<div class="reviews__item swiper-slide">
+									<div class="reviews__item-content">
+										<div class="reviews__item-top">
+											<div class="reviews__item-title">Станислав</div>
+											<div class="reviews__item-rating rating">
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+											</div>
+										</div>
+										<div class="reviews__item-text">Хочется сказать большое спасибо моему менеджеру Анне! О металле знает все вдоль и поперек, вопросов после консультации не осталось, осталось только желание продолжать сотрудничество.</div>
+									</div>
+									<div class="reviews__item-link">Оригинал отзыва</div>
+								</div>
+								<div class="reviews__item swiper-slide">
+									<div class="reviews__item-content">
+										<div class="reviews__item-top">
+											<div class="reviews__item-title">Павел</div>
+											<div class="reviews__item-rating rating">
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+												<div class="rating__star"></div>	
+											</div>
+										</div>
+										<div class="reviews__item-text">Спасибо менеджерам за быструю работу! Были вопросы по поводу обработки сплава, проконсультировали профессионально, быстро оформили все документы. Доставка уже на следующий день! Точно еще обращусь.</div>
+									</div>
+									<div class="reviews__item-link">Оригинал отзыва</div>
+								</div>
 							</div>
 						</div>
+						<div class="arrow arrow_next" id="reviews-next"></div>
+						<div class="arrow arrow_prev" id="reviews-prev"></div>
+						<div class="pagination" id="reviews-pagination"></div>
 					</div>
-					<div class="arrow arrow_next" id="reviews-next"></div>
-					<div class="arrow arrow_prev" id="reviews-prev"></div>
+				
 				</section>
 				<section class="about-us">
 					<div class="title">О компании</div>
@@ -2622,6 +2685,36 @@
 					<use xlink:href="images/dest/sprite.svg#cart-gray"></use>
 				</svg>
 				<div class="mobile-navbar__item-caption">Корзина</div>
+			</div>
+		</div>
+		<div class="city-changer" id="city-changer">
+			<div class="city-changer__close" id="city-changer-close"></div>
+			<div class="city-changer__title">Ваш город: Санкт-Петербург</div>
+			<input type="text" class="city-changer__value" placeholder="Введите название вашего города">
+			<div class="city-changer__list">
+				<div class="city-changer__item">Волгоград</div>
+				<div class="city-changer__item">Воронеж</div>
+				<div class="city-changer__item">Екатеринбург</div>
+				<div class="city-changer__item">Ижевск</div>
+				<div class="city-changer__item">Казань</div>
+				<div class="city-changer__item">Калининград</div>
+				<div class="city-changer__item">Кемерово</div>
+				<div class="city-changer__item">Кострома</div>
+				<div class="city-changer__item">Красноярск</div>
+				<div class="city-changer__item">Магнитогорск</div>
+				<div class="city-changer__item">Москва</div>
+				<div class="city-changer__item">Набережные челны</div>
+				<div class="city-changer__item">Новосибирск</div>
+				<div class="city-changer__item">Нижний Новгород</div>
+				<div class="city-changer__item">Омск</div>
+				<div class="city-changer__item">Пенза</div>
+				<div class="city-changer__item">Пермь</div>
+				<div class="city-changer__item">Ростов-на-Дону</div>
+				<div class="city-changer__item">Самара</div>
+				<div class="city-changer__item">Санкт-Петербург</div>
+				<div class="city-changer__item">Тюмень</div>
+				<div class="city-changer__item">Уфа</div>
+				<div class="city-changer__item">Челябинск</div>
 			</div>
 		</div>
 		<div class="overlay" id="overlay"></div>

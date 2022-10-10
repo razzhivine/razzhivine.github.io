@@ -1,7 +1,9 @@
 .city
+    position: relative
     &__title
         padding-left: 29px
         position: relative
+        cursor: pointer
         &::before
             content: ""
             width: 24px
@@ -11,3 +13,39 @@
             left: 0
             top: 50%
             transform: translateY(-50%)
+    &__check
+        display: none
+        z-index: 2
+    &__block
+        position: absolute
+        top: calc( 100% + 10px )
+        padding: 20px 40px 20px 20px
+        background: #FFFFFF
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
+        border-radius: 7px
+        z-index: 1
+    &__text
+        font-size: 14px
+        line-height: 16px
+        color: #626D7D
+        margin-bottom: 14px
+    &__value
+        padding-left: 34px
+        margin-bottom: 20px
+        font-weight: 600
+        font-size: 16px
+        line-height: 18px
+        position: relative
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_478_4207)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.2822 5.42541L4.90602 9.45074L11.6492 12.4177C11.9354 12.5436 12.164 12.7723 12.2899 13.0584L15.2569 19.8016L19.2822 5.42541ZM19.3057 3.86113C20.2444 3.59831 21.1093 4.46323 20.8465 5.40187L16.513 20.8785C16.1966 22.0087 14.6378 22.1192 14.1652 21.0449L10.9561 13.7515L3.66267 10.5424C2.58844 10.0698 2.69891 8.51104 3.82906 8.1946L19.3057 3.86113Z' fill='%230077FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_478_4207'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+    &__btns
+        display: flex
+    &__btn:first-child
+        margin-right: 15px

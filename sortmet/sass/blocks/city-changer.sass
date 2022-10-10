@@ -1,0 +1,42 @@
+.city-changer
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 20px 30px 40px
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+    border-radius: 7px
+    background: #fff
+    max-width: 723px
+    width: 100%
+    z-index: 10
+    display: none
+    &__close
+        width: 24px
+        height: 24px
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_478_4193)'%3E%3Cpath d='M5.63599 18.364L18.3639 5.63609' stroke='%23626D7D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.63623 5.63599L18.3642 18.3639' stroke='%23626D7D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_478_4193'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+        position: absolute
+        top: 20px
+        right: 30px
+    &__title
+        font-weight: 800
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 20px
+    &__value
+        border: 1px solid #CFD3DA
+        border-radius: 7px
+        padding: 0 24px
+        height: 52px
+        width: 100%
+        box-sizing: border-box
+        margin-bottom: 20px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -20px -15px
+    &__item
+        width: 25%
+        padding: 0 20px 15px
+        box-sizing: border-box
+        white-space: nowrap

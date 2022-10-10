@@ -1,21 +1,44 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let catalogSlider = new Swiper("#catalog-slider", {
+  let catalogSlider1 = new Swiper("#catalog-slider-1", {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
+      pagination: {
+        el: "#catalog-slider-1-pagination",
+      },
       navigation: {
-        nextEl: ".arrow_next",
-        prevEl: ".arrow_prev",
+        nextEl: "#catalog-slider-1-arrow-next",
+        prevEl: "#catalog-slider-1-arrow-prev",
       },
       breakpoints: {
-        1024: {
+        767: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
-        1215: {
+        1215:{
           slidesPerView: 4,
-          spaceBetween: 20,
-        },
+        }
       },
+  });
+
+  let catalogSlider2 = new Swiper("#catalog-slider-2", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: "#catalog-slider-2-pagination",
+    },
+    navigation: {
+      nextEl: "#catalog-slider-2-arrow-next",
+      prevEl: "#catalog-slider-2-arrow-prev",
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+      },
+      1215:{
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    },
   });
 
   let servicesSlider = new Swiper("#services-slider", {
@@ -53,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // freeMode: true,
     slidesPerView: 'auto',
     spaceBetween: 10,
+    
     breakpoints: {
       1215: {
         slidesPerView: 4,
@@ -63,7 +87,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let reviewsSlider = new Swiper("#reviews-slider", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
+    pagination: {
+      el: "#reviews-pagination",
+    },
+    navigation: {
+      nextEl: "#reviews-next",
+      prevEl: "#reviews-prev",
+    },
     breakpoints: {
       1024: {
         slidesPerView: 2,
@@ -73,10 +104,6 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesPerView: 3,
         spaceBetween: 20,
       },
-    },
-    navigation: {
-      nextEl: "#reviews-next",
-      prevEl: "#reviews-prev",
     },
   });
 
@@ -95,8 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
     /* SLIDE UP */
-    let slideUp = (target, duration=500) => {
-
+  let slideUp = (target, duration=500) => {
       target.style.transitionProperty = 'height, margin, padding';
       target.style.transitionDuration = duration + 'ms';
       target.style.boxSizing = 'border-box';
@@ -162,8 +188,8 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-   // ** FADE OUT FUNCTION **
-   function fadeOut(el) {
+  // ** FADE OUT FUNCTION **
+  function fadeOut(el) {
     el.style.opacity = 0.5;
     (function fade() {
         if ((el.style.opacity -= .05) < 0) {
@@ -171,28 +197,30 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             requestAnimationFrame(fade);
         }
-      })();
-    };
-
-    // ** FADE IN FUNCTION **
-    function fadeIn(el, display) {
-        el.style.opacity = 0;
-        el.style.display = display || "block";
-        (function fade() {
-            var val = parseFloat(el.style.opacity);
-            if (!((val += .05) > 0.5)) {
-                el.style.opacity = val;
-                requestAnimationFrame(fade);
-            }
-        })();
-    };
-
-    let fadeToggle = (el, display) => {
-      if (window.getComputedStyle(el).display === 'none') {
-        return fadeIn(el, display);
-      } else {
-        return fadeOut(el, display);
       }
+    )();
+  };
+
+  // ** FADE IN FUNCTION **
+  function fadeIn(el, display, opacity = 0.5) {
+      el.style.opacity = 0;
+      el.style.display = display || "block";
+      (function fade() {
+          var val = parseFloat(el.style.opacity);
+          if (!((val += .05) > opacity)) {
+              el.style.opacity = val;
+              requestAnimationFrame(fade);
+          }
+      }
+    )();
+  };
+
+  let fadeToggle = (el, display, opacity) => {
+    if (window.getComputedStyle(el).display === 'none') {
+      return fadeIn(el, display, opacity);
+    } else {
+      return fadeOut(el, display);
+    }
   }
 
   let faqItems = document.querySelectorAll('.faq__item');
@@ -253,5 +281,35 @@ document.addEventListener("DOMContentLoaded", function() {
     hamburgerIcon.classList.toggle('hamburger-icon_close')
     hamburger.classList.toggle('hamburger_active')
     fadeToggle(overlay);
+  });
+
+  let citySelect = document.getElementById('city-desk');
+  // let cityBlock = document.getElementById('city-block');
+  // let cityClose = document.getElementById('city-close');
+  // let cityChange = document.getElementById('city-change');
+  let cityChanger = document.getElementById('city-changer');
+  let cityChangerClose = document.getElementById('city-changer-close');
+
+  citySelect.addEventListener('click', function () {
+    // slideToggle(cityBlock);
+    fadeIn(overlay);
+    fadeIn(cityChanger, false, 1);
+    overlay.classList.add('overlay_z-index');
+  });
+
+  // cityClose.addEventListener('click', function () {
+  //   slideToggle(cityBlock);
+  // });
+
+  // cityChange.addEventListener('click', function () {
+  //   fadeIn(overlay);
+  //   fadeIn(cityChanger, false, 1);
+  // });
+
+  cityChangerClose.addEventListener('click', function () {
+    fadeOut(overlay);
+    fadeOut(cityChanger);
+    overlay.classList.remove('overlay_z-index');
+
   });
 });
