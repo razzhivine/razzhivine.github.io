@@ -482,6 +482,12 @@ ul li::before {
 .menu__item {
   color: #626D7D;
   padding: 0 15px;
+  -webkit-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+.menu__item:hover {
+  color: #0F68CE;
 }
 @media (max-width: 1214px) {
   .menu__item {
@@ -739,7 +745,7 @@ ul li::before {
 }
 .tags__item_active {
   color: #0F68CE;
-  border-color: #0077FF;
+  border-color: #0F68CE;
 }
 .tags__item:hover {
   background: #0077FF;
@@ -1549,7 +1555,14 @@ ul li::before {
   line-height: 150%;
   margin-bottom: 10px;
   height: 48px;
+  color: #1A1E24;
   overflow: hidden;
+  -webkit-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+.card__name:hover {
+  color: #0F68CE;
 }
 @media (max-width: 767px) {
   .card__name {
@@ -1942,15 +1955,15 @@ ul li::before {
   content: none;
 }
 
-.suppliers {
+.partners {
   margin: 70px 0;
 }
 @media (max-width: 767px) {
-  .suppliers {
+  .partners {
     margin: 40px 0;
   }
 }
-.suppliers__item {
+.partners__item {
   border-radius: 15px;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -1959,29 +1972,29 @@ ul li::before {
   height: 113px;
 }
 @media (max-width: 767px) {
-  .suppliers__item {
+  .partners__item {
     width: 136px;
     height: 68px;
   }
 }
-.suppliers__item:hover {
+.partners__item:hover {
   -webkit-box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.1), 0px 16px 26px rgba(0, 0, 0, 0.1), 0px 16px 5px -10px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.1), 0px 16px 26px rgba(0, 0, 0, 0.1), 0px 16px 5px -10px rgba(0, 0, 0, 0.03);
 }
-.suppliers__item img {
+.partners__item img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
   margin-bottom: -3px;
 }
 @media (max-width: 767px) {
-  .suppliers__item img {
+  .partners__item img {
     width: 136px;
     height: 68px;
   }
 }
 
-.suppliers__list.swiper {
+.partners__list.swiper {
   padding: 70px;
   margin: -70px;
 }
@@ -2587,6 +2600,7 @@ ul li::before {
 .faq__question {
   font-weight: 600;
   line-height: 150%;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .faq__question {
@@ -2734,6 +2748,12 @@ ul li::before {
   margin-bottom: 15px;
   color: #626D7D;
   white-space: nowrap;
+  -webkit-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+.menu-block__item:hover {
+  color: #0F68CE;
 }
 
 .adress__title {

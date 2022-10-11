@@ -60,8 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
     },
 
   });
-
-  let suppliersSlider = new Swiper("#suppliers-slider", {
+  let suppilersSlider = new Swiper("#suppilers-slider", {
+    // freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    breakpoints: {
+      767: {
+        spaceBetween: 20,
+      },
+    },
+  });
+  let buyersSlider = new Swiper("#buyers-slider", {
     // freeMode: true,
     slidesPerView: 'auto',
     spaceBetween: 10,
