@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
 
   });
+
   let suppilersSlider = new Swiper("#suppilers-slider", {
     // freeMode: true,
     slidesPerView: 'auto',
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
       },
     },
   });
+
   let buyersSlider = new Swiper("#buyers-slider", {
     // freeMode: true,
     slidesPerView: 'auto',
@@ -127,6 +129,15 @@ document.addEventListener("DOMContentLoaded", function() {
     navigation: {
       nextEl: "#gallery-next",
       prevEl: "#gallery-prev",
+    },
+  });
+
+  let catalogTagsSlider = new Swiper("#catalog-tags-slider", {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: "#catalog-tags-slider-arrow-next",
+      prevEl: "#catalog-tags-slider-arrow-prev",
     },
   });
 
@@ -188,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, duration);
   }
 
-  /* TOOGLE */
+  /* SLIDE TOOGLE */
   let slideToggle = (target, duration = 500) => {
       if (window.getComputedStyle(target).display === 'none') {
         return slideDown(target, duration);
@@ -232,14 +243,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  let faqItems = document.querySelectorAll('.faq__item');
-  faqItems.forEach(element => {
-    element.addEventListener('click', function () {
-      let answer = element.querySelector('.faq__answer');
-      element.classList.toggle('faq__item_active');
-      slideToggle(answer, 300);
+  if(document.querySelectorAll('.faq__item').length){
+    let faqItems = document.querySelectorAll('.faq__item');
+    faqItems.forEach(element => {
+      element.addEventListener('click', function () {
+        let answer = element.querySelector('.faq__answer');
+        element.classList.toggle('faq__item_active');
+        slideToggle(answer, 300);
+      });
     });
-  });
+  }
+
 
   let catalogBtn = document.getElementById('catalog-btn');
   let catalogMenu = document.getElementById('catalog-menu');
@@ -250,38 +264,43 @@ document.addEventListener("DOMContentLoaded", function() {
     catalogBtn.classList.toggle('catalog-btn_active');
   });
 
-  let seoController = document.getElementById('seo-controller');
-  seoController.addEventListener('click', function () {
-    let dataText = seoController.textContent
-    let content = seoController.previousElementSibling
-    console.log(content);
-    seoController.innerText = seoController.dataset.text;
-    seoController.dataset.text = dataText;
-    seoController.classList.toggle('seo__controller_active');
-    content.classList.toggle('seo__content_open');
-  });
-
-  let categories = document.querySelectorAll('.categories__item')
-  function hideCategories(categories) {
-    let i = 0;
-    categories.forEach(element => {
-      if (window.matchMedia("(max-width: 767px)").matches && i > 5) {
-        element.classList.add('categories__item_hide');
-      } else {
-        element.classList.remove('categories__item_hide')
-      }
-      i++;
-    })
+  if(document.getElementById('seo-controller') !== null){
+    let seoController = document.getElementById('seo-controller');
+    seoController.addEventListener('click', function () {
+      let dataText = seoController.textContent
+      let content = seoController.previousElementSibling
+      console.log(content);
+      seoController.innerText = seoController.dataset.text;
+      seoController.dataset.text = dataText;
+      seoController.classList.toggle('seo__controller_active');
+      content.classList.toggle('seo__content_open');
+    });
   }
-  hideCategories(categories);
+
+  if(document.querySelectorAll('.categories__item').length){
+    let categories = document.querySelectorAll('.categories__item')
+    function hideCategories(categories) {
+      let i = 0;
+      categories.forEach(element => {
+        if (window.matchMedia("(max-width: 767px)").matches && i > 5) {
+          element.classList.add('categories__item_hide');
+        } else {
+          element.classList.remove('categories__item_hide')
+        }
+        i++;
+      })
+    }
+    hideCategories(categories);
   
-  let showCategories = document.getElementById('show-categories')
-  showCategories.addEventListener('click', function () {
-    categories.forEach(element => {
-        element.classList.remove('categories__item_hide')
-    })
-    showCategories.classList.add('categories__more_disable')
-  });
+    let showCategories = document.getElementById('show-categories')
+    showCategories.addEventListener('click', function () {
+      categories.forEach(element => {
+          element.classList.remove('categories__item_hide')
+      })
+      showCategories.classList.add('categories__more_disable')
+    });
+  }
+
 
   let hamburger = document.getElementById('hamburger')
   let hamburgerIcon = document.getElementById('hamburger-icon')
@@ -293,9 +312,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   let citySelect = document.getElementById('city-desk');
-  // let cityBlock = document.getElementById('city-block');
-  // let cityClose = document.getElementById('city-close');
-  // let cityChange = document.getElementById('city-change');
   let cityChanger = document.getElementById('city-changer');
   let cityChangerClose = document.getElementById('city-changer-close');
 
@@ -306,19 +322,85 @@ document.addEventListener("DOMContentLoaded", function() {
     overlay.classList.add('overlay_z-index');
   });
 
-  // cityClose.addEventListener('click', function () {
-  //   slideToggle(cityBlock);
-  // });
-
-  // cityChange.addEventListener('click', function () {
-  //   fadeIn(overlay);
-  //   fadeIn(cityChanger, false, 1);
-  // });
-
   cityChangerClose.addEventListener('click', function () {
     fadeOut(overlay);
     fadeOut(cityChanger);
     overlay.classList.remove('overlay_z-index');
-
   });
+
+  let filterListControllers = document.querySelectorAll('.open-filter-list');
+  filterListControllers.forEach(element => {
+    element.addEventListener('click', (e)=>{
+      let list = element.nextElementSibling;
+      slideToggle(list);
+      element.classList.toggle('filter__block-caption_active')
+    })
+  });
+  
+  let prompts = document.querySelectorAll('.prompt__icon');
+  prompts.forEach(element => {
+    element.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      let block = element.nextElementSibling;
+      fadeToggle(block, false, 1);
+    })
+  });
+
+  let showMoreFilter = document.querySelectorAll('.filter__block-show-more');
+  showMoreFilter.forEach(element => {
+    element.addEventListener('click', ()=>{
+      let hiddenItems = element.parentElement.querySelectorAll('.filter__block-item_hidden');
+      hiddenItems.forEach(element => {
+        slideToggle(element);
+      });
+      let oldText = element.innerText;
+      element.innerText = element.dataset.text;
+      element.dataset.text = oldText;
+
+    })
+  });
+
+  let sort = document.getElementById('sort');
+  sort.addEventListener('click', (e)=>{
+    let sortBlock = sort.nextElementSibling;
+    slideToggle(sortBlock);
+    sort.classList.toggle('sort__value_active')
+  });
+
+  const rangeSliderInit = () => { // создаем функцию инициализации слайдера
+    const range = document.getElementById('range'); // Ищем слайдер
+    const inputMin = document.getElementById('min'); // Ищем input с меньшим значнием
+    const inputMax = document.getElementById('max'); // Ищем input с большим значнием
+  
+    if (!range || !inputMin || !inputMax) return // если этих элементов нет, прекращаем выполнение функции, чтобы не было ошибок
+  
+    const inputs = [inputMin, inputMax]; // создаем массив из меньшего и большего значения
+    
+    new noUiSlider.create(range, { // инициализируем слайдер
+        start: [20, 80], // устанавливаем начальные значения
+        connect: true, // указываем что нужно показывать выбранный диапазон
+        range: { // устанавливаем минимальное и максимальное значения
+          'min': 0,
+          'max': 100
+        },
+        step: 1, // шаг изменения значений
+      }
+    )
+    
+    range.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
+      inputs[handle].value = parseInt(values[handle]);
+    });
+    
+    inputMin.addEventListener('change', function () { // при изменении меньшего значения в input - меняем положение соответствующего элемента управления
+      range.noUiSlider.set([this.value, null]);
+    });
+    
+    inputMax.addEventListener('change', function () { // при изменении большего значения в input - меняем положение соответствующего элемента управления
+      range.noUiSlider.set([null, this.value]);
+    });
+    
+  }
+
+  rangeSliderInit();
+  
 });

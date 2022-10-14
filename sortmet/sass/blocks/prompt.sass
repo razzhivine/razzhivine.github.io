@@ -1,0 +1,30 @@
+.prompt
+    position: relative
+    &__icon
+        width: 24px
+        height: 24px
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_536_5823)'%3E%3Ccircle cx='12' cy='12' r='9' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.5 8C13.5 8.82843 12.8284 9.5 12 9.5C11.1716 9.5 10.5 8.82843 10.5 8C10.5 7.17157 11.1716 6.5 12 6.5C12.8284 6.5 13.5 7.17157 13.5 8Z' fill='%23ADB3BE'/%3E%3Cpath d='M12 12V16' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_536_5823'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+    &__text
+        position: absolute
+        bottom: calc( 100% + 17px )
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 16px
+        font-weight: 400
+        line-height: 150%
+        width: 372px
+        background: #FFFFFF
+        box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.1), 0px 16px 26px rgba(0, 0, 0, 0.1), 0px 16px 5px -10px rgba(0, 0, 0, 0.03)
+        border-radius: 15px
+        padding: 20px
+        z-index: 2
+        display: none
+        &::before
+            content: ""
+            width: 31px
+            height: 17px
+            background-image: url("data:image/svg+xml,%3Csvg width='31' height='17' viewBox='0 0 31 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.7536 15.4348C16.5588 16.7947 14.4409 16.7947 13.2461 15.4348L0.344381 0.750001L30.6553 0.750004L17.7536 15.4348Z' fill='white'/%3E%3C/svg%3E%0A")
+            position: absolute
+            top: calc( 100% - 1px )
+            left: 50%
+            transform: translateX(-50%)

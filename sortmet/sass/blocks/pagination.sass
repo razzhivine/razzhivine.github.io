@@ -1,12 +1,23 @@
 .pagination
-    display: flex
-    justify-content: center
-    padding-top: 25px
-    z-index: 10
-    .swiper-pagination-bullet
-        background: #DEE1E5
-        display: block        
-        margin: 0 5px !important
-        opacity: 1
-    .swiper-pagination-bullet.swiper-pagination-bullet-active
-        background: #0077FF
+    margin: 60px 0 
+    &__item
+        padding: 12.5px 18px
+        font-size: 20px
+        line-height: 23px
+        color: #7F8A9B
+        display: inline-block
+        &_active
+            background: #0077FF
+            border-radius: 7px
+            color: #FFFFFF
+    &__dots
+        padding: 12.5px 16px
+        font-size: 20px
+        line-height: 23px
+        color: #7F8A9B
+    &__next
+        margin-left: 20px
+        padding: 14px 25px 16px
+        background: #E7F2FF
+        border-radius: 7px
+        color: #0077FF
