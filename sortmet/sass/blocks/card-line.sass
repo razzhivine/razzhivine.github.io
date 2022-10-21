@@ -1,0 +1,69 @@
+.card-line
+    display: flex
+    margin: 0 10px 30px
+    justify-content: space-between
+    padding-bottom: 30px
+    border-bottom: 1px solid #DEE1E5
+    &:last-child
+        // margin-bottom: 0
+        padding-bottom: 0
+        border: 0
+    &__image
+        margin: 0 30px 0 0 
+        position: relative
+        max-width: 230px
+        height: 230px
+        width: 100%
+        img
+            width: 100%
+            height: auto
+    &__labels
+        position: absolute
+        top: 10px
+        left: 10px
+    &__content
+        // margin: 0 15px
+        display: flex
+        justify-content: space-betwee
+        padding-right: 58px
+    &__name
+        font-size: 18px
+        line-height: 150%
+        color: #1A1E24
+        margin-bottom: 10px
+        display: block
+    &__reviews
+        padding-bottom: 15px
+        display: flex
+        align-items: center
+        &-count
+            font-size: 14px
+            line-height: 16px
+            color: #626D7D
+            margin-left: 10px
+    &__characteristics
+        .characteristics__item
+            &:last-child
+                margin-bottom: 0
+    &__right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        white-space: nowrap
+        &-inner
+            display: flex
+        &-price
+            padding-right: 53px
+        &-labels
+            margin-bottom: 5px
+    &__price-current
+        font-weight: 800
+        font-size: 24px
+        line-height: 28px
+        margin-bottom: 10px
+    &__price-old
+        font-size: 18px
+        line-height: 21px
+        text-decoration: line-through
+        color: #7F8A9B
+    

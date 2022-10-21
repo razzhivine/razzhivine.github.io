@@ -7,14 +7,54 @@
     align-items: center
     color: #FFFFFF
     margin: 70px 0 
+    @media (max-width: 1023px)
+        padding: 20px
+        margin: 40px 0
+        svg
+            display: none
     &__inner
         display: flex
         justify-content: space-between
         align-items: center
         width: 100%
         padding-left: 20px
+        @media (max-width: 1023px)
+              flex-direction: column
+              padding-left: 0
+    &__content
+        @media (max-width: 1023px)
+            margin-bottom: 20px
     &__title
         font-weight: 700
         font-size: 26px
         line-height: 30px
         margin-bottom: 13px
+        @media (max-width: 1023px)
+            font-weight: 800
+            font-size: 20px
+            line-height: 23px
+            padding-left: 55px
+            min-height: 40px
+            margin-bottom: 10px
+            position: relative
+            &::before
+                content: ""
+                width: 40px
+                height: 40px
+                background-image: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_713_8020)'%3E%3Cpath d='M13.6668 35.5C10.7213 35.5 8.3335 33.1122 8.3335 30.1667V5.5H23.3335L31.6668 13.8333V30.1667C31.6668 33.1122 29.279 35.5 26.3335 35.5H13.6668Z' stroke='white' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.6665 5.5V15.5H31.6665' stroke='white' stroke-width='1.875' stroke-linejoin='round'/%3E%3Cpath d='M15 22.1665H25' stroke='white' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 28.8335H25' stroke='white' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_713_8020'%3E%3Crect width='40' height='40' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 0
+                left: 0
+    &__description
+        @media (max-width: 1023px)
+            font-size: 14px
+            line-height: 140%
+    &__btn
+        @media (max-width: 1023px)
+            padding: 14px 30px 16px
+            font-size: 16px
+            line-height: 18px
+        @media (max-width: 767px)
+            width: 100%
+            box-sizing: border-box
+            text-align: center

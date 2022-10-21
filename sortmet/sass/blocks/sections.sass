@@ -1,16 +1,23 @@
 .sections
     display: flex
     flex-wrap: wrap
-    margin: 30px -5px
+    margin: 30px -5px 20px
+    @media (max-width: 767px)
+        margin: 20px -5px 10px
     &__item
         width: calc( 25% - 10px )
-        margin: 0 5px
+        margin: 0 5px 10px
         padding: 13px 12px
         background: #F7F7F9
         border-radius: 10px
         box-sizing: border-box
         display: flex
         align-items: center
+        @media (max-width: 1023px)
+            width: calc( 50% - 10px )
+        @media (max-width: 767px)
+            width: calc( 100% - 10px )
+
         &-image
             padding-right: 10px
             mix-blend-mode: darken

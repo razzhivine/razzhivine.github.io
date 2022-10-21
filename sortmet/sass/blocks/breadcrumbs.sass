@@ -1,9 +1,14 @@
 .breadcrumbs
-    margin: 37px 0 10px
+    margin: 35px 0 10px
+    @media (max-width: 767px)
+        margin: 15px 0 10px
     &__item
         color: #7F8A9B
         padding-right: 25px
         position: relative
+        @media (max-width: 767px)
+            display: none
+            
         &::before
             content: ""
             width: 20px
@@ -15,5 +20,17 @@
             transform: translateY(-50%)
         &:last-child
             padding-right: 0
+            @media (max-width: 767px)
+                display: block
+                padding-left: 25px
+                &::after
+                    content: ""
+                    width: 20px
+                    height: 20px
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_532_5053)'%3E%3Cpath d='M8.33333 14.1667L12.5 10L8.33333 5.83334' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_532_5053'%3E%3Crect width='20' height='20' fill='white' transform='translate(0 20) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%) rotate(180deg)
             &::before
                 content: none

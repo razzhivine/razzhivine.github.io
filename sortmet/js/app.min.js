@@ -377,11 +377,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const inputs = [inputMin, inputMax]; // создаем массив из меньшего и большего значения
     
     new noUiSlider.create(range, { // инициализируем слайдер
-        start: [20, 80], // устанавливаем начальные значения
+        start: [1000, 50000], // устанавливаем начальные значения
         connect: true, // указываем что нужно показывать выбранный диапазон
         range: { // устанавливаем минимальное и максимальное значения
           'min': 0,
-          'max': 100
+          'max': 100000
         },
         step: 1, // шаг изменения значений
       }
@@ -400,7 +400,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
   }
-
   rangeSliderInit();
+
+  let regions = document.getElementById('regions');
+  let regionsController = document.getElementById('show-regions');
+
+  regionsController.addEventListener('click', () =>{
+    regions.classList.toggle('regions__inner_open');
+    regionsController.classList.toggle('regions__show-more_open');
+
+    let oldText = regionsController.innerText;
+    regionsController.innerText = regionsController.dataset.text;
+    regionsController.dataset.text = oldText;
+  });
   
 });

@@ -34,6 +34,10 @@ h1
     font-weight: 800
     font-size: 36px
     line-height: 41px
+    margin: 0
+    @media (max-width: 767px)
+        font-size: 22px
+        line-height: 130%
 
 input[type='text']
     width: 100%
@@ -53,6 +57,9 @@ input[type='text']
 .overflow
     width: 100vw
     overflow: hidden
+.overflow-scroll
+    width: 100%
+    overflow-x: auto
 
 // @media (min-width: 1024px) 
 .gray
