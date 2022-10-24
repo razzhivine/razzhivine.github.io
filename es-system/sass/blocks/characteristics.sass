@@ -1,0 +1,37 @@
+.characteristics
+    background: #D4E3F4
+    &__inner
+        display: flex
+        margin: 0 -25px
+        padding: 0 100px
+    &__block
+        width: calc( 50% - 50px )
+        margin: 0 25px
+        img
+            display: block
+    &__list
+        padding: 51px 0 10px
+    &__item
+        margin-bottom: 35px
+        position: relative
+        &_active
+            .characteristics__text
+                height: 100%
+            &::before
+                content: ""
+                width: 31px
+                height: 1px
+                background:#7B7B7B
+                position: absolute
+                top: 15px
+                left: -65px
+    &__title
+        font-weight: 600
+        font-size: 20px
+        line-height: 140%
+        margin-bottom: 15px
+    &__text
+        // display: none
+        height: 0
+        overflow: hidden
+    

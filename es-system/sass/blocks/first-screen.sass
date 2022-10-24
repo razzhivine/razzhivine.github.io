@@ -1,0 +1,92 @@
+.first-screen
+    background: #F8F8F8
+    &__inner
+        display: flex
+    &__right
+        width: 50%
+        padding: 15px 100px 15px 50px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: center    
+    &__title    
+        font-weight: 700
+        font-size: 55px
+        line-height: 120%
+        margin-bottom: 40px
+    &__description
+        line-height: 150%
+        margin-bottom: 40px
+    &__left
+        width: 50%
+
+    &__banner
+        display: flex
+        background: #FFF
+        padding: 75px 0 75px 71px
+        z-index: 10
+        box-sizing: border-box
+        position: relative
+        // transition: .3s all ease
+        z-index: 0
+        width: fit-content
+        &::before
+            content: ""
+            width: 100vw
+            height: 100%
+            // background: #FFF
+            position: absolute
+            top: 0
+            left: 100%
+            z-index: 10
+            // transition: .3s all ease
+        &-content
+            max-width: 450px
+            z-index: 11
+        &-title
+            font-weight: 700
+            font-size: 35px
+            line-height: 120%
+            margin-bottom: 30px
+        &-description
+            margin-bottom: 30px
+            line-height: 150%
+            max-width: 340px
+            font-size: 16px
+        &-image
+            position: absolute
+            top: 50%
+            right: -160px
+            z-index: 10
+            opacity: 0
+            transform: translateY(-50%)
+            // transition: .3s all ease
+            z-index: 2
+            height: 100%
+            display: flex
+            align-items: center
+            img
+                max-height: 100%
+        &:hover
+            background: #D4E3F4
+            width: 100%
+            &::before
+                background: #D4E3F4
+            .first-screen__banner-image
+                opacity: 1
+    // &__banner    
+    //     padding: 57px 20px 57px 71px
+    //     max-width: 547px
+    //     background: #fff
+    //     box-sizing: border-box
+
+    //     &-title
+    //         font-weight: 700
+    //         font-size: 35px
+    //         line-height: 120%
+    //         margin-bottom: 25px
+    //     &-description
+    //         margin-bottom: 25px
+    //         line-height: 150%
+    //         font-size: 16px
+    //         max-width: 340px

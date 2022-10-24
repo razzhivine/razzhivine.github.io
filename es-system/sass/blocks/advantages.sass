@@ -1,0 +1,44 @@
+.advantages
+    padding: 135px 50px 120px
+    &__description
+        max-width: 920px
+        font-size: 20px
+        line-height: 30px   
+        letter-spacing: 0.15px
+        color: #1D324E
+        margin-bottom: 50px
+    &__list
+        display: flex
+        margin: 0 -50px
+    &__item
+        width: 25%
+        padding: 0 50px
+        box-sizing: content-box
+        position: relative
+        &::before
+            content: ""
+            width: 1px
+            height: 241px
+            background: #E0E4E8
+            position: absolute
+            top: 0
+            right: 0
+        &:last-child
+            &::before
+                content: none
+        &-number
+            font-weight: 800
+            font-size: 50px
+            line-height: 50px
+            color: rgba(74, 77, 98, 0.3)
+            margin-bottom: 26px
+        &-title
+            margin-bottom: 9px
+            font-weight: 500
+            font-size: 18px
+            line-height: 140%
+            color: #8C0C27
+        &-text
+            font-size: 14px
+            line-height: 140%
+            color: #4A4D62

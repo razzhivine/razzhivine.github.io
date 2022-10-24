@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto&display=swap')
+
+body
+    font-family: 'Manrope', sans-serif
+    font-size: 18px
+    font-weight: 400
+    color: #3F3F3F
+
+a
+    text-decoration: none
+
+li
+    margin-bottom: 10px
+
+.overflow
+    width: 100vw
+    overflow-x: hidden
+
+.wrapper
+    max-width: 1800px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+    box-sizing: border-box
+    position: relative
+    z-index: 0
+    &::before,
+    &::after
+        content: ""
+        width: 1px
+        height: 100%
+        background: #7E7E7E
+        position: absolute
+        top: 0
+        left: 15px
+        z-index: 0
+    &::after
+        left: initial
+        right: 15px
+    &_nb
+        &::before,
+        &::after
+            content: none
+
+.title  
+    font-weight: 600
+    font-size: 48px
+    line-height: 66px
+    margin-bottom: 50px
+    color: #1D324E
+
+.sub-title
+    font-weight: 400
+    font-size: 34px
+    line-height: 140%
+    color: #4A4D62
+    margin-bottom: 35px
+
+.btn
+    border: 1px solid #293138
+    color: #293138
+    max-width: 197px
+    width: 100%
+    display: inline-block
+    text-align: center
+    padding: 18px
+    &_blue
+        border-color: #5472D3
+        color: #5472D3
+        background: transparent
+    &_blue-fill
+        border-color: #5472D3
+        background: #5472D3
+        color: #fff
+.more
+    font-size: 16px
+    line-height: 140%
+    color: #505050
+    padding-bottom: 4px
+    border-bottom: 1px solid #505050
+    width: fit-content
+    cursor: pointer
+    &:hover
+        color: #8C0C27
+        border-color: #8C0C27
+
+.yt
+    position: relative
+    &::before
+        content: ""
+        display: inline-block
+        padding-bottom: 56.25%
+    &__video
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%

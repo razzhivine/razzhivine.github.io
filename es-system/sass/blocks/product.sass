@@ -1,0 +1,68 @@
+.product
+    padding: 50px 50px 125px
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -25px
+    &__block
+        width: calc( 50% - 50px )
+        margin: 0 25px 100px
+    &__text
+        font-size: 16px
+    &__advantages
+        display: flex
+        flex-wrap: wrap
+        max-width: 605px
+        &-item
+            width: 50%
+            padding: 0 25px 5px 45px
+            margin-bottom: 20px
+            position: relative
+            box-sizing: border-box
+            &::before
+                content: ""
+                width: 20px
+                height: 20px
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M9.5 0.5V9.5H0.5V11H9.5V20H11V11H20V9.5H11V0.5H9.5Z' fill='%238C0C27'/%3E %3C/svg%3E ")
+                position: absolute
+                left: 0
+                top: 4px
+    &__slider
+        display: flex
+        align-items: flex-start
+        max-height: 383px
+        // overflow-y: hidden
+        &-inner
+            width: calc( 100% - 109px )
+        &-image
+            text-align: center
+
+        &-pagination
+            height: 100%
+            position: relative
+            &-item
+                width: 80px
+                height: 80px !important
+                text-align: center
+            // // display: flex
+            &-arrow
+                width: 22px
+                height: 13px
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='13' viewBox='0 0 22 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 12L11 2L1 12' stroke='%238C0C27' stroke-width='1.5'/%3E%3C/svg%3E%0A")
+                position: absolute
+                top: -30px
+                left: 50%
+                transform: translateX(-50%)
+                z-index: 10
+                &.swiper-button-disabled
+                    opacity: .2
+                &_next
+                    top: initial
+                    top: calc( 100% - 20px )
+                    transform: translateX(-50%) rotate(180deg)
+                    // bottom: 383px
+
+    &__description
+        font-size: 16px
+    &__btns
+        margin-top: 40px
