@@ -340,6 +340,16 @@ li {
 
 .feedback {
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .feedback__callback {
   font-size: 16px;
@@ -349,6 +359,9 @@ li {
   color: #3F3F3F;
   margin-bottom: 16px;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-bottom: 1px solid rgba(41, 49, 56, 0.4);
 }
 .feedback__email {
