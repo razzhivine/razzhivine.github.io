@@ -3703,6 +3703,9 @@ input[type=text]::placeholder {
     display: block;
   }
 }
+.catalog-section__tags-second {
+  margin-top: 20px;
+}
 @media (max-width: 767px) {
   .catalog-section__tags-second .tags-second__slider {
     display: none;
