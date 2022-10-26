@@ -1895,7 +1895,7 @@ input[type=text]::placeholder {
       -ms-flex-pack: space-betwee;
           justify-content: space-betwee;
   padding-right: 58px;
-  width: 100%;
+  width: calc(100% - 548px);
 }
 .card-line__name {
   font-size: 18px;
@@ -1934,6 +1934,7 @@ input[type=text]::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   white-space: nowrap;
+  width: 230px;
 }
 .card-line__right-inner {
   display: -webkit-box;
