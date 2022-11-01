@@ -1,0 +1,18 @@
+.navigation
+    display: flex
+    border-bottom: 1px solid #DEE1E5
+    &__item
+        margin: 0 60px 0 0
+        padding-bottom: 15px
+        color: #626D7D
+        &_active
+            color: #0077FF
+            position: relative
+            &::before
+                content: ''
+                width: 100%
+                height: 2px
+                background: #0077FF
+                position: absolute
+                bottom: -1px
+                left: 0

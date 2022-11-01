@@ -1,0 +1,152 @@
+.catalog-element
+    margin: 30px 0 100px
+    &__top
+        margin-bottom: 40px
+        display: flex
+    &__slider
+        margin-right: 30px
+        max-width: 392px
+    &__content
+        width: calc( 100% - 422px )
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &-heading
+            font-size: 26px
+            line-height: 30px
+            margin-bottom: 16px
+        &-reviews
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+        &-rating
+            margin-right: 20px
+        &-reviews-count
+            color: #0C67BD
+        &-variants
+            margin-bottom: 23px !important
+        &-characteristics
+            margin-bottom: 25px
+        &-question
+            background: #E7F2FF
+            border-radius: 7px
+            color: #0077FF
+            padding: 13px 15px 15px 49px
+            width: fit-content
+            position: relative
+            cursor: pointer
+            &::before
+                content: ''
+                width: 24px
+                height: 24px
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_546_6392)'%3E%3Ccircle cx='12' cy='11.9999' r='9' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.5 7.99994C13.5 8.82837 12.8284 9.49994 12 9.49994C11.1716 9.49994 10.5 8.82837 10.5 7.99994C10.5 7.17151 11.1716 6.49994 12 6.49994C12.8284 6.49994 13.5 7.17151 13.5 7.99994Z' fill='%230077FF'/%3E%3Cpath d='M12 12V16' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_546_6392'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                left: 15px
+                transform: translateY(-50%)
+        &-buy-inner
+            box-shadow: 0px 2px 34px -10px rgba(0, 0, 0, 0.07)
+            border-radius: 15px
+            padding: 30px 30px 20px
+            margin-bottom: 20px
+        &-block
+            display: flex
+        &-labels
+            margin-bottom: 5px
+        &-price
+            padding-right: 54px
+        &-price-current
+            font-weight: 800
+            font-size: 24px
+            line-height: 28px
+            margin-bottom: 10px
+        &-price-old
+            font-size: 18px
+            line-height: 21px
+            text-decoration: line-through
+            color: #7F8A9B
+        &-actions
+            position: relative
+            top: -10px
+            right: -10px
+        &-avaliable
+            margin: 15px 0
+            padding-left: 34px
+            font-size: 16px
+            line-height: 18px
+            color: #626D7D
+            position: relative
+            &::before
+                content: ''
+                width: 24px
+                height: 24px
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_536_8233)'%3E%3Cpath d='M20 7L10 17L5 12' stroke='%231BC100' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_536_8233'%3E%3Crect width='24' height='24' rx='5' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+        &-unit
+            margin-bottom: 10px
+        &-quantity
+            margin-bottom: 20px
+        &-btn-buy
+            margin-bottom: 15px
+        &-found-cheaper
+            padding-left: 28px
+            font-size: 14px
+            line-height: 16px
+            color: #626D7D
+            position: relative
+            cursor: pointer
+            &::before
+                content: ''
+                width: 18px
+                height: 18px
+                background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_564_7068)'%3E%3Ccircle cx='9' cy='8.99994' r='6.75' stroke='%237F8A9B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.125 11.9999C10.125 12.6213 9.62132 13.1249 9 13.1249C8.37868 13.1249 7.875 12.6213 7.875 11.9999C7.875 11.3786 8.37868 10.8749 9 10.8749C9.62132 10.8749 10.125 11.3786 10.125 11.9999Z' fill='%237F8A9B'/%3E%3Cpath d='M7.93934 5.68938C8.23156 5.39716 8.61435 5.25072 8.99735 5.25005C9.38212 5.24937 9.76709 5.39582 10.0607 5.68938C10.3536 5.98228 10.5 6.36616 10.5 6.75005C10.5 7.13393 10.3536 7.51781 10.0607 7.8107C9.76709 8.10427 9.38212 8.25072 8.99735 8.25004L9 9.00005' stroke='%237F8A9B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_564_7068'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+    &__navigation
+        margin-bottom: 35px
+    &__desctiption
+        margin-bottom: 60px
+        &-inner
+            display: flex
+            align-items: flex-start
+        &-text
+            width: calc( 100% - 289px )
+            padding-right: 20px
+            box-sizing: border-box
+            line-height: 160%
+        &-block
+            width: 289px
+            background: #F7F7F9
+            border-radius: 15px
+    &__services
+        padding: 20px
+        &-title
+            font-weight: 800
+            margin-bottom: 20px
+        &-item
+            margin-bottom: 15px
+            display: flex
+            flex-direction: column
+            span
+                &:first-child
+                    margin-bottom: 5px
+                &:last-child
+                    font-size: 14px
+                    line-height: 16px
+                    color: #7F8A9B
+            &:last-child
+                margin-bottom: 0
+    &__characteristics
+        &-inner
+            display: flex
+            gap: 20px
+        &-block
+            width: 50%
+            .characteristics-second__item-value
+                width: 100%
+                max-width: 284px

@@ -1,0 +1,73 @@
+.subscribe-form
+    background: linear-gradient(0deg, #454545, #454545), #9D9D9D
+    border-radius: 15px
+    color: #fff
+    padding: 40px 44px 26px 60px
+    display: flex
+    margin: 70px 0
+    position: relative
+    &_blue
+        background: #0077FF
+        .form__button
+            background: #1A1E24
+    &__block
+        position: relative
+        box-sizing: border-box
+        &:first-child
+            // width: calc(55% - 37px)
+            // width: 5%
+
+            padding-right: 37px
+            padding-left: 80px
+        &:last-child
+
+            // width: calc(50% - 37px)
+            padding-left: 37px
+
+    &__title
+        font-weight: 700
+        font-size: 26px
+        line-height: 30px
+        margin-bottom: 13px
+        position: relative
+        &::before
+            content: ''
+            width: 60px
+            height: 60px
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='61' viewBox='0 0 60 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_564_7198)'%3E%3Cpath d='M7.5 13V10.5C6.11929 10.5 5 11.6193 5 13H7.5ZM52.5 13H55C55 11.6193 53.8807 10.5 52.5 10.5V13ZM7.5 15.5H52.5V10.5H7.5V15.5ZM50 13V43H55V13H50ZM47.5 45.5H12.5V50.5H47.5V45.5ZM10 43V13H5V43H10ZM12.5 45.5C11.1193 45.5 10 44.3807 10 43H5C5 47.1421 8.35786 50.5 12.5 50.5V45.5ZM50 43C50 44.3807 48.8807 45.5 47.5 45.5V50.5C51.6421 50.5 55 47.1421 55 43H50Z' fill='white'/%3E%3Cpath d='M7.5 18L30 33L52.5 18' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_564_7198'%3E%3Crect width='60' height='60' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+            position: absolute
+            top: 0
+            left: -80px
+    &__description
+        font-size: 16px
+        line-height: 18px
+    &__input
+        max-width: 278px
+        width: 100%
+        height: 62px !important
+        background: #FFFFFF
+        border-radius: 7px
+        border: none
+        padding: 20px 30px 21px
+        box-sizing: border-box
+        margin-right: 15px
+        color: #1A1E24
+        font-size: 18px
+        line-height: 21px
+    &__button
+        padding: 20px 30px
+        max-width: 170px
+        width: 100%
+        height: 62px
+        background: #0077FF
+        border-radius: 7px
+        border: none
+    &__policy
+        margin-top: 12px
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+        opacity: .66
+        a
+            color: #FFFFFF
+            text-decoration: underline

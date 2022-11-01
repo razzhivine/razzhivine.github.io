@@ -20,6 +20,31 @@ document.addEventListener("DOMContentLoaded", function() {
       },
   });
 
+  var elementSliderThumb = new Swiper("#element-slider-thumb", {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: "#element-slider-thumb-arrow-next",
+      prevEl: "#element-slider-thumb-arrow-prev",
+    },
+    // freeMode: true,
+    // watchSlidesProgress: true,
+  });
+  var elementSlider = new Swiper("#element-slider", {
+    spaceBetween: 10,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    navigation: {
+      nextEl: "#element-slider-thumb-arrow-next",
+      prevEl: "#element-slider-thumb-arrow-prev",
+    },
+    thumbs: {
+      swiper: elementSliderThumb,
+    },
+  });
+
   let catalogSlider2 = new Swiper("#catalog-slider-2", {
     slidesPerView: 2,
     spaceBetween: 10,
@@ -360,13 +385,15 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   });
 
-  let sort = document.getElementById('sort');
-  sort.addEventListener('click', (e)=>{
-    let sortBlock = sort.nextElementSibling;
-    slideToggle(sortBlock);
-    sort.classList.toggle('sort__value_active')
-  });
 
+  if(document.getElementById('sort') !== null){
+    let sort = document.getElementById('sort');
+    sort.addEventListener('click', (e)=>{
+      let sortBlock = sort.nextElementSibling;
+      slideToggle(sortBlock);
+      sort.classList.toggle('sort__value_active')
+    });
+  }
   const rangeSliderInit = () => { // создаем функцию инициализации слайдера
     const range = document.getElementById('range'); // Ищем слайдер
     const inputMin = document.getElementById('min'); // Ищем input с меньшим значнием
@@ -402,16 +429,17 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   rangeSliderInit();
 
-  let regions = document.getElementById('regions');
-  let regionsController = document.getElementById('show-regions');
+  if(document.getElementById('regions') !== null){
+    let regions = document.getElementById('regions');
+    let regionsController = document.getElementById('show-regions');
 
-  regionsController.addEventListener('click', () =>{
-    regions.classList.toggle('regions__inner_open');
-    regionsController.classList.toggle('regions__show-more_open');
+    regionsController.addEventListener('click', () =>{
+      regions.classList.toggle('regions__inner_open');
+      regionsController.classList.toggle('regions__show-more_open');
 
-    let oldText = regionsController.innerText;
-    regionsController.innerText = regionsController.dataset.text;
-    regionsController.dataset.text = oldText;
-  });
-  
+      let oldText = regionsController.innerText;
+      regionsController.innerText = regionsController.dataset.text;
+      regionsController.dataset.text = oldText;
+    });
+  }
 });
