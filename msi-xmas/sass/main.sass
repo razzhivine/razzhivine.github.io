@@ -1,0 +1,237 @@
+@font-face
+    font-family: "Fredburger"
+    src: url("../fonts/Fredburger-Headline.otf")
+@font-face
+    font-family: "Calibri"
+    src: url("../fonts/CalibriL.ttf")
+@import libs/normalize
+
+body
+    color: #fff
+    font-family: "Fredburger", sans-serif
+    font-size: 18px
+    line-height: 1.5
+img
+    width: 100%
+    height: auto
+
+.wrapper
+    width: 100%
+    max-width: 1260px
+    padding: 0 15px
+    margin: 0 auto
+.title
+    font-size: 70px
+    color: #532194
+    text-align: center
+    padding-bottom: 40px
+    -webkit-text-stroke-width: 4px
+    -webkit-text-stroke-color: #fff
+.btn
+    border-radius: 11px
+    background: rgb(187, 0, 255)
+    color: #fff
+    font-size: 16px
+    font-family: "Calibri"
+    text-transform: uppercase
+    line-height: 0.909
+    text-decoration: none
+    padding: 14px 36px
+    width: fit-content
+
+.bg
+    background: url(../images/dest/bg-1.png)
+    background-size: cover
+.bg-2
+    // background: #21035c
+    background: url(../images/dest/bg-2.png) top center
+    background-size: cover
+
+.logo
+    position: absolute
+    // top: 15.873%
+    top: 90px
+    left: 6.25%
+    img
+        width: 228px
+.banner
+    width: 100%
+    max-width: 1700px
+    padding: 0 15px 100px
+    margin: 0 auto
+    box-sizing: border-box
+    &__tagline
+        width: 100%
+        max-width: 1170px
+        margin: 0 auto
+    &__images
+        display: flex
+        position: relative
+        &::before
+            content: ""
+            width: 100vw
+            height: 100%
+            background: url(../images/dest/garland-1.png)
+            background-repeat: no-repeat
+            background-size: contain
+            // background-position: top 50%
+            position: absolute
+            // top: 0
+            left: 50%
+            transform: translate(-50%, -33%)
+        &::after
+            content: ""
+            width: 100vw
+            height: 100%
+            background: url(../images/dest/garland-2.png)
+            background-repeat: no-repeat
+            background-size: contain
+            // background-position: 0% 50%
+            position: absolute
+            left: 50%
+            transform: translate(-50%, 65%)
+
+.stories
+    padding-bottom: 90px
+    &__text
+        font-size: 22px
+        line-height: 1.6
+        text-align: center
+        max-width: 940px
+        width: 100%
+        margin: 0 auto 90px
+    &__list
+        position: relative
+        &::before
+            content: ""
+            width: 100vw
+            height: 300px
+            background: url(../images/dest/garland-3.png)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            position: absolute
+            top: -165px
+            left: 50%
+            transform: translateX(-50%)
+        &::after
+            content: ""
+            width: 100vw
+            height: 300px
+            background: url(../images/dest/garland-5.png)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            position: absolute
+            bottom: -165px
+            left: 50%
+            transform: translateX(-50%)
+    &__item
+        display: flex
+        align-items: center
+        gap: 60px
+        & > *
+            width: 50%
+        &:nth-child(even)
+            text-align: right
+            flex-direction: row-reverse
+.contest
+    padding: 65px 0 140px
+    position: relative
+    &::before
+        content: ""
+        width: 100vw
+        height: 300px
+        background: url(../images/dest/garland-6.png)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        position: absolute
+        bottom: -50px
+        left: 50%
+        transform: translateX(-50%)
+    &__block
+        display: flex
+        align-items: center
+        gap: 60px
+        & > *
+            width: 50%
+        &-text
+            margin-bottom: 40px
+.offers
+    margin-bottom: 85px
+    &__text
+        font-size: 22px
+        line-height: 1.6
+        text-align: center
+        max-width: 940px
+        width: 100%
+        margin: 0 auto 40px
+    &__list
+        display: flex
+        position: relative
+        justify-content: space-around
+    &__lucky
+        position: absolute
+        top: 35px
+        left: calc(50% - 60px)
+        transform: translateX( -50%)
+        z-index: 1
+        &-image
+            width: auto
+            height: 100%
+            max-height: 373px
+    &__item
+        text-align: center
+        // width: 25%
+        position: relative
+
+        &-type,
+        &-name,
+        &-btn
+            position: relative
+            z-index: 2
+        &-type
+            font-size: 18px
+        &-name
+            font-size: 30px
+            margin-bottom: 30px
+        &-btn
+            margin: 0 auto
+        &-image
+                width: auto
+                height: 100%
+                object-fit: contain
+                margin-bottom: 35px
+        &:first-child
+            top: 75px
+            .offers__item-image
+                max-height: 315px 
+        &:nth-child(2)
+            left: -70px
+            .offers__item-image
+                max-height: 365px 
+        &:nth-child(4)
+            top: 10px
+            left: 15px
+            .offers__item-image
+                max-height: 344px 
+        &:last-child
+            top: 50px
+            .offers__item-image
+                max-height: 321px 
+.footer
+    background: #3e0b7f
+    &__inner
+        padding: 19px 0 14px
+        width: 100%
+        max-width: 540px
+        margin: 0 auto
+        display: flex
+        align-items: center
+    &__logo
+        width: 50px
+    &__text
+        padding-left: 10px
+        font-size: 12px
+        font-family: "Calibri"
