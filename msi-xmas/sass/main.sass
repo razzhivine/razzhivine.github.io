@@ -38,6 +38,9 @@ img
     text-decoration: none
     padding: 14px 36px
     width: fit-content
+    transition: .15s all ease-in
+    &:hover
+        box-shadow: 0px 0px 20px rgb(187, 0, 255)
 
 .bg
     background: url(../images/dest/bg-1.png)
@@ -52,8 +55,17 @@ img
     // top: 15.873%
     top: 90px
     left: 6.25%
+    @media (max-width: 1899px)
+        top: 90px
+        left: 3%
+        @media (max-width: 1559px)
+            top: 40px
+            left: 40px
     img
         width: 228px
+        @media (max-width: 1899px)
+            width: 150px
+
 .banner
     width: 100%
     max-width: 1700px
@@ -64,6 +76,10 @@ img
         width: 100%
         max-width: 1170px
         margin: 0 auto
+        padding: 100px 0 125px
+        @media (max-width: 1559px)
+            padding-top: 125px
+            
     &__images
         display: flex
         position: relative
@@ -73,7 +89,7 @@ img
             height: 100%
             background: url(../images/dest/garland-1.png)
             background-repeat: no-repeat
-            background-size: contain
+            background-size: 100%
             // background-position: top 50%
             position: absolute
             // top: 0
@@ -85,7 +101,7 @@ img
             height: 100%
             background: url(../images/dest/garland-2.png)
             background-repeat: no-repeat
-            background-size: contain
+            background-size: 100%
             // background-position: 0% 50%
             position: absolute
             left: 50%
@@ -105,25 +121,25 @@ img
         &::before
             content: ""
             width: 100vw
-            height: 300px
+            height: 500px
             background: url(../images/dest/garland-3.png)
             background-repeat: no-repeat
-            background-size: contain
+            background-size: 100%
             background-position: center
             position: absolute
-            top: -165px
+            top: -265px
             left: 50%
             transform: translateX(-50%)
         &::after
             content: ""
             width: 100vw
-            height: 300px
+            height: 500px
             background: url(../images/dest/garland-5.png)
             background-repeat: no-repeat
-            background-size: contain
+            background-size: 100%
             background-position: center
             position: absolute
-            bottom: -165px
+            bottom: -265px
             left: 50%
             transform: translateX(-50%)
     &__item
@@ -144,7 +160,7 @@ img
         height: 300px
         background: url(../images/dest/garland-6.png)
         background-repeat: no-repeat
-        background-size: contain
+        background-size: 100%
         background-position: center
         position: absolute
         bottom: -50px
@@ -199,10 +215,10 @@ img
         &-btn
             margin: 0 auto
         &-image
-                width: auto
-                height: 100%
-                object-fit: contain
-                margin-bottom: 35px
+            width: auto
+            height: 100%
+            object-fit: 100%
+            margin-bottom: 35px
         &:first-child
             top: 75px
             .offers__item-image

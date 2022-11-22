@@ -1,5 +1,7 @@
 .delivery
     margin: 60px 0
+    @media (max-width: 1023px)
+        margin: 30px 0
     &__inner
         display: flex
         gap: 30px
@@ -9,11 +11,21 @@
         width: 50%
         &:first-child
             max-width: 495px
+            @media (max-width:767px)
+                width: 100%
         &:last-child
             text-align: center
+            @media (max-width:767px)
+                display: none
+            img
+               width: 100%
+               height: auto
+               max-width: 500px 
     &__form
         max-width: 495px   
         margin-bottom: 20px
+        @media (max-width:767px)
+            margin-bottom: 10px
     &__switcher
         margin-bottom: 30px
         background: #F7F7F9
@@ -21,6 +33,8 @@
         padding: 4px
         display: flex
         justify-content: space-between
+        @media (max-width:767px)
+            margin-bottom: 20px
         &-item
             color: #7F8A9B
             text-align: center
@@ -28,6 +42,8 @@
             width: 33.33333%
             box-sizing: border-box
             cursor: pointer
+            @media (max-width:767px)
+                font-size: 14px
             &_active 
                 background: #0077FF
                 border-radius: 7px
@@ -43,33 +59,65 @@
             line-height: 28px
             color: #1A1E24
             margin-bottom: 5px
+            @media (max-width:767px)
+                font-size: 18px
+                line-height: 21px
         &-caption
             color: #7F8A9B
+            @media (max-width:767px)
+                font-size: 14px
     &__map
         margin-bottom: 20px
+        @media (max-width: 767px)
+            margin-bottom: 10px
+            width: calc(100vw + 30px)
+            position: relative
+            left: -15px
         img
             width: 100%
             height: auto
     &__list
-        display: flex
-        gap: 20px
+        // display: flex
+        // gap: 20px
+        &.swiper
+            overflow: inherit
     &__item
-        width: 33.33333%
+        // width: 33.33333%
         padding: 30px
         background: #F7F7F9
         border-radius: 15px
+        box-sizing: border-box
+        @media screen and (max-width: 1214px)
+            width: calc(50vw - 40px)
+        @media screen and (max-width: 767px)
+            width: calc(50vw - 25px)
+            padding: 20px
         &-title
             font-weight: 700
             font-size: 18px
             line-height: 21px
             margin-bottom: 20px
+            @media (max-width: 767px)
+                font-size: 16px
+                line-height: 18px
+                margin-bottom: 15px
         &-characteristics
             display: flex
             flex-wrap: wrap
             gap: 22px 30px
+            @media (max-width: 767px)
+                gap: 10px
         &-characteristic
             width: calc(50% - 15px)
             box-sizing: border-box
+            @media (max-width: 767px)
+                width: calc(100% - 15px)
             &-caption
                 color: #7F8A9B
                 margin-bottom: 5px
+                @media (max-width: 767px)
+                    font-size: 12px
+            &-value
+                @media (max-width: 767px)
+                    font-size: 14px
+            

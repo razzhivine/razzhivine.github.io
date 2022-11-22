@@ -276,7 +276,6 @@
 							</div>
 							<div class="arrow arrow_prev element-slider__thumb-arrow element-slider__thumb-arrow_prev" id="element-slider-thumb-arrow-prev"></div>
 							<div class="arrow arrow_next element-slider__thumb-arrow element-slider__thumb-arrow_next" id="element-slider-thumb-arrow-next"></div>
-							<!-- <div class="slider-pagination" id="catalog-slider-1-pagination"></div> -->
 						</div>
 					</div>
 					<div class="catalog-element__content">
@@ -292,7 +291,7 @@
 								</div>
 								<div class="catalog-element__content-reviews-count reviews-count">10 отзывов</div>
 							</div>
-							<div class="catalog-element__content-variants variants">
+							<div class="catalog-element__content-variants catalog-element__content-variants_desc variants">
 								<div class="variants__item variants__item_active">4 мм</div>
 								<div class="variants__item">8 мм</div>
 								<div class="variants__item">10 мм</div>
@@ -369,6 +368,13 @@
 											</svg>
 										</div>
 									</div>	
+								</div>
+								<div class="catalog-element__content-variants catalog-element__content-variants_mob variants">
+									<div class="variants__item variants__item_active">4 мм</div>
+									<div class="variants__item">8 мм</div>
+									<div class="variants__item">10 мм</div>
+									<div class="variants__item">12 мм</div>
+									<div class="variants__item">14 мм</div>
 								</div>
 								<div class="catalog-element__content-unit unit">
 									<div class="unit__item unit__item_active">Тонны</div>
@@ -543,67 +549,69 @@
 					<div class="delivery__map">
 						<img src="images/dest/delivery-map.webp" alt="">
 					</div>
-					<div class="delivery__list">
-						<div class="delivery__item">
-							<div class="delivery__item-title">Газель</div>
-							<div class="delivery__item-characteristics">
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
-									<div class="delivery__item-characteristic-value">1,5 тн</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Базовая ставка</div>
-									<div class="delivery__item-characteristic-value">5 000 р</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Длина кузова</div>
-									<div class="delivery__item-characteristic-value">6 м</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
-									<div class="delivery__item-characteristic-value">20 р/км</div>
-								</div>
-							</div>
-						</div>
-						<div class="delivery__item">
-							<div class="delivery__item-title">Валдай</div>
-							<div class="delivery__item-characteristics">
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
-									<div class="delivery__item-characteristic-value">5 тн</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Базовая ставка</div>
-									<div class="delivery__item-characteristic-value">8 000 р</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Длина кузова</div>
-									<div class="delivery__item-characteristic-value">6 м</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
-									<div class="delivery__item-characteristic-value">30 р/км</div>
+					<div class="delivery__list swiper" id="delivery-slider">
+						<div class="swiper-wrapper">
+							<div class="delivery__item swiper-slide">
+								<div class="delivery__item-title">Газель</div>
+								<div class="delivery__item-characteristics">
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
+										<div class="delivery__item-characteristic-value">1,5 тн</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Базовая ставка</div>
+										<div class="delivery__item-characteristic-value">5 000 р</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Длина кузова</div>
+										<div class="delivery__item-characteristic-value">6 м</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
+										<div class="delivery__item-characteristic-value">20 р/км</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="delivery__item">
-							<div class="delivery__item-title">МАЗ</div>
-							<div class="delivery__item-characteristics">
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
-									<div class="delivery__item-characteristic-value">20 тн</div>
+							<div class="delivery__item swiper-slide">
+								<div class="delivery__item-title">Валдай</div>
+								<div class="delivery__item-characteristics">
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
+										<div class="delivery__item-characteristic-value">5 тн</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Базовая ставка</div>
+										<div class="delivery__item-characteristic-value">8 000 р</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Длина кузова</div>
+										<div class="delivery__item-characteristic-value">6 м</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
+										<div class="delivery__item-characteristic-value">30 р/км</div>
+									</div>
 								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Базовая ставка</div>
-									<div class="delivery__item-characteristic-value">12 000 р</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Длина кузова</div>
-									<div class="delivery__item-characteristic-value">12 м</div>
-								</div>
-								<div class="delivery__item-characteristic">
-									<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
-									<div class="delivery__item-characteristic-value">40 р/км</div>
+							</div>
+							<div class="delivery__item swiper-slide">
+								<div class="delivery__item-title">МАЗ</div>
+								<div class="delivery__item-characteristics">
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Грузоподъемность</div>
+										<div class="delivery__item-characteristic-value">20 тн</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Базовая ставка</div>
+										<div class="delivery__item-characteristic-value">12 000 р</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Длина кузова</div>
+										<div class="delivery__item-characteristic-value">12 м</div>
+									</div>
+									<div class="delivery__item-characteristic">
+										<div class="delivery__item-characteristic-caption">Доставка за МКАД</div>
+										<div class="delivery__item-characteristic-value">40 р/км</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -3392,7 +3400,6 @@
 				</div>
 			</div>
 
-			
 		</section>
 
 		<footer class="footer">

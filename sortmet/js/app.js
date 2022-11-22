@@ -166,6 +166,19 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   });
 
+  var deliverySlider = new Swiper("#delivery-slider", {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    breakpoints: {
+      767: {
+        spaceBetween: 20,
+      },
+      1214: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+    },
+  });
     /* SLIDE UP */
   let slideUp = (target, duration=500) => {
       target.style.transitionProperty = 'height, margin, padding';

@@ -5,12 +5,16 @@
         &-item
             img
                 display: block
+                width: 100%
+                height: auto
         &-labels
             position: absolute
             top: 24px
             left: 24px
                 
     &__thumb
+        @media screen and ( max-width: 767px)
+            display: none
         &-item
             width: 80px
             height: 80px
