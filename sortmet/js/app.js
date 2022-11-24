@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // freeMode: true,
     // watchSlidesProgress: true,
   });
+
   var elementSlider = new Swiper("#element-slider", {
     spaceBetween: 10,
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
+    pagination: {
+      el: "#element-slider-pagination",
+    },
     navigation: {
       nextEl: "#element-slider-thumb-arrow-next",
       prevEl: "#element-slider-thumb-arrow-prev",
@@ -455,4 +455,48 @@ document.addEventListener("DOMContentLoaded", function() {
       regionsController.dataset.text = oldText;
     });
   }
+
+  if(document.getElementById('navigation') !== null){
+    let navigationItems = document.querySelectorAll('.navigation__item');
+    let infoBlocks = document.querySelectorAll('.info-block');
+    
+    navigationItems.forEach(element => {
+
+      element.addEventListener('click', () =>{
+        let id = element.dataset.id;
+
+        navigationItems.forEach(element => {
+          element.classList.remove('navigation__item_active');
+        });
+        infoBlocks.forEach(element => {
+          if(element.getAttribute('id') == id){
+            element.classList.add('info-block_active');
+          }else{
+          element.classList.remove('info-block_active');
+          }
+        });
+        element.classList.add('navigation__item_active');
+      });
+    });
+
+    if(window.matchMedia("(max-width: 1023px)").matches){
+      infoBlocks.forEach(element => {
+        element.classList.remove('info-block');
+        element.classList.remove('info-block_active');
+        element.classList.add('info-block_mobile');
+      });
+
+      let infoBlocksControllers = document.querySelectorAll('.info-block__controller');
+      let infoBlocksMobile = document.querySelectorAll('.info-block__mobile');
+      infoBlocksControllers.forEach(element => {
+        element.addEventListener('click', () =>{
+          let block = element.nextElementSibling;
+          element.classList.toggle('info-block__controller_active');
+          block.classList.toggle('info-block__mobile_active');
+        });
+      });
+    }
+    
+  }
+  
 });

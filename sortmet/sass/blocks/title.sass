@@ -21,9 +21,15 @@
             font-weight: 700
             font-size: 1.625rem
             line-height: 30px
+            @media (max-width: 767px)
+                font-size: 22px
+                line-height: 29px
     &__text
         padding-bottom: 20px
         font-size: 16px
         font-weight: 400
         line-height: 150%
         color: #626D7D
+    &__content
+        @media (max-width: 1023px)
+            display: none

@@ -8,7 +8,6 @@
         position: relative
         @media (max-width: 767px)
             display: none
-            
         &::before
             content: ""
             width: 20px
@@ -20,6 +19,9 @@
             transform: translateY(-50%)
         &:last-child
             padding-right: 0
+            &::before
+                content: none
+        &:nth-last-child(2)
             @media (max-width: 767px)
                 display: block
                 padding-left: 25px
@@ -32,5 +34,5 @@
                     top: 50%
                     left: 0
                     transform: translateY(-50%) rotate(180deg)
-            &::before
-                content: none
+                &::before
+                    content: none

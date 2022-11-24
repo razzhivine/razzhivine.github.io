@@ -7,11 +7,21 @@
                 display: block
                 width: 100%
                 height: auto
+                @media screen and ( max-width: 767px)
+                    border-radius: 12px
+                    overflow: hidden
+                    object-fit: cover
         &-labels
             position: absolute
             top: 24px
             left: 24px
-                
+            @media screen and ( max-width: 767px)
+                top: 10px
+                left: 10px
+                .labels__item
+                    font-size: 14px
+                    line-height: 16px
+                    padding: 5px 15px
     &__thumb
         @media screen and ( max-width: 767px)
             display: none
@@ -55,3 +65,8 @@
                     z-index: -1
             &.swiper-button-disabled
                 display: none
+    &__pagination
+        display: none
+        padding-top: 10px
+        @media screen and ( max-width: 767px)
+            display: flex
