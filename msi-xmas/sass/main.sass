@@ -11,15 +11,22 @@ body
     font-family: "Fredburger", sans-serif
     font-size: 18px
     line-height: 1.5
+    @media screen and (max-width: 1023px)
+        font-size: 16px
+        line-height: 1.25
+        letter-spacing: 0.4px
 img
     width: 100%
     height: auto
-
+.overflow
+    width: 100vw
+    overflow-x: hidden
 .wrapper
     width: 100%
-    max-width: 1260px
+    max-width: 1290px
     padding: 0 15px
     margin: 0 auto
+    box-sizing: border-box
 .title
     font-size: 70px
     color: #532194
@@ -27,6 +34,13 @@ img
     padding-bottom: 40px
     -webkit-text-stroke-width: 4px
     -webkit-text-stroke-color: #fff
+    position: relative
+    z-index: 1
+    @media screen and (max-width: 1023px)
+        font-size: 40px
+        padding-bottom: 21px
+        line-height: 1
+        -webkit-text-stroke-width: 2px
 .btn
     border-radius: 11px
     background: rgb(187, 0, 255)
@@ -41,45 +55,48 @@ img
     transition: .15s all ease-in
     &:hover
         box-shadow: 0px 0px 20px rgb(187, 0, 255)
-
 .bg
     background: url(../images/dest/bg-1.png)
     background-size: cover
 .bg-2
-    // background: #21035c
     background: url(../images/dest/bg-2.png) top center
     background-size: cover
-
 .logo
     position: absolute
-    // top: 15.873%
     top: 90px
     left: 6.25%
-    @media (max-width: 1899px)
+    @media screen and (max-width: 1899px)
         top: 90px
         left: 3%
-        @media (max-width: 1559px)
-            top: 40px
-            left: 40px
+    @media screen and (max-width: 1559px)
+        top: 40px
+        left: 40px
+    @media screen and (max-width: 767px)
+        left: 50%
+        transform: translateX(-50%)
     img
         width: 228px
-        @media (max-width: 1899px)
+        @media screen and (max-width: 1899px)
             width: 150px
-
 .banner
     width: 100%
     max-width: 1700px
     padding: 0 15px 100px
     margin: 0 auto
     box-sizing: border-box
+    @media screen and (max-width: 1023px)
+        padding-bottom: 30px
     &__tagline
         width: 100%
         max-width: 1170px
         margin: 0 auto
         padding: 100px 0 125px
-        @media (max-width: 1559px)
+        @media screen and (max-width: 1559px)
             padding-top: 125px
-            
+        @media screen and (max-width: 1023px)
+            padding-bottom: 0
+        @media screen and (max-width: 767px)
+            padding-top: 110px
     &__images
         display: flex
         position: relative
@@ -102,13 +119,35 @@ img
             background: url(../images/dest/garland-2.png)
             background-repeat: no-repeat
             background-size: 100%
-            // background-position: 0% 50%
             position: absolute
             left: 50%
             transform: translate(-50%, 65%)
-
+        @media screen and (max-width: 1023px)
+            &::before,
+            &::after
+                content: none
+        @media screen and (max-width: 767px)
+            flex-wrap: wrap
+            align-items: center
+            margin-bottom: -15%
+    &__image
+        &:first-child
+            @media screen and (max-width: 767px)
+                width: 65%
+                order: 2
+        &:nth-child(2)
+            @media screen and (max-width: 767px)
+                width: 80%
+                order: 3
+                transform: translateY(-30%)
+        &:last-child
+            @media screen and (max-width: 767px)
+                width: 35%
+                order: 1
 .stories
     padding-bottom: 90px
+    @media screen and (max-width: 1023px)
+        padding-bottom: 0
     &__text
         font-size: 22px
         line-height: 1.6
@@ -116,6 +155,10 @@ img
         max-width: 940px
         width: 100%
         margin: 0 auto 90px
+        @media screen and (max-width: 1023px)
+            font-size: 16px
+            margin-bottom: 40px
+            line-height: 1.25
     &__list
         position: relative
         &::before
@@ -142,18 +185,38 @@ img
             bottom: -265px
             left: 50%
             transform: translateX(-50%)
+        @media screen and (max-width: 1023px)
+            &::before,
+            &::after
+                content: none
     &__item
         display: flex
         align-items: center
         gap: 60px
+        @media screen and (max-width: 1023px)
+            gap: 0
+            flex-direction: column
+            padding-bottom: 40px
         & > *
             width: 50%
+            @media screen and (max-width: 1023px)
+                width: 100%
+                font-size: 16px
+                line-height: 1.25
         &:nth-child(even)
             text-align: right
             flex-direction: row-reverse
+            @media screen and (max-width: 1023px)
+                flex-direction: column
+                text-align: left
+        &-image
+            @media screen and (max-width: 1023px)
+            width: calc(100% + 10px)
 .contest
     padding: 65px 0 140px
     position: relative
+    @media screen and (max-width: 1023px)
+        padding: 35px 0 60px
     &::before
         content: ""
         width: 100vw
@@ -166,16 +229,40 @@ img
         bottom: -50px
         left: 50%
         transform: translateX(-50%)
+        @media screen and (max-width: 1023px)
+            content: none
     &__block
         display: flex
         align-items: center
+        @media screen and (max-width: 1023px)
+            flex-direction: column
+            gap: 0
         gap: 60px
         & > *
             width: 50%
+            @media screen and (max-width: 1023px)
+                width: 100%
+        &-image
+            img
+                @media screen and (max-width: 1023px)
+                    transform: scale(1.3)
+                    position: relative
+                    z-index: 0
         &-text
+            position: relative
+            z-index: 1
             margin-bottom: 40px
+            @media screen and (max-width: 1023px)
+                text-align: center
+                margin-bottom: 20px
+        &-btn
+            @media screen and (max-width: 1023px)
+                margin: 0 auto
+                display: block
 .offers
     margin-bottom: 85px
+    @media screen and (max-width: 1023px)
+        margin-bottom: 20px
     &__text
         font-size: 22px
         line-height: 1.6
@@ -183,25 +270,42 @@ img
         max-width: 940px
         width: 100%
         margin: 0 auto 40px
+        @media screen and (max-width: 1023px)
+            font-size: 16px
+            line-height: 1.25
+            letter-spacing: 0.4px
     &__list
         display: flex
         position: relative
         justify-content: space-around
+        @media screen and (max-width: 1367px)
+            flex-wrap: wrap
     &__lucky
         position: absolute
         top: 35px
         left: calc(50% - 60px)
         transform: translateX( -50%)
         z-index: 1
+        @media screen and (max-width: 1367px)
+            display: none
+        @media screen and (max-width: 1023px)
+            display: block
+            order: 5
+            position: static
+            transform: none
         &-image
             width: auto
             height: 100%
             max-height: 373px
     &__item
         text-align: center
-        // width: 25%
         position: relative
-
+        @media screen and (max-width: 1367px)
+            width: 50%
+            position: static
+            margin-bottom: 50px
+        @media screen and (max-width: 1023px)
+            width: 100%
         &-type,
         &-name,
         &-btn
@@ -212,42 +316,121 @@ img
         &-name
             font-size: 30px
             margin-bottom: 30px
+            @media screen and (max-width: 1023px)
+                margin-bottom: 13px
         &-btn
             margin: 0 auto
+            @media screen and (max-width: 1367px)
+                display: block
         &-image
             width: auto
             height: 100%
             object-fit: 100%
             margin-bottom: 35px
+            @media screen and (max-width: 1367px)
+                max-height: 315px !important
         &:first-child
             top: 75px
             .offers__item-image
                 max-height: 315px 
+                @media screen and (max-width: 1023px)
+                    max-height: 271px !important
         &:nth-child(2)
             left: -70px
             .offers__item-image
                 max-height: 365px 
+                @media screen and (max-width: 1023px)
+                    max-height: 311px !important
         &:nth-child(4)
             top: 10px
             left: 15px
             .offers__item-image
                 max-height: 344px 
+                @media screen and (max-width: 1023px)
+                    max-height: 296px !important
         &:last-child
             top: 50px
             .offers__item-image
                 max-height: 321px 
+                @media screen and (max-width: 1023px)
+                    max-height: 276px !important
 .footer
     background: #3e0b7f
     &__inner
-        padding: 19px 0 14px
+        padding: 19px 15px 14px
         width: 100%
         max-width: 540px
         margin: 0 auto
         display: flex
         align-items: center
+        @media screen and (max-width: 1023px)
+            padding: 11px 15px 8px
+            justify-content: center
     &__logo
         width: 50px
     &__text
         padding-left: 10px
         font-size: 12px
         font-family: "Calibri"
+        @media screen and (max-width: 1023px)
+            font-size: 11px
+
+.hamburger-icon
+    position: fixed
+    top: 15px   
+    right: 15px
+    width: 28px
+    height: 30px
+    z-index: 4
+    cursor: pointer
+    @media screen and (min-width: 1023px)
+        display: none
+    div
+        width: 28px
+        height: 4px
+        margin-bottom: 6px
+        background: #fff
+        transform: none
+        position: relative
+        top: 0
+        left: 0
+        transition: .3s all ease-in
+        &:last-child
+            padding-bottom: 0
+    &_close
+        div
+            &:first-child,
+            &:last-child
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%) rotate(45deg)
+            &:nth-child(2)
+                opacity: 0
+            &:last-child
+                transform: translate(-50%, -50%) rotate(-45deg)
+.hamburger-menu
+    background: rgb(187, 0, 255)
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    right: -100vw
+    padding: 110px 15px 0
+    z-index: 3
+    box-sizing: border-box
+    transition: .3s right ease-in
+    &_active
+        right: 0
+    &__logo
+        position: absolute
+    &__item
+        display: block
+        font-size: 35px
+        color: #532194
+        text-align: center
+        padding-bottom: 20px
+        -webkit-text-stroke-width: 1.5px
+        -webkit-text-stroke-color: #fff
+        position: relative
+        text-decoration: none
