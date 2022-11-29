@@ -498,5 +498,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
   }
-  
+
+  if(document.querySelectorAll('.cart-item-services-controller').length){
+    let servicesController = document.querySelectorAll('.cart-item-services-controller');
+    servicesController.forEach(element => {
+      element.addEventListener('click', () =>{
+        element.classList.toggle('cart__item-services-title_active')
+        let list = element.nextElementSibling;
+        slideToggle(list);
+      });
+    });
+  }
 });

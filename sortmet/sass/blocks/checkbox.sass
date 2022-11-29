@@ -30,9 +30,13 @@
     &__input
         display: none
         &:checked
-            & + .filter__block-item-name
+            & + .checkbox__name
                 &::before
                     background: #0077FF
                     border-color: #0077FF
                 &::after
                     opacity: 1
+    // &_small
+    //     .checkbox__name
+    //         &::before
+    //         &::after

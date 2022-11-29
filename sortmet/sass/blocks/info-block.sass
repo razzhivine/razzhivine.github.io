@@ -4,6 +4,12 @@
         display: block
     & > *
         margin-top: 0 !important
+    & > .reviews-second
+        margin-top: -9px !important
+    &_mobile
+        @media screen and (max-width: 1023px)
+            & > .catalog-slider
+                margin-top: 30px !important
     &__controller
         position: relative
         &::before
@@ -16,6 +22,8 @@
             top: 0
             transform: rotate(180deg)
             transition: .3s transform ease-in
+            @media (min-width: 1023px)
+                display: none
         &_active
             &::before
                 transform: rotate(0deg)
@@ -24,3 +32,6 @@
             display: none
             &_active
                 display: block
+        &-btn
+            margin-bottom: 20px
+            text-align: center
