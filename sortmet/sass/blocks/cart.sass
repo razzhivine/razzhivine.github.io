@@ -3,25 +3,73 @@
     flex-wrap: wrap
     &__list
         width: calc( 100% - 368px )
-        margin-right: 79px
+        padding-right: 79px
+        @media (max-width: 1367px)
+            width: calc( 100% - 319px )
+            padding-right: 30px
+        @media (max-width: 1023px)
+            width: 100%
+            padding: 0 0 15px
     &__item
         width: 100%
         display: flex
         align-items: flex-start
         margin-bottom: 40px
+        position: relative
+        justify-content: space-between
+        @media (max-width: 767px)
+            flex-wrap: wrap
+            margin: 0
+            padding: 15px 0
+            justify-content: flex-start
+            &::before
+                content: ''
+                width: 100vw
+                height: 1px
+                background: #DEE1E5
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
         &-image
             margin-right: 20px
+            @media (max-width: 767px)
+                width: 70px
+                height: 70px
+                margin-right: 10px
+                img
+                    width: 100%
+                    height: auto
         &-content
             max-width: 375px
             width: 100%
+            // width: fit-content
+            @media (max-width: 767px)
+                max-width: calc( 100% - 130px )
         &-sku
             font-size: 14px
             line-height: 16px
             color: #7F8A9B
             margin-bottom: 10px
+            @media (max-width: 767px)
+                font-size: 12px
+                line-height: 14px
+                margin: 5px 0
         &-name
             margin-bottom: 10px
+            @media (max-width: 767px)
+                font-size: 14px
+                line-height: 150%
         &-services
+            &_desk
+                @media (max-width: 767px)
+                    display: none
+            &_mob
+                display: none
+                @media (max-width: 767px)
+                    display: block
+                    width: 100%
+                    margin-top: 15px
             &-title
                 font-size: 16px
                 line-height: 18px
@@ -30,6 +78,9 @@
                 position: relative
                 width: fit-content
                 cursor: pointer
+                @media (max-width: 767px)
+                    font-size: 14px
+                    line-height: 16px
                 &::before
                     content: ''
                     width: 20px
@@ -48,12 +99,17 @@
                 max-width: 350px
                 width: 100%
                 margin-top: 20px
+                @media (max-width: 767px)
+                    margin-top: 15px
             &-item
                 display: flex
                 justify-content: space-between
                 color: #626D7D
                 margin-bottom: 15px
                 cursor: pointer
+                @media (max-width: 767px)
+                    font-size: 14px
+                    line-height: 16px
                 &-input
                     // display: none
                 &-name
@@ -63,38 +119,72 @@
                 font-size: 14px
                 line-height: 150%
                 color: #ADB3BE
+                @media (max-width: 767px)
+                    font-size: 12px
         &-quantity
             margin: 21px 20px
             width: 166px
             height: 58px
             box-sizing: border-box
+            @media (max-width: 767px)
+                margin: 15px 21px 0 0 
+                width: 131px
+                height: 40px
         &-total
             margin: 40px 32px 0 20px
             font-weight: 600
             font-size: 18px
             line-height: 21px
+            white-space: nowrap
+            @media (max-width: 767px)
+                margin: 29px 0 0 0
         &-remove
             width: 24px
             height: 24px
             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_656_7686)'%3E%3Cpath d='M5.63574 18.364L18.3637 5.63603' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.63672 5.63605L18.3646 18.364' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_656_7686'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
             margin-top: 38px
+            @media (max-width: 767px)
+                position: absolute
+                top: 18px
+                right: 10px
+                margin: 0
     &__total
         width: 289px
+        @media (max-width: 1023px)
+            width: 100%
         &-inner
             background: #FFFFFF
             box-shadow: 0px 2px 34px -10px rgba(0, 0, 0, 0.07)
             border-radius: 15px
             padding: 20px
             margin-bottom: 20px
+            @media (max-width: 1023px)
+                margin-bottom: 0
+            @media (max-width: 767px)
+                padding: 15px
         &-count
             margin-bottom: 20px
+            @media (max-width: 767px)
+                margin-bottom: 10px
+        &-prices
+            @media (max-width: 767px)
+                display: flex
+                align-items: center
+                margin-bottom: 10px
         &-price
             font-weight: 700
             font-size: 28px
             line-height: 32px
             margin-bottom: 10px
+            @media (max-width: 767px)
+                margin-bottom: 0
+                margin-right: 20px
+                font-size: 24px
+                line-height: 28px
         &-discount
             margin-bottom: 20px
+            @media (max-width: 767px)
+                margin-bottom: 0
         &-promocode
             line-height: 18px
             color: #0077FF
@@ -104,3 +194,6 @@
             text-align: center
             &:last-child
                 margin-bottom: 0
+        &-clear
+            @media (max-width: 1023px)
+                display: none

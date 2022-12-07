@@ -13,20 +13,30 @@
         line-height: 18px
         color: #7F8A9B
     &__print,
-    &__share
+    &__share,
+    &__clear
         padding-left: 34px
         position: relative
+        @media (max-width: 1023px)
+            padding-right: 10px
         &::before
             content: ''
             width: 24px
             height: 24px
             position: absolute
+            background-size: cover
             top: 50%
             left: 0
             transform: translateY(-50%)
+            @media (max-width: 1023px)
+                width: 20px
+                height: 20px    
     &__print
         &::before
             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_668_6664)'%3E%3Cpath d='M7 21C5.89543 21 5 20.1046 5 19V3H14L19 8V19C19 20.1046 18.1046 21 17 21H7Z' stroke='%237F8A9B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13 3V9H19' stroke='%237F8A9B' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M9 13H15' stroke='%237F8A9B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 17H15' stroke='%237F8A9B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_668_6664'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
     &__share
         &::before
             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_668_6679)'%3E%3Cpath d='M16.2722 6.00791C16.6191 6.60134 17.263 7 18 7C19.1046 7 20 6.10457 20 5C20 3.89543 19.1046 3 18 3C16.8954 3 16 3.89543 16 5C16 5.36756 16.0991 5.71195 16.2722 6.00791ZM16.2722 6.00791L7.72784 10.9921M7.72784 10.9921C7.38092 10.3987 6.73701 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14C6.73701 14 7.38092 13.6013 7.72784 13.0079M7.72784 10.9921C7.90085 11.288 8 11.6324 8 12C8 12.3676 7.90085 12.712 7.72784 13.0079M7.72784 13.0079L16.2722 17.9921M16.2722 17.9921C16.6191 17.3987 17.263 17 18 17C19.1046 17 20 17.8954 20 19C20 20.1046 19.1046 21 18 21C16.8954 21 16 20.1046 16 19C16 18.6324 16.0991 18.288 16.2722 17.9921Z' stroke='%237F8A9B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_668_6679'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+    &__clear
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1090_17336)'%3E%3Cpath d='M11.667 9.16667V14.1667' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.33301 9.16667V14.1667' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5 5.83333V15.8333C5 16.7538 5.74619 17.5 6.66667 17.5H13.3333C14.2538 17.5 15 16.7538 15 15.8333V5.83333' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3.33301 5.83333H16.6663' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.83301 5.83333L7.49967 2.5H12.4997L14.1663 5.83333' stroke='%237F8A9B' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1090_17336'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")

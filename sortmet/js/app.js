@@ -509,4 +509,40 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+
+  if(document.querySelectorAll('.input').length){
+    let inputs = document.querySelectorAll(".input__input")
+    inputs.forEach(element => {
+        element.addEventListener('focus', () => {
+            moveLabel(element, 'focus')
+        });
+        element.addEventListener('blur', () => {
+            moveLabel(element, 'blur')
+        });
+    });
+  }
+
+  if(document.querySelectorAll('.textarea').length){
+    let textareas = document.querySelectorAll(".textarea__textarea")
+    textareas.forEach(element => {
+        element.addEventListener('focus', () => {
+            moveLabel(element, 'focus')
+        });
+        element.addEventListener('blur', () => {
+            moveLabel(element, 'blur')
+        });
+    });
+  }
+  function moveLabel(input, action) {
+    if(action == 'focus'){
+        let label = input.previousElementSibling
+        label.classList.add("-active");
+    }else if(action == 'blur'){
+        if(!input.value){
+            let label = input.previousElementSibling
+            label.classList.remove("-active");
+        }
+    }
+}
 });

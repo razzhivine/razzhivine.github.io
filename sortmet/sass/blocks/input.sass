@@ -1,0 +1,21 @@
+.input
+    margin-bottom: 15px
+    position: relative
+    &__label
+        position: absolute
+        top: 50%
+        left: 16px
+        transform: translateY(-50%)
+        z-index: 2
+        cursor: text
+        transition: .3s all ease
+        &.-active
+            font-size: 14px
+            line-height: 16px
+            color: #7F8A9B
+            top: 10px
+            transform: none
+    &__input
+        height: 62px !important
+        padding: 30px 15px 10px !important
+        // box-sizing: border-box÷
