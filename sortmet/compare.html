@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sortmet</title>
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="overflow">
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__top">
+					<div class="city">
+						<div class="city__title" id="city-desk">Санкт-Петербург</div>
+					</div>
+					<nav class="menu">
+						<div class="menu__inner">
+							<a href="#" class="menu__item">Доставка</a>
+							<a href="#" class="menu__item">Оплата</a>
+							<a href="#" class="menu__item">Акции</a>
+							<a href="#" class="menu__item">Прайс-лист</a>
+							<a href="#" class="menu__item">О компании</a>
+							<a href="#" class="menu__item">Сертификаты</a>
+							<a href="#" class="menu__item">Отзывы</a>
+							<a href="#" class="menu__item">Контакты</a>
+						</div>
+					</nav>
+				</div>
+				<div class="header__middle">
+					<a href="#" class="logo">
+						<img src="images/dest/logo.svg" width="191" height="51" alt="logo">
+					</a>
+					<div class="header__phones phones">
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (495) 123-30-40</a>
+							<div class="phone__caption">Перезвоните мне</div>
+						</div>
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (800) 200-69-40</a>
+							<div class="phone__caption">Бесплатно по РФ</div>
+						</div>
+					</div>
+					<div class="header__email email">
+						<a href="#" class="email__value">zakaz@sortmet.ru</a>
+						<div class="email__caption">пн-пт 09:00 - 18:00</div>
+					</div>
+					<div class="header__location location">
+						<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+					</div>
+					<div class="header__social social">
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#wa"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__hamburger hamburger-icon" id="hamburger-icon"></div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__catalog-btn catalog-btn" id="catalog-btn">Каталог</div>
+					<div class="catalog-menu" id="catalog-menu">
+						<div class="wrapper">
+							<div class="catalog-menu__inner">
+								<div class="catalog-menu__sections">
+									<div class="catalog-menu__section catalog-menu__section_active" data-id="1">Сортовой прокат</div>
+									<div class="catalog-menu__section" data-id="2">Листовой прокат</div>
+									<div class="catalog-menu__section" data-id="3">Трубы</div>
+									<div class="catalog-menu__section" data-id="4">Проволока и сетка</div>
+									<div class="catalog-menu__section" data-id="5">Нержавеющая сталь</div>
+									<div class="catalog-menu__section" data-id="6">Цветные металлы</div>
+								</div>
+								<div class="catalog-menu__sub-sections">
+									<div class="catalog-menu__sub-section catalog-menu__sub-section_active" data-id="1">
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматура</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура A500С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура А240</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 25Г2С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 35ГС</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура Ат800</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура В500С</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматурные каркасы</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Балка (Двутавр)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балка Ст3</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балки двутавровые низколегированные (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Швеллер</a>
+											<a href="#" class="catalog-menu__sub-section-second">Горячекатанный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Гнутый</a>
+											<a href="#" class="catalog-menu__sub-section-second">Низколегированный (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Круг г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Полоса г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Квадрат г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Катанка</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шестигранник металлический</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шпунт Ларсена</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Рельс</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Уголок</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Неравнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный низколегированный (09Г2С)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Уголок оцинкованный</a>
+										</div>
+									</div>
+									<div class="catalog-menu__sub-section" data-id="2"></div>
+									<div class="catalog-menu__sub-section" data-id="3"></div>
+									<div class="catalog-menu__sub-section" data-id="4"></div>
+									<div class="catalog-menu__sub-section" data-id="5"></div>
+									<div class="catalog-menu__sub-section" data-id="6"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="#" class="header__search search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn"></button>
+					</form>
+					<div class="header__navbar navbar">
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#compare"></use>
+							</svg>
+							<div class="navbar__item-caption">Сравнение</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#like"></use>
+							</svg>
+							<div class="navbar__item-caption">Избранное</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#cart-black"></use>
+							</svg>
+							<div class="navbar__item-caption">Корзина</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<span class="breadcrumbs__item">Сравнение товаров</span>
+			</div>
+			<div class="heading heading_with-content">
+				<h1>Сравнение товаров</h1>
+				<div class="heading__content">
+					<div class="compare-heading__clear heading__clear heading__clear_second">Очистить корзину</div>
+				</div>
+			</div>
+			<section class="compare">
+				<div class="compare__tabs navigation" id="navigation">
+					<div class="navigation__item navigation__item_active" data-id="1">Арматура</div>
+					<div class="navigation__item" data-id="2">Уголок</div>
+					<div class="navigation__item" data-id="3">Труба профильная</div>
+				</div>
+				<div class="info-block compare__block compare__block_active" data-id="1">
+					<div class="compare__mobile-block-title title info-block__controller">Арматура</div>
+					<div class="info-block__mobile info-block__mobile_active">
+						<div class="swiper compare__slider" id="compare-slider-1">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+						</div>
+						<div class="compare__block-arrow arrow arrow_prev" id="compare-slider-1-arrow-prev"></div>
+						<div class="compare__block-arrow arrow arrow_next" id="compare-slider-1-arrow-next"></div>
+						<div class="compare__block-pagination slider-pagination" id="compare-slider-1-pagination"></div>
+					</div>
+				</div>
+				<div class="info-block compare__block" data-id="2">
+					<div class="compare__mobile-block">
+						<div class="compare__mobile-block-title title info-block__controller">Уголок</div>
+						<div class="info-block__mobile">
+							<div class="swiper compare__slider" id="compare-slider-2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+											
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+											
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="compare__block-arrow arrow arrow_prev" id="compare-slider-2-arrow-prev"></div>
+							<div class="compare__block-arrow arrow arrow_next" id="compare-slider-2-arrow-next"></div>
+							<div class="compare__block-pagination slider-pagination" id="compare-slider-2-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<div class="info-block compare__block" data-id="3">
+					<div class="compare__mobile-block">
+						<div class="compare__mobile-block-title title info-block__controller">Труба профильная</div>
+						<div class="info-block__mobile">
+							<div class="swiper compare__slider" id="compare-slider-3">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+											
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+											
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide compare__item compare-item">
+										<div class="compare-item__image">
+											<img src="images/dest/item-1.webp" alt="">
+											<div class="compare-item__labels labels">
+												<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+												<div class="labels__item">Новинка</div>
+											</div>
+										</div>
+										<div class="compare-item__prices">
+											<div class="compare-item__prices-current">101 750 ₽/тн</div>
+											<div class="compare-item__prices-old">102 800 р</div>
+										</div>
+										<div class="compare-item__name">Уголок металлический 25х25х1.2 6 (метров)</div>
+										<div class="compare-item__block">
+											<div class="compare-item__block-characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="compare-item__block-actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="compare-item__btns">
+											<div class="compare-item__btns-buy btn btn-buy btn-buy_second"><span>Купить</span></div>
+											<div class="compare-item__btns-remove"></div>
+										</div>
+										<div class="compare-item__characteristics">
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр</div>
+												<div class="compare-item__characteristics-item-value">10</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Длина</div>
+												<div class="compare-item__characteristics-item-value">6000, 11700, 12000, бухты</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Диаметр наружный</div>
+												<div class="compare-item__characteristics-item-value">54</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Марка стали или сплава</div>
+												<div class="compare-item__characteristics-item-value">Ст3</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип покрытия</div>
+												<div class="compare-item__characteristics-item-value">Без покрытия</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип рифления</div>
+												<div class="compare-item__characteristics-item-value">Рифленая</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Материал</div>
+												<div class="compare-item__characteristics-item-value">сталь</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Класс арматуры</div>
+												<div class="compare-item__characteristics-item-value">А3 (А500С)</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип поставки</div>
+												<div class="compare-item__characteristics-item-value">пруток</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Тип производства</div>
+												<div class="compare-item__characteristics-item-value">горячекатаный</div>
+											</div>
+											<div class="compare-item__characteristics-item">
+												<div class="compare-item__characteristics-item-name">Вес погонного метра</div>
+												<div class="compare-item__characteristics-item-value">0.617 кг</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="compare__block-arrow arrow arrow_prev" id="compare-slider-3-arrow-prev"></div>
+							<div class="compare__block-arrow arrow arrow_next" id="compare-slider-3-arrow-next"></div>
+							<div class="compare__block-pagination slider-pagination" id="compare-slider-3-pagination"></div>
+						</div>
+					</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__inner">
+					<div class="footer__contacts contacts-second">
+						<a href="#" class="contacts-second__phone">8 (495) 123-30-40</a>
+						<a href="#" class="contacts-second__phone">8 (800) 200-69-40</a>
+						<a href="#" class="contacts-second__email">info@sortmet.ru</a>
+						<div class="contacts-second__work-time">пн-пт 09:00 - 18:00</div>
+						<div class="footer__contacts-btn contacts-second__btn btn">Заказать звонок</div>
+						<div class="footer__social social">
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#tg-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#wa-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#vk-1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__menu menu-second">
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Покупателям</div>
+							<a href="#" class="menu-block__item">Доставка</a>
+							<a href="#" class="menu-block__item">Оплата</a>
+							<a href="#" class="menu-block__item">Акции</a>
+							<a href="#" class="menu-block__item">Прайс-лист</a>
+							<a href="#" class="menu-block__item">О компании</a>
+							<a href="#" class="menu-block__item">Сертификаты</a>
+							<a href="#" class="menu-block__item">Отзывы</a>
+							<a href="#" class="menu-block__item">Контакты</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Каталог</div>
+							<a href="#" class="menu-block__item">Сортовой прокат</a>
+							<a href="#" class="menu-block__item">Листовой прокат</a>
+							<a href="#" class="menu-block__item">Трубы</a>
+							<a href="#" class="menu-block__item">Проволока и сетка</a>
+							<a href="#" class="menu-block__item">Нержавеющая сталь</a>
+							<a href="#" class="menu-block__item">Цветные металлы</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Услуги</div>
+							<a href="#" class="menu-block__item">Изготовление металлоконструкций</a>
+							<a href="#" class="menu-block__item">Порошковая покраска металла</a>
+							<a href="#" class="menu-block__item">Гибка металла</a>
+							<a href="#" class="menu-block__item">Теплоизоляция труб</a>
+							<a href="#" class="menu-block__item">Резка металла</a>
+							<a href="#" class="menu-block__item">Рубка металла</a>
+							<a href="#" class="menu-block__item">Сварка металла</a>
+							<a href="#" class="menu-block__item">Цинкование</a>
+						</div>
+					</div>
+					<div class="footer__adress adress">
+						<div class="adress__title">Адрес офиса</div>
+						<div class="adress__value">Люберцы ул. 3-е Почтовое отделение 102, офис 424</div>
+						<div class="adress__maps">
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#gm"></use>
+								</svg>
+								<div class="adress__map-caption">Google Maps</div>
+							</a>
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#ym"></use>
+								</svg>
+								<div class="adress__map-caption">Яндекс карты</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__mob">
+						<div class="footer__copy">© 2020, Сортмет. Все права защищены. Копирование информации преследуется по закону.</div>
+						<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="hamburger__city">Санкт-Петербург</div>
+			<div class="hamburger__menu hamburger-menu">
+				<a href="#" class="hamburger-menu__item">Доставка</a>
+				<a href="#" class="hamburger-menu__item">Оплата</a>
+				<a href="#" class="hamburger-menu__item">Акции</a>
+				<a href="#" class="hamburger-menu__item">Прайс-лист</a>
+				<a href="#" class="hamburger-menu__item">О компании</a>
+				<a href="#" class="hamburger-menu__item">Сертификаты</a>
+				<a href="#" class="hamburger-menu__item">Отзывы</a>
+				<a href="#" class="hamburger-menu__item">Контакты</a>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (495) 123-30-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (800) 200-69-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__email email">
+				<a href="#" class="email__value">zakaz@sortmet.ru</a>
+				<div class="email__caption">пн-пт 09:00 - 18:00</div>
+			</div>
+			<div class="hamburger__location location">
+				<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+			</div>
+			<div class="hamburger__social social">
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#tg"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#wa"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-navbar">
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#catalog-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Каталог</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#search-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Поиск</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Сравнение</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Избранное</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#cart-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Корзина</div>
+			</div>
+		</div>
+		<div class="city-changer" id="city-changer">
+			<div class="city-changer__close" id="city-changer-close"></div>
+			<div class="city-changer__title">Ваш город: Санкт-Петербург</div>
+			<input type="text" class="city-changer__value" placeholder="Введите название вашего города">
+			<div class="city-changer__list">
+				<div class="city-changer__item">Волгоград</div>
+				<div class="city-changer__item">Воронеж</div>
+				<div class="city-changer__item">Екатеринбург</div>
+				<div class="city-changer__item">Ижевск</div>
+				<div class="city-changer__item">Казань</div>
+				<div class="city-changer__item">Калининград</div>
+				<div class="city-changer__item">Кемерово</div>
+				<div class="city-changer__item">Кострома</div>
+				<div class="city-changer__item">Красноярск</div>
+				<div class="city-changer__item">Магнитогорск</div>
+				<div class="city-changer__item">Москва</div>
+				<div class="city-changer__item">Набережные челны</div>
+				<div class="city-changer__item">Новосибирск</div>
+				<div class="city-changer__item">Нижний Новгород</div>
+				<div class="city-changer__item">Омск</div>
+				<div class="city-changer__item">Пенза</div>
+				<div class="city-changer__item">Пермь</div>
+				<div class="city-changer__item">Ростов-на-Дону</div>
+				<div class="city-changer__item">Самара</div>
+				<div class="city-changer__item">Санкт-Петербург</div>
+				<div class="city-changer__item">Тюмень</div>
+				<div class="city-changer__item">Уфа</div>
+				<div class="city-changer__item">Челябинск</div>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="libs/nouislider/nouislider.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

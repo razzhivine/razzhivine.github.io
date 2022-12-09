@@ -1,0 +1,27 @@
+.compare
+    margin-bottom: 70px
+    &__tabs
+        margin-bottom: 37px
+        @media ( max-width: 1023px )
+            display: none
+    &__block
+        display: none
+        position: relative
+        @media ( max-width: 1023px )
+            display: block
+        &_active
+            display: block
+        &-arrow
+            position: absolute
+            top: 10%
+            @media ( max-width: 1365px )
+                display: none
+        &-pagination
+            display: none
+            @media ( max-width: 1365px )
+                display: flex
+    &__mobile-block
+        &-title
+            display: none
+            @media ( max-width: 1023px )
+                display: block
