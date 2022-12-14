@@ -1,0 +1,115 @@
+.employees
+    margin: 80px 0
+    @media (max-width: 767px)
+        margin: 30px 0
+    &__main
+        display: flex
+        align-items: center
+        background: #F7F7F9
+        border-radius: 20px
+        gap: 30px
+        overflow: hidden
+        margin-bottom: 40px
+        @media (max-width: 1023px)
+            margin-bottom: 20px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 20px
+            padding: 20px
+        &-img
+            @media (max-width: 1023px)
+                width: 40%    
+            @media (max-width: 767px)
+                width: 100%
+                text-align: center
+            img
+                position: relative
+                bottom: -5px
+                @media (max-width: 1023px)
+                    width: 100%
+                    height: auto
+                    @media (max-width: 767px)
+                        width: 242px
+        &-content                
+            margin-right: 30px
+            @media (max-width: 1023px)
+                width: 60%
+            @media (max-width: 767px)
+                width: 100%
+                margin-right: 0
+        &-name
+            font-weight: 600
+            font-size: 22px
+            line-height: 150%
+            margin-bottom: 5px
+            @media (max-width: 767px)
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+        &-post
+            margin-bottom: 15px
+            @media (max-width: 767px)
+                font-size: 14px
+                line-height: 16px
+                margin-bottom: 10px
+        &-text
+            color: #626D7D
+            @media (max-width: 767px)
+                font-size: 12px
+    &__inner
+        position: relative
+        & .arrow
+            @media (max-width: 1365px)
+                display: none
+        & .slider-pagination
+            display: none
+            @media (max-width: 1365px)
+                display: flex
+            @media (max-width: 767px)
+                display: none
+    &__slider
+        @media (max-width: 767px)
+            overflow: initial
+        &-item
+            @media (max-width: 1023px)
+                width: 35%
+            @media (max-width: 465px)
+                width: 58.5%
+            &-img
+                position: relative
+                margin-bottom: 25px
+                border-radius: 15px
+                overflow: hidden
+                @media (max-width: 1023px)
+                    margin-bottom: 15px
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 73%
+                    background: #F7F7F9
+                    border-radius: 15px
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    z-index: 0
+                img
+                    width: 100%
+                    height: auto
+                    position: relative
+                    z-index: 1
+                    margin-bottom: -5px
+            &-name
+                font-weight: 600
+                font-size: 20px
+                line-height: 23px
+                margin-bottom: 15px
+                @media (max-width: 1023px)
+                    font-size: 16px
+                    line-height: 18px
+                    margin-bottom: 10px
+            &-post
+                color: #626D7D
+                line-height: 18px
+                @media (max-width: 1023px)
+                    font-size: 14px
+                    line-height: 16px

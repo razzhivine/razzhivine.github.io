@@ -1,0 +1,75 @@
+.cta
+    display: flex
+    gap: 73px
+    background: #F7F7F9
+    border-radius: 20px
+    padding: 40px
+   
+    @media ( max-width: 1023px )
+        flex-direction: column
+        gap: 20px
+    @media ( max-width: 767px )
+        padding: 20px
+    &__content
+        width: 35%
+        @media ( max-width: 1023px )
+            width: 100%
+    &__gallery
+        width: 65%
+        border-radius: 15px
+        overflow: hidden
+        position: relative
+        @media ( max-width: 1023px )
+            width: 100%
+        @media ( max-width: 767px )
+            border-radius: 0
+            overflow: initial
+    &__item
+        height: auto
+        position: relative
+        z-index: 0
+        @media ( max-width: 767px )
+            width: 40%
+            border-radius: 10px
+            &.swiper-slide-next + .swiper-slide::before
+                content: ""
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                right: 0
+                background: linear-gradient(270deg, #F7F7F9 71.81%, rgba(247, 247, 249, 0) 112.56%)
+                z-index: 2
+        @media ( max-width: 465px )
+            width: 80%
+            &.swiper-slide-next::before
+                content: ""
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                right: 0
+                background: linear-gradient(270deg, #F7F7F9 71.81%, rgba(247, 247, 249, 0) 112.56%)
+                z-index: 2
+                &.swiper-slide-next + .swiper-slide::before
+                    content: none
+        img
+            width: 100%
+            height: auto
+            margin-bottom: -3px
+    &__text
+        margin-bottom: 30px
+        @media ( max-width: 767px )
+            font-size: 14px
+            margin-bottom: 10px
+    &__btn
+        display: block
+        width: fit-content
+        @media ( max-width: 767px )
+            display: none
+        &_mob
+            display: none
+            @media ( max-width: 767px )
+                display: block
+                width: calc( 100% - 50px )
+                text-align: center

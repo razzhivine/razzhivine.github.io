@@ -1,0 +1,48 @@
+.mission
+    position: relative
+    color: #fff
+    img
+        width: 100%
+        height: auto
+        object-fit: cover
+        @media (max-width: 767px)
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 0
+            height: 100%
+            border-radius: 20px
+    &__content
+        width: calc(100% - 60px)
+        height: calc(100% - 60px)
+        position: absolute
+        bottom: 30px
+        left: 30px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        @media (max-width: 767px)
+            position: relative
+            left: 0
+            bottom: 0
+            padding: 20px   
+            width: calc(100% - 40px)
+            height: calc(100% - 40px)
+            z-index: 1
+    &__title
+        font-weight: 800
+        font-size: 26px
+        line-height: 30px
+        margin-bottom: 15px
+        @media (max-width: 767px)
+            font-size: 22px
+            line-height: 25px
+            margin-bottom: 10px
+    &__text
+        p
+            &:last-child
+                margin-bottom: 0
+        @media (max-width: 767px)
+            font-size: 14px
+            line-height: 160%
+            

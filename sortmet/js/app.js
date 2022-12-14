@@ -243,6 +243,76 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   });
 
+  let employeesSlider1 = new Swiper("#employees-slider-1", {
+    slidesPerView: 'auto',
+    freeMode: true,
+    spaceBetween: 10,
+    pagination: {
+      el: "#employees-slider-1-pagination",
+    },
+    navigation: {
+      nextEl: "#employees-slider-1-arrow-next",
+      prevEl: "#employees-slider-1-arrow-prev",
+    },
+    breakpoints: {
+      1023: {
+        slidesPerView: 3,
+      },
+      1215:{
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    },
+  });
+
+  let certificatesSlider1 = new Swiper("#certificates-slider-1", {
+    slidesPerView: 'auto',
+    freeMode: true,
+    spaceBetween: 10,
+    pagination: {
+      el: "#certificates-slider-1-pagination",
+    },
+    navigation: {
+      nextEl: "#certificates-slider-1-arrow-next",
+      prevEl: "#certificates-slider-1-arrow-prev",
+    },
+    breakpoints: {
+      // 465: {
+      //   slidesPerView: 3,
+      // },
+      767: {
+        slidesPerView: 4,
+      },
+      1023: {
+        slidesPerView: 5,
+      },
+      1215:{
+        slidesPerView: 6,
+        spaceBetween: 20,
+      }
+    },
+  });
+
+  let ctaSlider = new Swiper("#cta-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    grid: {
+      rows: 1,
+      fill: "row"
+    },
+    breakpoints: {
+     767:{
+      slidesPerView: 3,
+      spaceBetween: 1,
+      grid: {
+        rows: 2,
+        fill: "row"
+      },
+     }
+    },
+
+  });
+
   /* SLIDE UP */
   let slideUp = (target, duration=500) => {
       target.style.transitionProperty = 'height, margin, padding';

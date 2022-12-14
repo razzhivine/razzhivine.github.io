@@ -1,0 +1,26 @@
+.certificates
+    margin: 80px 0
+    @media (max-width: 767px)
+        margin: 30px 0
+    &__inner
+        position: relative
+        & .arrow
+            @media (max-width: 1365px)
+                display: none
+        & .slider-pagination
+            display: none
+            @media (max-width: 1365px)
+                display: flex
+            @media (max-width: 767px)
+                display: none
+    &__slider
+        @media (max-width: 767px)
+            overflow: initial
+    &__item
+        @media (max-width: 1023px)
+            width: 35%
+        @media (max-width: 465px)
+            width: 58.5%
+        img
+            width: 100%
+            height: auto
