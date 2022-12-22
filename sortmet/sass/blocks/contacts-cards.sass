@@ -1,0 +1,50 @@
+.contacts-cards
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    margin: 40px 0
+    @media ( max-width: 767px )
+        gap: 15px
+    &__item
+        padding: 25px
+        background: #F7F7F9
+        border-radius: 15px
+        width: calc( 25% - 15px )
+        min-height: 366px
+        box-sizing: border-box
+        @media ( max-width: 1367px )
+            width: calc( 50% - 10px )
+            min-height: fit-content
+        @media ( max-width: 767px )
+            width: 100%
+            padding: 20px
+        &-title
+            font-weight: 600
+            font-size: 22px
+            line-height: 25px
+            margin-bottom: 30px
+            @media ( max-width: 767px )
+                font-size: 18px
+                line-height: 21px
+                margin-bottom: 20px
+        &-content
+            display: flex
+            flex-direction: column
+            height: calc( 100% - 50px )
+            box-sizing: border-box
+            &_space-between
+                justify-content: space-between
+            &_mobile-half
+                @media ( max-width: 767px )
+                    flex-direction: row
+                    flex-wrap: wrap
+                    gap: 30px
+                    & > *
+                        width: calc( 50% - 15px )
+                        margin-bottom: 0 !important
+        &-block
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+        &-location
+            margin-bottom: 20px

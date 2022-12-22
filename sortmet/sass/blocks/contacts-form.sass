@@ -1,0 +1,54 @@
+.contacts-form
+    background: #0077FF
+    border-radius: 25px
+    padding: 35px 20px 85px
+    margin: 70px 0 30px
+    @media (max-width: 767px)
+        margin: 30px 0
+        padding: 20px 15px
+        border-radius: 10px
+    &__title
+        text-align: center
+        color: #fff
+        margin-bottom: 10px
+        @media (max-width: 767px)
+            text-align: left
+            font-size: 20px
+            line-height: 23px
+    &__description
+        text-align: center
+        color: #fff
+        margin-bottom: 30px
+        @media (max-width: 767px)
+            text-align: left
+            font-size: 14px
+            line-height: 140%
+            margin-bottom: 10px
+    &__inner
+        max-width: 488px
+        margin: 0 auto
+    &__bottom
+        display: flex
+        gap: 20px
+        @media (max-width: 537px)
+            flex-direction: column
+            gap: 10px
+    &__submit
+        // width: 50%
+        width: 252px
+        box-sizing: border-box
+        @media (max-width: 537px)
+            width: 100%
+    &__policy
+        width: calc( 100% - 272px )
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+        opacity: 0.66
+        @media (max-width: 537px)
+            width: 100%
+            font-size: 12px
+            line-height: 14px
+        a
+            color: #FFFFFF
+            text-decoration: underline

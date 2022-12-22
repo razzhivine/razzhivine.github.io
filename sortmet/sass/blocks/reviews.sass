@@ -5,6 +5,12 @@
         margin: 40px 0 
     &__list
         position: relative
+        &-flex
+            display: flex
+            gap: 20px
+            flex-wrap: wrap
+            @media (max-width: 767px)
+                gap: 10px
     &__item
         padding: 30px
         background: #F7F7F9
@@ -15,6 +21,12 @@
         flex-direction: column
         justify-content: space-between
         transition: .3s all ease
+        &-flex
+            width: calc( 33.3333% - 14px )
+            @media (max-width: 1023px)
+                width: calc( 50% - 10px )
+            @media (max-width: 767px)
+                width: 100%
         @media (max-width: 767px)
             padding: 20px
         &:hover
@@ -108,6 +120,33 @@
                     top: 50%
                     left: 15px
                     transform: translateY(-50%)
+    &__show-all
+        padding: 16px 30px 18px
+        background: #E7F2FF
+        border-radius: 7px
+        text-align: center
+        font-weight: 600
+        font-size: 18px
+        line-height: 21px
+        color: #0077FF
+        margin-top: 30px
+        cursor: pointer
+        @media ( max-width: 767px )
+            font-size: 16px
+            line-height: 18px
+            margin-top: 10px
+        span
+            position: relative
+            padding-right: 34px
+            &::before
+                content: ""
+                width: 24px
+                height: 24px
+                background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_866_23831)'%3E%3Cpath d='M7.5 10L12.5 15L17.5 10' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_866_23831'%3E%3Crect width='24' height='24' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
 .reviews__list .swiper
     margin: -70px -20px
     padding: 70px 20px

@@ -313,6 +313,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
+  let reviewsVideoSlider = new Swiper("#reviews-video-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: "#reviews-video-slider-pagination",
+    },
+    // navigation: {
+    //   nextEl: "#catalog-slider-1-arrow-next",
+    //   prevEl: "#catalog-slider-1-arrow-prev",
+    // },
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // 1215:{
+      //   slidesPerView: 4,
+      // }
+    },
+  });
+
+  let lettersSlider = new Swiper("#letters-slider", {
+    slidesPerView: 'auto',
+    freeMode: true,
+    spaceBetween: 10,
+    pagination: {
+      el: "#letters-slider-pagination",
+    },
+    navigation: {
+      nextEl: "#letters-slider-arrow-next",
+      prevEl: "#letters-slider-arrow-prev",
+    },
+    breakpoints: {
+      // 465: {
+      //   slidesPerView: 3,
+      // },
+      767: {
+        slidesPerView: 4,
+      },
+      // 1023: {
+      //   slidesPerView: 5,
+      // },
+      // 1215:{
+      //   slidesPerView: 6,
+      //   spaceBetween: 20,
+      // }
+    },
+  });
+
   /* SLIDE UP */
   let slideUp = (target, duration=500) => {
       target.style.transitionProperty = 'height, margin, padding';
@@ -703,6 +752,30 @@ document.addEventListener("DOMContentLoaded", function() {
         
   //   });
   // }
+  if(document.querySelectorAll('.maps__tab').length && document.querySelectorAll('.maps__block').length){
+    let mapsTab = document.querySelectorAll('.maps__tab');
+    let mapsBlock = document.querySelectorAll('.maps__block');
+
+    mapsTab.forEach(element => {
+      element.addEventListener('click', () => {
+        let tab = element.dataset.tab;
+        let block = document.querySelector('.maps__block[data-tab="'+ tab +'"]');
+        
+        mapsTab.forEach(elementTab => {
+          elementTab.classList.remove('maps__tab_active')
+        });
+
+        mapsBlock.forEach(elementBlock => {
+          elementBlock.classList.remove('maps__block_active')
+        });
+        
+        element.classList.add('maps__tab_active')
+        block.classList.add('maps__block_active')
+
+      });
+    });
+
+  }
 });
 
 if(document.querySelector('.compare-item') !== null){

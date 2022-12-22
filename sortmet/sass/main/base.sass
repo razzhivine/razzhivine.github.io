@@ -30,6 +30,21 @@ ul
             position: absolute
             top: 7px
             left: 7px
+.simple-list
+    margin: 0
+    li
+        margin-bottom: 10px
+        line-height: 18px
+        @media (max-width: 767px)
+            padding-left: 20px
+        &::before
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background: #000 
+            @media (max-width: 767px)
+                top: 7px
+                left: 5px
 h1
     font-weight: 800
     font-size: 36px

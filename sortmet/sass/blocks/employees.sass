@@ -1,5 +1,7 @@
 .employees
     margin: 80px 0
+    &_mt-0
+        margin-top: 0 !important
     @media (max-width: 767px)
         margin: 30px 0
     &__main
@@ -75,41 +77,69 @@
                 width: 35%
             @media (max-width: 465px)
                 width: 58.5%
-            &-img
-                position: relative
-                margin-bottom: 25px
-                border-radius: 15px
-                overflow: hidden
-                @media (max-width: 1023px)
-                    margin-bottom: 15px
-                &::before
-                    content: ""
-                    width: 100%
-                    height: 73%
-                    background: #F7F7F9
-                    border-radius: 15px
-                    position: absolute
-                    bottom: 0
-                    left: 0
-                    z-index: 0
-                img
-                    width: 100%
-                    height: auto
-                    position: relative
-                    z-index: 1
-                    margin-bottom: -5px
-            &-name
-                font-weight: 600
-                font-size: 20px
-                line-height: 23px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        @media (max-width: 465px)
+            flex-direction: column
+            align-items: center
+        .employees__item
+            width: calc( 25% - 15px )
+            margin-bottom: 40px
+            @media (max-width: 1023px)
+                width: calc( 33.33333% - 14px )
+            @media (max-width: 767px)
+                width: calc( 50% - 10px )
+                margin-bottom: 10px
+            @media (max-width: 465px)
+                width: 187px
+                margin-bottom: 0
+    &__item
+        &-img
+            position: relative
+            margin-bottom: 25px
+            border-radius: 15px
+            overflow: hidden
+            @media (max-width: 1023px)
                 margin-bottom: 15px
-                @media (max-width: 1023px)
-                    font-size: 16px
-                    line-height: 18px
-                    margin-bottom: 10px
-            &-post
-                color: #626D7D
+            &::before
+                content: ""
+                width: 100%
+                height: 73%
+                background: #F7F7F9
+                border-radius: 15px
+                position: absolute
+                bottom: 0
+                left: 0
+                z-index: 0
+            img
+                width: 100%
+                height: auto
+                position: relative
+                z-index: 1
+                margin-bottom: -5px
+        &-name
+            font-weight: 600
+            font-size: 20px
+            line-height: 23px
+            margin-bottom: 15px
+            @media (max-width: 1023px)
+                font-size: 16px
                 line-height: 18px
-                @media (max-width: 1023px)
-                    font-size: 14px
-                    line-height: 16px
+                margin-bottom: 10px
+        &-post
+            color: #626D7D
+            line-height: 18px
+            &_black
+                color: #1A1E24
+            @media (max-width: 1023px)
+                font-size: 14px
+                line-height: 16px
+        &-experience
+            margin-top: 10px
+            line-height: 18px
+            color: #626D7D
+            @media (max-width: 1023px)
+                font-size: 12px
+                line-height: 14px

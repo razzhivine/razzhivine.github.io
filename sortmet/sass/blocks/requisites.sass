@@ -1,0 +1,74 @@
+.requisites
+    margin: 70px 0
+    &_mt-0
+        margin-top: 0
+    @media (max-width: 767px)
+        margin: 30px 0
+    &__top
+        display: flex
+        align-items: center
+        gap: 56px
+        margin-bottom: 42px
+        .title
+            margin-bottom: 0
+        @media ( max-width: 767px )
+            gap: 10px
+            margin-bottom: 20px
+            flex-direction: column
+            align-items: flex-start
+    &__download
+        padding-left: 39px
+        line-height: 18px
+        color: #0C67BD
+        position: relative
+        @media ( max-width: 767px )
+            font-size: 14px
+            line-height: 16px
+            padding-left: 30px
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 12L12 17M12 17L17 12M12 17L12 4' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 20H18' stroke='%230077FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            @media ( max-width: 767px )
+                width: 20px
+                height: 20px
+            
+    &__list
+    &__item
+        display: flex
+        justify-content: space-between
+        gap: 15px
+        padding: 20px
+        background: #F7F7F9
+        border-radius: 15px
+        @media ( max-width: 767px )
+            background: transparent
+            flex-direction: column
+            border-radius: 0
+            padding: 0 0 15px
+            gap: 0
+        &:nth-child(2n)
+            background: transparent
+        &-name
+            width: 50%
+            @media ( max-width: 767px )
+                width: 100%
+                margin-bottom: 5px
+                font-size: 12px
+                line-height: 15px
+                color: #7F8A9B
+
+        &-value
+            width: 50%
+            text-align: right
+            @media ( max-width: 767px )
+                width: 100%
+                text-align: left
+                font-size: 14px
+                line-height: 18px

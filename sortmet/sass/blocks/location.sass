@@ -1,2 +1,19 @@
 .location
     line-height: 140%
+    &_image
+        padding-left: 34px
+        position: relative
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.0344 10.0348C20.0344 11.9349 19.3748 13.681 18.2722 15.0565H18.2768C18.2768 15.0565 15.4844 18.7933 13.3211 21.4393C12.631 22.2834 11.3685 22.2831 10.6788 21.4386C8.52246 18.7985 5.73361 15.0646 5.73361 15.0646L5.7271 15.0565C4.62442 13.681 3.96484 11.9349 3.96484 10.0348C3.96484 5.5973 7.56214 2 11.9996 2C16.4371 2 20.0344 5.5973 20.0344 10.0348ZM15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10Z' fill='%230077FF'/%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            top: 0
+            left: 0
+        @media ( max-width: 767px )
+            padding-left: 30px
+            &::before
+                width: 20px 
+                height: 20px

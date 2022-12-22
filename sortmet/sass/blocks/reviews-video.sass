@@ -1,0 +1,50 @@
+.reviews-video
+    margin: 70px 0
+    @media (max-width: 767px)
+        margin: 30px 0 
+    &__item
+        border-radius: 15px
+        overflow: hidden
+        position: relative
+        img
+            width: 100%
+            height: auto
+            display: block
+        &_paused
+            &::before
+                content: ""
+                width: 41px
+                height: 48px
+                background-image: url("data:image/svg+xml,%3Csvg width='41' height='48' viewBox='0 0 41 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41 24L0.499998 47.3827L0.5 0.617312L41 24Z' fill='white'/%3E%3C/svg%3E%0A")
+                background-size: contain
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                @media (max-width: 767px)
+                    width: 27px
+                    height: 32px
+        &-content
+            position: absolute
+            left: 35px
+            bottom: 30px
+            color: #fff
+            @media (max-width: 767px)
+                left: 20px
+                bottom: 20px
+        
+        &-title
+            font-weight: 800
+            font-size: 18px
+            line-height: 21px
+            margin-bottom: 10px
+            @media (max-width: 767px)
+                font-size: 14px
+                line-height: 16px
+        &-bottom
+            display: flex
+            gap: 20px
+            line-height: 18px
+            @media (max-width: 767px)
+                font-size: 12px
+                line-height: 14px
