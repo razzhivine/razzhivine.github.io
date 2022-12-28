@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sortmet</title>
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="overflow">
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__top">
+					<div class="city">
+						<div class="city__title" id="city-desk">Санкт-Петербург</div>
+					</div>
+					<nav class="menu">
+						<div class="menu__inner">
+							<a href="#" class="menu__item">Доставка</a>
+							<a href="#" class="menu__item">Оплата</a>
+							<a href="#" class="menu__item">Акции</a>
+							<a href="#" class="menu__item">Прайс-лист</a>
+							<a href="#" class="menu__item">О компании</a>
+							<a href="#" class="menu__item">Сертификаты</a>
+							<a href="#" class="menu__item">Отзывы</a>
+							<a href="#" class="menu__item">Контакты</a>
+						</div>
+					</nav>
+				</div>
+				<div class="header__middle">
+					<a href="#" class="logo">
+						<img src="images/dest/logo.svg" width="191" height="51" alt="logo">
+					</a>
+					<div class="header__phones phones">
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (495) 123-30-40</a>
+							<div class="phone__caption">Перезвоните мне</div>
+						</div>
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (800) 200-69-40</a>
+							<div class="phone__caption">Бесплатно по РФ</div>
+						</div>
+					</div>
+					<div class="header__email email">
+						<a href="#" class="email__value">zakaz@sortmet.ru</a>
+						<div class="email__caption">пн-пт 09:00 - 18:00</div>
+					</div>
+					<div class="header__location location">
+						<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+					</div>
+					<div class="header__social social">
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#wa"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__hamburger hamburger-icon" id="hamburger-icon"></div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__catalog-btn catalog-btn" id="catalog-btn">Каталог</div>
+					<div class="catalog-menu" id="catalog-menu">
+						<div class="wrapper">
+							<div class="catalog-menu__inner">
+								<div class="catalog-menu__sections">
+									<div class="catalog-menu__section catalog-menu__section_active" data-id="1">Сортовой прокат</div>
+									<div class="catalog-menu__section" data-id="2">Листовой прокат</div>
+									<div class="catalog-menu__section" data-id="3">Трубы</div>
+									<div class="catalog-menu__section" data-id="4">Проволока и сетка</div>
+									<div class="catalog-menu__section" data-id="5">Нержавеющая сталь</div>
+									<div class="catalog-menu__section" data-id="6">Цветные металлы</div>
+								</div>
+								<div class="catalog-menu__sub-sections">
+									<div class="catalog-menu__sub-section catalog-menu__sub-section_active" data-id="1">
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматура</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура A500С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура А240</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 25Г2С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 35ГС</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура Ат800</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура В500С</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматурные каркасы</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Балка (Двутавр)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балка Ст3</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балки двутавровые низколегированные (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Швеллер</a>
+											<a href="#" class="catalog-menu__sub-section-second">Горячекатанный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Гнутый</a>
+											<a href="#" class="catalog-menu__sub-section-second">Низколегированный (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Круг г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Полоса г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Квадрат г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Катанка</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шестигранник металлический</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шпунт Ларсена</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Рельс</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Уголок</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Неравнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный низколегированный (09Г2С)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Уголок оцинкованный</a>
+										</div>
+									</div>
+									<div class="catalog-menu__sub-section" data-id="2"></div>
+									<div class="catalog-menu__sub-section" data-id="3"></div>
+									<div class="catalog-menu__sub-section" data-id="4"></div>
+									<div class="catalog-menu__sub-section" data-id="5"></div>
+									<div class="catalog-menu__sub-section" data-id="6"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="#" class="header__search search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn"></button>
+					</form>
+					<div class="header__navbar navbar">
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#compare"></use>
+							</svg>
+							<div class="navbar__item-caption">Сравнение</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#like"></use>
+							</svg>
+							<div class="navbar__item-caption">Избранное</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#cart-black"></use>
+							</svg>
+							<div class="navbar__item-caption">Корзина</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<span class="breadcrumbs__item">Политики</span>
+			</div>
+			<div class="heading heading_with-content">
+				<h1>Политика в отношении обработки персональных данных</h1>
+			</div>
+			<div class="policy">
+				<h2>1. Общие положения</h2>
+				<p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ООО Компания (далее – Оператор).</p>
+				<p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+				<p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://example.ru.</p>
+				<h2>2. Основные понятия, используемые в Политике</h2>
+				<p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники.</p>
+				<p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+				<p>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://example.ru.</p>
+				<p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств.</p>
+				<p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных.</p>
+				<p>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+				<p>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+				<p>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта https://splitis.ru.</p>
+				<p>2.9. Персональные данные, разрешенные субъектом персональных данных для распространения, - персональные данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных путем дачи согласия на обработку персональных данных, разрешенных субъектом персональных данных для распространения в порядке, предусмотренном Законом о персональных данных (далее - персональные данные, разрешенные для распространения).</p>
+				<p>2.10. Пользователь – любой посетитель веб-сайта https://example.ru.</p>
+				<p>2.11. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.</p>
+				<p>2.12. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом.</p>
+				<p>2.13. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу.</p>
+				<p>2.14. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.</p>
+				<h2>3. Основные права и обязанности Оператора</h2>
+				<p>3.1. Оператор имеет право:</p>
+				<p>– получать от субъекта персональных данных достоверные информацию и/или документы, содержащие персональные данные;</p>
+				<p>– в случае отзыва субъектом персональных данных согласия на обработку персональных данных Оператор вправе продолжить обработку персональных данных без согласия субъекта персональных данных при наличии оснований, указанных в Законе о персональных данных;</p>
+				<p>– самостоятельно определять состав и перечень мер, необходимых и достаточных для обеспечения выполнения обязанностей, предусмотренных Законом о персональных данных и принятыми в соответствии с ним нормативными правовыми актами, если иное не предусмотрено Законом о персональных данных или другими федеральными законами.</p>
+				<p>3.2. Оператор обязан:</p>
+				<p>– предоставлять субъекту персональных данных по его просьбе информацию, касающуюся обработки его персональных данных;</p>
+				<p>– организовывать обработку персональных данных в порядке, установленном действующим законодательством РФ;</p>
+				<p>– отвечать на обращения и запросы субъектов персональных данных и их законных представителей в соответствии с требованиями Закона о персональных данных;</p>
+				<p>– сообщать в уполномоченный орган по защите прав субъектов персональных данных по запросу этого органа необходимую информацию в течение 30 дней с даты получения такого запроса;</p>
+				<p>– публиковать или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении обработки персональных данных;</p>
+				<p>– принимать правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;</p>
+				<p>– прекратить передачу (распространение, предоставление, доступ) персональных данных, прекратить обработку и уничтожить персональные данные в порядке и случаях, предусмотренных Законом о персональных данных;</p>
+				<p>– исполнять иные обязанности, предусмотренные Законом о персональных данных</p>
+			</div>
+		</div>
+	
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__inner">
+					<div class="footer__contacts contacts-second">
+						<a href="#" class="contacts-second__phone">8 (495) 123-30-40</a>
+						<a href="#" class="contacts-second__phone">8 (800) 200-69-40</a>
+						<a href="#" class="contacts-second__email">info@sortmet.ru</a>
+						<div class="contacts-second__work-time">пн-пт 09:00 - 18:00</div>
+						<div class="footer__contacts-btn contacts-second__btn btn">Заказать звонок</div>
+						<div class="footer__social social">
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#tg-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#wa-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#vk-1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__menu menu-second">
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Покупателям</div>
+							<a href="#" class="menu-block__item">Доставка</a>
+							<a href="#" class="menu-block__item">Оплата</a>
+							<a href="#" class="menu-block__item">Акции</a>
+							<a href="#" class="menu-block__item">Прайс-лист</a>
+							<a href="#" class="menu-block__item">О компании</a>
+							<a href="#" class="menu-block__item">Сертификаты</a>
+							<a href="#" class="menu-block__item">Отзывы</a>
+							<a href="#" class="menu-block__item">Контакты</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Каталог</div>
+							<a href="#" class="menu-block__item">Сортовой прокат</a>
+							<a href="#" class="menu-block__item">Листовой прокат</a>
+							<a href="#" class="menu-block__item">Трубы</a>
+							<a href="#" class="menu-block__item">Проволока и сетка</a>
+							<a href="#" class="menu-block__item">Нержавеющая сталь</a>
+							<a href="#" class="menu-block__item">Цветные металлы</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Услуги</div>
+							<a href="#" class="menu-block__item">Изготовление металлоконструкций</a>
+							<a href="#" class="menu-block__item">Порошковая покраска металла</a>
+							<a href="#" class="menu-block__item">Гибка металла</a>
+							<a href="#" class="menu-block__item">Теплоизоляция труб</a>
+							<a href="#" class="menu-block__item">Резка металла</a>
+							<a href="#" class="menu-block__item">Рубка металла</a>
+							<a href="#" class="menu-block__item">Сварка металла</a>
+							<a href="#" class="menu-block__item">Цинкование</a>
+						</div>
+					</div>
+					<div class="footer__adress adress">
+						<div class="adress__title">Адрес офиса</div>
+						<div class="adress__value">Люберцы ул. 3-е Почтовое отделение 102, офис 424</div>
+						<div class="adress__maps">
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#gm"></use>
+								</svg>
+								<div class="adress__map-caption">Google Maps</div>
+							</a>
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#ym"></use>
+								</svg>
+								<div class="adress__map-caption">Яндекс карты</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__mob">
+						<div class="footer__copy">© 2020, Сортмет. Все права защищены. Копирование информации преследуется по закону.</div>
+						<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="hamburger__city">Санкт-Петербург</div>
+			<div class="hamburger__menu hamburger-menu">
+				<a href="#" class="hamburger-menu__item">Доставка</a>
+				<a href="#" class="hamburger-menu__item">Оплата</a>
+				<a href="#" class="hamburger-menu__item">Акции</a>
+				<a href="#" class="hamburger-menu__item">Прайс-лист</a>
+				<a href="#" class="hamburger-menu__item">О компании</a>
+				<a href="#" class="hamburger-menu__item">Сертификаты</a>
+				<a href="#" class="hamburger-menu__item">Отзывы</a>
+				<a href="#" class="hamburger-menu__item">Контакты</a>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (495) 123-30-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (800) 200-69-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__email email">
+				<a href="#" class="email__value">zakaz@sortmet.ru</a>
+				<div class="email__caption">пн-пт 09:00 - 18:00</div>
+			</div>
+			<div class="hamburger__location location">
+				<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+			</div>
+			<div class="hamburger__social social">
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#tg"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#wa"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-navbar">
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#catalog-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Каталог</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#search-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Поиск</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Сравнение</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Избранное</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#cart-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Корзина</div>
+			</div>
+		</div>
+		<div class="city-changer" id="city-changer">
+			<div class="city-changer__close" id="city-changer-close"></div>
+			<div class="city-changer__title">Ваш город: Санкт-Петербург</div>
+			<input type="text" class="city-changer__value" placeholder="Введите название вашего города">
+			<div class="city-changer__list">
+				<div class="city-changer__item">Волгоград</div>
+				<div class="city-changer__item">Воронеж</div>
+				<div class="city-changer__item">Екатеринбург</div>
+				<div class="city-changer__item">Ижевск</div>
+				<div class="city-changer__item">Казань</div>
+				<div class="city-changer__item">Калининград</div>
+				<div class="city-changer__item">Кемерово</div>
+				<div class="city-changer__item">Кострома</div>
+				<div class="city-changer__item">Красноярск</div>
+				<div class="city-changer__item">Магнитогорск</div>
+				<div class="city-changer__item">Москва</div>
+				<div class="city-changer__item">Набережные челны</div>
+				<div class="city-changer__item">Новосибирск</div>
+				<div class="city-changer__item">Нижний Новгород</div>
+				<div class="city-changer__item">Омск</div>
+				<div class="city-changer__item">Пенза</div>
+				<div class="city-changer__item">Пермь</div>
+				<div class="city-changer__item">Ростов-на-Дону</div>
+				<div class="city-changer__item">Самара</div>
+				<div class="city-changer__item">Санкт-Петербург</div>
+				<div class="city-changer__item">Тюмень</div>
+				<div class="city-changer__item">Уфа</div>
+				<div class="city-changer__item">Челябинск</div>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="libs/nouislider/nouislider.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

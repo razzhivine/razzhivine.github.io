@@ -2,6 +2,25 @@
     margin: 70px 0
     @media (max-width: 767px)
         margin: 40px 0 
+    &__slider
+        margin: -70px
+        padding: 70px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        @media (max-width: 767px)
+            gap: 10px
+            margin-bottom: 30px
+        .news__item
+            width: calc( 25% - 15px )
+            @media (max-width: 1235px)
+                width: calc( 33.33333% - 14px )
+            @media (max-width: 1023px)
+                width: calc( 50% - 10px )
+            @media (max-width: 767px)
+                width: 100%
+
     &__item
         background: #F7F7F9
         border-radius: 15px
@@ -9,6 +28,9 @@
         color: #1A1E24
         width: 289px
         transition: .3s all ease
+        img
+            width: 100%
+            height: auto
         &-content
             margin: 15px 20px 20px
             @media (max-width: 767px)
@@ -31,6 +53,4 @@
         &:hover
             color: #0C67BD
             box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.1), 0px 16px 26px rgba(0, 0, 0, 0.1), 0px 16px 5px -10px rgba(0, 0, 0, 0.03)
-.news__list.swiper
-    margin: -70px
-    padding: 70px
+    

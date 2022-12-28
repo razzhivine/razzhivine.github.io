@@ -1,0 +1,50 @@
+.faq-form
+    margin: 70px 0
+    @media ( max-width: 767px )
+        margin: 30px 0
+    &__inner
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        @media ( max-width: 767px )
+            gap: 0
+    &__textarea
+        width: calc( 60% - 7.5px ) 
+        @media ( max-width: 767px )
+            order: 2
+            width: 100%
+            & > *
+                margin-bottom: 10px
+    &__inputs
+        width: calc( 40% - 7.5px ) 
+        @media ( max-width: 767px )
+            order: 1
+            width: 100%
+            & > *
+                margin-bottom: 10px
+    &__submit
+        // margin-top: 15px
+        width: 100%
+        display: flex
+        align-items: center
+        gap: 21px
+        @media ( max-width: 767px )
+            order: 3
+            flex-direction: column
+            text-align: center
+            gap: 10px
+        &-btn
+            @media ( max-width: 767px )
+                width: 100%
+    &__policy
+        width: 304px
+        font-size: 14px
+        line-height: 16px
+        color: #7F8A9B
+        @media ( max-width: 767px )
+            font-size: 12px
+            line-height: 14px
+            width: 100%
+        a
+            color: #7F8A9B
+            text-decoration: underline

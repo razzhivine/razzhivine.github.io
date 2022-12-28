@@ -1,0 +1,36 @@
+.rate
+    padding: 30px 50px
+    border: 1px solid #DEE1E5
+    border-radius: 20px
+    display: flex
+    align-items: center
+    gap: 30px
+    box-sizing: border-box
+    @media ( max-width: 1023px )
+        justify-content: space-between
+    @media ( max-width: 767px )
+        padding: 20px
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        text-align: center
+    &__title
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+        @media ( max-width: 767px )
+            font-size: 14px
+            line-height: 16px
+    &__list
+        display: flex
+        margin: 0 -5px
+    &__star
+        width: 32px
+        height: 32px
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.4492 10.981L14.9125 4.00469C15.3571 3.10911 16.6416 3.10911 17.0862 4.00469L20.5495 10.981L28.2947 12.1066C29.2884 12.251 29.6845 13.4655 28.965 14.1622L23.3617 19.5887L24.6841 27.2549C24.8539 28.2394 23.8146 28.9901 22.9254 28.5252L15.9993 24.9037L9.07331 28.5252C8.18415 28.9901 7.1448 28.2394 7.31462 27.2549L8.63702 19.5887L3.03368 14.1622C2.31425 13.4655 2.71031 12.251 3.70405 12.1066L11.4492 10.981Z' fill='%23F5CB5E'/%3E%3C/svg%3E%0A")
+        background-size: contain
+        margin: 0 5px
+        &_empty
+            background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.4492 10.981L14.9125 4.00469C15.3571 3.10911 16.6416 3.10911 17.0862 4.00469L20.5495 10.981L28.2947 12.1066C29.2884 12.251 29.6845 13.4655 28.965 14.1622L23.3617 19.5887L24.6841 27.2549C24.8539 28.2394 23.8146 28.9901 22.9254 28.5252L15.9993 24.9037L9.07331 28.5252C8.18415 28.9901 7.1448 28.2394 7.31462 27.2549L8.63702 19.5887L3.03368 14.1622C2.31425 13.4655 2.71031 12.251 3.70405 12.1066L11.4492 10.981Z' fill='%23DEE1E5'/%3E%3C/svg%3E%0A")
+
+            

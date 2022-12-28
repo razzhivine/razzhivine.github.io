@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sortmet</title>
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="overflow">
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__top">
+					<div class="city">
+						<div class="city__title" id="city-desk">Санкт-Петербург</div>
+					</div>
+					<nav class="menu">
+						<div class="menu__inner">
+							<a href="#" class="menu__item">Доставка</a>
+							<a href="#" class="menu__item">Оплата</a>
+							<a href="#" class="menu__item">Акции</a>
+							<a href="#" class="menu__item">Прайс-лист</a>
+							<a href="#" class="menu__item">О компании</a>
+							<a href="#" class="menu__item">Сертификаты</a>
+							<a href="#" class="menu__item">Отзывы</a>
+							<a href="#" class="menu__item">Контакты</a>
+						</div>
+					</nav>
+				</div>
+				<div class="header__middle">
+					<a href="#" class="logo">
+						<img src="images/dest/logo.svg" width="191" height="51" alt="logo">
+					</a>
+					<div class="header__phones phones">
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (495) 123-30-40</a>
+							<div class="phone__caption">Перезвоните мне</div>
+						</div>
+						<div class="phones__item phone">
+							<a href="#" class="phone__value">8 (800) 200-69-40</a>
+							<div class="phone__caption">Бесплатно по РФ</div>
+						</div>
+					</div>
+					<div class="header__email email">
+						<a href="#" class="email__value">zakaz@sortmet.ru</a>
+						<div class="email__caption">пн-пт 09:00 - 18:00</div>
+					</div>
+					<div class="header__location location">
+						<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+					</div>
+					<div class="header__social social">
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#wa"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="images/dest/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__hamburger hamburger-icon" id="hamburger-icon"></div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__catalog-btn catalog-btn" id="catalog-btn">Каталог</div>
+					<div class="catalog-menu" id="catalog-menu">
+						<div class="wrapper">
+							<div class="catalog-menu__inner">
+								<div class="catalog-menu__sections">
+									<div class="catalog-menu__section catalog-menu__section_active" data-id="1">Сортовой прокат</div>
+									<div class="catalog-menu__section" data-id="2">Листовой прокат</div>
+									<div class="catalog-menu__section" data-id="3">Трубы</div>
+									<div class="catalog-menu__section" data-id="4">Проволока и сетка</div>
+									<div class="catalog-menu__section" data-id="5">Нержавеющая сталь</div>
+									<div class="catalog-menu__section" data-id="6">Цветные металлы</div>
+								</div>
+								<div class="catalog-menu__sub-sections">
+									<div class="catalog-menu__sub-section catalog-menu__sub-section_active" data-id="1">
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматура</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура A500С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура А240</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 25Г2С</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура 35ГС</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура Ат800</a>
+											<a href="#" class="catalog-menu__sub-section-second">Арматура В500С</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Арматурные каркасы</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Балка (Двутавр)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балка Ст3</a>
+											<a href="#" class="catalog-menu__sub-section-second">Балки двутавровые низколегированные (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Швеллер</a>
+											<a href="#" class="catalog-menu__sub-section-second">Горячекатанный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Гнутый</a>
+											<a href="#" class="catalog-menu__sub-section-second">Низколегированный (09Г2С)</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Круг г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Полоса г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Квадрат г/к</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Катанка</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шестигранник металлический</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Шпунт Ларсена</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Рельс</a>
+										</div>
+										<div class="catalog-menu__sub-section-block">
+											<a href="#" class="catalog-menu__sub-section-main">Уголок</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Неравнополочный</a>
+											<a href="#" class="catalog-menu__sub-section-second">Равнополочный низколегированный (09Г2С)</a>
+											<a href="#" class="catalog-menu__sub-section-second">Уголок оцинкованный</a>
+										</div>
+									</div>
+									<div class="catalog-menu__sub-section" data-id="2"></div>
+									<div class="catalog-menu__sub-section" data-id="3"></div>
+									<div class="catalog-menu__sub-section" data-id="4"></div>
+									<div class="catalog-menu__sub-section" data-id="5"></div>
+									<div class="catalog-menu__sub-section" data-id="6"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="#" class="header__search search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn"></button>
+					</form>
+					<div class="header__navbar navbar">
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#compare"></use>
+							</svg>
+							<div class="navbar__item-caption">Сравнение</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#like"></use>
+							</svg>
+							<div class="navbar__item-caption">Избранное</div>
+						</a>
+						<a href="#" class="navbar__item">
+							<svg width="30" height="30">
+								<use xlink:href="images/dest/sprite.svg#cart-black"></use>
+							</svg>
+							<div class="navbar__item-caption">Корзина</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<span class="breadcrumbs__item">Характеристики и область применения двутавра</span>
+			</div>
+			<div class="heading heading_with-content">
+				<h1>Можно ли использовать ржавую арматуру при строительстве фундамента?</h1>
+			</div>
+			<div class="news-detail">
+				<div class="news-detail__preview">Ржавая арматура продается со скидками. Заманчивая цена привлекает желающих сэкономить на строительстве. Давайте разберемся, насколько опасно использовать металл при возведении дома, когда это можно делать, а когда категорически нельзя.</div>
+				<div class="news-detail__info">
+					<div class="news-detail__author">
+						<img src="images/dest/news-author-2.png" alt="">
+						<div class="news-detail__author-content">
+							<div class="news-detail__author-name">Екатерина Александрова</div>
+							<div class="news-detail__author-post">Автор статьи</div>
+						</div>
+					</div>
+					<div class="news-detail__about">
+						<div class="news-detail__about-rating rating">
+							<div class="rating__star"></div>	
+							<div class="rating__star"></div>	
+							<div class="rating__star"></div>	
+							<div class="rating__star"></div>	
+							<div class="rating__star rating__star_empty"></div>	
+						</div>
+						<div class="news-detail__about-time">
+							<span>Время чтения</span>
+							<span>~10 мин</span>
+						</div>
+					</div>
+				</div>
+				<img src="images/dest/news-banner.png" alt="" class="news-detail__banner">
+				<div class="news-detail__content">
+					<div class="news-detail__contents">
+						<div class="news-detail__contents-title">Содержание статьи</div>
+						<div class="news-detail__contents-list">
+							<div class="news-detail__contents-item">Опасность использования ржавой арматуры в бетоне</div>
+							<div class="news-detail__contents-item">Можно ли удалить ржавчину с арматуры и избежать неприятных последствий</div>
+							<div class="news-detail__contents-item">Когда можно использовать ржавую арматуру, а когда нельзя</div>
+							<div class="news-detail__contents-item">Дополнительная V категория повреждения арматуры</div>
+							<div class="news-detail__contents-item">Подведем итоги</div>
+						</div>
+					</div>
+					<div class="news-detail__title">Можно ли удалить ржавчину с арматуры и избежать неприятных последствий</div>
+					<p>В Сети можно найти статьи «экспертов», которые продают «чудо-средства» для удаления «рыжины». Они уверяют, что их товар решит проблему. К подобным обещаниям нужно относится осторожно. «Специалисты» заинтересованы в увеличении объемов продаж и используют рекламу не всегда добросовестно.</p>
+					<p>Никакое «чудо-средство» не поможет, если коррозия проникла глубоко в арматуру и привела к потере прочности металла.</p>
+					<div class="news-detail__video video">
+						<img src="images/dest/video.png" alt="">
+					</div>
+					<div class="news-detail__title">Когда можно использовать ржавую арматуру</div>
+					<p>По мнению С. А. Мадатяна, арматуру I-III категорий можно использовать при строительстве дома без ограничений. При попадании металла в щелочную бетонную среду разрушение прекратиться. Риск снижения прочности конструкций отсутствует.</p>
+					<p>С большой осторожностью профессор рекомендует использовать ржавую арматуру IV категории. Каждую партию нужно оценивать отдельно при покупке ее для ответственных участков сооружения и крупных объектов.</p>
+					<p>В малоэтажном строительстве металл применять не рекомендуется. Из стержней IV группы нельзя возводить перекрытия, фундаменты, любые конструкции с нагрузками на растяжение и изгиб. Если повезет, она простоит долго. Но однажды разрушится в самый неподходящий момент.</p>
+					<div class="news-detail__accent">В малоэтажном строительстве металл применять не рекомендуется. Из стержней IV группы нельзя возводить перекрытия, фундаменты, любые конструкции с нагрузками на растяжение</div>
+				</div>
+				<section class="catalog-slider">
+					<div class="title">Рекомендованные товары из каталога</div>
+					<div class="catalog-slider__inner">
+						<div class="swiper" id="catalog-slider-2">
+							<div class="swiper-wrapper">
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-1.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">101 750 ₽/тн</div>
+											<div class="card__price-old">102 800 р</div>
+										</div>
+										<a href="#" class="card__name">Уголок металлический 25х25х1.2 6 (метров)</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>	
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-2.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">49 000 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Трубы электросварные (ЭСВ) квадратные 80х80х4</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-3.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">73 100 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Труба профильная квадратная 80х80х3 электросварная</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-4.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">99 900 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Швеллер низколегированный10У 12 метров</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-1.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">101 750 ₽/тн</div>
+											<div class="card__price-old">102 800 р</div>
+										</div>
+										<a href="#" class="card__name">Уголок металлический 25х25х1.2 6 (метров)</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-2.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">49 000 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Трубы электросварные (ЭСВ) квадратные 80х80х4</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-3.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">73 100 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Труба профильная квадратная 80х80х3 электросварная</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-4.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">99 900 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Швеллер низколегированный10У 12 метров</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-1.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item labels__item_accent">Экономия 1 500 ₽</div>
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">101 750 ₽/тн</div>
+											<div class="card__price-old">102 800 р</div>
+										</div>
+										<a href="#" class="card__name">Уголок металлический 25х25х1.2 6 (метров)</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-2.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">49 000 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Трубы электросварные (ЭСВ) квадратные 80х80х4</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-3.webp" alt="">
+										<div class="card__labels labels">
+											<div class="labels__item">Новинка</div>
+										</div>
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">73 100 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Труба профильная квадратная 80х80х3 электросварная</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card swiper-slide">
+									<div class="card__image">
+										<img src="images/dest/item-4.webp" alt="">
+									</div>
+									<div class="card__content">
+										<div class="card__price">
+											<div class="card__price-current">99 900 ₽/тн</div>
+										</div>
+										<a href="#" class="card__name">Швеллер низколегированный10У 12 метров</a>
+										<div class="card__block">
+											<div class="card__characteristics characteristics">
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Габариты</div>
+													<div class="characteristics__item-value">6 м</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Марка стали</div>
+													<div class="characteristics__item-value">Ст1-3</div>
+												</div>
+												<div class="characteristics__item">
+													<div class="characteristics__item-caption">Артикул</div>
+													<div class="characteristics__item-value">48I5</div>
+												</div>
+											</div>	
+											<div class="card__actions actions">
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+													</svg>
+												</div>
+												<div class="actions__item">
+													<svg class="actions__item-icon actions__item-icon_default" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+													</svg>
+													<svg class="actions__item-icon actions__item-icon_hover" width="30" height="30">
+														<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="card__buy btn-buy"><span>Купить</span></div>	
+										<div class="card__mobile-actions mobile-actions">
+											<div class="mobile-actions__item mobile-actions__item_buy">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#cart-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#like-blue"></use>
+												</svg>
+											</div>
+											<div class="mobile-actions__item">
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_default" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+												</svg>
+												<svg class="mobile-actions__item-icon mobile-actions__item-icon_hover" width="24" height="24">
+													<use xlink:href="images/dest/sprite.svg#compare-blue"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="arrow arrow_prev" id="catalog-slider-2-arrow-prev"></div>
+						<div class="arrow arrow_next" id="catalog-slider-2-arrow-next"></div>
+						<div class="slider-pagination" id="catalog-slider-2-pagination"></div>
+					</div>
+				</section>
+				<div class="news-detail__content">
+					<div class="title">Согласно стандарту, есть 6 типов коррозии</div>
+					<ul>
+						<li>Вес, характеристики и цвет металла остались без изменений. Ржавчина похожа на пыль и легко удаляется</li>
+						<li>Арматура равномерно покрыта рыжим слоем. Он отлетает при вибрации бетона в ЖБ-конструкции. Изменился цвет металла, сечение и вес соответствуют стандартам. Налет легко убирается стальной щеткой или тряпкой</li>
+						<li>Локальные поражения появляются от капель воды. Они легко удаляются очищающими средствами. Диаметр стержня и свойства стали остались прежними</li>
+						<li>Если убрать ржавчину, на прутке остаются глубокие очаги, свидетельствующие о значительном повреждении структуры металла. Уменьшился вес стержней и сечение. Признаки коррозии говорят об опасном повреждении стали</li>
+					</ul>
+				</div>
+				<form action="" class="news-detail__form form form_blue">
+					<div class="form__block">
+						<div class="form__title">Проконсультируем по любым вопросам</div>
+						<div class="form__description">оставьте заявку и наш менеджер поможет с выбором и оформить заказ</div>
+					</div>
+					<div class="form__block">
+						<input type="text" class="form__input" placeholder="+7 999 999 99 99">
+						<button class="form__button">Отправить</button>
+						<div class="form__policy">Заполняя форму вы соглашаетесь на <a href="#">обработку персональных данных</a></div>	
+					</div>
+				</form>
+				<div class="news-detail__content">
+					<div class="title">Дополнительная V категория повреждения арматуры</div>
+					<p>Профессор из НИИЖБ не упомянул V категорию повреждения арматуры, но мы о ней расскажем. В продаже иногда можно встретить дешевые стержни, которые полностью непригодны к использованию. Речь о прутьях глобально поврежденных коррозией. При ударе по стали молотком с них слетают большие куски ржавчины. Стержни полностью покрыты рыжими хлопьями. Сгнившей арматуре место на свалке, а не в конструкции.</p>
+				</div>		
+				<div class="news-detail__price-list price-list">
+					<div class="price-list__table">
+						<div class="price-list__table-head">
+							<div class="price-list__table-col price-list__table-col_first">Наименование</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">Размер</div>
+								<div class="price-list__table-col">Количество</div>
+								<div class="price-list__table-col">Цена</div>
+								<div class="price-list__table-col"></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура композитная АСП - 6 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура стрелковая А-3 500С 8 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура рифленая А-3 500С 10 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура рифленая А-3 500С 12 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура рифленая А-3 500С 14 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+						<div class="price-list__table-row">
+							<div class="price-list__table-col price-list__table-col_first">Арматура рифленая А-3 500С 16 мм</div>
+							<div class="price-list__table-right">
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Размер</div>
+									50 м
+								</div>
+								<div class="price-list__table-col">
+									<div class="price-list__table-mob">Количество</div>
+									1 235 тн
+								</div>
+								<div class="price-list__table-col">
+									11.50 <span>₽/м.п</span>
+								</div>
+								<div class="price-list__table-col"><div class="btn btn-second">Купить</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news-detail__actions">
+					<div class="news-detail__rate rate">
+						<div class="rate__title">Оцените статью</div>
+						<div class="rate__list">
+							<div class="rate__star"></div>	
+							<div class="rate__star"></div>	
+							<div class="rate__star"></div>	
+							<div class="rate__star"></div>	
+							<div class="rate__star rate__star_empty"></div>	
+						</div>
+					</div>
+					<div class="news-detail__share share">
+						<div class="share__title">Поделитесь материалом в соцсетях</div>
+						<div class="share__list">
+							<div class="share__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#share-vk"></use>
+								</svg>
+							</div>
+							<div class="share__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#share-ok"></use>
+								</svg>
+							</div>
+							<div class="share__item">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.76618 15.563C2.76534 17.9109 3.37956 20.2031 4.54747 22.2238L2.6543 29.1278L9.728 27.2752C11.677 28.336 13.8713 28.896 16.1045 28.8967H16.1102C23.4644 28.8967 29.4504 22.9196 29.4536 15.5735C29.455 12.0134 28.0683 8.66634 25.5488 6.14774C23.0297 3.6295 19.6795 2.24191 16.1096 2.24023C8.75502 2.24023 2.76903 8.21658 2.76584 15.5631L2.76618 15.563ZM16.11 28.8966H16.1102H16.11C16.1097 28.8966 16.1099 28.8966 16.11 28.8966Z" fill="url(#paint0_linear_851_18389)"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6567 9.78963C12.398 9.21516 12.1257 9.20366 11.8796 9.19355C11.6782 9.185 11.4478 9.18555 11.2177 9.18555C10.9874 9.18555 10.6132 9.27189 10.2968 9.61709C9.98013 9.9623 9.08789 10.7968 9.08789 12.4939C9.08789 14.1912 10.3256 15.8311 10.4981 16.0615C10.6708 16.2915 12.8874 19.8856 16.3976 21.2682C19.3152 22.4173 19.9089 22.1887 20.5421 22.1312C21.1753 22.0737 22.5855 21.297 22.8732 20.4915C23.1611 19.6861 23.1611 18.9957 23.0748 18.8515C22.9885 18.7077 22.7581 18.6214 22.4127 18.449C22.0672 18.2765 20.3693 17.4419 20.0528 17.3268C19.7361 17.2118 19.5059 17.1544 19.2755 17.4997C19.0453 17.8446 18.3838 18.6214 18.1823 18.8515C17.9808 19.082 17.7793 19.1108 17.4339 18.9383C17.0884 18.7652 15.9761 18.4013 14.6565 17.2263C13.6298 16.3119 12.9367 15.1828 12.7351 14.8374C12.5337 14.4925 12.7136 14.3057 12.8868 14.1337C13.0419 13.9791 13.2323 13.7309 13.405 13.5296C13.5773 13.3281 13.6348 13.1844 13.7499 12.9543C13.8652 12.724 13.8076 12.5226 13.7212 12.35C13.6348 12.1775 12.9636 10.4716 12.6565 9.78953" fill="white"/>
+									<defs>
+									<linearGradient id="paint0_linear_851_18389" x1="16.0541" y1="29.125" x2="16.0541" y2="2.23741" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#20B038"/>
+									<stop offset="1" stop-color="#60D66A"/>
+									</linearGradient>
+									</defs>
+								</svg>
+							
+							</div>
+							<div class="share__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#share-vb"></use>
+								</svg>
+							</div>
+							<div class="share__item">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.1816 30.1816C23.9136 30.1816 30.1816 23.9136 30.1816 16.1816C30.1816 8.44965 23.9136 2.18164 16.1816 2.18164C8.44965 2.18164 2.18164 8.44965 2.18164 16.1816C2.18164 23.9136 8.44965 30.1816 16.1816 30.1816Z" fill="url(#paint0_linear_851_18402)"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.51785 16.0336C12.5991 14.2554 15.3206 13.0832 16.6823 12.5168C20.5703 10.8997 21.3782 10.6187 21.9047 10.6095C22.0206 10.6074 22.2795 10.6361 22.4472 10.7722C22.5889 10.8872 22.6278 11.0424 22.6465 11.1514C22.6651 11.2603 22.6884 11.5086 22.6699 11.7025C22.4592 13.9162 21.5476 19.2884 21.0838 21.7678C20.8875 22.8169 20.5011 23.1687 20.127 23.2031C19.314 23.2779 18.6966 22.6658 17.9092 22.1497C16.677 21.3419 15.9809 20.8391 14.7849 20.051C13.4026 19.1401 14.2987 18.6395 15.0864 17.8213C15.2926 17.6072 18.8747 14.349 18.944 14.0534C18.9527 14.0164 18.9607 13.8786 18.8789 13.8059C18.797 13.7331 18.6762 13.758 18.589 13.7778C18.4654 13.8058 16.497 15.1069 12.6837 17.6809C12.125 18.0646 11.6189 18.2515 11.1655 18.2417C10.6656 18.2309 9.70405 17.9591 8.98924 17.7268C8.11249 17.4418 7.41566 17.2911 7.47634 16.8071C7.50794 16.555 7.85512 16.2971 8.51785 16.0336Z" fill="white"/>
+									<defs>
+									<linearGradient id="paint0_linear_851_18402" x1="16.1816" y1="2.18164" x2="16.1816" y2="29.974" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#2AABEE"/>
+									<stop offset="1" stop-color="#229ED9"/>
+									</linearGradient>
+									</defs>
+								</svg>
+									
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-second">
+					<div class="title title_with-content">
+						<span>Комментарии к статье</span>
+						<div class="btn title__content">Написать комментарий</div>
+					</div>
+					<div class="reviews-second__list">
+						<div class="reviews-second__item">
+							<div class="reviews-second__item-row">
+								<div class="reviews-second__item-name">Евгений</div>
+								<div class="reviews-second__item-date">17 августа 2022</div>
+							</div>
+							<div class="reviews-second__item-text">Покупаем арматуру и листы уже долгое время . У нас сложились теплые и хорошие партнерские отношения. Радует внимательное отношение к клиентам персонала компании. Любые спорные моменты или вопросы решаются в течение часа без конфликтов. Отдельное спасибо менеджеру Елене. Доставка круглосуточная. Привозят все в срок без задержек</div>
+						</div>
+						<div class="reviews-second__item">
+							<div class="reviews-second__item-row">
+								<div class="reviews-second__item-name">Вячеслав</div>
+								<div class="reviews-second__item-date">17 августа 2022</div>
+							</div>
+							<div class="reviews-second__item-text">Честно признаюсь, после заказа очень переживал, вдруг обманут. Сейчас совесть мучает, что так плохо думал о людях. В компании работают честные и порядочные сотрудники. Теперь убедился в этом лично на собственном опыте. Все проверяли. Все цифры по факту и на бумаге сошлись до грамма. Оплата точно по квитанции. Все чеки предоставлены. Ничего лишнего сверху не накрутили.</div>
+						</div>
+						<div class="reviews-second__item">
+							<div class="reviews-second__item-row">
+								<div class="reviews-second__item-name">Станислав</div>
+								<div class="reviews-second__item-date">17 августа 2022</div>
+							</div>
+							<div class="reviews-second__item-text">15.12.20 Заказали тонну оцинкованных листов, на сайте прочитал, что если заказывать до обеда, то возможна доставка в день заказа, и ведь не соврали! Очень рекомендую Сортамент, действительно качество на все сто!</div>
+						</div>
+					</div>
+				</div>
+				<section class="news">
+					<div class="title">Читайте также</div>
+					<div class="news__slider swiper" id="news-slider">
+						<div class="swiper-wrapper">
+							<div class="news__item swiper-slide">
+								<img src="images/dest/news-1.webp" alt="">
+								<div class="news__item-content">
+									<div class="news__item-title">Сетка рабица. Применение в строительстве</div>
+									<div class="news__item-bottom">
+										<div class="news__item-date">10.09.2022</div>
+										<a href="#" class="news__item-more">Читать статью</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__item swiper-slide">
+								<img src="images/dest/news-2.webp" alt="">
+								<div class="news__item-content">
+									<div class="news__item-title">Электросварная труба. Примерение в строительстве</div>
+									<div class="news__item-bottom">
+										<div class="news__item-date">10.09.2022</div>
+										<a href="#" class="news__item-more">Читать статью</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__item swiper-slide">
+								<img src="images/dest/news-3.webp" alt="">
+								<div class="news__item-content">
+									<div class="news__item-title">Вязальная проволока. Способы применения</div>
+									<div class="news__item-bottom">
+										<div class="news__item-date">10.09.2022</div>
+										<a href="#" class="news__item-more">Читать статью</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__item swiper-slide">
+								<img src="images/dest/news-4.webp" alt="">
+								<div class="news__item-content">
+									<div class="news__item-title">Причины коррозии металла и способы его защиты</div>
+									<div class="news__item-bottom">
+										<div class="news__item-date">10.09.2022</div>
+										<a href="#" class="news__item-more">Читать статью</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>			
+		</div>
+	
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__inner">
+					<div class="footer__contacts contacts-second">
+						<a href="#" class="contacts-second__phone">8 (495) 123-30-40</a>
+						<a href="#" class="contacts-second__phone">8 (800) 200-69-40</a>
+						<a href="#" class="contacts-second__email">info@sortmet.ru</a>
+						<div class="contacts-second__work-time">пн-пт 09:00 - 18:00</div>
+						<div class="footer__contacts-btn contacts-second__btn btn">Заказать звонок</div>
+						<div class="footer__social social">
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#tg-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#wa-1"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__item">
+								<svg width="32" height="32">
+									<use xlink:href="images/dest/sprite.svg#vk-1"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__menu menu-second">
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Покупателям</div>
+							<a href="#" class="menu-block__item">Доставка</a>
+							<a href="#" class="menu-block__item">Оплата</a>
+							<a href="#" class="menu-block__item">Акции</a>
+							<a href="#" class="menu-block__item">Прайс-лист</a>
+							<a href="#" class="menu-block__item">О компании</a>
+							<a href="#" class="menu-block__item">Сертификаты</a>
+							<a href="#" class="menu-block__item">Отзывы</a>
+							<a href="#" class="menu-block__item">Контакты</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Каталог</div>
+							<a href="#" class="menu-block__item">Сортовой прокат</a>
+							<a href="#" class="menu-block__item">Листовой прокат</a>
+							<a href="#" class="menu-block__item">Трубы</a>
+							<a href="#" class="menu-block__item">Проволока и сетка</a>
+							<a href="#" class="menu-block__item">Нержавеющая сталь</a>
+							<a href="#" class="menu-block__item">Цветные металлы</a>
+						</div>
+						<div class="menu-second__block menu-block">
+							<div class="menu-block__title">Услуги</div>
+							<a href="#" class="menu-block__item">Изготовление металлоконструкций</a>
+							<a href="#" class="menu-block__item">Порошковая покраска металла</a>
+							<a href="#" class="menu-block__item">Гибка металла</a>
+							<a href="#" class="menu-block__item">Теплоизоляция труб</a>
+							<a href="#" class="menu-block__item">Резка металла</a>
+							<a href="#" class="menu-block__item">Рубка металла</a>
+							<a href="#" class="menu-block__item">Сварка металла</a>
+							<a href="#" class="menu-block__item">Цинкование</a>
+						</div>
+					</div>
+					<div class="footer__adress adress">
+						<div class="adress__title">Адрес офиса</div>
+						<div class="adress__value">Люберцы ул. 3-е Почтовое отделение 102, офис 424</div>
+						<div class="adress__maps">
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#gm"></use>
+								</svg>
+								<div class="adress__map-caption">Google Maps</div>
+							</a>
+							<a href="#" class="adress__map">
+								<svg width="24" height="24">
+									<use xlink:href="images/dest/sprite.svg#ym"></use>
+								</svg>
+								<div class="adress__map-caption">Яндекс карты</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__mob">
+						<div class="footer__copy">© 2020, Сортмет. Все права защищены. Копирование информации преследуется по закону.</div>
+						<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<div class="hamburger" id="hamburger">
+			<div class="hamburger__city">Санкт-Петербург</div>
+			<div class="hamburger__menu hamburger-menu">
+				<a href="#" class="hamburger-menu__item">Доставка</a>
+				<a href="#" class="hamburger-menu__item">Оплата</a>
+				<a href="#" class="hamburger-menu__item">Акции</a>
+				<a href="#" class="hamburger-menu__item">Прайс-лист</a>
+				<a href="#" class="hamburger-menu__item">О компании</a>
+				<a href="#" class="hamburger-menu__item">Сертификаты</a>
+				<a href="#" class="hamburger-menu__item">Отзывы</a>
+				<a href="#" class="hamburger-menu__item">Контакты</a>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (495) 123-30-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__phone phone">
+				<a href="#" class="phone__value">8 (800) 200-69-40</a>
+				<div class="phone__caption">Перезвоните мне</div>
+			</div>
+			<div class="hamburger__email email">
+				<a href="#" class="email__value">zakaz@sortmet.ru</a>
+				<div class="email__caption">пн-пт 09:00 - 18:00</div>
+			</div>
+			<div class="hamburger__location location">
+				<b>Люберцы,</b> ул. 3-е Почтовое отделение 102, офис 424
+			</div>
+			<div class="hamburger__social social">
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#tg"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#wa"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__item">
+					<svg width="32" height="32">
+						<use xlink:href="images/dest/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-navbar">
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#catalog-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Каталог</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#search-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Поиск</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#compare-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Сравнение</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#like-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Избранное</div>
+			</div>
+			<div class="mobile-navbar__item">
+				<svg width="24" height="24">
+					<use xlink:href="images/dest/sprite.svg#cart-gray"></use>
+				</svg>
+				<div class="mobile-navbar__item-caption">Корзина</div>
+			</div>
+		</div>
+		<div class="city-changer" id="city-changer">
+			<div class="city-changer__close" id="city-changer-close"></div>
+			<div class="city-changer__title">Ваш город: Санкт-Петербург</div>
+			<input type="text" class="city-changer__value" placeholder="Введите название вашего города">
+			<div class="city-changer__list">
+				<div class="city-changer__item">Волгоград</div>
+				<div class="city-changer__item">Воронеж</div>
+				<div class="city-changer__item">Екатеринбург</div>
+				<div class="city-changer__item">Ижевск</div>
+				<div class="city-changer__item">Казань</div>
+				<div class="city-changer__item">Калининград</div>
+				<div class="city-changer__item">Кемерово</div>
+				<div class="city-changer__item">Кострома</div>
+				<div class="city-changer__item">Красноярск</div>
+				<div class="city-changer__item">Магнитогорск</div>
+				<div class="city-changer__item">Москва</div>
+				<div class="city-changer__item">Набережные челны</div>
+				<div class="city-changer__item">Новосибирск</div>
+				<div class="city-changer__item">Нижний Новгород</div>
+				<div class="city-changer__item">Омск</div>
+				<div class="city-changer__item">Пенза</div>
+				<div class="city-changer__item">Пермь</div>
+				<div class="city-changer__item">Ростов-на-Дону</div>
+				<div class="city-changer__item">Самара</div>
+				<div class="city-changer__item">Санкт-Петербург</div>
+				<div class="city-changer__item">Тюмень</div>
+				<div class="city-changer__item">Уфа</div>
+				<div class="city-changer__item">Челябинск</div>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="libs/nouislider/nouislider.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
