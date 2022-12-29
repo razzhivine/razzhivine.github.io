@@ -1,0 +1,128 @@
+.services-page
+    margin-bottom: 70px
+    line-height: 150%
+    @media ( max-width: 767px )
+        margin-bottom: 30px
+    p
+        @media ( max-width: 767px )
+            font-size: 12px
+    &__list
+        margin-top: 40px
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        align-items: flex-start
+        @media ( max-width: 767px )
+            margin-top: 15px
+    &__item
+        width: calc( 33.33333% - 14px )
+        margin-bottom: 30px
+        box-sizing: border-box
+        @media ( max-width: 1235px )
+            width: calc( 50% - 10px )
+        @media ( max-width: 767px )
+            width: 100%
+            margin-bottom: 10px
+        &_form
+            background: #F7F7F9
+            border-radius: 15px
+            padding: 30px 30px 60px
+            @media ( max-width: 767px )
+                padding: 20px 15px 25px
+            .services-page__item-name
+                line-height: 150%
+                font-size: 22px
+                @media ( max-width: 767px )
+                    font-size: 20px
+                    line-height: 23px
+                    margin-bottom: 10px
+            .services-page__item-text
+                @media ( max-width: 767px )
+                    font-size: 14px
+                    line-height: 140%
+            .services-page__item-input
+                height: 48px !important
+            .services-page__item-submit
+                padding: 10px 15px 12px
+                position: absolute
+                background: #1A1E24
+                border-radius: 7px
+                top: 4px
+                right: 4px
+                // transform: translateY(-50%)
+                height: 40px
+                width: fit-content
+                margin: 0
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 25px
+            @media ( max-width: 767px )
+                height: 140px
+                object-fit: cover
+                border-radius: 10px
+                margin-bottom: 15px
+        &-name
+            font-weight: 600
+            font-size: 20px
+            line-height: 23px
+            margin-bottom: 15px
+            @media ( max-width: 767px )
+                font-size: 14px
+                line-height: 16px
+                margin-bottom: 5px
+        &-text
+            line-height: 150%
+            color: #626D7D
+            margin-bottom: 20px
+            @media ( max-width: 767px )
+                font-size: 12px
+                margin-bottom: 15px
+        &-actions
+            display: flex
+            gap: 40px
+            align-items: center
+            @media ( max-width: 767px )
+                gap: 30px
+        &-form
+            position: relative
+        &-btn
+            @media ( max-width: 767px )
+                font-size: 14px
+                line-height: 16px
+        &-more
+            color: #1A1E24
+            position: relative
+            padding-right: 25px
+            @media ( max-width: 767px )
+                font-size: 14px
+                line-height: 16px
+            &::before
+                content: ""
+                width: 20px
+                height: 20px
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_757_27456)'%3E%3Cpath d='M8.33333 14.166L12.5 9.99935L8.33334 5.83268' stroke='%230077FF' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_757_27456'%3E%3Crect width='20' height='20' fill='white' transform='translate(0 20) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+        &-input
+            margin-bottom: 15px 
+            height: 62px !important
+        &-submit
+            width: 100%
+            text-align: center
+            height: 62px
+            margin-bottom: 25px
+        &-policy
+            font-size: 14px
+            line-height: 16px
+            color: #7F8A9B
+            opacity: 0.66
+            @media ( max-width: 767px )
+                font-size: 12px
+                line-height: 14px
+            a
+                color: #7F8A9B
+                text-decoration: underline
+    

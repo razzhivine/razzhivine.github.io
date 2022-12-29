@@ -1,0 +1,66 @@
+.warranty
+    p
+        font-size: 16px
+        line-height: 160%
+        @media (max-width: 767px)
+            font-size: 14px
+            line-height: 160%
+    &__list
+        margin: 40px 0
+    &__item
+        margin-bottom: 20px
+        background: #F7F7F9
+        border-radius: 15px
+        padding: 30px
+        box-sizing: border-box
+        transition: .3s background ease
+        display: flex
+        align-items: center
+        @media (max-width: 767px)
+            // width: calc( 50% - 10px )
+            // margin: 0 5px 10px
+            padding: 20px
+            flex-direction: column
+            align-items: flex-start
+        &:hover
+            background: #0077FF
+            box-shadow: 0px 3px 20px -9px rgba(0, 0, 0, 0.43), 0px 16px 26px rgba(0, 119, 255, 0.26), 0px 16px 5px -10px rgba(0, 79, 170, 0.14)
+            .warranty__item-caption,
+            .warranty__item-text,
+            .warranty__item-disclamer
+                color: #FFFFFF
+            .warranty__item-icon_default
+                display: none
+            .warranty__item-icon_hover
+                display: inline-block
+        &-left
+            margin-right: 30px
+            @media (max-width: 767px)
+                margin-bottom: 10px
+        &-caption
+            font-weight: 800
+            margin-bottom: 14px
+            font-size: 22px
+            line-height: 25px
+            transition: .3s color ease
+            @media (max-width: 767px)
+                font-size: 16px
+                line-height: 140%
+                margin-bottom: 10px
+        &-text
+            line-height: 150%
+            transition: .3s color ease
+            @media (max-width: 767px)
+                font-size: 12px
+        &-disclamer
+            color: #626D7D
+            margin-top: 14px
+            @media (max-width: 767px)
+                font-size: 12px
+                margin-top: 10px
+        &-icon
+            @media (max-width: 1023px)
+                width: 24px
+                height: auto
+            &_hover
+                display: none
