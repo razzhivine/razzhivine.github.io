@@ -5,15 +5,23 @@
         margin: 40px 0
     &__inner
         position: relative
-      
+        z-index: 1
 .catalog-slider__inner .swiper
     margin-bottom: -300px
     padding-bottom: 300px
+    margin: -65px -65px -300px
+    padding: 65px 65px 300px
 .catalog-slider__inner .arrow
     top: calc( 27% )
+    z-index: 3
     @media (max-width: 1365px)
         display: none
 .catalog-slider__inner .slider-pagination
     display: none
     @media (max-width: 1365px)
         display: flex
+.catalog-slider__inner .swiper-slide
+    opacity: 0
+    transition: opacity .3s ease-in
+.catalog-slider__inner .swiper-slide-visible
+        opacity: 1

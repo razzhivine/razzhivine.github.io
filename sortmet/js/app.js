@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let catalogSlider1 = new Swiper("#catalog-slider-1", {
       slidesPerView: 2,
       spaceBetween: 10,
+      watchSlidesProgress: true,
       pagination: {
         el: "#catalog-slider-1-pagination",
       },
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let catalogSlider2 = new Swiper("#catalog-slider-2", {
     slidesPerView: 2,
     spaceBetween: 10,
+    watchSlidesProgress: true,
     pagination: {
       el: "#catalog-slider-2-pagination",
     },
@@ -495,6 +497,8 @@ document.addEventListener("DOMContentLoaded", function() {
       seoController.dataset.text = dataText;
       seoController.classList.toggle('seo__controller_active');
       content.classList.toggle('seo__content_open');
+      // slideToggle(this);
+      
     });
   }
 
@@ -776,6 +780,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
   }
+
+  if(document.querySelectorAll('.popup-controller').length){
+    let popupsControllers = document.querySelectorAll('.popup-controller');
+    popupsControllers.forEach(element => {
+      element.addEventListener('click', ()=>{
+        let popupId = element.dataset.popup;
+        let popup = document.querySelector('.popup[data-popup="' + popupId + '"]');
+        fadeIn(popup, false, 1);
+        fadeIn(overlay);
+        overlay.classList.add('overlay_z-index');
+    
+      })
+    })
+  }
+  if(document.querySelectorAll('.popup__close').length){
+    let popupsClose = document.querySelectorAll('.popup__close');
+    popupsClose.forEach(element => {
+      element.addEventListener('click', ()=>{
+        let popup = element.parentElement;
+        fadeOut(popup, false, 1);
+        fadeOut(overlay);
+      })
+    })
+
+  }
+
 });
 
 if(document.querySelector('.compare-item') !== null){

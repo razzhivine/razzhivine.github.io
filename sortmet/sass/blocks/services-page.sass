@@ -41,18 +41,20 @@
                     font-size: 14px
                     line-height: 140%
             .services-page__item-input
-                height: 48px !important
+                @media ( max-width: 767px )
+                    height: 48px !important
             .services-page__item-submit
-                padding: 10px 15px 12px
-                position: absolute
-                background: #1A1E24
-                border-radius: 7px
-                top: 4px
-                right: 4px
-                // transform: translateY(-50%)
-                height: 40px
-                width: fit-content
-                margin: 0
+                @media ( max-width: 767px )
+                    padding: 10px 15px 12px
+                    position: absolute
+                    background: #1A1E24
+                    border-radius: 7px
+                    top: 4px
+                    right: 4px
+                    // transform: translateY(-50%)
+                    height: 40px
+                    width: fit-content
+                    margin: 0
         img
             width: 100%
             height: auto

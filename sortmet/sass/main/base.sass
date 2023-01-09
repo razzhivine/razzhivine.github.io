@@ -21,6 +21,11 @@ ul
         margin-bottom: 20px
         position: relative
         line-height: 160%
+        &:last-child
+            margin-bottom: 0
+        @media ( max-width: 767px )
+            padding-left: 26px
+            margin-bottom: 10px
         &::before
             content: ""
             width: 10px
@@ -30,6 +35,11 @@ ul
             position: absolute
             top: 7px
             left: 7px
+            @media ( max-width: 767px )
+                width: 6.67px
+                height: 6.67px
+                top: 4.67px
+                left: 4.67px
 .simple-list
     margin: 0
     li
@@ -102,6 +112,9 @@ textarea
     &_pb 
         padding-bottom: 70px
         margin-bottom: -70px
+    &_without-after
+        &::after
+          content: none !important 
     @media (min-width: 1024px) 
         padding-top: 60px
         &::before
@@ -126,3 +139,13 @@ textarea
     &_nb
         &::after
             content: none
+.mt-0
+    margin-top: 0 !important
+    
+.mb-0
+    margin-bottom: 0 !important
+.btns
+    margin: 0 -5px
+    & > *
+        width: fit-content
+        margin: 0 5px 5px 

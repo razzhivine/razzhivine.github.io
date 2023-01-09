@@ -1,13 +1,19 @@
 .favorites
-    display: flex
-    flex-wrap: wrap
-    margin: 0 -10px
+    margin-bottom: 133px
+    @media  ( max-width: 767px )
+        margin-bottom: 30px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -10px 60px
+        @media  ( max-width: 767px )
+            margin-bottom: 0
     &__item
         width: calc( 25% - 20px )
         margin: 0 10px 40px
         @media ( max-width: 1023px )
             width: calc( 33.33333% - 20px )
-        @media ( max-width: 1023px )
+        @media ( max-width: 767px )
             width: calc( 50% - 10px )
             margin: 0 5px 30px
             

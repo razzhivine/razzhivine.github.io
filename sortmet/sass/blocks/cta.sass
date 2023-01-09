@@ -4,12 +4,16 @@
     background: #F7F7F9
     border-radius: 20px
     padding: 40px
-   
+
     @media ( max-width: 1023px )
         flex-direction: column
         gap: 20px
     @media ( max-width: 767px )
         padding: 20px
+    &__title
+        line-height: 140%
+        @media ( max-width: 767px )
+            line-height: 25px
     &__content
         width: 35%
         @media ( max-width: 1023px )
@@ -59,9 +63,10 @@
             margin-bottom: -3px
     &__text
         margin-bottom: 30px
+        line-height: 160%
         @media ( max-width: 767px )
             font-size: 14px
-            margin-bottom: 10px
+            margin-bottom: 0
     &__btn
         display: block
         width: fit-content

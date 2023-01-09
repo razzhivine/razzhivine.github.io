@@ -1,0 +1,48 @@
+.popup
+    height: 586px
+    background: #FFFFFF
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14)
+    border-radius: 25px
+    margin: 15px
+    padding: 40px
+    width: 100%
+    max-width: 477px
+    box-sizing: border-box
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 100
+    text-align: center
+    // position: relative
+    display: none
+    &__close
+        width: 24px
+        height: 24px
+        position: absolute
+        top: 20px
+        right: 20px
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_890_16992)'%3E%3Cpath d='M5.63574 18.364L18.3637 5.63603' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.63672 5.63605L18.3646 18.364' stroke='%23ADB3BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_890_16992'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+        cursor: pointer
+    &__icon
+        margin-bottom: 25px
+    &__title
+        font-weight: 800
+        font-size: 36px
+        line-height: 41px
+        margin-bottom: 10px
+    &__description
+        line-height: 150%
+        margin-bottom: 25px
+    &__btn
+        width: 100%
+        margin: 5px 0 20px
+    &__policy
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #7F8A9B
+        opacity: 0.66
+        a
+            color: #7F8A9B
+            text-decoration: underline
