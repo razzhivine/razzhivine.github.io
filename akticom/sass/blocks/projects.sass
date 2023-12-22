@@ -1,0 +1,49 @@
+.projects
+    margin: 100px 0 180px
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        gap: 15px
+        padding-bottom: 40px
+        border-bottom: 1px solid #fff
+        margin-bottom: 70px
+    &__title 
+    &__tags 
+    &__list
+    &__item
+        display: flex
+        gap: 36px
+        padding: 60px 0
+        border-bottom: 1px solid #fff
+        &:first-child
+            padding-top: 0
+        &:last-child
+            border-bottom: none
+        &-info
+            position: relative
+            max-width: 585px
+            width: 100%
+            &::before
+                content: ""
+                width: 228px
+                height: 228px
+                background-image: url("data:image/svg+xml,%3Csvg width='228' height='228' viewBox='0 0 228 228' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='114' width='114' height='114' fill='%23151515'/%3E%3Cpath d='M228 114V228H114L228 114Z' fill='%23151515'/%3E%3Crect y='114' width='114' height='114' fill='%23151515'/%3E%3C/svg%3E%0A")
+                position: absolute
+                bottom: 0
+                right: 0
+        &-title
+            font-family: 'Manrope', sans-serif
+            font-size: 36px
+            font-weight: 600
+            line-height: 110%
+            margin-bottom: 30px
+        &-text
+            font-size: 20px
+            font-weight: 400
+            line-height: 140%
+            margin-bottom: 30px
+            position: relative
+        &-image
+            width: calc(100% - 615px) 
+            
