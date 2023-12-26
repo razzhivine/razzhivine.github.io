@@ -1,9 +1,16 @@
 .tasks
     margin: 100px 0 180px
+    @media (max-width: 767px)
+        margin: 30px 0 60px
     &__top
         padding-bottom: 40px
         border-bottom: 1px solid #fff
         margin-bottom: 100px
+        @media (max-width: 1367px)
+            margin-bottom: 50px
+        @media (max-width: 1023px)
+            margin-bottom: 30px
+            padding-bottom: 30px
     &__list
         display: flex
         flex-direction: column
@@ -24,6 +31,11 @@
         display: flex
         justify-content: space-between
         gap: 15px
+        box-sizing: border-box
+        @media (max-width: 767px)
+            padding: 20px 60px 20px 60px
+            flex-direction: column
+            font-size: 20px
         &::before
             content: counter(item, decimal-leading-zero)
             position: absolute
@@ -34,14 +46,22 @@
             font-style: normal
             font-weight: 500
             text-transform: uppercase
+            @media (max-width: 767px)
+                top: 20px
+                font-size: 20px
         &::after
             content: ''
             width: 26px
             height: 26px
             background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.52 1.48H25.52V0.48H24.52V1.48ZM24.52 25H23.52V26H24.52V25ZM25 25V26H26V25H25ZM25 1H26V0H25V1ZM1 1V0H0V1H1ZM1 1.48H0V2.48H1V1.48ZM25.3497 2.06454C25.7388 1.6726 25.7365 1.03944 25.3445 0.650334C24.9526 0.261228 24.3194 0.263524 23.9303 0.655462L25.3497 2.06454ZM24.52 26H25V24H24.52V26ZM0 1V1.48H2V1H0ZM23.9303 0.655462L0.615595 24.1399L2.03493 25.549L25.3497 2.06454L23.9303 0.655462ZM1 2.48H24.52V0.48H1V2.48ZM23.52 1.48V25H25.52V1.48H23.52ZM26 25V1H24V25H26ZM25 0H1V2H25V0Z' fill='%23B8FF20'/%3E%3C/svg%3E%0A")
+            background-size: contain
             position: absolute
             top: 40px
             right: 15px
+            @media (max-width: 767px)
+                top: 20px
+                width: 22px
+                height: 22px
         &-title
         &-text
             max-width: 600px
@@ -54,3 +74,5 @@
         &.-active
             .tasks__item-text
                 display: block
+            &::after
+                transform: rotate(180deg)

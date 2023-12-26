@@ -1,0 +1,45 @@
+.quiz
+    margin: 150px 0 16px
+    @media (max-width: 1023px)
+        margin: 30px 0
+    &__inner
+        padding: 100px 0
+        display: flex
+        gap: 15px
+        justify-content: space-between
+        @media (max-width: 1023px)
+            flex-direction: column
+            padding: 30px 0
+    &__info
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media (max-width: 1367px)
+            width: 40%
+        @media (max-width: 1023px)
+            width: 100%
+    &__title
+        margin-bottom: 30px
+        @media (max-width: 1023px)
+            margin-bottom: 15px
+    &__policy
+        max-width: 367px
+        font-family: 'Manrope', sans-serif
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: 110%
+        @media (max-width: 1023px)
+            display: none
+    &__form
+        width: 50%
+        max-width: 860px
+        min-height: 500px
+        box-sizing: border-box
+        @media (max-width: 1367px)
+            width: 60%
+        @media (max-width: 1023px)
+            width: 100%
+            max-width: 100%
+            min-height: auto

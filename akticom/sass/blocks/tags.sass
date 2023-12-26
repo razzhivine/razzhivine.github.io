@@ -2,9 +2,21 @@
     display: flex
     flex-wrap: wrap
     gap: 25px
+    @media (max-width: 1367px)
+        gap: 15px
+    @media (max-width: 1023px)
+        gap: 10px
     &__item
         font-size: 20px
         padding: 12px 20px
         border-radius: 100px
         border: 1px solid #FFF
         line-height: 110%
+        @media (max-width: 1367px)
+            font-size: 18px
+            padding: 10px 15px  
+        @media (max-width: 1023px)
+            font-size: 16px
+        @media (max-width: 767px)
+            font-size: 14px
+            padding: 5px 10px

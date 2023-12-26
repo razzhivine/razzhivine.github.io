@@ -1,0 +1,122 @@
+.quiz-form
+    background: #141414
+    padding: 40px 50px 40px 40px
+    @media (max-width: 1023px)
+        padding: 20px
+    &__progress
+        color: #B8FF20
+        font-family: 'Manrope', sans-serif
+        font-size: 24px
+        font-style: normal
+        font-weight: 500
+        line-height: 110%
+        display: flex
+        align-items: center
+        gap: 22px
+        margin-bottom: 23px
+        @media (max-width: 767px)
+            font-size: 18px
+            gap: 15px
+    &__progress-line
+        width: 215px
+        height: 8px
+        border-radius: 4px
+        background: #212121
+        position: relative
+        @media (max-width: 767px)
+            width: 150px
+        &::before
+            content: ''
+            width: 0
+            height: 8px
+            border-radius: 4px
+            background: #B8FF20
+            position: absolute
+            left: 0
+            top: 0
+            transition: width .3s ease-in
+        &[data-step="1"]
+            &::before
+                width: 20%
+        &[data-step="2"]
+            &::before
+                width: 40%
+        &[data-step="3"]
+            &::before
+                width: 60%
+        &[data-step="4"]
+            &::before
+                width: 80%
+        &[data-step="5"]
+            &::before
+                width: 100%
+    &__inner
+        display: flex
+        gap: 15px
+        justify-content: space-between
+    &__block
+        max-width: 550px
+        &-title
+            font-family: 'Manrope', sans-serif
+            font-size: 36px
+            font-weight: 600
+            line-height: 110%
+            margin-bottom: 26px
+            @media (max-width: 1023px)
+                font-size: 28px
+        &-variants
+            display: flex
+            flex-wrap: wrap
+            gap: 20px
+        &-variant
+            padding: 15px 15px 15px 50px
+            border-radius: 5px
+            background: #262626
+            position: relative
+            font-size: 24px
+            @media (max-width: 767px)
+                padding: 10px 10px 10px 50px
+                font-size: 18px
+            &::before
+                content: ""
+                position: absolute
+                left: 15px
+                top: 50%
+                transform: translateY(-50%)
+            &--landing
+                padding-left: 54px
+                &::before
+                    width: 24px
+                    height: 24px
+                    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='7.5' stroke='%23B8FF20'/%3E%3Ccircle cx='8' cy='8' r='7.5' stroke='%23B8FF20'/%3E%3C/svg%3E%0A")
+            &--mobile-app
+                &::before
+                    width: 20px
+                    height: 24px
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 20 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='19' height='23' rx='1.5' stroke='%23B8FF20'/%3E%3Crect x='7' y='20' width='6' height='1' rx='0.5' fill='%23B8FF20'/%3E%3C/svg%3E%0A")
+            &--site
+                padding-left: 71px
+                &::before
+                    width: 41px
+                    height: 24px
+                    background-image: url("data:image/svg+xml,%3Csvg width='42' height='24' viewBox='0 0 42 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6.85714' cy='17.1428' r='6.35714' stroke='%23B8FF20'/%3E%3Ccircle cx='13.7146' cy='6.85714' r='6.35714' stroke='%23B8FF20'/%3E%3Ccircle cx='23.9997' cy='17.1428' r='6.35714' stroke='%23B8FF20'/%3E%3Ccircle cx='34.2859' cy='6.85714' r='6.35714' stroke='%23B8FF20'/%3E%3C/svg%3E%0A")
+            &--shop
+                &::before
+                    width: 20px
+                    height: 23px
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 20 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.659818 2.61219C0.594555 1.742 1.28299 1 2.15562 1H17.8444C18.717 1 19.4054 1.742 19.3402 2.61218L18.1402 18.6122C18.0815 19.3949 17.4293 20 16.6444 20H3.35562C2.57071 20 1.91852 19.3949 1.85982 18.6122L0.659818 2.61219Z' stroke='%23B8FF20'/%3E%3Ccircle cx='3' cy='22.5' r='1' fill='%23B8FF20'/%3E%3Ccircle cx='17' cy='22.5' r='1' fill='%23B8FF20'/%3E%3C/svg%3E%0A")
+    &__steps
+        font-family: 'Manrope', sans-serif
+        font-size: 14px
+        font-weight: 600
+        line-height: 110%
+        @media (max-width: 767px)
+            display: none
+    &__step
+        color: #606060
+        margin-bottom: 15px
+        white-space: nowrap
+        &:last-child
+            margin-bottom: 0
+        &.-active
+            color: #fff

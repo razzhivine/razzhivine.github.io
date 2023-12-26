@@ -16,13 +16,19 @@ a
 .wrapper
     max-width: 1790px
     width: 100%
-    padding: 15px
+    padding: 0 15px
     margin: 0 auto
     box-sizing: border-box
 .title
     font-size: 72px
     text-transform: uppercase
     line-height: 110%
+    @media (max-width: 1367px)
+        font-size: 50px
+    @media (max-width: 1023px)
+        font-size: 40px
+    @media (max-width: 767px)
+        font-size: 35px
 .button
     color: #404040
     padding: 24px 30px
@@ -31,11 +37,22 @@ a
     text-decoration: none
     display: inline-block
     font-size: 20px
+    width: fit-content
+    cursor: pointer
+    @media (max-width: 1023px)
+        font-size: 18px
+        padding: 18px 24px
     &--big
         font-size: 36px
         padding: 60px 50px
         border-radius: 15px
         box-shadow: 0px 2px 16px 0px rgba(188, 255, 46, 0.28)
+        @media (max-width: 1367px)
+            font-size: 28px
+            padding: 40px 30px
+        @media (max-width: 1023px)
+            font-size: 22px
+            padding: 30px 20px
 
 .logo
     max-width: 201px
@@ -56,7 +73,13 @@ a
         top: 50%
         left: 0
         transform: translateY(-50%)
-.phone
+    &--close
+        &::before
+            width: 18px
+            height: 18px
+            background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 16.4246L16.2635 0.161133L17.6777 1.57535L1.41421 17.8388L0 16.4246Z' fill='white'/%3E%3Cpath d='M16.2635 17.8388L0 1.57535L1.41421 0.161133L17.6777 16.4246L16.2635 17.8388Z' fill='white'/%3E%3C/svg%3E%0A")
+.phone,
+.email
     font-size: 18px
     font-weight: 600
     line-height: 150%
@@ -68,4 +91,7 @@ a
 @import blocks/tasks
 @import blocks/projects
 @import blocks/tags
+@import blocks/quiz
+@import blocks/quiz-form
 @import blocks/footer
+@import blocks/menu

@@ -1,8 +1,12 @@
 .first-screen
+    @media (max-width: 1023px)
+        margin-bottom: 60px
     &__inner
         display: flex
         gap: 30px
         justify-content: space-between
+        @media (max-width: 1023px)
+            flex-direction: column
     &__info
         max-width: 950px
         height: 100%
@@ -22,6 +26,14 @@
         line-height: 110%
         text-transform: uppercase
         margin: 98px 0
+        @media (max-width: 1367px)
+            font-size: 80px
+        @media (max-width: 1279px)
+            font-size: 68px
+            margin: 50px 0
+        @media (max-width: 767px)
+            font-size: 50px
+            margin: 50px 0 30px
     &__button
         position: relative
         &::before
@@ -38,6 +50,13 @@
         gap: 20px
         max-width: 410px
         width: 100%
+        @media (max-width: 1367px)
+            max-width: 300px    
+        @media (max-width: 1023px)
+            max-width: 100%
+            flex-direction: row
+        @media (max-width: 767px)
+            flex-direction: column
     &__tab
         width: 100%
         height: 236px
@@ -51,11 +70,20 @@
         padding: 25px
         box-sizing: border-box
         position: relative
+        @media (max-width: 1367px)
+            height: 180px
+        @media (max-width: 767px)
+            height: 100px
+            padding-left: 130px
+            align-items: center
         &::before    
             content: ''
             position: absolute
             top: 25px
             left: 25px
+            @media (max-width: 767px)
+                top: 50%
+                transform: translateY(-50%)
         &--development::before
             width: 76px
             height: 57px
