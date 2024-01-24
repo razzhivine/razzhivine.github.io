@@ -1,0 +1,109 @@
+.first-screen
+    &__slider
+        overflow: visible
+    &__images
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        // height: calc(100% + 151px )
+        z-index: -1
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+    &__image
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            display: block
+    &__content
+        max-width: 555px
+        margin-top: 90px
+        @media (max-width: 1023px)
+            font-size: 75px
+    &__title
+        color: #fff
+        font-size: 90px
+        font-style: normal
+        font-weight: 600
+        line-height: 120%
+        text-transform: uppercase
+        margin-bottom: 20px
+        @media (max-width: 1023px)
+            font-size: 48px
+        span
+            color: #B1CAFF
+    &__text
+        color: #E0E0E0
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 150%
+        margin-bottom: 60px
+        @media (max-width: 1023px)
+            font-size: 15px
+    &__link
+        color: #A5F018
+        font-size: 20px
+        font-weight: 700
+        line-height: 140%
+        position: relative
+        padding-left: 75px
+        margin-bottom: 80px
+        @media (max-width: 1023px)
+            padding-left: 44px
+            font-size: 15px
+            margin-bottom: 224px
+
+        &::before
+            content: ''
+            width: 50px
+            height: 50px
+            background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='48' height='48' fill='%23A5F018' stroke='%23A5F018' stroke-width='2'/%3E%3Cpath d='M23.9393 38.5607C24.5251 39.1464 25.4749 39.1464 26.0607 38.5607L35.6066 29.0147C36.1924 28.4289 36.1924 27.4792 35.6066 26.8934C35.0208 26.3076 34.0711 26.3076 33.4853 26.8934L25 35.3787L16.5147 26.8934C15.9289 26.3076 14.9792 26.3076 14.3934 26.8934C13.8076 27.4792 13.8076 28.4289 14.3934 29.0147L23.9393 38.5607ZM23.5 12.5V37.5H26.5V12.5H23.5Z' fill='%23181818'/%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            @media (max-width: 1023px)
+                width: 34px
+                height: 34px
+    &__advantages
+        display: flex
+        gap: 15px
+        justify-content: space-between
+        padding: 28px 39px
+        background: rgba(255, 255, 255, .1)
+        color: #fff
+        @media (max-width: 1279px)
+            gap: 25px
+            padding: 40px 0 25px
+            flex-wrap: wrap
+            background: #324773
+            position: relative
+            &::before,
+            &::after
+                content: ''
+                width: 100vw
+                height: 100%
+                background: #324773
+                position: absolute
+                top: 0
+                z-index: -1
+            &::before
+                left: 0
+            &::after
+                right: 0
+        &-item
+            @media (max-width: 1279px)
+                width: calc( 50% - 15px )
+                padding-bottom: 15px
+            &-icon
+                margin-bottom: 20px
+            &-text
+                font-size: 18px
+                font-weight: 500
+                line-height: 140% 
+                @media (max-width: 1023px)
+                    font-size: 13px

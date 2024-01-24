@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap')
+@import libs/normalize
+*
+    box-sizing: border-box
+body
+    font-family: 'Manrope', sans-serif
+    font-size: 18px
+    line-height: 120%
+    background: #fff
+
+.flow
+    width: 100vw
+    overflow-x: hidden
+.wrapper
+    width: 100%
+    max-width: 1780px
+    margin: 0 auto
+    padding: 0 20px
+.gray
+    background: #F4F6F8
+    position: relative
+    &::before,
+    &::after
+        content: ''
+        width: 100vw
+        height: 100%
+        background: #F4F6F8
+        position: absolute
+        top: 0
+        z-index: -1
+    &::before
+        left: 0
+    &::after
+        right: 0
+.pt-100
+    padding-top: 100px
+.pb-125
+    padding-bottom: 125px
+.title
+    color: #181818
+    font-size: 48px
+    font-weight: 600
+    line-height: 120%
+    margin-bottom: 30px
+    @media (max-width: 767px)
+        font-size: 24px
+.sub-title
+    color: #324773
+    font-size: 20px
+    font-weight: 600
+    line-height: 120%
+.btn
+    display: inline-block
+    color: #324773
+    font-weight: 500
+    padding: 13px
+    border: 1px solid #324773
+    cursor: pointer
+    text-decoration: none
+    transition: all .15s ease-in
+    text-align: center
+    @media (max-width: 767px)
+        font-size: 14px
+    &-white
+        color: #fff
+        border-color: #fff
+        &:hover
+            background: #fff
+            color: #324773
+.btn-accent
+    display: inline-block
+    background: #A5F018
+    color:  #324773
+    font-weight: 500
+    padding: 17px 20px
+    border: none 
+    cursor: pointer
+    text-decoration: none
+    &--blue
+        background: #324773
+        color: #fff
+    &--link
+        span
+            padding-left: 50px
+            position: relative
+            display: block
+            margin: 0 auto
+            width: fit-content
+            font-size: 14px
+            &::before
+                content: ''
+                width: 20px
+                height: 20px
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.4444 20H3.33331C2.44289 20 1.60584 19.6532 0.976279 19.0236C0.346722 18.394 0 17.557 0 16.6666V5.55555C0 4.66516 0.346761 3.82811 0.976318 3.19855C1.60587 2.569 2.44293 2.22224 3.33335 2.22224H7.77778C8.39147 2.22224 8.8889 2.71967 8.8889 3.33335C8.8889 3.94704 8.39147 4.44447 7.77778 4.44447H3.33331C3.03651 4.44447 2.75751 4.56006 2.54769 4.76988C2.33786 4.97971 2.22224 5.25874 2.22224 5.55555V16.6666C2.22224 16.9635 2.33782 17.2424 2.54769 17.4524C2.75751 17.6621 3.03651 17.7778 3.33331 17.7778H14.4444C14.7412 17.7778 15.0202 17.6622 15.23 17.4523C15.4399 17.2424 15.5555 16.9634 15.5555 16.6666V12.2222C15.5555 11.6085 16.0529 11.1111 16.6666 11.1111C17.2803 11.1111 17.7778 11.6086 17.7778 12.2222V16.6666C17.7778 17.557 17.431 18.394 16.8014 19.0237C16.1718 19.6532 15.3347 20 14.4444 20ZM7.77778 13.3333C7.4934 13.3333 7.20905 13.2248 6.99212 13.0079C6.55822 12.574 6.55822 11.8704 6.99212 11.4365L16.2064 2.22224H12.2222C11.6085 2.22224 11.1111 1.7248 11.1111 1.11112C11.1111 0.497436 11.6085 7.33796e-07 12.2222 7.33796e-07H18.8889C19.179 -0.000332971 19.4577 0.113163 19.665 0.316099L19.6651 0.316177L19.6673 0.31835L19.6679 0.318971L19.6697 0.320679L19.6708 0.321804L19.672 0.323047L19.6744 0.325453L19.6768 0.327859L19.678 0.329101L19.6792 0.330227C19.68 0.330962 19.6808 0.331753 19.6815 0.332595L19.6837 0.334807L19.6837 0.334885C19.8867 0.542258 20.0002 0.820943 19.9998 1.11108V7.77775C19.9998 8.39143 19.5024 8.88886 18.8887 8.88886C18.275 8.88886 17.7776 8.39143 17.7776 7.77775V3.79361L8.56326 13.0079C8.34648 13.2249 8.06213 13.3333 7.77778 13.3333Z' fill='white'/%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 50%
+                left: 20px
+                transform: translateY(-50%)
+.input
+    border: 1px solid #CCC
+    background: #F9F9F9
+    padding: 19px 23px
+
+.counter
+    display: flex
+    gap: 4px
+    color: #181818
+    font-size: 28px
+    font-weight: 500
+    line-height: 140%
+    &__total
+        color: #9C9C9C
+
+
+.progress
+    width: 100%
+    height: 2px
+    background: #D9D9D9
+    position: relative
+    &__line
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        background: #324773
+
+.controls
+    display: flex
+    gap: 15px
+    align-items: flex-end
+    padding-bottom: 25px
+    margin-bottom: 60px
+    position: relative
+.controls
+    .progress
+        position: absolute
+        bottom: 0
+        left: 0
+@import blocks/arrows
+@import blocks/socials
+@import blocks/menu
+@import blocks/second-menu
+@import blocks/section-menu
+@import blocks/contact
+@import blocks/header
+@import blocks/first-screen
+@import blocks/subscribe
+@import blocks/for-whom
+@import blocks/banner
+@import blocks/services
+@import blocks/projects
+@import blocks/item
+@import blocks/list
+@import blocks/blog
+@import blocks/callback-block
+@import blocks/callback-form
+@import blocks/contacts
+@import blocks/brands
+@import blocks/footer

@@ -1,0 +1,7 @@
+File from: [app/images/src/banner.png]
+
+File to: [app/images/dest/banner.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/razzhivin/Desktop/uzmolkom/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/banner.png app/images/src/banner.png

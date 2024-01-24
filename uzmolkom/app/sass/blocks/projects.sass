@@ -1,0 +1,108 @@
+.projects
+    margin: 180px 0
+    @media (max-width: 1023px)
+        margin: 80px 0
+    &__top
+        display: flex
+        gap: 15px
+        justify-content: space-between
+        align-items: center
+    &__btn
+        @media (max-width: 767px)
+            display: none
+    &__sub-title
+        margin-bottom: 20px
+    &__title
+        max-width: 1000px
+    &__list
+        border-top: 1px solid #CCC
+        display: flex
+        flex-wrap: wrap
+        gap: 50px
+        padding-top: 30px
+        @media (max-width: 1023px)
+            gap: 30px
+    &__item
+        width: calc( 33.33333% - 34px )
+        position: relative
+        transition: all .15s ease-in
+        @media (max-width: 1379px)
+            width: calc(50% - 25px)
+        @media (max-width: 767px)
+            width: 100%
+        &::before
+            content: ""
+            width: 100%
+            height: 100%
+            background: transparent
+            position: absolute
+            top: 0
+            left: 0
+            transition: all .15s ease-in
+            @media (max-width: 767px)
+                content: none
+        &-image
+            width: 100%
+            height: auto
+            display: block
+            @media (max-width: 767px)
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                object-fit: cover
+        &-content
+            position: absolute
+            top: 0
+            left: 0
+            padding: 30px 30px 110px
+            height: 100%
+            @media (max-width: 767px)
+                position: relative
+                padding: 20px
+                height: auto
+        &-title
+            color: #fff
+            font-size: 32px
+            font-weight: 600
+            line-height: 120%
+            margin-bottom: 30px
+            transition: all .15s ease-in
+            @media (max-width: 767px)
+                margin-bottom: 20px
+                font-size: 20px
+        &-text
+            color: #181818
+            font-weight: 500
+            line-height: 140%
+            opacity: 0
+            transition: all .15s ease-in
+            @media (max-width: 767px)
+                opacity: 1
+                color: #fff
+                font-size: 14px
+
+        &-btn
+            position: absolute
+            bottom: 30px
+            left: 30px
+            @media (max-width: 767px)
+                position: relative
+                width: calc(100% - 60px)
+                margin: 30px 0 0
+        &:hover
+            .projects__item-title
+                color: #181818
+                @media (max-width: 767px)
+                    color: #fff
+                    
+            .projects__item-text
+                opacity: 1
+            .projects__item-btn
+                background: #fff
+                color: #324773
+            &::before
+                background: #A5F018
+
+
+            

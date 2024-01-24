@@ -1,0 +1,63 @@
+.contacts
+    margin: 180px 0 110px
+    @media (max-width: 1023px)
+        margin: 80px 0 50px 
+    &__top
+        display: flex
+        align-items: center
+        gap: 15px
+        justify-content: space-between
+        margin-bottom: 30px
+    &__btn
+        @media (max-width: 1023px)
+            display: none
+    &__title
+        margin-bottom: 0
+    &__inner
+        border: 1px solid #CCC
+        display: flex
+        justify-content: space-between
+        @media (max-width: 1023px)
+            flex-direction: column
+    &__content
+        padding: 60px 40px
+        max-width: 740px
+        width: 50%
+        @media (max-width: 1023px)
+            width: 100%
+        @media (max-width: 767px)
+            padding: 20px 15px
+    &__info
+        color: #181818
+        font-size: 32px
+        font-weight: 600
+        line-height: 120%
+        padding-bottom: 30px
+        margin-bottom: 46px
+        border-bottom: 1px solid #CCC
+        @media (max-width: 767px)
+            font-size: 16px
+            margin-bottom: 20px
+            padding-bottom: 0
+            border-bottom: none
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+        justify-content: space-between
+        @media (max-width: 767px)
+            gap: 10px
+    &__item
+        @media (max-width: 767px)
+            width: 100%
+    &__map
+        width: 50%
+        @media (max-width: 1023px)
+            width: 100%
+        img
+            width: 100%
+            height: 100%
+            display: block
+            object-fit: cover
+            @media (max-width: 1023px)
+                height: auto

@@ -1,0 +1,39 @@
+.contact
+    padding-left: 56px
+    position: relative
+    min-height: 40px
+    display: inline-flex
+    align-items: center
+    color: #181818
+    font-size: 24px
+    font-weight: 600
+    line-height: 120%
+    text-decoration: none
+    @media (max-width: 767px)
+        font-size: 16px
+        min-height: 26px
+        padding-left: 31px
+    &::before
+        content: ''
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        @media (max-width: 767px)
+            width: 26px
+            height: 26px
+            background-size: contain
+    &--phone
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H40V40H0V0Z' fill='white' fill-opacity='0.3'/%3E%3Cg clip-path='url(%23clip0_883_715)'%3E%3Cpath d='M30.1837 25.0375L27.1779 22.0318C26.1044 20.9583 24.2795 21.3877 23.8501 22.7832C23.5281 23.7494 22.4546 24.2861 21.4884 24.0714C19.3415 23.5346 16.4431 20.7436 15.9063 18.4893C15.5843 17.5231 16.2284 16.4496 17.1945 16.1276C18.59 15.6982 19.0194 13.8733 17.9459 12.7998L14.9402 9.79405C14.0814 9.04261 12.7932 9.04261 12.0418 9.79405L10.0021 11.8337C7.96253 13.9806 10.2168 19.6701 15.2622 24.7155C20.3076 29.7609 25.9971 32.1226 28.144 29.9756L30.1837 27.9359C30.9351 27.0771 30.9351 25.789 30.1837 25.0375Z' fill='%23324773'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_883_715'%3E%3Crect width='21.5385' height='21.5385' fill='white' transform='translate(9.23145 9.23047)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+    &--email
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H40V40H0V0Z' fill='white' fill-opacity='0.3'/%3E%3Cpath d='M28.8 11H11.2C9.99 11 9.011 12.0125 9.011 13.25L9 26.75C9 27.9875 9.99 29 11.2 29H28.8C30.01 29 31 27.9875 31 26.75V13.25C31 12.0125 30.01 11 28.8 11ZM28.8 15.5L20 21.125L11.2 15.5V13.25L20 18.875L28.8 13.25V15.5Z' fill='%23324773'/%3E%3C/svg%3E%0A")
+    &--location
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H40V40H0V0Z' fill='white' fill-opacity='0.3'/%3E%3Cg clip-path='url(%23clip0_883_722)'%3E%3Cpath d='M20.0004 8.46191C15.759 8.46191 12.3081 11.9128 12.3081 16.1542C12.3081 17.4275 12.6264 18.69 13.2316 19.8098L19.5798 31.2909C19.6643 31.444 19.8253 31.5388 20.0004 31.5388C20.1755 31.5388 20.3366 31.444 20.4211 31.2909L26.7716 19.806C27.3744 18.69 27.6928 17.4275 27.6928 16.1542C27.6928 11.9128 24.2419 8.46191 20.0004 8.46191ZM20.0004 20.0004C17.8797 20.0004 16.1543 18.275 16.1543 16.1542C16.1543 14.0335 17.8797 12.3081 20.0004 12.3081C22.1212 12.3081 23.8466 14.0335 23.8466 16.1542C23.8466 18.275 22.1212 20.0004 20.0004 20.0004Z' fill='%23324773'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_883_722'%3E%3Crect width='23.0769' height='23.0769' fill='white' transform='translate(8.46191 8.46191)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+    &--time
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H40V40H0V0Z' fill='white' fill-opacity='0.3'/%3E%3Cpath d='M20 10C18.0222 10 16.0888 10.5865 14.4443 11.6853C12.7998 12.7841 11.5181 14.3459 10.7612 16.1732C10.0043 18.0004 9.8063 20.0111 10.1922 21.9509C10.578 23.8907 11.5304 25.6725 12.9289 27.0711C14.3275 28.4696 16.1093 29.422 18.0491 29.8078C19.9889 30.1937 21.9996 29.9957 23.8268 29.2388C25.6541 28.4819 27.2159 27.2002 28.3147 25.5557C29.4135 23.9112 30 21.9778 30 20C29.9969 17.3488 28.9423 14.8071 27.0676 12.9324C25.1929 11.0577 22.6512 10.0031 20 10ZM23.37 23.37C23.1995 23.5404 22.9683 23.6362 22.7273 23.6362C22.4862 23.6362 22.255 23.5404 22.0845 23.37L19.3573 20.6427C19.1868 20.4723 19.091 20.2411 19.0909 20V14.5455C19.0909 14.3043 19.1867 14.0731 19.3572 13.9026C19.5277 13.7321 19.7589 13.6364 20 13.6364C20.2411 13.6364 20.4723 13.7321 20.6428 13.9026C20.8133 14.0731 20.9091 14.3043 20.9091 14.5455V19.6236L23.37 22.0845C23.5404 22.255 23.6362 22.4862 23.6362 22.7273C23.6362 22.9683 23.5404 23.1995 23.37 23.37Z' fill='%23324773'/%3E%3C/svg%3E%0A")

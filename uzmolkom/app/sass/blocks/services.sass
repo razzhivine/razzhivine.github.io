@@ -1,0 +1,91 @@
+.services
+    margin: 180px 0
+    @media (max-width: 1023px)
+        margin: 80px 0
+    &__sub-title
+        margin-bottom: 27px
+        @media (max-width: 767px)
+            margin-bottom: 20px
+    &__title
+        margin-bottom: 40px
+        @media (max-width: 767px)
+            margin-bottom: 20px
+    &__block
+        border-top: 1px solid #CCC
+        padding-top: 40px
+        display: flex
+        gap: 50px
+        @media (max-width: 1023px)
+            flex-direction: column-reverse
+            gap: 25px
+        @media (max-width: 767px)
+            border-top: none
+            padding-top: 0
+    &__image
+        width: 50%
+        @media (max-width: 1023px)
+            width: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__list
+        width: 50%
+        counter-reset: item
+
+        @media (max-width: 1023px)
+            width: 100%
+    &__item
+        display: block
+        padding: 35px 100px
+        color: #181818
+        font-size: 24px
+        font-weight: 600
+        line-height: 120%
+        text-decoration: none
+        border-bottom: 1px solid #CCC
+        position: relative
+        counter-increment: item
+        transition: all .15s ease-in
+        @media (max-width: 767px)
+            font-size: 16px
+            padding: 24px 33px
+        &::before
+            content: counter(item, decimal-leading-zero)
+            color: #324773
+            font-size: 24px
+            font-weight: 600
+            line-height: 120%
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            transition: all .15s ease-in
+            @media (max-width: 767px)
+                font-size: 16px
+        &::after
+            content: ''
+            width: 60px
+            height: 60px
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.672 29.2561C34.8821 29.4537 35 29.7212 35 30.0001C35 30.279 34.8821 30.5465 34.672 30.7441L27.1216 37.8198C27.0606 37.8769 26.9883 37.9222 26.9086 37.9532C26.829 37.9841 26.7436 38 26.6574 38C26.5711 38 26.4858 37.9841 26.4061 37.9532C26.3264 37.9222 26.2541 37.8769 26.1931 37.8198C26.07 37.7044 26.0008 37.5479 26.0008 37.3847C26.0008 37.3039 26.0178 37.2239 26.0508 37.1492C26.0838 37.0746 26.1321 37.0068 26.1931 36.9496L33.6089 30.0001L26.1931 23.0506C26.1319 22.9936 26.0833 22.9258 26.0502 22.8511C26.0171 22.7764 26 22.6964 26 22.6155C26 22.5346 26.0171 22.4546 26.0502 22.3799C26.0833 22.3052 26.1319 22.2374 26.1931 22.1804C26.254 22.1232 26.3264 22.0779 26.406 22.0469C26.4857 22.0159 26.5711 22 26.6574 22C26.7436 22 26.829 22.0159 26.9087 22.0469C26.9883 22.0779 27.0607 22.1232 27.1216 22.1804L34.672 29.2561Z' fill='%23324773'/%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            transition: all .15s ease-in
+            @media (max-width: 767px)
+                width: 40px
+                height: 40px
+
+        &:hover
+            background: #324773
+            padding-left: 120px
+            color: #fff
+            border-color: #324773
+            &::before
+                color: #fff
+                left: 20px
+            &::after
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.672 29.2561C34.8821 29.4537 35 29.7212 35 30.0001C35 30.279 34.8821 30.5465 34.672 30.7441L27.1216 37.8198C27.0606 37.8769 26.9883 37.9222 26.9086 37.9532C26.829 37.9841 26.7436 38 26.6574 38C26.5711 38 26.4858 37.9841 26.4061 37.9532C26.3264 37.9222 26.2541 37.8769 26.1931 37.8198C26.07 37.7044 26.0008 37.5479 26.0008 37.3847C26.0008 37.3039 26.0178 37.2239 26.0508 37.1492C26.0838 37.0746 26.1321 37.0068 26.1931 36.9496L33.6089 30.0001L26.1931 23.0506C26.1319 22.9936 26.0833 22.9258 26.0502 22.8511C26.0171 22.7764 26 22.6964 26 22.6155C26 22.5346 26.0171 22.4546 26.0502 22.3799C26.0833 22.3052 26.1319 22.2374 26.1931 22.1804C26.254 22.1232 26.3264 22.0779 26.406 22.0469C26.4857 22.0159 26.5711 22 26.6574 22C26.7436 22 26.829 22.0159 26.9087 22.0469C26.9883 22.0779 27.0607 22.1232 27.1216 22.1804L34.672 29.2561Z' fill='%23ffffff'/%3E%3C/svg%3E%0A")
+

@@ -1,0 +1,39 @@
+.footer
+    background: #324773
+    padding: 40px 0 50px
+    display: flex
+    justify-content: space-between
+    gap: 15px
+    position: relative
+    @media (max-width: 767px)
+        flex-direction: column
+        gap: 40px
+        padding-bottom: 40px
+    &::before,
+    &::after
+        content: ''
+        width: 100vw
+        height: 100%
+        background: #324773
+        position: absolute
+        top: 0
+        z-index: -1
+    &::before
+        left: 0
+    &::after
+        right: 0
+    &__block
+        &--first
+        &--second
+            display: flex
+            gap: 80px
+            @media (max-width: 1279px)
+                display: none
+        &--third
+    &__logo
+        display: block
+        margin-bottom: 26px
+    &__subscribe
+        margin-bottom: 30px
+        @media (max-width: 767px)
+            margin-bottom: 40px

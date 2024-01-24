@@ -1,0 +1,50 @@
+.banner
+    height: 500px
+    position: relative
+    margin: 100px 0
+    padding-top: 100px
+
+    @media (max-width: 1023px)
+        height: auto
+        margin: 20px 0 40px
+        padding-top: 20px
+    &__image
+        object-fit: cover
+        width: 100%
+        height: 100%
+        @media (max-width: 1023px)
+            height: auto
+            display: block
+            
+    &__quote
+        position: absolute
+        bottom: 40px
+        right: 40px
+        background: #324773
+        padding: 40px 25px 40px 75px
+        color: #fff
+        font-size: 32px
+        font-weight: 600
+        line-height: 120%
+        width: 850px
+        @media (max-width: 1023px)
+            position: relative
+            width: 100%
+            top: 0
+            left: 0
+            padding: 15px 43px
+            font-size: 16px
+        &::before
+            content: ''
+            width: 33px
+            height: 31px
+            background-image: url("data:image/svg+xml,%3Csvg width='33' height='31' viewBox='0 0 33 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M0 30.7077L0.810964 24.7581C2.59924 24.886 3.99244 24.5448 4.99055 23.7345C5.98866 22.9241 6.65406 21.7939 6.98677 20.3438C7.31947 18.8937 7.38185 17.2517 7.17391 15.4178H5C2.23857 15.4178 0 13.1792 0 10.4178V5C0 2.23857 2.23858 0 5 0H8.78639C11.5478 0 13.7864 2.23858 13.7864 5V16.6973C13.7864 21.7299 12.6011 25.5257 10.2306 28.0847C7.9017 30.6437 4.49149 31.518 0 30.7077ZM19.2136 30.7077L20.0246 24.7581C21.8129 24.886 23.2061 24.5448 24.2042 23.7345C25.2023 22.9241 25.8677 21.7939 26.2004 20.3438C26.5331 18.8937 26.5955 17.2517 26.3875 15.4178H24.2136C21.4522 15.4178 19.2136 13.1792 19.2136 10.4178V5C19.2136 2.23857 21.4522 0 24.2136 0H28C30.7614 0 33 2.23858 33 5V16.6973C33 21.7299 31.8147 25.5257 29.4442 28.0847C27.1153 30.6437 23.7051 31.518 19.2136 30.7077Z' fill='white'/%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            top: 40px
+            left: 25px
+            @media (max-width: 1023px)
+                width: 18px
+                height: 17px
+                top: 18px
+                left: 15px
