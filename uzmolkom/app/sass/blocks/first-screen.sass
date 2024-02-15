@@ -1,6 +1,36 @@
 .first-screen
     &__slider
-        overflow: visible
+        @media (max-width: 1279px)
+            overflow: visible
+        
+    &__slide
+        position: relative
+        border-right: 1px solid
+        border-left: 1px solid
+        border-color: rgba(255, 255, 255, 0.1)
+        &::before
+            content: ''
+            width: 50%
+            height: 100%
+            opacity: .1
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            border-right: 1px solid #fff
+            border-left: 1px solid #fff
+            @media (max-width: 1023px)
+                content: none
+        &::after
+            content: ''
+            width: 1px
+            height: 100%
+            opacity: .1
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            background: #fff
     &__images
         position: absolute
         top: 0
@@ -51,10 +81,11 @@
         position: relative
         padding-left: 75px
         margin-bottom: 80px
+        @media (max-width: 1279px)
+            margin-bottom: 224px
         @media (max-width: 1023px)
             padding-left: 44px
             font-size: 15px
-            margin-bottom: 224px
 
         &::before
             content: ''
@@ -76,6 +107,7 @@
         padding: 28px 39px
         background: rgba(255, 255, 255, .1)
         color: #fff
+        z-index: 1
         @media (max-width: 1279px)
             gap: 25px
             padding: 40px 0 25px
@@ -107,3 +139,14 @@
                 line-height: 140% 
                 @media (max-width: 1023px)
                     font-size: 13px
+    &__controls
+        position: absolute
+        right: 0
+        bottom: 240px
+        width: 350px
+        z-index: 1
+        margin-bottom: 0
+        @media (max-width: 1279px)
+            width: 100%
+            right: initial
+            left: 0

@@ -1,0 +1,56 @@
+.tabs
+    margin: 80px 0
+    display: none
+    @media (max-width: 1023px)
+        display: block
+    &__sub-title
+        margin-bottom: 20px
+    &__title
+        margin-bottom: 25px
+    &__list
+    &__item
+        padding: 15px 
+        background: rgba(50, 71, 115, 0.2)
+        margin-bottom: 10px
+        position: relative
+        min-height: 68px
+        &::before
+            content: ''
+            width: 25px
+            height: 26px
+            background-image: url("data:image/svg+xml,%3Csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 13C0 12.1716 0.671573 11.5 1.5 11.5H23.5C24.3284 11.5 25 12.1716 25 13C25 13.8284 24.3284 14.5 23.5 14.5H1.5C0.671573 14.5 0 13.8284 0 13Z' fill='%23324773'/%3E%3Cpath d='M12.5 25.5C11.6716 25.5 11 24.8284 11 24V2C11 1.17157 11.6716 0.5 12.5 0.5C13.3284 0.5 14 1.17157 14 2V24C14 24.8284 13.3284 25.5 12.5 25.5Z' fill='%23324773'/%3E%3C/svg%3E%0A")
+            position: absolute
+            top: 21.5px
+            right: 15px
+        &-name
+            color: #324773
+            font-size: 16px
+            font-weight: 600
+            line-height: 19px
+            padding-right: 50px
+        &-content
+            display: none
+        &-image
+            max-width: 170px
+            margin-bottom: 15px
+        &-title
+            font-size: 16px
+            font-weight: 600
+            line-height: 19px
+            margin-bottom: 15px
+        &-text
+            font-size: 14px
+            font-weight: 500
+            line-height: 20px
+            color: #686868
+        &.active
+            background: transparent
+            border: 1px solid #8D9093
+            &::before
+                transform: rotate(45deg)
+            .tabs__item-name
+                padding-bottom: 15px
+                border-bottom: 1px solid #8D9093
+            .tabs__item-content
+                display: block
+        

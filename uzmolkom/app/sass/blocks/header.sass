@@ -23,6 +23,7 @@
         &::after
             right: 0
     &__hamburger-icon
+        display: none
         position: absolute
         left: 0
         top: 50%
@@ -30,8 +31,10 @@
         width: 27px
         height: 16px
         background-image: url("data:image/svg+xml,%3Csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='27' height='2' fill='%23A5F018'/%3E%3Crect y='7' width='27' height='2' fill='%23A5F018'/%3E%3Crect y='14' width='27' height='2' fill='%23A5F018'/%3E%3C/svg%3E%0A")
+        @media (max-width: 1023px)
+            display: block
     &__logo
-        @media (max-width: 767px)
+        @media (max-width: 1023px)
             position: relative
             left: 35px
             img
@@ -71,20 +74,29 @@
         &::before
             left: 0
         &::after
-            right: 0
+            right: 50%
+            left: initial
+
     &--transparent
         .header__top
             background: transparent
+            border: none
+            &::after
+                right: 50%
+                left: initial
+                background: transparent
+                border-bottom: 1px solid rgba(255, 255, 255, .1)
+                z-index: 1
+                transform: translateY(-1px) translateX(50%)
         .header__phone,
         .header__email
             color: #fff
         .header__menu
             background: transparent
-            border-top: 1px solid rgba(255, 255, 255, .1)
-            border-bottom: 1px solid rgba(255, 255, 255, .1)
-            &::before,
+            // &::before,
             &::after
                 background: transparent
                 border-top: 1px solid rgba(255, 255, 255, .1)
                 border-bottom: 1px solid rgba(255, 255, 255, .1)
-                
+                z-index: 1
+                transform: translateY(-2px) translateX(50%)
