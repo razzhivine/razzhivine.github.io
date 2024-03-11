@@ -1,0 +1,23 @@
+.sort
+    display: flex
+    gap: 25px
+    &__title
+    &__item
+        color:#324773
+        border-bottom: 1px solid #324773
+        padding-right: 25px
+        text-decoration: none
+        position: relative
+        &.-up,
+        &.-down
+            &::before
+                content: ""
+                width: 22px
+                height: 22px
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_322_726)'%3E%3Cpath d='M6.7925 7.87427L11 12.0726L15.2075 7.87427L16.5 9.16677L11 14.6668L5.5 9.16677L6.7925 7.87427Z' fill='%23324773'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_322_726'%3E%3Crect width='22' height='22' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+                position: absolute
+                top: 0
+                right: 0
+        &.-down
+            &::before
+                transform: rotate(180deg)

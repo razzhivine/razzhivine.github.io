@@ -18,10 +18,27 @@
                 width: 100%
     &__title
         margin-bottom: 0
+    &__actions
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 30px
+    &__counter
+        font-size: 18px
+        font-weight: 500
+        line-height: 27px
+        color: #868686
+        margin-bottom: 30px
+
     &__inner
+        display: flex
+        flex-wrap: wrap
+        gap: 50px
         &.swiper
             overflow: visible
-    &__pagination
+    &__item
+        width: calc(25% - 37.5px)
+    &__slider-pagination
         display: none
         margin: 30px 0
         @media (max-width: 1379px)

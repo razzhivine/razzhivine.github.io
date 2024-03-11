@@ -115,7 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    gsap.registerPlugin(MotionPathPlugin);
+    if(document.getElementById('holder') !== null){
+
+        gsap.registerPlugin(MotionPathPlugin);
         const circlePath = MotionPathPlugin.convertToPath("#holder", false)[0];
         circlePath.id = "circlePath";
         document.querySelector("svg").prepend(circlePath);
@@ -166,6 +168,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
+    }
+
 
     var list = new Swiper(".list-slider", {
         loop: true,
@@ -240,16 +244,19 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollTo(0, 700)
     })
 
-    // if (window.matchMedia("(max-width: 1279px)").matches) {
-    let firstScreenHeight = document.getElementById('first-screen').clientHeight;
-    let firstScreenImagesBlock = document.getElementById('first-screen-images');
-    firstScreenImagesBlock.style.height = firstScreenHeight + 'px'
-    // }
+    if(document.getElementById('first-screen') !== null){
+        let firstScreenHeight = document.getElementById('first-screen').clientHeight;
+        let firstScreenImagesBlock = document.getElementById('first-screen-images');
+        firstScreenImagesBlock.style.height = firstScreenHeight + 'px'
+    }
 
 });
 window.addEventListener("resize", (e) => {
-    let firstScreenHeight = document.getElementById('first-screen').clientHeight;
-    let firstScreenImagesBlock = document.getElementById('first-screen-images');
-    firstScreenImagesBlock.style.height = firstScreenHeight + 'px';
+    if(document.getElementById('first-screen') !== null){
+        let firstScreenHeight = document.getElementById('first-screen').clientHeight;
+        let firstScreenImagesBlock = document.getElementById('first-screen-images');
+        firstScreenImagesBlock.style.height = firstScreenHeight + 'px';
+    }
+
 });
 
