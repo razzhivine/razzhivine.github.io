@@ -1,0 +1,50 @@
+.cards
+    &__title
+        border-bottom: 1px solid #CCC
+        padding-bottom: 30px
+    &__inner   
+        counter-reset: item
+        display: flex
+        flex-wrap: wrap
+        gap: 40px 50px 
+    &__item
+        padding: 20px
+        background: #EBEDF1
+        width: calc( 33.33333% - 34px )
+        display: flex
+        flex-direction: column
+        gap: 60px
+        color: #324773
+        min-height: 330px
+        transition: all .15s ease-in
+        &:hover
+            color: #fff
+            background: #324773
+            .cards__item-text
+                color: #fff
+        &--number
+            position: relative
+            counter-increment: item
+            &::before
+                content: counter(item, decimal-leading-zero)
+                font-size: 40px
+                font-weight: 300
+                line-height: 48px
+                
+
+        &--image
+            padding: 0
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &-title
+            font-size: 28px
+            font-weight: 600
+            line-height: 33.6px
+            margin-bottom: 20px
+        &-text
+            line-height: 27px
+            color: #868686
+            max-width: 475px
+            transition: all .15s ease-in

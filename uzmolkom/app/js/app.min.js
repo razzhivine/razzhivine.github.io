@@ -227,6 +227,41 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    var info = new Swiper(".project-info-slider", {
+        loop: true,
+        // effect: "fade",
+        slidesPerView: 1,
+        pagination: {
+            el: '.info-slider-swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return '<div class="counter info__counter"><div class="counter__current">'+String(current).padStart(2,'0')+ '</div>' + '/' + '<div class="counter__total">' + String(total).padStart(2,'0') + '</div> </div> <div class="progress"><div class="progress__line" style="width:'+ (current/total*100) +'%"></div></div>';
+            }
+        },
+        navigation: {
+            prevEl: ".info-slider-arrows .arrows__item--prev",
+            nextEl: ".info-slider-arrows .arrows__item--next",
+        },
+    });
+
+    var steps = new Swiper(".project-steps-slider", {
+        loop: true,
+        // effect: "fade",
+        slidesPerView: 1.8,
+        spaceBetween: 20,
+        pagination: {
+            el: '.steps-slider-swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return '<div class="counter steps__counter"><div class="counter__current">'+String(current).padStart(2,'0')+ '</div>' + '/' + '<div class="counter__total">' + String(total).padStart(2,'0') + '</div> </div> <div class="progress"><div class="progress__line" style="width:'+ (current/total*100) +'%"></div></div>';
+            }
+        },
+        navigation: {
+            prevEl: ".steps-slider-arrows .arrows__item--prev",
+            nextEl: ".steps-slider-arrows .arrows__item--next",
+        },
+    });
+
     let tabsItems = document.querySelectorAll('.tabs-item');
     tabsItems.forEach(element => {
         element.addEventListener('click', ()=>{

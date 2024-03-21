@@ -1,0 +1,47 @@
+.steps-slider
+    display: flex
+    min-height: 500px
+    gap: 30px
+    margin-bottom: 180px
+    &__left
+        width: 45%
+        padding-left: 85px
+    &__image
+        width: 100%
+        height: 100%
+        background-image: url("data:image/svg+xml,%3Csvg width='480' height='437' viewBox='0 0 480 437' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 421L165 143.5L316 294.5L465 14' stroke='%23EAF2FB'/%3E%3Ccircle cx='15' cy='422' r='15' fill='%23E3EAF1'/%3E%3Ccircle cx='165' cy='144' r='15' fill='%23E3EAF1'/%3E%3Ccircle cx='315' cy='294' r='15' fill='%23E3EAF1'/%3E%3Ccircle cx='465' cy='15' r='15' fill='%23E3EAF1'/%3E%3C/svg%3E%0A")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &__content
+        width: 55%
+        border-left: 4px solid #324773
+        // padding-left: 40px
+    &__slider
+        height: 100%
+        // height: calc(100% - 85px)
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        gap: 30px
+        padding-left: 40px
+        &-step
+            font-size: 32px
+            font-weight: 600
+            line-height: 38.4px
+            color: #324773
+            text-transform: uppercase
+        &-content
+        &-title
+            font-size: 32px
+            font-weight: 600
+            line-height: 38.4px
+            margin-bottom: 20px
+        &-text
+            color: #868686
+    &__controls
+        margin-top: 60px
+        margin-bottom: 0
+        width: calc(100% - 85px)
