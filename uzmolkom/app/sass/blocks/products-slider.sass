@@ -1,0 +1,95 @@
+.products-slider
+    margin: 180px 0 150px
+    &__top
+    &__title
+        padding-bottom: 30px
+        margin-bottom: 60px
+        border-bottom: 1px solid #ccc
+    &__inner
+        display: flex
+        gap: 30px
+        justify-content: space-between
+    &__slider
+        width: calc( 50% - 15px )
+    &__item
+        background: #EBEDF1
+        &-image
+            img
+                width: 100%
+                height: auto
+        &-content
+            padding: 60px 40px 35px
+            position: relative
+            &::before
+                content: ''
+                width: calc( 100% - 50px )
+                height: 1px
+                background: #324773
+                position: absolute
+                top: 30px
+                left: 50%
+                transform: translateX(-50%)
+        &-title
+            font-size: 32px
+            font-weight: 600
+            line-height: 38.4px
+            margin-bottom: 10px
+        &-text
+            color: #868686
+            line-height: 27px
+    &__pagination
+        border: 1px solid #CCCCCC
+        width: calc( 50% - 15px )
+        max-width: 656px
+        padding: 40px
+        overflow-y: scroll
+        max-height: 641px
+        position: relative
+        // &::before,
+        // &::after
+        //     width: 60px
+        //     height: 60px
+        //     content: ''
+        //     position: absolute
+        //     top: 0
+        //     right: -30px
+        //     z-index: 999
+        //     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='60' height='60' transform='matrix(0 -1 1 0 0 60)' fill='%23324773'/%3E%3Cpath d='M29.2561 25.328C29.4537 25.1179 29.7212 25 30.0001 25C30.279 25 30.5465 25.1179 30.7441 25.328L37.8198 32.8784C37.8769 32.9394 37.9222 33.0117 37.9532 33.0914C37.9841 33.171 38 33.2564 38 33.3426C38 33.4289 37.9841 33.5142 37.9532 33.5939C37.9222 33.6736 37.8769 33.7459 37.8198 33.8069C37.7044 33.93 37.5479 33.9992 37.3847 33.9992C37.3039 33.9992 37.2239 33.9822 37.1492 33.9492C37.0746 33.9162 37.0068 33.8679 36.9496 33.8069L30.0001 26.3911L23.0506 33.8069C22.9936 33.8681 22.9258 33.9167 22.8511 33.9498C22.7764 33.9829 22.6964 34 22.6155 34C22.5346 34 22.4546 33.9829 22.3799 33.9498C22.3052 33.9167 22.2374 33.8681 22.1804 33.8069C22.1232 33.746 22.0779 33.6736 22.0469 33.594C22.0159 33.5143 22 33.4289 22 33.3426C22 33.2564 22.0159 33.171 22.0469 33.0913C22.0779 33.0117 22.1232 32.9393 22.1804 32.8784L29.2561 25.328Z' fill='white'/%3E%3Crect x='0.5' y='59.5' width='59' height='59' rx='29.5' transform='rotate(-90 0.5 59.5)' stroke='%23324773'/%3E%3C/svg%3E%0A")
+        // &::after
+        //     top: calc( 100% - 60px )
+        //     transform: rotate(180deg)
+        &::-webkit-scrollbar
+            z-index: -1
+            width: 60px 
+            background: #fff
+            border: 1px solid #324773
+        &::-webkit-scrollbar-thumb
+            // width: 60px
+            // height: 60px
+            z-index: 123
+            background: #3247731A
+        .swiper-wrapper
+            gap: 30px 40px 
+            flex-wrap: wrap 
+        .swiper-css-mode>.swiper-wrapper
+            overflow: initial
+        &-item
+            width: calc( 50% - 20px )
+            max-height: 260px
+            border: 1px solid #D3D3D3
+            padding: 25px 20px
+            position: relative
+            cursor: pointer
+            transition: all .15s ease-in
+            &.swiper-slide-thumb-active
+                background: #EBEDF1
+                border: 1px solid #324773
+            &-title
+                font-size: 20px
+                font-weight: 600
+                line-height: 24px
+
+            img 
+                position: absolute
+                right: 3px
+                bottom: 7px

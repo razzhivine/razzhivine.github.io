@@ -1,0 +1,57 @@
+.team-slider
+    position: relative
+    margin-bottom: 40px
+    &__top
+        display: flex
+        gap: 30px
+        justify-content: space-between
+        border-bottom: 1px solid #ccc
+    &__inner
+        display: flex
+        gap: 50px
+    &__left
+        max-width: 550px
+        width: 100%
+        padding-top: 60px        
+    &__pagination
+        &-item
+            cursor: pointer
+            font-size: 32px
+            font-weight: 400
+            line-height: 38.4px
+            color: #8D9093
+            transition: all .15s ease-in
+            &::before
+                width: 0px
+                transition: all .15s ease-in
+            &.swiper-slide-thumb-active
+                font-weight: 600
+                color: #324773
+                padding-left: 32px
+                position: relative
+                overflow: hidden
+                &::before
+                    content: ''
+                    width: 24px
+                    height: 16px
+                    position: absolute
+                    background: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9H23V7H1V9Z' fill='%23324773'/%3E%3C/svg%3E%0A")
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%)
+    &__slider
+        padding: 60px 0 0 40px
+        width: calc( 100% - 600px )
+        &-item
+            &-title
+                font-size: 40px
+                font-weight: 600
+                line-height: 48px
+                margin-bottom: 40px
+            &-text
+                width: calc( 66.66666% - 25px )
+                color: #868686
+                margin-bottom: 40px
+            img
+                width: 100%
+                height: auto

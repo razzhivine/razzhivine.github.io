@@ -1,0 +1,60 @@
+.tabs-second
+    margin: 180px 0
+    &__title
+        border-bottom: 1px solid #ccc
+        padding-bottom: 30px
+    &__inner
+        display: flex
+        gap: 150px
+    &__image
+        width: calc( 42% - 75px )
+        img
+            width: 100%
+            height: auto
+    &__list
+        width: calc( 58% - 75px )
+        display: flex
+        flex-direction: column
+        gap: 30px
+    &__item
+        &-top
+            cursor: pointer
+            background: #F0F4FB
+            padding: 37px 37px 37px 190px
+            position: relative
+            &::before
+                content: ""
+                width: 150px
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                background: #324773
+                background-image: url("data:image/svg+xml,%3Csvg width='30' height='13' viewBox='0 0 30 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6052 12.5269C13.9757 12.8299 14.4773 13 15.0002 13C15.5231 13 16.0247 12.8299 16.3952 12.5269L29.6621 1.63636C29.7692 1.54842 29.8542 1.44402 29.9122 1.32912C29.9702 1.21422 30 1.09107 30 0.966708C30 0.842343 29.9702 0.719193 29.9122 0.604295C29.8542 0.489396 29.7692 0.384999 29.6621 0.29706C29.4457 0.119457 29.1523 0.01968 28.8463 0.01968C28.6948 0.01968 28.5448 0.0441742 28.4048 0.0917664C28.2649 0.139359 28.1377 0.20912 28.0306 0.29706L15.0002 10.9935L1.96984 0.29706C1.86294 0.208797 1.73583 0.138753 1.59583 0.0909576C1.45583 0.0431614 1.3057 0.0185566 1.15408 0.0185566C1.00245 0.0185566 0.852322 0.0431614 0.712322 0.0909576C0.572323 0.138753 0.445215 0.208797 0.338308 0.29706C0.231064 0.384946 0.145981 0.489327 0.0879307 0.604234C0.0298786 0.719139 0 0.842313 0 0.966708C0 1.0911 0.0298786 1.21428 0.0879307 1.32918C0.145981 1.44409 0.231064 1.54847 0.338308 1.63636L13.6052 12.5269Z' fill='white'/%3E%3C/svg%3E%0A")
+                background-position: center center
+                background-repeat: no-repeat
+        &-title
+            font-size: 32px
+            font-weight: 600
+            line-height: 38.4px
+            margin-bottom: 10px
+        &-text
+            color: #868686
+
+        &-content
+            padding: 35px 40px
+            display: none
+            p
+                margin: 20px 0 
+                &:first-child
+                    margin-top: 0
+                &:last-child
+                    margin-bottom: 0
+        &.active
+            .tabs-second__item-content
+                display: block
+            .tabs-second__item-top
+                border: 1px solid #323232
+            .tabs-second__item-content
+                border: 1px solid #323232
+                border-top: none

@@ -262,10 +262,105 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    var historyPagination = new Swiper(".history-slider-pagination", {
+        slidesPerView: 'auto',
+        direction: "vertical",
+        spaceBetween: 20,
+    });
+    var historySlider = new Swiper(".history-slider", {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        navigation: {
+            prevEl: ".history-slider-arrows .arrows__item--prev",
+            nextEl: ".history-slider-arrows .arrows__item--next",
+        },
+        loop: true,
+        thumbs: {
+            swiper: historyPagination,
+        },
+    });
+
+    var teamPagination = new Swiper(".team-slider-pagination", {
+        slidesPerView: 'auto',
+        direction: "vertical",
+        spaceBetween: 20,
+    });
+    var teamSlider = new Swiper(".team-main-slider", {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        navigation: {
+            prevEl: ".team-slider-arrows .arrows__item--prev",
+            nextEl: ".team-slider-arrows .arrows__item--next",
+        },
+        loop: true,
+        thumbs: {
+            swiper: teamPagination,
+        },
+    });
+
+
+    var bannersSlider = new Swiper(".banners-main-slider", {
+        slidesPerView: 4,
+        spaceBetween: 6,
+        pagination: {
+            el: '.banners-main-slider-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return '<div class="progress"><div class="progress__line" style="width:'+ (current/total*100) +'%"></div></div>';
+            }
+        },
+        navigation: {
+            prevEl: ".banners-slider-arrows .arrows__item--prev",
+            nextEl: ".banners-slider-arrows .arrows__item--next",
+        },
+        loop: true,
+    });
+
+    var bannersSlider1 = new Swiper(".banners-main-slider1", {
+        slidesPerView: 4,
+        spaceBetween: 6,
+        pagination: {
+            el: '.banners-main-slider1-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return '<div class="progress"><div class="progress__line" style="width:'+ (current/total*100) +'%"></div></div>';
+            }
+        },
+        navigation: {
+            prevEl: ".banners-slider-arrows1 .arrows__item--prev",
+            nextEl: ".banners-slider-arrows1 .arrows__item--next",
+        },
+        loop: true,
+    });
+
+    var productsPagination = new Swiper(".products-slider-pagination", {
+        cssMode: true,
+        slidesPerView: 'auto',
+    });
+
+    var productsSlider = new Swiper(".products-main-slider", {
+        slidesPerView: 1,
+        thumbs: {
+            swiper: productsPagination,
+        },
+    });
+
     let tabsItems = document.querySelectorAll('.tabs-item');
     tabsItems.forEach(element => {
         element.addEventListener('click', ()=>{
             tabsItems.forEach(tab => {
+                if(element != tab){
+                    tab.classList.remove('active');
+                }
+            });
+            element.classList.toggle('active');
+        })
+    });
+
+    let tabsSecondItems = document.querySelectorAll('.tabs-second__item');
+    tabsSecondItems.forEach(element => {
+        element.addEventListener('click', ()=>{
+            tabsSecondItems.forEach(tab => {
                 if(element != tab){
                     tab.classList.remove('active');
                 }

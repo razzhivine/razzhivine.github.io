@@ -1,0 +1,36 @@
+.principles
+    margin: 150px 0
+    border-top: 1px solid #ccc
+    padding-top: 30px
+    display: flex
+    gap: 50px
+    &__title
+        max-width: 550px
+        width: 100%
+    &__content
+        width: calc( 100% - 600px )
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 50px
+        margin-bottom: 60px
+        counter-reset: item
+    &__item
+        width: calc( 50% - 25px )
+        display: flex
+        gap: 20px
+        padding-bottom: 30px
+        border-bottom: 1px solid #324773
+        counter-increment: item
+        font-size: 20px
+        line-height: 28px
+        &::before
+            content: counter(item, decimal-leading-zero)
+            font-size: 24px
+            font-weight: 500
+            line-height: 28.8px
+            color: #8D9093
+    &__image
+        img
+            width: 100%
+            height: auto

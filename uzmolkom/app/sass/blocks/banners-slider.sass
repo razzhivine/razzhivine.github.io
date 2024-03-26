@@ -1,0 +1,36 @@
+.banners-slider
+    margin: 125px 0 180px
+    &__top
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid #ccc
+        margin-bottom: 30px
+    &__item
+        position: relative
+        &::before
+            content: ''
+            width: 100%
+            height: 100%
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+        &-title
+            position: absolute
+            width: calc( 100% -  50px)
+            padding-bottom: 25px
+            bottom: 50px
+            left: 50%
+            transform: translateX(-50%)
+            border-bottom: 1px solid #D9D9D9
+            font-size: 40px
+            font-weight: 400
+            line-height: 48px
+            color: #fff
+        img
+            width: 100%
+            height: auto
+    &__pagination
+        max-width: 1000px
+        margin: 50px auto 0
