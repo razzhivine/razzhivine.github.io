@@ -345,6 +345,22 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    var slider = new Swiper(".slider-1", {
+        slidesPerView: 1,
+        pagination: {
+            el: '.slider-swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return '<div class="counter slider__counter"><div class="counter__current">'+String(current).padStart(2,'0')+ '</div>' + '/' + '<div class="counter__total">' + String(total).padStart(2,'0') + '</div> </div> <div class="progress"><div class="progress__line" style="width:'+ (current/total*100) +'%"></div></div>';
+            }
+        },
+        navigation: {
+            prevEl: ".slider-arrows .arrows__item--prev",
+            nextEl: ".slider-arrows .arrows__item--next",
+        },
+   
+    });
+
     let tabsItems = document.querySelectorAll('.tabs-item');
     tabsItems.forEach(element => {
         element.addEventListener('click', ()=>{
@@ -378,6 +394,45 @@ document.addEventListener('DOMContentLoaded', function () {
         let firstScreenHeight = document.getElementById('first-screen').clientHeight;
         let firstScreenImagesBlock = document.getElementById('first-screen-images');
         firstScreenImagesBlock.style.height = firstScreenHeight + 'px'
+    }
+    if(document.querySelectorAll('.js-tab').length){
+        let tabs = document.querySelectorAll('.js-tab');
+        let blocks = document.querySelectorAll('.js-blocks');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tab.parentElement.querySelectorAll('.js-tab').forEach(tab1 => {
+                    tab1.classList.remove('-active')
+                })
+                tab.parentElement.parentElement.querySelectorAll('.js-block').forEach(block => {
+                    block.classList.remove('-active')
+                })
+                let block = document.querySelector('.js-block[data-id="'+ tab.dataset.id +'"]');
+                block.classList.add('-active');
+                tab.classList.add('-active');
+
+            })
+        });
+    }
+
+    if(document.getElementById('js-price-controller') !== null){
+        priceController = document.getElementById('js-price-controller');
+        priceController.addEventListener('click', () => {
+            priceController.classList.toggle('-active');
+            document.getElementById('js-price-switch').classList.toggle('-active');
+        })
+        priceSwitcher = document.querySelectorAll('.js-price-switcher');
+        priceSwitcher.forEach(element => {
+            element.addEventListener('click', () => {
+                document.getElementById('js-price-switch').classList.toggle('-active');
+                priceController.classList.toggle('-active');
+                priceSwitcher.forEach(elem => {
+                    elem.classList.remove('-active');
+                });
+                element.classList.add('-active');
+                priceController.innerText = element.dataset.text;
+                document.getElementById('js-price').innerText = element.dataset.price;
+            });
+        });
     }
 
 });

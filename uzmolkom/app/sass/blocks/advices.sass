@@ -1,0 +1,30 @@
+.advices
+    &__categories
+        margin-bottom: 20px
+    &__blocks
+    &__block
+        background: #EBEDF1
+        padding: 65px 35px 65px 45px
+        display: none
+
+        &.-active
+            display: block
+        &-inner
+            display: flex
+            justify-content: space-between
+        &-content
+            width: 33.33333%
+            max-width: 515px
+        &-title
+            font-size: 32px
+            font-weight: 600
+            line-height: 38.4px
+            margin-bottom: 75px
+        &-images
+            width: 55%
+            display: flex
+            gap: 20px
+            img
+                width: calc( 33.33333% - 13px )
+                &:nth-child(even)
+                    transform: translateY(30px)

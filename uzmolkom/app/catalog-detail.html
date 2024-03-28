@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>template</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="flow">
+			<div class="wrapper">
+				<header class="first-screen__header header">
+					<div class="header__top">
+						<div class="header__hamburger-icon"></div>
+						<a href="#" class="header__logo logo">
+							<img src="images/dest/logo.png" alt="">
+						</a>
+						<div class="header__contacts">
+							<a href="#" class="header__phone">8 800 900 80 90</a>
+							<a href="#" class="header__email">info@new-terra.ru</a>
+							<div class="header__socials socials">
+								<div class="socials__list">
+									<a href="#" class="socials__item socials__item--hide-mob socials__item--vk"></a>
+									<a href="#" class="socials__item socials__item--wa"></a>
+									<a href="#" class="socials__item socials__item--tg"></a>
+								</div>
+							</div>
+							<div class="header__callback btn">Обратный звонок</div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<div class="menu__item">О компании</div>
+						<div class="menu__item menu__item--with-childrens">Каталог</div>
+						<div class="menu__item menu__item--with-childrens">Услуги</div>
+						<div class="menu__item">Решения для Horeca</div>
+						<div class="menu__item">Решения для производств</div>
+						<div class="menu__more"></div>
+					</div>
+				</header>
+				
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__item">Главная</a>
+					<div class="breadcrumbs__item">Название продукции</div>
+				</div>
+
+				<section class="product">
+					<div class="product__left">
+						<div class="product__image">
+							<img src="images/dest/product2.jpg" alt="" class="img-responsive">
+						</div>
+						<form class="product__callback-form callback-form-thidh">
+							<div class="callback-form-thidh__title">Получить паспорт продукта</div>
+							<div class="callback-form-thidh__inner">
+								<input type="text" class="callback-form-thidh__input input" placeholder="Ваш e-mail">
+								<button class="callback-form-thidh__btn btn btn-accent btn-accent--blue">Получить PDF</button>
+							</div>
+						</form>
+					</div>
+					<div class="product__info">
+						<h1 class="product__info-title">Название продукта</h1>
+						<div class="product__info-description">Кисломолочный продукт с плотной структурой и низким содержанием жира, идеальная основа для творчества шеф-повара</div>
+						<div class="product__info-structure">
+							<div class="product__info-structure-title">Состав продукта</div>
+							<div class="product__info-structure-text">Молоко обезжиренное, сливки, соли-плавители, закваска молочнокислых термофильных культур, молокосвертывающий ферментный препарат микробного происхождения</div>
+						</div>
+						<div class="product__info-price">
+							<div class="product__info-price-switcher">
+								<div class="product__info-price-title" id="js-price-controller">Цена дистрибьютора, продвигающего нашу продукцию</div>
+								<span class="product__info-price-switch" id="js-price-switch">
+									<div class="product__info-price-switch-item js-price-switcher -active" data-price="12 000 руб./ за шт." data-text="Цена дистрибьютора, продвигающего нашу продукцию">Стандартная цена для дистрибьютора-логиста</div>
+									<div class="product__info-price-switch-item js-price-switcher" data-price="10 000 руб./ за шт." data-text="Цена для точки НoReCa">Цена для точки НoReCa</div>
+								</span>
+							</div>
+							<div class="product__info-price-row">
+								<div class="product__info-price-value" id="js-price">12 000 руб./ за шт.</div>
+								<div class="product__info-price-btn btn btn-accent btn-accent--blue">Заказать продукцию</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="utp utp--gray mb-l">
+					<div class="utp-item">
+						<div class="utp-item-icon">
+							<img src="images/dest/advantages-1.svg" alt="">
+						</div>
+						<div class="utp-item-text">Натуральные, безопасные,<br> живые молочные продукты</div>
+					</div>
+					<div class="utp-item">
+						<div class="utp-item-icon">
+							<img src="images/dest/advantages-2.svg" alt="">
+						</div>
+						<div class="utp-item-text">Уникальные продукты под<br> нестандартные запросы</div>
+					</div>
+					<div class="utp-item">
+						<div class="utp-item-icon">
+							<img src="images/dest/advantages-3.svg" alt="">
+						</div>
+						<div class="utp-item-text">Стабильный вкус и<br> технологические свойства</div>
+					</div>
+					<div class="utp-item">
+						<div class="utp-item-icon">
+							<img src="images/dest/advantages-4.svg" alt="">
+						</div>
+						<div class="utp-item-text">Гарантия<br> микробиологической чистоты</div>
+					</div>
+					<div class="utp-item">
+						<div class="utp-item-icon">
+							<img src="images/dest/advantages-5.svg" alt="">
+						</div>
+						<div class="utp-item-text">Надежные поставки и<br> партнерский сервис</div>
+					</div>
+				</section>
+
+				<section class="advices mb-m">
+					<div class="advices__categories categories-list">
+						<div class="js-tab categories-list__item -active" data-id="1">Рекомендуем использовать</div>
+						<div class="js-tab categories-list__item" data-id="2">Возможно использовать</div>
+						<div class="js-tab categories-list__item" data-id="3">Не рекомендуем использовать</div>
+					</div>
+					<div class="advices__blocks">
+						<div class="advices__block js-block -active" data-id="1">
+							<div class="advices__block-inner">
+								<div class="advices__block-content">
+									<div class="advices__block-title">Рекомендуем использовать</div>
+									<div class="advices__block-list rhombus-list rhombus-list--no-border">
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Йогуртовые торты</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Основа для дип-соусов и дрессингов</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Порционные десерты (трайфлы, гранолы)</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Национальные блюда греческой кухни (соусы дзадзики, гирос)</div>
+										</div>
+									</div>
+								</div>
+								<div class="advices__block-images">
+									<img src="images/dest/advice1.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice2.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice3.jpg" alt="" class="img-responsive">
+								</div>
+							</div>
+						</div>
+						<div class="advices__block js-block" data-id="2">
+							<div class="advices__block-inner">
+								<div class="advices__block-content">
+									<div class="advices__block-title">Возможно использовать</div>
+									<div class="advices__block-list rhombus-list rhombus-list--no-border">
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Йогуртовые торты</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Основа для дип-соусов и дрессингов</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Порционные десерты (трайфлы, гранолы)</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Национальные блюда греческой кухни (соусы дзадзики, гирос)</div>
+										</div>
+									</div>
+								</div>
+								<div class="advices__block-images">
+									<img src="images/dest/advice1.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice2.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice3.jpg" alt="" class="img-responsive">
+								</div>
+							</div>
+						</div>
+						<div class="advices__block js-block" data-id="3">
+							<div class="advices__block-inner">
+								<div class="advices__block-content">
+									<div class="advices__block-title">Не рекомендуем использовать</div>
+									<div class="advices__block-list rhombus-list rhombus-list--no-border">
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Йогуртовые торты</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Основа для дип-соусов и дрессингов</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Порционные десерты (трайфлы, гранолы)</div>
+										</div>
+										<div class="rhombus-list__item">
+											<div class="rhombus-list__item-title rhombus-list__item-title--400">Национальные блюда греческой кухни (соусы дзадзики, гирос)</div>
+										</div>
+									</div>
+								</div>
+								<div class="advices__block-images">
+									<img src="images/dest/advice1.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice2.jpg" alt="" class="img-responsive">
+									<img src="images/dest/advice3.jpg" alt="" class="img-responsive">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="callback-block-second mb-l">
+				<div class="callback-block-second__inner">
+					<form class="callback-block-second__form callback-form-second">
+						<div class="callback-form-second__title title">Получите сборник рецептов</div>
+						<input type="text" class="callback-form-second__input input" placeholder="Ваше имя и Фамилия">
+						<input type="text" class="callback-form-second__input input" placeholder="Сфера применения">
+						<input type="text" class="callback-form-second__input input" placeholder="Ваш E-mail">
+						<button class="callback-form-second__btn btn-accent btn-accent--blue">Отправить</button>
+						<div class="callback-form-second__messengers">
+							<div class="callback-form-second__messengers-text">или напишите нам в мессенджерах</div>
+							<div class="callback-form-second__messengers-list">
+								<a href="#" class="callback-form-second__messengers-item callback-form-second__messengers-item-wa"></a>
+								<a href="#" class="callback-form-second__messengers-item callback-form-second__messengers-item-tg"></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<img src="images/dest/callback-block-second.jpg" alt="" class="callback-block-second__image">
+			</section>
+
+			<div class="wrapper">
+				<table class="mb-l">
+					<tr>
+						<th>Свойство продукта</th>
+						<th>Оценка свойств продукта</th>
+						<th>Комментарии</th>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					<tr>
+						<td>Свойство 1</td>
+						<td>В процессе сбора</td>
+						<td>Сохраняет структуру</td>
+					</tr>
+					
+				</table>
+
+				<div class="callback-block-third mb-l">
+					<div class="callback-block-third__title title">Подобрать дистрибьютора</div>
+						<div class="callback-block-third__inner">
+							<img src="images/dest/form-1.jpg" alt="" class="callback-block-third__image">
+							<img src="images/dest/form2.jpg" alt="" class="callback-block-third__image">
+							<img src="images/dest/form3.jpg" alt="" class="callback-block-third__image">
+							<form class="callback-block-third__form callback-form callback-form--gray">
+								<div class="callback-form__title">Оставь свой номер телефона, наши специалисты смогут с вами связаться для подробной консультации</div>
+								<input type="text" class="callback-form__input input" placeholder="Ваше имя и фамилия">
+								<input type="text" class="callback-form__input input" placeholder="E-mail">
+								<input type="text" class="callback-form__input input" placeholder="Город">
+								<input type="text" class="callback-form__input input" placeholder="Сфера деятельности">
+								<input type="text" class="callback-form__input input" placeholder="Объем закупок (в месяц)">
+								<button class="callback-form__btn btn-accent btn-accent--blue">Отправить</button>
+								<div class="callback-form__messengers">
+									<div class="callback-form__messengers-text">или напишите нам в мессенджерах</div>
+									<div class="callback-form__messengers-list">
+										<a href="#" class="callback-form__messengers-item callback-form__messengers-item-wa"></a>
+										<a href="#" class="callback-form__messengers-item callback-form__messengers-item-tg"></a>
+									</div>
+								</div>
+							</form>
+						</div>
+					
+				</div>
+
+				<footer class="footer">
+					<div class="footer__scroll-to-top js-scroll-to-top"></div>
+					<div class="footer__block footer__block--first">
+						<a href="#" class="footer__logo logo">
+							<img src="images/dest/logo-white.png" alt="">
+						</a>
+						<div class="footer__second-menu second-menu">
+							<a href="#" class="second-menu__item">О компании</a>
+							<a href="#" class="second-menu__item">Наши бренды</a>
+							<a href="#" class="second-menu__item">Партнерам</a>
+							<a href="#" class="second-menu__item">Решения для HoReCa</a>
+							<a href="#" class="second-menu__item">Решения для производств</a>
+							<a href="#" class="second-menu__item">Блог</a>
+							<a href="#" class="second-menu__item">Контакты</a>
+						</div>
+					</div>
+					<div class="footer__block footer__block--second">
+						<div class="footer__section-menu section-menu">
+							<div class="section-menu__title">Продукты</div>
+							<a href="#" class="section-menu__item">Сыр для пиццы</a>
+							<a href="#" class="section-menu__item">Творожные сыры</a>
+							<a href="#" class="section-menu__item">Молодые сыры</a>
+							<a href="#" class="section-menu__item">Классические молодые продукты</a>
+							<a href="#" class="section-menu__item">Сладкие продукты</a>
+							<a href="#" class="section-menu__item">Начинки кондитерские</a>
+							<a href="#" class="section-menu__item">Технологичные продукты для производств</a>
+							<a href="#" class="section-menu__item">Пищевые ингредиенты</a>
+						</div>
+						<div class="footer__section-menu section-menu">
+							<div class="section-menu__title">Услуги</div>
+							<a href="#" class="section-menu__item">Разработка рецептур молочных продуктов</a>
+							<a href="#" class="section-menu__item">Импортозамещение молочных ингредиентов</a>
+							<a href="#" class="section-menu__item">Оптимизация рецептур и снижение себестоимости</a>
+							<a href="#" class="section-menu__item">Продление сроков годности продукции</a>
+							<a href="#" class="section-menu__item">Сладкие продукты</a>
+							<a href="#" class="section-menu__item">Оздоровление состава и этикетки</a>
+							<a href="#" class="section-menu__item">Подбор ингредиентов</a>
+						</div>
+					</div>
+					<div class="footer__block footer__block--third">
+						<form class="footer__subscribe subscribe">
+							<div class="subscribe__title">Подпишитесь на рассылку новостей</div>
+							<div class="subscribe__form">
+								<input type="text" class="subscribe__input input" placeholder="Ваш e-mail">
+								<button class="subscribe__btn btn-accent">Подписаться</button>
+							</div>
+						</form>
+						<div class="footer__socials socials">
+							<div class="socials__title">Следите за нами в соц. сетях</div>
+							<div class="socials__list">
+								<a href="#" class="socials__item socials__item--vk"></a>
+								<a href="#" class="socials__item socials__item--wa"></a>
+								<a href="#" class="socials__item socials__item--tg"></a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
