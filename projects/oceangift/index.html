@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>template</title>
+		<link rel="stylesheet" type="text/css" href="libs/swiper/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		
+		<header class="header">
+			<div class="header__top">
+				<div class="wrapper">
+					<div class="header__inner">
+						<div class="header__hamburger">
+							<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 0.75C0.585786 0.75 0.25 1.08579 0.25 1.5C0.25 1.91421 0.585786 2.25 1 2.25V0.75ZM21 2.25C21.4142 2.25 21.75 1.91421 21.75 1.5C21.75 1.08579 21.4142 0.75 21 0.75V2.25ZM1 8.75C0.585786 8.75 0.25 9.08579 0.25 9.5C0.25 9.91421 0.585786 10.25 1 10.25V8.75ZM21 10.25C21.4142 10.25 21.75 9.91421 21.75 9.5C21.75 9.08579 21.4142 8.75 21 8.75V10.25ZM1 15.75C0.585786 15.75 0.25 16.0858 0.25 16.5C0.25 16.9142 0.585786 17.25 1 17.25V15.75ZM21 17.25C21.4142 17.25 21.75 16.9142 21.75 16.5C21.75 16.0858 21.4142 15.75 21 15.75V17.25ZM1 2.25H21V0.75H1V2.25ZM1 10.25H21V8.75H1V10.25ZM1 17.25H21V15.75H1V17.25Z" fill="#15A3D7"/>
+							</svg>
+						</div>
+						<nav class="header__menu menu">       
+							<a href="javascript:void(0)" class="menu__item">О компании</a>
+							<a href="javascript:void(0)" class="menu__item">Хочу купить</a>
+							<a href="javascript:void(0)" class="menu__item">Наши дилеры</a>
+							<a href="javascript:void(0)" class="menu__item">Нанесение логотипа</a>
+							<a href="javascript:void(0)" class="menu__item">Стать дилером</a>
+							<a href="javascript:void(0)" class="menu__item">Контакты</a>
+						</nav>
+						<div class="header__phones phones">
+							<div class="phones__main">
+								<a href="tel:+78003331322" class="phones__phone">8 (800) 333-13-22</a>
+								<div class="phones__icon">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="7.5" cy="7.5" r="6.5" stroke="#15A3D7"/>
+										<path d="M5 6.5L7.5 9L10 6.5" stroke="#15A3D7" stroke-linecap="round"/>
+									</svg>
+								</div>
+							</div>
+							<div class="phones__list phones__list_down">
+								<div class="phones__list-cities">
+									Самара, Москва, Санкт-Петербург
+								</div>
+								<a href="tel:+78003331322" class="phones__list-phone">8 (800) 333-13-22</a>
+								<div class="phones__list-cities">
+									Новосибирск
+								</div>
+								<a href="tel:+73832461277" class="phones__list-phone">+7 (383) 246-12-77</a>
+								<a href="tel:+73832461277" class="phones__list-phone">+7 (383) 246-12-77</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="wrapper">
+					<div class="header__inner">
+						<a href="javascript:void(0)" class="header__logo logo">
+							<img src="images/dest/logo.png" alt="" class="logo__image">
+						</a>
+						<div class="header__block">
+							<div class="header__additional-menu additional-menu additional-menu_second">
+								<a href="javascript:void(0)" class="additional-menu__item">
+									<div class="additional-menu__icon">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 0.75C0.585786 0.75 0.25 1.08579 0.25 1.5C0.25 1.91421 0.585786 2.25 1 2.25V0.75ZM21 2.25C21.4142 2.25 21.75 1.91421 21.75 1.5C21.75 1.08579 21.4142 0.75 21 0.75V2.25ZM1 8.75C0.585786 8.75 0.25 9.08579 0.25 9.5C0.25 9.91421 0.585786 10.25 1 10.25V8.75ZM21 10.25C21.4142 10.25 21.75 9.91421 21.75 9.5C21.75 9.08579 21.4142 8.75 21 8.75V10.25ZM1 15.75C0.585786 15.75 0.25 16.0858 0.25 16.5C0.25 16.9142 0.585786 17.25 1 17.25V15.75ZM21 17.25C21.4142 17.25 21.75 16.9142 21.75 16.5C21.75 16.0858 21.4142 15.75 21 15.75V17.25ZM1 2.25H21V0.75H1V2.25ZM1 10.25H21V8.75H1V10.25ZM1 17.25H21V15.75H1V17.25Z" fill="#15A3D7"/>
+										</svg>
+									</div>
+									<div class="additional-menu__name">Каталог товаров</div>
+								</a>
+							</div>
+							<div class="header__search search">
+								<form action="" class="search__form">
+									<input type="text" class="search__input" placeholder="Поиск">
+									<!-- <button type="submit" class="search__submit">
+										<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.96714 7.65297C8.59922 6.94675 8.98357 6.01415 8.98357 4.99178C8.98357 2.78718 7.19639 1 4.99178 1C2.78718 1 1 2.78718 1 4.99178C1 7.19638 2.78718 8.98357 4.99178 8.98357C6.17402 8.98357 7.23621 8.46962 7.96714 7.65297ZM7.96714 7.65297L10.3142 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+										</svg>
+										Найти
+									</button> -->
+								</form>
+							</div>
+							<div class="header__additional-menu additional-menu">
+								<div class="additional-menu__item filter">
+									<div class="filter__button">
+										<div class="filter__icon">
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.75 19C9.75 19.4142 10.0858 19.75 10.5 19.75C10.9142 19.75 11.25 19.4142 11.25 19H9.75ZM11.25 1C11.25 0.585786 10.9142 0.25 10.5 0.25C10.0858 0.25 9.75 0.585786 9.75 1H11.25ZM17.1848 19C17.1848 19.4142 17.5206 19.75 17.9348 19.75C18.349 19.75 18.6848 19.4142 18.6848 19H17.1848ZM18.6848 1C18.6848 0.585786 18.349 0.25 17.9348 0.25C17.5206 0.25 17.1848 0.585786 17.1848 1H18.6848ZM2.31522 19C2.31522 19.4142 2.651 19.75 3.06522 19.75C3.47943 19.75 3.81522 19.4142 3.81522 19H2.31522ZM3.81522 1C3.81522 0.585786 3.47943 0.25 3.06522 0.25C2.651 0.25 2.31522 0.585786 2.31522 1H3.81522ZM9.75 7.95455V19H11.25V7.95455H9.75ZM9.75 1V3.86364H11.25V1H9.75ZM11.8152 5.90909C11.8152 6.61777 11.2332 7.20455 10.5 7.20455V8.70455C12.048 8.70455 13.3152 7.45976 13.3152 5.90909H11.8152ZM10.5 7.20455C9.76681 7.20455 9.18478 6.61777 9.18478 5.90909H7.68478C7.68478 7.45976 8.95201 8.70455 10.5 8.70455V7.20455ZM9.18478 5.90909C9.18478 5.20041 9.76681 4.61364 10.5 4.61364V3.11364C8.95201 3.11364 7.68478 4.35842 7.68478 5.90909H9.18478ZM10.5 4.61364C11.2332 4.61364 11.8152 5.20041 11.8152 5.90909H13.3152C13.3152 4.35842 12.048 3.11364 10.5 3.11364V4.61364ZM17.1848 16.1364V19H18.6848V16.1364H17.1848ZM17.1848 1V12.0455H18.6848V1H17.1848ZM19.25 14.0909C19.25 14.7996 18.668 15.3864 17.9348 15.3864V16.8864C19.4828 16.8864 20.75 15.6416 20.75 14.0909H19.25ZM17.9348 15.3864C17.2016 15.3864 16.6196 14.7996 16.6196 14.0909H15.1196C15.1196 15.6416 16.3868 16.8864 17.9348 16.8864V15.3864ZM16.6196 14.0909C16.6196 13.3822 17.2016 12.7955 17.9348 12.7955V11.2955C16.3868 11.2955 15.1196 12.5402 15.1196 14.0909H16.6196ZM17.9348 12.7955C18.668 12.7955 19.25 13.3822 19.25 14.0909H20.75C20.75 12.5402 19.4828 11.2955 17.9348 11.2955V12.7955ZM2.31522 12.8636V19H3.81522V12.8636H2.31522ZM2.31522 1V8.77273H3.81522V1H2.31522ZM4.38043 10.8182C4.38043 11.5269 3.79841 12.1136 3.06522 12.1136V13.6136C4.6132 13.6136 5.88043 12.3689 5.88043 10.8182H4.38043ZM3.06522 12.1136C2.33203 12.1136 1.75 11.5269 1.75 10.8182H0.25C0.25 12.3689 1.51723 13.6136 3.06522 13.6136V12.1136ZM1.75 10.8182C1.75 10.1095 2.33203 9.52273 3.06522 9.52273V8.02273C1.51723 8.02273 0.25 9.26751 0.25 10.8182H1.75ZM3.06522 9.52273C3.79841 9.52273 4.38043 10.1095 4.38043 10.8182H5.88043C5.88043 9.26751 4.6132 8.02273 3.06522 8.02273V9.52273Z" fill="#15A3D7"/>
+											</svg>
+										</div>
+										<div class="filter__title">Фильтр</div>
+									</div>
+									<div class="filter__content">
+										<form action="" class="filter__form form">
+											<div class="form__block">
+												<div class="form__block-title">Наличие</div>
+												<input type="text" class="form__input" placeholder="Количество">
+											</div>
+											<div class="form__block ">
+												<div class="form__block-title">Интервал цен</div>
+												<div class="form__block-flex">
+													<input type="text" class="form__input" placeholder="От">
+													<input type="text" class="form__input" placeholder="До">
+												</div>
+											</div>
+											<button type="submit" class="form__submit">Найти</button>
+										</form>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="additional-menu__item cart">
+									<div class="additional-menu__icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.75391 16.9688L6.01601 17.103C6.08087 17.4596 6.39146 17.7188 6.75391 17.7188V16.9688ZM4.0293 1.98828L3.29086 2.1195L3.2914 2.12249L4.0293 1.98828ZM3.26758 1.34375L3.27476 0.59375H3.26758V1.34375ZM1.5 0.59375C1.08579 0.59375 0.75 0.929536 0.75 1.34375C0.75 1.75796 1.08579 2.09375 1.5 2.09375V0.59375ZM6.04102 12.3125C5.6268 12.3125 5.29102 12.6483 5.29102 13.0625C5.29102 13.4767 5.6268 13.8125 6.04102 13.8125V12.3125ZM18.3066 13.0625L18.3089 12.3125H18.3066V13.0625ZM19.8398 11.7832L19.102 11.6486L19.1016 11.6511L19.8398 11.7832ZM21.0312 5.25L21.7691 5.38455C21.809 5.1657 21.7497 4.94042 21.6072 4.76959C21.4647 4.59876 21.2537 4.5 21.0312 4.5V5.25ZM4.625 4.5C4.21079 4.5 3.875 4.83579 3.875 5.25C3.875 5.66421 4.21079 6 4.625 6V4.5ZM17.9062 16.2188H6.75391V17.7188H17.9062V16.2188ZM7.4918 16.8345L4.76719 1.85407L3.2914 2.12249L6.01601 17.103L7.4918 16.8345ZM4.76773 1.85707C4.70525 1.50544 4.52183 1.18672 4.2492 0.956029L3.28028 2.10111C3.28585 2.10582 3.28959 2.11232 3.29086 2.1195L4.76773 1.85707ZM4.2492 0.956029C3.97657 0.725342 3.63188 0.597205 3.27476 0.593784L3.2604 2.09372C3.26768 2.09379 3.27472 2.0964 3.28028 2.10111L4.2492 0.956029ZM3.26758 0.59375H1.5V2.09375H3.26758V0.59375ZM8.95312 18.9219C8.95312 19.5863 8.41447 20.125 7.75 20.125V21.625C9.24289 21.625 10.4531 20.4148 10.4531 18.9219H8.95312ZM7.75 20.125C7.08553 20.125 6.54688 19.5863 6.54688 18.9219H5.04688C5.04688 20.4148 6.25711 21.625 7.75 21.625V20.125ZM6.54688 18.9219C6.54688 18.2574 7.08553 17.7188 7.75 17.7188V16.2188C6.25711 16.2188 5.04688 17.429 5.04688 18.9219H6.54688ZM7.75 17.7188C8.41447 17.7188 8.95312 18.2574 8.95312 18.9219H10.4531C10.4531 17.429 9.24289 16.2188 7.75 16.2188V17.7188ZM19.1094 18.9219C19.1094 19.5863 18.5707 20.125 17.9062 20.125V21.625C19.3991 21.625 20.6094 20.4148 20.6094 18.9219H19.1094ZM17.9062 20.125C17.2418 20.125 16.7031 19.5863 16.7031 18.9219H15.2031C15.2031 20.4148 16.4134 21.625 17.9062 21.625V20.125ZM16.7031 18.9219C16.7031 18.2574 17.2418 17.7188 17.9062 17.7188V16.2188C16.4134 16.2188 15.2031 17.429 15.2031 18.9219H16.7031ZM17.9062 17.7188C18.5707 17.7188 19.1094 18.2574 19.1094 18.9219H20.6094C20.6094 17.429 19.3991 16.2188 17.9062 16.2188V17.7188ZM6.04102 13.8125H18.3066V12.3125H6.04102V13.8125ZM18.3044 13.8125C18.846 13.8141 19.3708 13.6248 19.7867 13.2779L18.8257 12.1261C18.6807 12.2471 18.4977 12.3131 18.3089 12.3125L18.3044 13.8125ZM19.7867 13.2779C20.2025 12.9309 20.4827 12.4484 20.5781 11.9153L19.1016 11.6511C19.0683 11.837 18.9706 12.0052 18.8257 12.1261L19.7867 13.2779ZM20.5777 11.9178L21.7691 5.38455L20.2934 5.11545L19.102 11.6487L20.5777 11.9178ZM21.0312 4.5H4.625V6H21.0312V4.5Z" fill="#0C93CF"/>
+										</svg>
+									</div>
+									<div class="additional-menu__name">Корзина</div>
+									<div class="cart__content">
+										<div>
+											<span>Товаров:</span>
+											<span>0 шт.</span>
+										</div>
+										<div>
+											<span>На сумму:</span>
+											<span>0 ₽</span>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0)" class="additional-menu__item">
+									<div class="additional-menu__icon">
+										<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.850446 18.5937C0.643373 18.9525 0.766321 19.4111 1.12506 19.6182C1.4838 19.8253 1.94248 19.7023 2.14955 19.3436L0.850446 18.5937ZM19.7958 19.3436C20.0028 19.7023 20.4615 19.8253 20.8203 19.6182C21.179 19.4111 21.3019 18.9525 21.0949 18.5937L19.7958 19.3436ZM16.4727 7.25C16.4727 10.2876 14.0102 12.75 10.9727 12.75V14.25C14.8386 14.25 17.9727 11.116 17.9727 7.25H16.4727ZM10.9727 12.75C7.93509 12.75 5.47266 10.2876 5.47266 7.25H3.97266C3.97266 11.116 7.10666 14.25 10.9727 14.25V12.75ZM5.47266 7.25C5.47266 4.21243 7.93509 1.75 10.9727 1.75V0.25C7.10666 0.25 3.97266 3.38401 3.97266 7.25H5.47266ZM10.9727 1.75C14.0102 1.75 16.4727 4.21243 16.4727 7.25H17.9727C17.9727 3.38401 14.8386 0.25 10.9727 0.25V1.75ZM2.14955 19.3436C3.04363 17.7947 4.32971 16.5084 5.8785 15.6141L5.12844 14.3151C3.35161 15.3411 1.87617 16.8168 0.850446 18.5937L2.14955 19.3436ZM5.8785 15.6141C7.42708 14.72 9.18397 14.25 10.9727 14.25V12.75C8.92114 12.75 6.90549 13.2891 5.12844 14.3151L5.8785 15.6141ZM10.9727 14.25C12.7613 14.25 14.5182 14.72 16.0668 15.6141L16.8169 14.3151C15.0398 13.2891 13.0242 12.75 10.9727 12.75V14.25ZM16.0668 15.6141C17.6156 16.5084 18.9017 17.7947 19.7958 19.3436L21.0949 18.5937C20.0691 16.8168 18.5937 15.3411 16.8169 14.3151L16.0668 15.6141Z" fill="#0C93CF"/>
+										</svg>
+									</div>
+									<div class="additional-menu__name">Войти</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="slider">
+			<div class="wrapper">
+				<div class="swiper slider__list">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="images/dest/banner.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="images/dest/banner.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="images/dest/banner.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page">
+			<div class="wrapper">
+				<div class="page__inner">
+					<div class="page__main">
+						<div class="catalog-sections">
+							<div class="catalog-sections__categories">
+								<div class="catalog-sections__category">Новинки</div>
+								<div class="catalog-sections__category catalog-sections__category_active">Конструктор наборов</div>
+								<div class="catalog-sections__category">Бренды</div>
+								<div class="catalog-sections__category">По праздникам</div>
+							</div>
+							<div class="catalog-sections__list">
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-1.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div class="catalog-sections__section-list">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители<br> и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+										<div class="catalog-sections__section-list-hidden">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-2.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div class="catalog-sections__section-list">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+										<div class="catalog-sections__section-list-hidden">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-3.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div class="catalog-sections__section-list">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+										<div class="catalog-sections__section-list-hidden">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-4.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div class="catalog-sections__section-list">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+										<div class="catalog-sections__section-list-hidden">
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+											<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-5.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-6.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-1.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-2.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-3.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-sections__section">
+									<div class="catalog-sections__section-inner">
+										<a href="javascript:void(0)">
+											<div class="catalog-sections__section-image">
+												<img src="images/dest/seciton-4.png" alt="" class="catalog-sections__section-image-orig">
+												<img src="images/dest/section-hover.png" alt="" class="catalog-sections__section-image-hover">
+											</div>
+											<div class="catalog-sections__section-title">Здоровье</div>
+										</a>
+										<div>
+											<div class="catalog-sections__section-list">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+											<div class="catalog-sections__section-list-hidden">
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Здоровье</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Защита здоровья</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">Увлажнители и диспенсеры</a>
+												<a href="javascript:void(0)" class="catalog-sections__section-link">УФ стерилизаторы</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="social">
+							<div class="social__title h2">Мы в социальных сетях</div>
+							<div class="social__list">
+								<a href="javascript:void(0)" class="social__item social__item_vk">
+									<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.053 6.20204C23.4227 5.72404 23.7162 5.34054 23.933 5.05124C25.4942 2.97555 26.1709 1.64961 25.9635 1.07152L25.8821 0.936126C25.8281 0.854806 25.6879 0.780126 25.4625 0.712536C25.2368 0.644986 24.9481 0.634196 24.5963 0.678786L20.6976 0.706287C20.6074 0.697297 20.5171 0.699396 20.4268 0.712536C20.3366 0.726256 20.278 0.740036 20.2508 0.753166C20.2235 0.766946 20.2011 0.777986 20.1832 0.786966L20.1291 0.827606C20.084 0.854516 20.0344 0.902036 19.9803 0.969926C19.9262 1.03777 19.8807 1.11641 19.8449 1.20696C19.4207 2.29885 18.938 3.31426 18.3964 4.25285C18.0625 4.81244 17.7555 5.29784 17.4761 5.70794C17.1963 6.11894 16.9616 6.42114 16.7721 6.61484C16.5826 6.80884 16.411 6.96484 16.2577 7.08174C16.1041 7.19944 15.9869 7.24884 15.9059 7.23094C15.8246 7.21294 15.7478 7.19504 15.6757 7.17644C15.5493 7.09554 15.4477 6.98514 15.3712 6.84504C15.2944 6.70544 15.2427 6.52934 15.2154 6.31714C15.1885 6.10524 15.1724 5.92234 15.1682 5.76864C15.1634 5.61534 15.1658 5.39894 15.1751 5.11884C15.1841 4.83904 15.1885 4.64984 15.1885 4.55034C15.1885 4.20772 15.1954 3.8353 15.2089 3.43358C15.2224 3.03216 15.2337 2.71381 15.2427 2.47913C15.2517 2.24479 15.2561 1.99638 15.2561 1.73454C15.2561 1.47329 15.2403 1.26762 15.2085 1.11851C15.1768 0.969927 15.1293 0.825556 15.0665 0.685376C15.0032 0.545786 14.9108 0.437267 14.7888 0.360777C14.6669 0.283957 14.5159 0.223297 14.3354 0.177817C13.8568 0.0692965 13.2477 0.0113164 12.5079 0.00179636C10.8292 -0.0155436 9.75076 0.0926364 9.27251 0.326986C9.08301 0.426516 8.91143 0.561616 8.75811 0.733196C8.59552 0.931976 8.5731 1.04046 8.69057 1.0578C9.23217 1.13912 9.61543 1.33341 9.84107 1.64008L9.92239 1.80238C9.98545 1.92014 10.0485 2.12762 10.1119 2.4253C10.175 2.72304 10.2156 3.05243 10.2339 3.41351C10.279 4.07228 10.279 4.63604 10.2339 5.10564C10.1887 5.57524 10.146 5.94054 10.1054 6.20174C10.0647 6.46364 10.0037 6.67554 9.92269 6.83784C9.84136 7.00074 9.7873 7.09994 9.76009 7.13614C9.73289 7.17194 9.71047 7.19464 9.69254 7.20374C9.57508 7.24854 9.45342 7.27124 9.32702 7.27124C9.20057 7.27124 9.04721 7.20784 8.86669 7.08144C8.68612 6.95554 8.49872 6.78164 8.30501 6.56044C8.11072 6.33954 7.89221 6.03014 7.64829 5.63294C7.40467 5.23624 7.15177 4.76664 6.89023 4.22535L6.67381 3.83257C6.53843 3.5803 6.35337 3.21233 6.11873 2.72959C5.8841 2.24684 5.67633 1.77996 5.49611 1.32833C5.42377 1.13912 5.31554 0.994737 5.17121 0.895197L5.10367 0.854566C5.05854 0.818666 4.9862 0.780127 4.88696 0.739737C4.78742 0.699107 4.68402 0.669797 4.5755 0.651577L0.866346 0.678496C0.487338 0.678496 0.230286 0.764596 0.0948985 0.936126L0.0407824 1.01716C0.0134313 1.06258 0 1.13492 0 1.23387C0 1.33341 0.0272046 1.45507 0.0813207 1.59915C0.622921 2.87191 1.2118 4.09924 1.84786 5.28114C2.48426 6.46364 3.03695 7.41594 3.50622 8.13774C3.97548 8.86024 4.45374 9.54114 4.94127 10.1819C5.4288 10.8228 5.7513 11.2332 5.90911 11.4134C6.06691 11.5943 6.19097 11.7297 6.28128 11.8196L6.61965 12.1448C6.83606 12.3613 7.15441 12.6207 7.57411 12.9232C7.99375 13.2257 8.45828 13.5234 8.96852 13.8164C9.47818 14.1099 10.0718 14.3487 10.7485 14.534C11.4252 14.7193 12.084 14.7937 12.7249 14.7573H14.2816C14.5976 14.7304 14.8366 14.6315 14.999 14.4596L15.0531 14.392C15.0889 14.3382 15.123 14.2545 15.1547 14.1418C15.1861 14.0291 15.2023 13.9048 15.2023 13.7697C15.1929 13.3817 15.2226 13.0314 15.2901 12.7205C15.3577 12.4091 15.4345 12.1747 15.5203 12.0163C15.6061 11.8588 15.7029 11.7255 15.8114 11.6169C15.9197 11.5084 15.9961 11.4436 16.0416 11.4209C16.0867 11.3987 16.1229 11.3829 16.1498 11.3733C16.3662 11.3012 16.6212 11.3712 16.9147 11.5831C17.2079 11.7957 17.4833 12.0569 17.7406 12.3684C17.9976 12.6798 18.3067 13.0292 18.6678 13.4175C19.0286 13.8055 19.3445 14.0942 19.6153 14.2837L19.8862 14.4467C20.0666 14.5546 20.301 14.6538 20.5901 14.7444C20.8788 14.8344 21.1317 14.8571 21.3481 14.8119L24.8136 14.7575C25.1565 14.7575 25.4228 14.7014 25.6124 14.5884C25.8018 14.4763 25.9146 14.3513 25.9507 14.2162C25.9866 14.0808 25.989 13.9281 25.9576 13.7562C25.926 13.5849 25.8943 13.4653 25.8629 13.3978C25.8313 13.3303 25.8019 13.2734 25.7747 13.2286C25.3234 12.4165 24.4616 11.419 23.1891 10.2368L23.1619 10.2099L23.1485 10.1962L23.135 10.183H23.1214C22.5437 9.63244 22.1784 9.26244 22.025 9.07264C21.7453 8.71214 21.6819 8.34654 21.8356 7.97654C21.9431 7.69594 22.3491 7.10474 23.053 6.20204Z" fill="#4D76A1"/>
+									</svg>
+								</a>
+								<a href="javascript:void(0)" class="social__item social__item_fb">
+									<svg width="9" height="20" viewBox="0 0 9 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.9 0C2.5 0 2 0.6 2 6.3H0V9.6H2V19.2H5.9V9.6H8.5L8.9 6.3H6C6 6.3 6 5.5 6 4.6C6 3.7 6.3 3.3 7.5 3.3C8.7 3.3 9 3.3 9 3.3L8.9 0Z" fill="#3B5998"/>
+									</svg>
+								</a>
+								<a href="javascript:void(0)" class="social__item social__item_inst">
+									<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.7 14.8C18.7 17 16.9 18.8 14.8 18.8H5.9C3.7 18.8 2 17 2 14.8V5.9C2 3.7 3.8 1.9 5.9 1.9H14.8C17 1.9 18.7 3.7 18.7 5.9V14.8ZM14.6 0H5.9C2.6 0 0 2.7 0 6V14.7C0 18 2.7 20.7 5.9 20.7H12.7H14.6C17.9 20.7 20.5 18 20.5 14.7V6C20.6 2.7 17.9 0 14.6 0ZM10.3 13.8C8.4 13.8 6.8 12.2 6.8 10.3C6.8 8.4 8.3 6.8 10.3 6.8C12.3 6.8 13.8 8.4 13.8 10.3C13.8 12.3 12.2 13.8 10.3 13.8ZM10.3 5C7.4 5 5 7.4 5 10.4C5 13.4 7.4 15.8 10.3 15.8C13.2 15.8 15.6 13.4 15.6 10.4C15.6 7.4 13.2 5 10.3 5ZM15.8 3.5C15.1 3.5 14.6 4.1 14.6 4.7C14.6 5.3 15.2 5.9 15.8 5.9C16.5 5.9 17 5.3 17 4.7C17 4.1 16.5 3.5 15.8 3.5Z" fill="white"/>
+									</svg>
+								</a>
+								<a href="javascript:void(0)" class="social__item social__item_yt">
+									<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21 2.4C20.8 1.5 20 0.8 19.1 0.5C17.4 0 10.7 0 10.7 0C10.7 0 4 0 2.3 0.5C1.4 0.7 0.700001 1.5 0.400001 2.4C5.66244e-07 4.1 0 7.5 0 7.5C0 7.5 0 11 0.5 12.7C0.7 13.6 1.5 14.3 2.4 14.6C4.1 15.1 10.8 15.1 10.8 15.1C10.8 15.1 17.5 15.1 19.2 14.6C20.1 14.4 20.8 13.6 21.1 12.7C21.6 11 21.6 7.5 21.6 7.5C21.6 7.5 21.5 4.1 21 2.4ZM8.7 10.8V4.4L14.2 7.6L8.7 10.8Z" fill="#DB0B0A"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="page__sidebar">
+						<div class="news">
+							<div class="news__top">
+								<div class="news__top-title h2">Новости</div>
+								<a href="javascript:void(0);" class="news__top-link">Все новости</a>
+							</div>
+							<div class="news__list">
+								<a href="javascript:void(0);" class="news__item news__item_active">
+									<div class="news__item-date">31.01.2022</div>
+									<div class="news__item-title">Сокращаем сроки поставки в Москву до 2 дней!</div>
+								</a>
+								<a href="javascript:void(0);" class="news__item">
+									<div class="news__item-date">31.01.2022</div>
+									<div class="news__item-title">Сокращаем сроки поставки в Москву до 2 дней!</div>
+								</a>
+								<a href="javascript:void(0);" class="news__item">
+									<div class="news__item-date">31.01.2022</div>
+									<div class="news__item-title">Сокращаем сроки поставки в Москву до 2 дней!</div>
+								</a>
+								<a href="javascript:void(0);" class="news__item">
+									<div class="news__item-date">31.01.2022</div>
+									<div class="news__item-title">Сокращаем сроки поставки в Москву до 2 дней!</div>
+								</a>
+								<a href="javascript:void(0);" class="news__item">
+									<div class="news__item-date">31.01.2022</div>
+									<div class="news__item-title">Сокращаем сроки поставки в Москву до 2 дней!</div>
+								</a>
+							</div>
+						</div>
+						<div class="pdf-catalog">
+							<div class="pdf-catalog__title h2">PDF-версии каталога</div>
+							<a href="javascript:void(0);" class="pdf-catalog__link">Океан бизнес-сувениров</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="wrapper">
+					<div class="footer__inner">
+						<div class="footer__left">
+							<a href="javascript:void(0)" class="footer__logo logo">
+								<img src="/images/dest/logo.png" alt="" class="logo__image">
+							</a>
+							<nav class="footer__menu menu">       
+								<a href="javascript:void(0)" class="menu__item">О компании</a>
+								<a href="javascript:void(0)" class="menu__item">Хочу купить</a>
+								<a href="javascript:void(0)" class="menu__item">Наши дилеры</a>
+								<a href="javascript:void(0)" class="menu__item">Нанесение логотипа</a>
+								<a href="javascript:void(0)" class="menu__item">Стать дилером</a>
+								<a href="javascript:void(0)" class="menu__item">Контакты</a>
+							</nav>
+						</div>
+						<div class="footer__right">
+							<div class="footer__phones phones">
+								<div class="phones__main">
+									<a href="tel:+78003331322" class="phones__phone">8 (800) 333-13-22</a>
+									<div class="phones__icon">
+										<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="7.5" cy="7.5" r="6.5" stroke="#15A3D7"/>
+											<path d="M5 6.5L7.5 9L10 6.5" stroke="#15A3D7" stroke-linecap="round"/>
+										</svg>
+									</div>
+								</div>
+								<div class="phones__list phones__list_up">
+									<div class="phones__list-cities">
+										Самара, Москва, Санкт-Петербург
+									</div>
+									<a href="tel:+78003331322" class="phones__list-phone">8 (800) 333-13-22</a>
+									<div class="phones__list-cities">
+										Новосибирск
+									</div>
+									<a href="tel:+73832461277" class="phones__list-phone">+7 (383) 246-12-77</a>
+									<a href="tel:+73832461277" class="phones__list-phone">+7 (383) 246-12-77</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="wrapper">
+					<div class="footer__copiright">
+						© «Океан бизнес сувениров» 2005–2022 Все права защищены<br>
+						Использование сайта, регистрация на нем и размещение любых персональных данных означает согласие с Политикой в отношении обработки персональных данных
+					</div>
+					<a href="javascript:void(0)" class="footer__sitemap">Карта сайта</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="overlay"></div>
+
+		<div class="hamburger-menu">
+			<div class="hamburger-menu__close"></div>
+			<nav class="hamburger-menu__list">
+				<a href="javascript:void(0)" class="hamburger-menu__item">О компании</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">Хочу купить</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">Наши дилеры</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">Нанесение логотипа</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">Стать дилером</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">Контакты</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">
+					<div class="hamburger-menu__icon">
+						<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0.75C0.585786 0.75 0.25 1.08579 0.25 1.5C0.25 1.91421 0.585786 2.25 1 2.25V0.75ZM21 2.25C21.4142 2.25 21.75 1.91421 21.75 1.5C21.75 1.08579 21.4142 0.75 21 0.75V2.25ZM1 8.75C0.585786 8.75 0.25 9.08579 0.25 9.5C0.25 9.91421 0.585786 10.25 1 10.25V8.75ZM21 10.25C21.4142 10.25 21.75 9.91421 21.75 9.5C21.75 9.08579 21.4142 8.75 21 8.75V10.25ZM1 15.75C0.585786 15.75 0.25 16.0858 0.25 16.5C0.25 16.9142 0.585786 17.25 1 17.25V15.75ZM21 17.25C21.4142 17.25 21.75 16.9142 21.75 16.5C21.75 16.0858 21.4142 15.75 21 15.75V17.25ZM1 2.25H21V0.75H1V2.25ZM1 10.25H21V8.75H1V10.25ZM1 17.25H21V15.75H1V17.25Z" fill="#15A3D7"/>
+						</svg>
+					</div>
+					<div class="hamburger-menu__name">Каталог товаров</div>
+				</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item cart">
+					<div class="hamburger-menu__icon">
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.75391 16.9688L6.01601 17.103C6.08087 17.4596 6.39146 17.7188 6.75391 17.7188V16.9688ZM4.0293 1.98828L3.29086 2.1195L3.2914 2.12249L4.0293 1.98828ZM3.26758 1.34375L3.27476 0.59375H3.26758V1.34375ZM1.5 0.59375C1.08579 0.59375 0.75 0.929536 0.75 1.34375C0.75 1.75796 1.08579 2.09375 1.5 2.09375V0.59375ZM6.04102 12.3125C5.6268 12.3125 5.29102 12.6483 5.29102 13.0625C5.29102 13.4767 5.6268 13.8125 6.04102 13.8125V12.3125ZM18.3066 13.0625L18.3089 12.3125H18.3066V13.0625ZM19.8398 11.7832L19.102 11.6486L19.1016 11.6511L19.8398 11.7832ZM21.0312 5.25L21.7691 5.38455C21.809 5.1657 21.7497 4.94042 21.6072 4.76959C21.4647 4.59876 21.2537 4.5 21.0312 4.5V5.25ZM4.625 4.5C4.21079 4.5 3.875 4.83579 3.875 5.25C3.875 5.66421 4.21079 6 4.625 6V4.5ZM17.9062 16.2188H6.75391V17.7188H17.9062V16.2188ZM7.4918 16.8345L4.76719 1.85407L3.2914 2.12249L6.01601 17.103L7.4918 16.8345ZM4.76773 1.85707C4.70525 1.50544 4.52183 1.18672 4.2492 0.956029L3.28028 2.10111C3.28585 2.10582 3.28959 2.11232 3.29086 2.1195L4.76773 1.85707ZM4.2492 0.956029C3.97657 0.725342 3.63188 0.597205 3.27476 0.593784L3.2604 2.09372C3.26768 2.09379 3.27472 2.0964 3.28028 2.10111L4.2492 0.956029ZM3.26758 0.59375H1.5V2.09375H3.26758V0.59375ZM8.95312 18.9219C8.95312 19.5863 8.41447 20.125 7.75 20.125V21.625C9.24289 21.625 10.4531 20.4148 10.4531 18.9219H8.95312ZM7.75 20.125C7.08553 20.125 6.54688 19.5863 6.54688 18.9219H5.04688C5.04688 20.4148 6.25711 21.625 7.75 21.625V20.125ZM6.54688 18.9219C6.54688 18.2574 7.08553 17.7188 7.75 17.7188V16.2188C6.25711 16.2188 5.04688 17.429 5.04688 18.9219H6.54688ZM7.75 17.7188C8.41447 17.7188 8.95312 18.2574 8.95312 18.9219H10.4531C10.4531 17.429 9.24289 16.2188 7.75 16.2188V17.7188ZM19.1094 18.9219C19.1094 19.5863 18.5707 20.125 17.9062 20.125V21.625C19.3991 21.625 20.6094 20.4148 20.6094 18.9219H19.1094ZM17.9062 20.125C17.2418 20.125 16.7031 19.5863 16.7031 18.9219H15.2031C15.2031 20.4148 16.4134 21.625 17.9062 21.625V20.125ZM16.7031 18.9219C16.7031 18.2574 17.2418 17.7188 17.9062 17.7188V16.2188C16.4134 16.2188 15.2031 17.429 15.2031 18.9219H16.7031ZM17.9062 17.7188C18.5707 17.7188 19.1094 18.2574 19.1094 18.9219H20.6094C20.6094 17.429 19.3991 16.2188 17.9062 16.2188V17.7188ZM6.04102 13.8125H18.3066V12.3125H6.04102V13.8125ZM18.3044 13.8125C18.846 13.8141 19.3708 13.6248 19.7867 13.2779L18.8257 12.1261C18.6807 12.2471 18.4977 12.3131 18.3089 12.3125L18.3044 13.8125ZM19.7867 13.2779C20.2025 12.9309 20.4827 12.4484 20.5781 11.9153L19.1016 11.6511C19.0683 11.837 18.9706 12.0052 18.8257 12.1261L19.7867 13.2779ZM20.5777 11.9178L21.7691 5.38455L20.2934 5.11545L19.102 11.6487L20.5777 11.9178ZM21.0312 4.5H4.625V6H21.0312V4.5Z" fill="#0C93CF"/>
+						</svg>
+					</div>
+					<div class="hamburger-menu__name">Корзина</div>
+				</a>
+				<a href="javascript:void(0)" class="hamburger-menu__item">
+					<div class="hamburger-menu__icon">
+						<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.850446 18.5937C0.643373 18.9525 0.766321 19.4111 1.12506 19.6182C1.4838 19.8253 1.94248 19.7023 2.14955 19.3436L0.850446 18.5937ZM19.7958 19.3436C20.0028 19.7023 20.4615 19.8253 20.8203 19.6182C21.179 19.4111 21.3019 18.9525 21.0949 18.5937L19.7958 19.3436ZM16.4727 7.25C16.4727 10.2876 14.0102 12.75 10.9727 12.75V14.25C14.8386 14.25 17.9727 11.116 17.9727 7.25H16.4727ZM10.9727 12.75C7.93509 12.75 5.47266 10.2876 5.47266 7.25H3.97266C3.97266 11.116 7.10666 14.25 10.9727 14.25V12.75ZM5.47266 7.25C5.47266 4.21243 7.93509 1.75 10.9727 1.75V0.25C7.10666 0.25 3.97266 3.38401 3.97266 7.25H5.47266ZM10.9727 1.75C14.0102 1.75 16.4727 4.21243 16.4727 7.25H17.9727C17.9727 3.38401 14.8386 0.25 10.9727 0.25V1.75ZM2.14955 19.3436C3.04363 17.7947 4.32971 16.5084 5.8785 15.6141L5.12844 14.3151C3.35161 15.3411 1.87617 16.8168 0.850446 18.5937L2.14955 19.3436ZM5.8785 15.6141C7.42708 14.72 9.18397 14.25 10.9727 14.25V12.75C8.92114 12.75 6.90549 13.2891 5.12844 14.3151L5.8785 15.6141ZM10.9727 14.25C12.7613 14.25 14.5182 14.72 16.0668 15.6141L16.8169 14.3151C15.0398 13.2891 13.0242 12.75 10.9727 12.75V14.25ZM16.0668 15.6141C17.6156 16.5084 18.9017 17.7947 19.7958 19.3436L21.0949 18.5937C20.0691 16.8168 18.5937 15.3411 16.8169 14.3151L16.0668 15.6141Z" fill="#0C93CF"/>
+						</svg>
+					</div>
+					<div class="hamburger-menu__name">Войти</div>
+				</a>
+			</nav>
+		</div>
+		<script type="text/javascript" src="libs/jquery/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

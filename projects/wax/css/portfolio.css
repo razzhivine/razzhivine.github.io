@@ -1,0 +1,91 @@
+.portfolio .button {
+  margin: 0 0 100px 0;
+  display: inline-block; }
+
+.portfolio h2 {
+  margin: 80px 0 24px 0; }
+
+.portfolio p {
+  margin: 0 auto 40px; }
+
+.portfolio-filter {
+  margin: 0 0 40px 0; }
+  .portfolio-filter a {
+    border: 1px solid #ebebeb;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px 21px;
+    color: #8c8c8c;
+    margin: 0 5px; }
+  .portfolio-filter .active {
+    background-color: #998675;
+    color: #fff; }
+
+.portfolio-list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 0 0 40px 0; }
+  .portfolio-list .portfolio-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .portfolio-list .portfolio-item img {
+      -webkit-filter: brightness(100%);
+              filter: brightness(100%);
+      -webkit-transition: -webkit-filter 0.5s ease-in;
+      transition: -webkit-filter 0.5s ease-in;
+      -o-transition: filter 0.5s ease-in;
+      transition: filter 0.5s ease-in;
+      transition: filter 0.5s ease-in, -webkit-filter 0.5s ease-in; }
+    .portfolio-list .portfolio-item .portfolio-description {
+      width: auto;
+      text-align: left;
+      background: #fbfaf8;
+      -webkit-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in; }
+      .portfolio-list .portfolio-item .portfolio-description h3 {
+        color: #c7b29a;
+        font-size: 20px;
+        font-weight: 500;
+        margin: -4px 30px 14px;
+        -webkit-transition: color 0.5s ease-in;
+        -o-transition: color 0.5s ease-in;
+        transition: color 0.5s ease-in; }
+      .portfolio-list .portfolio-item .portfolio-description p {
+        margin: 0 30px 30px;
+        color: #d1d1d1;
+        font-size: 14px;
+        -webkit-transition: color 0.5s ease-in;
+        -o-transition: color 0.5s ease-in;
+        transition: color 0.5s ease-in; }
+    .portfolio-list .portfolio-item .portfolio-description:before {
+      content: "";
+      border: 20px solid transparent;
+      border-bottom: 13px solid #fbfaf8;
+      display: block;
+      position: relative;
+      width: 10px;
+      bottom: 30px;
+      left: 30px;
+      -webkit-transition: border-bottom-color 0.5s ease-in;
+      -o-transition: border-bottom-color 0.5s ease-in;
+      transition: border-bottom-color 0.5s ease-in; }
+  .portfolio-list .portfolio-item:hover img {
+    -webkit-filter: brightness(40%);
+            filter: brightness(40%);
+    -webkit-transition: -webkit-filter 0.5s ease-in;
+    transition: -webkit-filter 0.5s ease-in;
+    -o-transition: filter 0.5s ease-in;
+    transition: filter 0.5s ease-in;
+    transition: filter 0.5s ease-in, -webkit-filter 0.5s ease-in; }
+  .portfolio-list .portfolio-item:hover .portfolio-description {
+    background: #362f2d; }
+    .portfolio-list .portfolio-item:hover .portfolio-description h3 {
+      color: #fff; }
+    .portfolio-list .portfolio-item:hover .portfolio-description p {
+      color: #c7b29a; }
+  .portfolio-list .portfolio-item:hover .portfolio-description:before {
+    border-bottom-color: #362f2d; }

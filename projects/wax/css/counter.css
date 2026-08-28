@@ -1,0 +1,29 @@
+.counter {
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background: -webkit-linear-gradient(left, #211b19 0%, #4e3427 100%);
+  background: -o-linear-gradient(left, #211b19 0%, #4e3427 100%);
+  background: linear-gradient(90deg, #211b19 0%, #4e3427 100%); }
+  .counter-content {
+    grid-template-columns: repeat(5, 1fr); }
+    .counter-content .counter-item i {
+      font-size: 44px;
+      color: #c7b29a;
+      margin: 70px 0 0; }
+    .counter-content .counter-item p {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 200;
+      margin-bottom: 20px; }
+    .counter-content .counter-item p:nth-child(3) {
+      color: #c7b29a;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .counter-content .counter-item hr {
+      color: #fff;
+      background-color: #fff;
+      border: 0px none;
+      width: 40px;
+      height: 2px;
+      clear: both;
+      margin-bottom: 60px; }

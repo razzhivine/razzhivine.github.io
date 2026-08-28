@@ -1,0 +1,53 @@
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%; }
+  .header__top {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 85px 0 150px 0; }
+    .header__top .header__logo {
+      color: #ff6a6d;
+      font-family: "Fivo Sans - Heavy", sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48.34px; }
+    .header__top .header__menu .menu__link {
+      font-family: "Fivo Sans", sans-serif;
+      font-size: 18px;
+      opacity: 0.5;
+      color: #1c2056;
+      margin: auto 67px auto 0; }
+      .header__top .header__menu .menu__link--active {
+        color: #ff6a6d;
+        opacity: 1;
+        font-weight: bold; }
+    .header__top .header__menu .menu__link:nth-child(4) {
+      margin: auto 125px auto 0; }
+    .header__top .header__menu .menu__login {
+      color: #fff;
+      height: 42px;
+      padding: 0 36px;
+      background: #ff6a6d;
+      -webkit-border-radius: 21px;
+              border-radius: 21px;
+      font-family: "Fivo Sans", sans-serif; }
+  .header__info {
+    margin: 0 0 0 115px; }
+    .header__info .info__heading {
+      width: 538px; }
+    .header__info .info__paragraph {
+      width: 473px;
+      margin: 0 0 70px 0; }
+    .header__info .info__buttons {
+      padding: 0 0 457px 0; }
+      .header__info .info__buttons .button {
+        margin: 0 27px 0 0; }
+      .header__info .info__buttons .button--opacity {
+        color: #ff6a6d;
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid #ff6a6d;
+        -webkit-box-shadow: none;
+                box-shadow: none; }

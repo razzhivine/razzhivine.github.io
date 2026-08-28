@@ -1,0 +1,11 @@
+.adaptability {
+  background: #fbfaf8; }
+  .adaptability-content img {
+    margin: 80px 0 0 0; }
+  .adaptability-content .adaptability-description {
+    margin: 195px 0 0 0; }
+    .adaptability-content .adaptability-description h2 {
+      margin: 0 0 40px 0; }
+    .adaptability-content .adaptability-description ul {
+      list-style: none;
+      line-height: 32px; }

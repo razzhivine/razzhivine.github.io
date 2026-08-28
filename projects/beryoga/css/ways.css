@@ -1,0 +1,16 @@
+.ways div img {
+  float: left; }
+
+.ways div .info h1 {
+  color: #3b3838;
+  font-family: "Fivo Sans";
+  font-size: 40px;
+  font-weight: 700; }
+
+.ways div .info p {
+  opacity: 0.65;
+  color: #000000;
+  font-family: "Fivo Sans";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px; }

@@ -1,0 +1,29 @@
+.video {
+  background: url("../img/video-bg.jpg") center;
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .video h2 {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 30px; }
+  .video i {
+    font-size: 100px;
+    margin: 210px 0 45px;
+    color: #fff; }
+  .video p {
+    width: 560px;
+    margin: 0 0 40px;
+    color: #fff; }
+  .video p:last-child {
+    margin: 0 0 165px;
+    color: #c7b29a;
+    font-size: 14px;
+    font-weight: 400; }

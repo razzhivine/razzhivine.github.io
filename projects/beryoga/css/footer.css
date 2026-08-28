@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Fivo Sans";
+  src: url("../fonts/FivoSans-Thin.otf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fivo Sans";
+  src: url("../fonts/FivoSans-Medium.otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fivo Sans-Regular";
+  src: url("../fonts/FivoSans-Regular.otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fivo Sans - Heavy";
+  src: url("../fonts/FivoSans-Heavy.otf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fivo Sans - Oblique";
+  src: url("../fonts/FivoSans-Oblique.otf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Fivo Sans - Thin";
+  src: url("../fonts/FivoSans-Thin.otf");
+  font-weight: 400;
+  font-style: normal; }
+
+.footer {
+  background: url("../img/footer-bg.png") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center; }
+  .footer .pricing {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 210px 0; }
+    .footer .pricing__item {
+      -webkit-box-shadow: -27px 32px 35px rgba(255, 106, 109, 0.15);
+              box-shadow: -27px 32px 35px rgba(255, 106, 109, 0.15);
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      width: 380px;
+      position: relative;
+      z-index: 1;
+      background-color: #fff; }
+      .footer .pricing__item .advantages__list {
+        list-style: none; }
+        .footer .pricing__item .advantages__list .list__item {
+          opacity: 0.75;
+          color: #3b3838;
+          line-height: 1;
+          padding: 22px 0 20px 70px;
+          background: url("../img/galochka_blue.png") no-repeat left center; }
+      .footer .pricing__item .pricing__label {
+        background-color: #ff6a6d;
+        padding: 35px 0;
+        -webkit-border-radius: 20px 20px 0 0;
+                border-radius: 20px 20px 0 0;
+        color: #fbfcfc;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 29.13px;
+        text-transform: uppercase; }
+    .footer .pricing__price {
+      font-size: 150px;
+      opacity: 0.75;
+      color: #3b3838;
+      margin: 110px 0 65px; }
+      .footer .pricing__price sup {
+        font-size: 48px;
+        position: relative;
+        top: -85px; }
+      .footer .pricing__price sub {
+        font-size: 30px; }
+      .footer .pricing__price .pricing__description {
+        font-size: 18px;
+        font-style: italic;
+        margin: 50px 0 0 0; }
+    .footer .pricing__item:nth-child(2) {
+      width: 420px;
+      -webkit-box-shadow: -24px 28px 136px rgba(255, 106, 109, 0.19);
+              box-shadow: -24px 28px 136px rgba(255, 106, 109, 0.19);
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      z-index: 1000; }
+      .footer .pricing__item:nth-child(2) .advantages__list .list__item {
+        background: url("../img/galochka.png") no-repeat left center; }
+      .footer .pricing__item:nth-child(2) .button {
+        -webkit-box-shadow: -14px 16px 24px 1px rgba(226, 88, 91, 0.29), 0 0 7px rgba(255, 255, 255, 0.35);
+                box-shadow: -14px 16px 24px 1px rgba(226, 88, 91, 0.29), 0 0 7px rgba(255, 255, 255, 0.35);
+        background: #ff6a6d;
+        margin: 0 0 55px 100px; }
+    .footer .pricing__item:nth-child(3) {
+      -webkit-box-shadow: 0px 32px 35px rgba(255, 106, 109, 0.15);
+              box-shadow: 0px 32px 35px rgba(255, 106, 109, 0.15); }
+  .footer .button {
+    text-align: center;
+    padding: 20px 30px;
+    margin: 0 0 55px 80px;
+    -webkit-box-shadow: -14px 16px 24px 1px rgba(95, 206, 244, 0.29), 0 0 7px rgba(255, 255, 255, 0.35);
+            box-shadow: -14px 16px 24px 1px rgba(95, 206, 244, 0.29), 0 0 7px rgba(255, 255, 255, 0.35);
+    -webkit-border-radius: 38px;
+            border-radius: 38px;
+    background: #8ec7fb -webkit-linear-gradient(66deg, #5fcef5 0%, #83e4fc 100%);
+    background: #8ec7fb -o-linear-gradient(66deg, #5fcef5 0%, #83e4fc 100%);
+    background: #8ec7fb linear-gradient(24deg, #5fcef5 0%, #83e4fc 100%);
+    display: inline-block; }
+  .footer .sitemap {
+    -webkit-border-radius: 176px 176px 0 0;
+            border-radius: 176px 176px 0 0;
+    background-color: #fff;
+    opacity: 0.5; }
+    .footer .sitemap__list {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 85px 0 0 0;
+      margin: 0 0 110px 0; }
+      .footer .sitemap__list .sitemap__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 190px;
+        margin-right: 60px; }
+        .footer .sitemap__list .sitemap__item .item__heading {
+          text-transform: uppercase;
+          color: #2e2e2e;
+          font-family: "Fivo Sans - Heavy", sans-serif;
+          font-size: 16px;
+          font-weight: 800;
+          letter-spacing: 1.8px; }
+        .footer .sitemap__list .sitemap__item .item__paragraph {
+          line-height: 30px;
+          font-size: 16px; }
+        .footer .sitemap__list .sitemap__item .item__link {
+          font-family: "Fivo Sans - Regular", sans-serif;
+          font-weight: 300;
+          line-height: 36px;
+          font-size: 16px;
+          color: #787979; }
+      .footer .sitemap__list .sitemap__item:nth-child(4) {
+        margin-right: 0; }
+    .footer .sitemap__copyright {
+      padding: 0 0 60px 0; }

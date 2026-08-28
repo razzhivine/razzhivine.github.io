@@ -1,0 +1,13 @@
+.partners {
+  background: url("../img/partners-bg.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .partners-content {
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center; }
+    .partners-content img {
+      margin: 140px 0; }

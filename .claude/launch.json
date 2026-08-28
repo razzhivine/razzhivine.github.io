@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "php",
+      "runtimeArgs": ["-S", "127.0.0.1:8934", "-t", "/Users/razzhivin/Desktop/portfolio"],
+      "port": 8934
+    }
+  ]
+}
