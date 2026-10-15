@@ -72,6 +72,7 @@
       <a href="#skills">Что делаю</a>
       <a href="#stack">Стек</a>
       <a href="#projects">Проекты</a>
+      <a href="#opensource">Open source</a>
       <a href="#shops">Магазины</a>
       <a href="#layout">Вёрстка</a>
       <a href="#certs">Сертификаты</a>
@@ -253,6 +254,33 @@
               интеграция с 1С</a></h3>
           <p>Собрал собственную систему расчёта доставки со своим калькулятором вместо сторонних служб. Настроил
             обмен с 1С, импорт товаров из XLSX и автогенерацию новых SEO-свойств для карточек и разделов каталога.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- OPEN SOURCE -->
+    <section class="section rise" id="opensource">
+      <div class="s-head">
+        <h2 class="s-title">Open source</h2>
+        <span class="s-note">свои инструменты для Битрикса, MIT</span>
+      </div>
+      <div class="picks picks-2">
+        <article class="pick">
+          <div class="pick-k">Shell · Docker · CLI</div>
+          <h3 class="pick-h"><a href="https://github.com/razzhivine/bitrixbox" target="_blank" rel="noopener">BitrixBox</a></h3>
+          <p>Локальный 1С-Битрикс в Docker одной командой <code>bx</code>: ставит окружение, включает HTTPS, проходит
+            мастер установки без браузера, убирает демо-данные, делает снимки и откатывает их. Сайт переносится из
+            резервной копии или по SSH, с обезличиванием персональных данных. Автотесты в GitHub Actions на матрице
+            редакций, версий PHP и баз данных.</p>
+          <a class="pick-more" href="https://github.com/razzhivine/bitrixbox" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+        <article class="pick">
+          <div class="pick-k">PHP · Composer · REST</div>
+          <h3 class="pick-h"><a href="https://github.com/razzhivine/custom-rest" target="_blank" rel="noopener">custom/rest</a></h3>
+          <p>Headless REST API для сайта на Битриксе: контент инфоблоков, поиск, веб-формы, справочники и карта сайта
+            для фронтенда на Vue или Nuxt. Наружу уходит только публичное по белому списку. Кеш с тегами,
+            ETag/304, лимиты, защита форм и описание в OpenAPI. Подключается через Composer.</p>
+          <a class="pick-more" href="https://github.com/razzhivine/custom-rest" target="_blank" rel="noopener">GitHub →</a>
         </article>
       </div>
     </section>

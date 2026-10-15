@@ -322,6 +322,10 @@
       gap: 20px
     }
 
+    .picks-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
     .pick {
       background: var(--card);
       border: 1px solid var(--rule);
