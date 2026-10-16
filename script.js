@@ -82,3 +82,32 @@
       if (mq.addEventListener) mq.addEventListener('change', render);
       render();
     })();
+
+    (function () {
+      var burger = document.getElementById('nav-burger');
+      var bar = document.querySelector('.nav-in');
+      var links = document.getElementById('nav-links');
+      if (!burger || !bar || !links) return;
+
+      function setOpen(open) {
+        bar.classList.toggle('open', open);
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      burger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(!bar.classList.contains('open'));
+      });
+      links.addEventListener('click', function (e) {
+        if (e.target.closest('a')) setOpen(false);
+      });
+      document.addEventListener('click', function (e) {
+        if (!bar.contains(e.target)) setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 820) setOpen(false);
+      });
+    })();

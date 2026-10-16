@@ -824,6 +824,113 @@
       }
     }
 
+    /* ---------- мобильное меню ---------- */
+    .nav-links {
+      display: contents
+    }
+
+    .nav-burger {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 13px;
+      line-height: 1.2;
+      color: var(--ink);
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 3px 10px;
+      cursor: pointer
+    }
+
+    .nav-burger-ico,
+    .nav-burger-ico::before,
+    .nav-burger-ico::after {
+      display: block;
+      width: 14px;
+      height: 1.5px;
+      background: currentColor;
+      transition: transform .2s ease, opacity .2s ease
+    }
+
+    .nav-burger-ico {
+      position: relative
+    }
+
+    .nav-burger-ico::before,
+    .nav-burger-ico::after {
+      content: "";
+      position: absolute;
+      left: 0
+    }
+
+    .nav-burger-ico::before {
+      top: -4.5px
+    }
+
+    .nav-burger-ico::after {
+      top: 4.5px
+    }
+
+    .nav-burger[aria-expanded="true"] .nav-burger-ico {
+      background: transparent
+    }
+
+    .nav-burger[aria-expanded="true"] .nav-burger-ico::before {
+      transform: translateY(4.5px) rotate(45deg)
+    }
+
+    .nav-burger[aria-expanded="true"] .nav-burger-ico::after {
+      transform: translateY(-4.5px) rotate(-45deg)
+    }
+
+    .nav-burger:hover,
+    .nav-burger:focus-visible {
+      border-color: var(--pine);
+      outline: none
+    }
+
+    @media (max-width:820px) {
+      .nav-in {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0 12px;
+        padding: 9px 24px
+      }
+
+      .nav-burger {
+        display: inline-flex
+      }
+
+      .nav-links {
+        display: none;
+        order: 3;
+        flex: 0 0 100%;
+        flex-direction: column;
+        margin-top: 8px;
+        border-top: 1px solid var(--rule)
+      }
+
+      .nav-in.open .nav-links {
+        display: flex
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        padding: 11px 0;
+        border-bottom: 1px solid var(--rule)
+      }
+
+      .nav-links a:last-child {
+        border-bottom: 0
+      }
+
+      .nav-links a::after {
+        display: none
+      }
+    }
+
     /* ---------- переключатель темы ---------- */
     .theme-toggle {
       margin-left: auto;
