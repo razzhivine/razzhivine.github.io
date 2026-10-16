@@ -34,7 +34,7 @@
     }
 
     .wrap {
-      max-width: 1020px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 0 24px
     }
@@ -151,7 +151,7 @@
       flex-wrap: wrap;
       gap: 22px;
       padding: 13px 24px;
-      max-width: 1020px;
+      max-width: 1280px;
       margin: 0 auto
     }
 
