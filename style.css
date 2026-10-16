@@ -274,26 +274,27 @@
       grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1.25fr) 28px;
       gap: 20px;
       align-items: baseline;
-      padding: 18px 8px 18px 0;
+      padding: 18px 12px;
       border-bottom: 1px solid var(--rule);
       text-decoration: none;
       position: relative;
-      transition: background .18s ease, padding-left .18s ease
+      transition: background .18s ease
     }
 
     .row:last-child {
       border-bottom: none
     }
 
-    .row:hover,
     .row:focus-visible {
       background: var(--card);
-      padding-left: 12px;
+      box-shadow: inset 3px 0 0 var(--pine);
       outline: none
     }
 
-    .row:focus-visible {
-      box-shadow: inset 3px 0 0 var(--pine)
+    @media (hover:hover) {
+      .row:hover {
+        background: var(--card)
+      }
     }
 
     .row::before {
@@ -336,13 +337,12 @@
     .r-arrow {
       font-size: 15px;
       color: var(--muted);
-      transition: transform .18s ease, color .18s ease;
+      transition: color .18s ease;
       justify-self: end
     }
 
     .row:hover .r-arrow,
     .row:focus-visible .r-arrow {
-      transform: translate(3px, -3px);
       color: var(--pine)
     }
 
@@ -469,13 +469,12 @@
       text-decoration: none;
       display: flex;
       flex-direction: column;
-      transition: border-color .18s ease, transform .18s ease
+      transition: border-color .18s ease
     }
 
     .tile:hover,
     .tile:focus-visible {
       border-color: var(--pine);
-      transform: translateY(-2px);
       outline: none
     }
 
@@ -802,8 +801,24 @@
         row-gap: 6px
       }
 
+      .r-idx {
+        grid-column: 1;
+        grid-row: 1
+      }
+
+      .r-name {
+        grid-column: 2;
+        grid-row: 1
+      }
+
+      .r-arrow {
+        grid-column: 3;
+        grid-row: 1
+      }
+
       .r-desc {
-        grid-column: 2 / 4
+        grid-column: 2 / 4;
+        grid-row: 2
       }
 
       .fact {
