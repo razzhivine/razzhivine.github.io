@@ -21,6 +21,16 @@
   <meta name="color-scheme" content="light dark">
   <script>
     try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) { }
+    (function () {
+      var h = document.documentElement;
+      h.classList.add('intro-wait');
+      try {
+        var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!calm && !sessionStorage.getItem('pl')) h.classList.add('has-preloader');
+      } catch (e) { }
+      // страховка: что бы ни случилось, через 3 секунды всё открывается
+      setTimeout(function () { h.classList.remove('intro-wait', 'has-preloader'); }, 3000);
+    })();
   </script>
 
   <meta property="og:type" content="website">
@@ -145,6 +155,11 @@
 
 <body>
 
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pl-mark">ЕР</div>
+    <div class="pl-line"><span></span></div>
+  </div>
+
   <header class="masthead">
     <div class="wrap">
       <p class="eyebrow">Разработчик 1С-Битрикс · PHP · вёрстка</p>
@@ -181,6 +196,7 @@
   </header>
 
   <nav class="nav">
+    <div class="scroll-progress" id="scroll-progress"></div>
     <div class="nav-in">
       <button type="button" class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links"><span class="nav-burger-ico" aria-hidden="true"></span>Меню</button>
       <div class="nav-links" id="nav-links">
@@ -730,11 +746,6 @@
           <span class="tile-cover"><img class="tile-img" src="assets/previews/oceangift.jpg" alt="oceangift"
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>oceangift</span><em>↗</em></div>
-        </a>
-        <a class="tile" href="projects/medici/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/medici.jpg" alt="medici" loading="lazy"
-              width="960" height="600"></span>
-          <div class="tile-foot"><span>medici</span><em>↗</em></div>
         </a>
       </div>
     </section>

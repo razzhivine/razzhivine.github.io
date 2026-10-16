@@ -16,6 +16,8 @@
       --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
       --body: "Inter", ui-sans-serif, system-ui, sans-serif;
       --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      --dur: .4s;
+      --ease: cubic-bezier(.2, .7, .2, 1);
     }
 
     /* ---------- тёмная тема: по системе, пока не выбрана вручную ---------- */
@@ -225,8 +227,7 @@
     }
 
     .nav a:hover::after,
-    .nav a:focus-visible::after,
-    .nav a.active::after {
+    .nav a:focus-visible::after {
       background: var(--pine)
     }
 
@@ -306,7 +307,7 @@
       height: 1px;
       width: 0;
       background: var(--pine);
-      transition: width .3s ease
+      transition: width var(--dur) ease
     }
 
     .row:hover::before,
@@ -764,13 +765,11 @@
     /* ---------- появление ---------- */
     .rise {
       opacity: 0;
-      transform: translateY(14px);
-      transition: opacity .5s ease, transform .5s ease
+      transition: opacity var(--dur) ease
     }
 
     .rise.on {
-      opacity: 1;
-      transform: none
+      opacity: 1
     }
 
     @media (max-width:820px) {
@@ -854,6 +853,10 @@
       .rise {
         opacity: 1;
         transform: none
+      }
+
+      html {
+        scroll-behavior: auto
       }
     }
 
@@ -966,6 +969,10 @@
       .nav-links a.active {
         color: var(--pine)
       }
+
+      .nav-marker {
+        display: none
+      }
     }
 
     /* ---------- переключатель темы ---------- */
@@ -1024,4 +1031,171 @@
     .to-top:focus-visible {
       border-color: var(--pine);
       outline: none
+    }
+
+    /* ---------- анимации ---------- */
+    html {
+      scroll-behavior: smooth
+    }
+
+    section[id],
+    footer[id] {
+      scroll-margin-top: 60px
+    }
+
+    @keyframes intro-in {
+      from {
+        opacity: 0;
+        transform: translateY(12px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .masthead .wrap>* {
+      animation: intro-in var(--dur) var(--ease) backwards;
+      animation-delay: calc(var(--n, 0) * 90ms)
+    }
+
+    .masthead .wrap>:nth-child(1) { --n: 0 }
+    .masthead .wrap>:nth-child(2) { --n: 1 }
+    .masthead .wrap>:nth-child(3) { --n: 2 }
+    .masthead .wrap>:nth-child(4) { --n: 3 }
+    .masthead .wrap>:nth-child(5) { --n: 4 }
+
+    @keyframes item-in {
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    /* элементы появляются сами, когда доезжают до экрана; класс js ставит скрипт */
+    .js .reveal-item {
+      opacity: 0
+    }
+
+    .js .reveal-item.in {
+      opacity: 1;
+      animation: item-in var(--dur) var(--ease) backwards;
+      animation-delay: var(--d, 0ms)
+    }
+
+    .count {
+      display: inline-block;
+      font-variant-numeric: tabular-nums
+    }
+
+    /* плавная смена темы: класс живёт доли секунды */
+    html.theme-anim,
+    html.theme-anim *,
+    html.theme-anim *::before,
+    html.theme-anim *::after {
+      transition: background-color var(--dur) ease, color var(--dur) ease, border-color var(--dur) ease, fill var(--dur) ease !important
+    }
+
+    /* линия прогресса прокрутки */
+    .scroll-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--pine);
+      transform: scaleX(0);
+      transform-origin: left;
+      pointer-events: none
+    }
+
+    /* маркер активного пункта меню */
+    .nav-in {
+      position: relative
+    }
+
+    .nav-marker {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1.5px;
+      width: 0;
+      background: var(--pine);
+      opacity: 0;
+      transition: transform var(--dur) var(--ease), width var(--dur) var(--ease), opacity var(--dur) ease;
+      pointer-events: none
+    }
+
+    /* ---------- прелоадер ---------- */
+    .preloader {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--foot-bg);
+      transition: opacity var(--dur) ease, visibility 0s linear var(--dur)
+    }
+
+    .has-preloader .preloader {
+      display: flex
+    }
+
+    .has-preloader:not(.pl-hide) {
+      overflow: hidden
+    }
+
+    .pl-hide .preloader {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none
+    }
+
+    .pl-mark {
+      width: 72px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 700 32px/1 Arial, Helvetica, sans-serif;
+      letter-spacing: -.03em;
+      color: var(--on-pine);
+      border: 1px solid rgba(237, 242, 234, .28);
+      border-radius: 16px;
+      margin-bottom: 22px
+    }
+
+    .pl-line {
+      width: 120px;
+      height: 2px;
+      background: rgba(237, 242, 234, .2);
+      overflow: hidden
+    }
+
+    .pl-line span {
+      display: block;
+      height: 100%;
+      background: var(--on-pine);
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: pl-fill .9s var(--ease) forwards
+    }
+
+    @keyframes pl-fill {
+      to {
+        transform: scaleX(1)
+      }
+    }
+
+    /* пока шрифты не загрузились, вводная анимация шапки ждёт */
+    .intro-wait .masthead .wrap>* {
+      animation-play-state: paused
     }
