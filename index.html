@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Евгений Разживин — разработчик 1С-Битрикс</title>
   <meta name="description"
-    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, корпоративные сайты, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony и Doctrine. Проекты, вёрстка, сертификаты.">
+    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony. Open-source: BitrixBox и custom/rest.">
+
+  <link rel="canonical" href="https://razzhivine.github.io/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Евгений Разживин">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -25,8 +29,9 @@
   <meta property="og:url" content="https://razzhivine.github.io/">
   <meta property="og:title" content="Евгений Разживин — разработчик 1С-Битрикс">
   <meta property="og:description"
-    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, корпоративные сайты, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony и Doctrine.">
-  <meta property="og:image" content="https://razzhivine.github.io/assets/og-image.png">
+    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony. Open-source: BitrixBox и custom/rest.">
+  <meta property="og:image" content="https://razzhivine.github.io/assets/og-image.png?v=20261016">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Евгений Разживин — разработчик 1С-Битрикс">
@@ -34,8 +39,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Евгений Разживин — разработчик 1С-Битрикс">
   <meta name="twitter:description"
-    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, корпоративные сайты, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony и Doctrine.">
-  <meta name="twitter:image" content="https://razzhivine.github.io/assets/og-image.png">
+    content="Разработчик 1С-Битрикс, 8 лет опыта. Интернет-магазины, B2B-кабинеты, интеграции с 1С и Битрикс24, Symfony. Open-source: BitrixBox и custom/rest.">
+  <meta name="twitter:image" content="https://razzhivine.github.io/assets/og-image.png?v=20261016">
+  <meta name="twitter:image:alt" content="Евгений Разживин — разработчик 1С-Битрикс">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,19 +52,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Евгений Разживин",
-    "alternateName": "Eugene Razzhivin",
-    "jobTitle": "Разработчик 1С-Битрикс",
-    "url": "https://razzhivine.github.io/",
-    "image": "https://razzhivine.github.io/assets/og-image.png",
-    "email": "mailto:razzhivine@gmail.com",
-    "telephone": "+79370725227",
-    "sameAs": [
-      "https://t.me/razzhivine",
-      "https://github.com/razzhivine"
-    ],
-    "knowsAbout": ["1С-Битрикс", "Битрикс24", "PHP", "Symfony", "Doctrine", "Vue", "Nuxt", "REST API"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://razzhivine.github.io/#website",
+        "url": "https://razzhivine.github.io/",
+        "name": "Евгений Разживин",
+        "inLanguage": "ru",
+        "publisher": {
+          "@id": "https://razzhivine.github.io/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://razzhivine.github.io/#profile",
+        "url": "https://razzhivine.github.io/",
+        "name": "Евгений Разживин — разработчик 1С-Битрикс",
+        "inLanguage": "ru",
+        "isPartOf": {
+          "@id": "https://razzhivine.github.io/#website"
+        },
+        "about": {
+          "@id": "https://razzhivine.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://razzhivine.github.io/#person"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://razzhivine.github.io/assets/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
+        "dateModified": "2026-10-16"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://razzhivine.github.io/#person",
+        "name": "Евгений Разживин",
+        "alternateName": "Eugene Razzhivin",
+        "jobTitle": "Разработчик 1С-Битрикс",
+        "description": "8 лет делаю сайты на 1С-Битрикс: интернет-магазины, корпоративные сайты и B2B-кабинеты, интеграции с 1С и Битрикс24, собственные компоненты и API.",
+        "url": "https://razzhivine.github.io/",
+        "image": "https://razzhivine.github.io/assets/og-image.png",
+        "email": "mailto:razzhivine@gmail.com",
+        "telephone": "+79370725227",
+        "sameAs": [
+          "https://t.me/razzhivine",
+          "https://github.com/razzhivine"
+        ],
+        "knowsAbout": [
+          "1С-Битрикс",
+          "Битрикс24",
+          "PHP",
+          "Symfony",
+          "Doctrine",
+          "Vue",
+          "Nuxt",
+          "Docker",
+          "REST API",
+          "Open-source"
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://github.com/razzhivine/bitrixbox",
+        "name": "BitrixBox",
+        "description": "Локальный 1С-Битрикс в Docker одной командой bx: установка, HTTPS, снимки, перенос сайта.",
+        "codeRepository": "https://github.com/razzhivine/bitrixbox",
+        "programmingLanguage": "Shell",
+        "license": "https://opensource.org/license/mit",
+        "author": {
+          "@id": "https://razzhivine.github.io/#person"
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://github.com/razzhivine/custom-rest",
+        "name": "custom/rest",
+        "description": "Headless REST API для 1С-Битрикс: инфоблоки, поиск, веб-формы, highload-блоки, карта сайта (Composer-библиотека).",
+        "codeRepository": "https://github.com/razzhivine/custom-rest",
+        "programmingLanguage": "PHP",
+        "license": "https://opensource.org/license/mit",
+        "author": {
+          "@id": "https://razzhivine.github.io/#person"
+        }
+      }
+    ]
   }
   </script>
 </head>

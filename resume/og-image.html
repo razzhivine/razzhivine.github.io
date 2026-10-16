@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>og-image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0
+    }
+
+    html,
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #16483A
+    }
+
+    .card {
+      width: 1200px;
+      height: 630px;
+      padding: 64px 80px 56px;
+      display: flex;
+      flex-direction: column;
+      color: #F4F5F2;
+      font-family: "Inter", sans-serif
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline
+    }
+
+    .eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 22px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #BFD2C6
+    }
+
+    .name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 118px;
+      line-height: .95;
+      letter-spacing: -.035em;
+      margin-top: 30px
+    }
+
+    .lede {
+      font-size: 30px;
+      line-height: 1.35;
+      color: #BFD2C6;
+      margin-top: 30px
+    }
+
+    .facts {
+      margin-top: auto;
+      display: flex;
+      align-items: flex-start;
+      border-top: 1px solid rgba(244, 245, 242, .22);
+      padding-top: 26px;
+      white-space: nowrap
+    }
+
+    .fact {
+      padding-right: 40px;
+      margin-right: 40px;
+      border-right: 1px solid rgba(244, 245, 242, .22)
+    }
+
+    .fact b {
+      display: block;
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 1;
+      letter-spacing: -.02em
+    }
+
+    .fact span {
+      display: block;
+      margin-top: 10px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 16px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #BFD2C6
+    }
+
+    .url {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 22px;
+      letter-spacing: .04em;
+      color: #BFD2C6
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="eyebrow">Разработчик 1С-Битрикс · PHP · вёрстка</div>
+      <div class="url">razzhivine.github.io</div>
+    </div>
+    <div class="name">Евгений<br>Разживин</div>
+    <div class="lede">Интернет-магазины, корпоративные сайты и B2B-кабинеты</div>
+    <div class="facts">
+      <div class="fact"><b>8 лет</b><span>на Битриксе</span></div>
+      <div class="fact"><b>30+</b><span>релизнутых сайтов</span></div>
+      <div class="fact"><b>17</b><span>сертификатов</span></div>
+      <div class="fact" style="border-right:0;margin-right:0;padding-right:0"><b>2</b><span>open-source</span></div>
+    </div>
+  </div>
+</body>
+
+</html>
