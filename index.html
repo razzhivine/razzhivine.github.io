@@ -12,7 +12,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <meta name="theme-color" content="#16483A">
+  <meta name="theme-color" content="#16483A" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C2A21" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) { }
+  </script>
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
@@ -97,6 +102,7 @@
       <a href="#layout">Вёрстка</a>
       <a href="#certs">Сертификаты</a>
       <a href="#contacts">Контакты</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Тема оформления"></button>
     </div>
   </nav>
 

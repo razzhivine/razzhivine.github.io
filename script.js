@@ -44,3 +44,41 @@
         if (e.key === 'Escape') closeAll();
       });
     })();
+
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var labels = { light: 'тема: светлая', dark: 'тема: тёмная' };
+
+      function system() { return mq.matches ? 'dark' : 'light'; }
+
+      function effective() {
+        var t = root.getAttribute('data-theme');
+        return t === 'light' || t === 'dark' ? t : system();
+      }
+
+      function render() { btn.textContent = labels[effective()]; }
+
+      // клик переключает на противоположную тему; если она совпала с системной,
+      // ручной выбор снимается и сайт снова следует за системой
+      btn.addEventListener('click', function () {
+        var next = effective() === 'dark' ? 'light' : 'dark';
+        try {
+          if (next === system()) {
+            root.removeAttribute('data-theme');
+            localStorage.removeItem('theme');
+          } else {
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+          }
+        } catch (e) {
+          root.setAttribute('data-theme', next);
+        }
+        render();
+      });
+
+      if (mq.addEventListener) mq.addEventListener('change', render);
+      render();
+    })();
