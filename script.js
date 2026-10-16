@@ -108,6 +108,56 @@
         if (e.key === 'Escape') setOpen(false);
       });
       window.addEventListener('resize', function () {
-        if (window.innerWidth > 820) setOpen(false);
+        if (window.innerWidth > 900) setOpen(false);
       });
+    })();
+
+    (function () {
+      // подсветка текущего раздела в меню
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+      var map = {};
+      links.forEach(function (a) {
+        var el = document.getElementById(a.getAttribute('href').slice(1));
+        if (el) map[el.id] = a;
+      });
+      var ids = Object.keys(map);
+      var activeId = null;
+
+      function updateActive() {
+        var line = window.innerHeight * 0.35;
+        var current = null;
+        ids.forEach(function (id) {
+          if (document.getElementById(id).getBoundingClientRect().top <= line) current = id;
+        });
+        // у самого низа страницы подсвечиваем последний пункт
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+          current = ids[ids.length - 1];
+        }
+        if (current === activeId) return;
+        activeId = current;
+        links.forEach(function (a) { a.classList.remove('active'); });
+        if (current) map[current].classList.add('active');
+      }
+
+      if (ids.length) {
+        window.addEventListener('scroll', updateActive, { passive: true });
+        window.addEventListener('resize', updateActive);
+        updateActive();
+      }
+
+      // кнопка «наверх»
+      var top = document.getElementById('to-top');
+      if (top) {
+        top.hidden = false;
+        var onScroll = function () { top.classList.toggle('show', window.scrollY > 700); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        top.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // год в подвале
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
     })();

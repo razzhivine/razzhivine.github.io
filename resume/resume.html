@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Евгений Разживин — разработчик 1С-Битрикс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #15181C;
+      --text: #3A403C;
+      --muted: #6E7570;
+      --pine: #16483A;
+      --rule: #DFE2DA;
+      --side: #F4F5F2;
+      --paper: #F4F5F2;
+      --side-w: 68mm;
+    }
+
+    @page {
+      size: A4;
+      margin: 0
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact
+    }
+
+    html {
+      background: linear-gradient(to right, var(--side) 0, var(--side) var(--side-w), #fff var(--side-w))
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.42;
+      color: var(--text)
+    }
+
+    .page {
+      display: grid;
+      grid-template-columns: var(--side-w) 1fr;
+      width: 210mm;
+      height: 296.5mm;
+      overflow: hidden;
+      break-after: page
+    }
+
+    .page:last-child {
+      break-after: auto
+    }
+
+    /* ---------- левая колонка ---------- */
+    aside {
+      padding: 13mm 7mm 10mm 9mm
+    }
+
+    .photo-mark {
+      width: 13mm;
+      height: 13mm;
+      background: var(--pine);
+      color: var(--paper);
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 15pt;
+      letter-spacing: -.03em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 9mm
+    }
+
+    aside h2 {
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 500;
+      font-size: 6.8pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--pine);
+      margin: 0 0 2.2mm;
+      padding-bottom: 1.4mm;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    aside section {
+      margin-bottom: 7mm
+    }
+
+    .contact {
+      margin: 0 0 1.8mm;
+      word-break: break-word
+    }
+
+    .contact small {
+      display: block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.2pt;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .contact b {
+      font-weight: 500;
+      color: var(--ink)
+    }
+
+    .stack-group {
+      margin-bottom: 2.6mm
+    }
+
+    .stack-group h3 {
+      font-size: 7.4pt;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 .6mm
+    }
+
+    .stack-group p {
+      margin: 0
+    }
+
+    .mini-name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 12pt;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      margin: 0 0 .5mm
+    }
+
+    .mini-role {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.4pt;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--pine);
+      margin: 0 0 9mm
+    }
+
+    .cert-title {
+      font-size: 7.6pt;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 1.8mm
+    }
+
+    .cert-names {
+      margin: 0 0 5mm;
+      padding: 0;
+      list-style: none
+    }
+
+    .cert-names li {
+      margin-bottom: 1.6mm;
+      padding-left: 3mm;
+      position: relative
+    }
+
+    .cert-names li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.3mm;
+      width: 1.3mm;
+      height: 1.3mm;
+      background: var(--pine)
+    }
+
+    .side-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 7.6pt
+    }
+
+    /* ---------- правая колонка ---------- */
+    main {
+      padding: 12mm 12mm 8mm 10mm
+    }
+
+    .name {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 27pt;
+      line-height: .98;
+      letter-spacing: -.03em;
+      color: var(--ink);
+      margin: 0 0 2mm
+    }
+
+    .role {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 7.6pt;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--pine);
+      margin: 0 0 4.5mm
+    }
+
+    .lede {
+      font-size: 9.4pt;
+      line-height: 1.5;
+      color: var(--ink);
+      margin: 0 0 4mm
+    }
+
+    .lede b {
+      font-weight: 600
+    }
+
+    .facts {
+      display: flex;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 5.5mm
+    }
+
+    .fact {
+      flex: 1;
+      padding: 3mm 0 3mm 4mm;
+      border-left: 1px solid var(--rule)
+    }
+
+    .fact:first-child {
+      padding-left: 0;
+      border-left: 0
+    }
+
+    .fact b {
+      display: block;
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 15pt;
+      line-height: 1;
+      letter-spacing: -.02em;
+      color: var(--ink)
+    }
+
+    .fact span {
+      display: block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6pt;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 1.4mm
+    }
+
+    main h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 12pt;
+      letter-spacing: -.01em;
+      color: var(--ink);
+      margin: 0 0 3mm;
+      display: flex;
+      align-items: center;
+      gap: 3mm
+    }
+
+    main h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--rule)
+    }
+
+    main section {
+      margin-bottom: 5.2mm
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm 7mm
+    }
+
+    .area h3 {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 .5mm
+    }
+
+    .area p {
+      margin: 0
+    }
+
+    .item {
+      margin-bottom: 3.2mm;
+      break-inside: avoid
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4mm
+    }
+
+    .item h3 {
+      font-size: 9.2pt;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0
+    }
+
+    .item .tag {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.2pt;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--pine);
+      white-space: nowrap
+    }
+
+    .item p {
+      margin: .6mm 0 0
+    }
+
+    .item .url {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.6pt;
+      color: var(--muted)
+    }
+
+    .rows {
+      margin: 0;
+      padding: 0;
+      list-style: none
+    }
+
+    .rows li {
+      display: grid;
+      grid-template-columns: 34mm 1fr;
+      gap: 3mm;
+      padding: 1.8mm 0;
+      border-top: 1px solid var(--rule);
+      break-inside: avoid
+    }
+
+    .rows b {
+      font-weight: 600;
+      color: var(--ink)
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4mm
+    }
+
+    .chip-row span {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 7pt;
+      padding: .7mm 1.8mm;
+      border: 1px solid var(--rule);
+      background: #fff
+    }
+
+    .note {
+      font-size: 7.6pt;
+      color: var(--muted);
+      margin: 2.4mm 0 0
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Страница 1 ===== -->
+  <div class="page">
+    <aside>
+      <div class="photo-mark">ЕР</div>
+
+      <section>
+        <h2>Контакты</h2>
+        <p class="contact"><small>Telegram</small><b><a href="https://t.me/razzhivine">@razzhivine</a></b></p>
+        <p class="contact"><small>Почта</small><b><a href="mailto:razzhivine@gmail.com">razzhivine@gmail.com</a></b></p>
+        <p class="contact"><small>Телефон</small><b><a href="tel:+79370725227">+7 (937) 072-52-27</a></b></p>
+        <p class="contact"><small>Сайт</small><b><a href="https://razzhivine.github.io/">razzhivine.github.io</a></b></p>
+        <p class="contact"><small>GitHub</small><b><a href="https://github.com/razzhivine">github.com/razzhivine</a></b></p>
+      </section>
+
+      <section>
+        <h2>Стек</h2>
+        <div class="stack-group">
+          <h3>CMS и платформы</h3>
+          <p>1С-Битрикс, Битрикс24, WordPress, MODX</p>
+        </div>
+        <div class="stack-group">
+          <h3>Бэкенд</h3>
+          <p>PHP, MySQL, SQL, Python</p>
+        </div>
+        <div class="stack-group">
+          <h3>Фронтенд</h3>
+          <p>JavaScript, jQuery, HTML, CSS, Sass, Gulp, Bootstrap, Tailwind</p>
+        </div>
+        <div class="stack-group">
+          <h3>Vue-экосистема</h3>
+          <p>Vue 3, Nuxt 3, Pinia, Vite, SSR / SSG, Composition API</p>
+        </div>
+        <div class="stack-group">
+          <h3>Symfony-стек</h3>
+          <p>Symfony 7, Doctrine ORM, Doctrine Queries, Twig, Dependency Injection, EasyAdmin 4, AssetMapper,
+            Stimulus, Turbo, Live Components</p>
+        </div>
+        <div class="stack-group">
+          <h3>Инструменты</h3>
+          <p>Git, Linux, Docker</p>
+        </div>
+        <div class="stack-group">
+          <h3>ИИ в работе</h3>
+          <p>Claude, ChatGPT, Cursor</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Сертификаты</h2>
+        <p class="side-note"><b>17 курсов:</b> 7 по 1С-Битрикс и 10 от SymfonyCasts. Полный список на следующей
+          странице.</p>
+      </section>
+    </aside>
+
+    <main>
+      <h1 class="name">Евгений<br>Разживин</h1>
+      <p class="role">Разработчик 1С-Битрикс · PHP · вёрстка</p>
+
+      <p class="lede">8 лет делаю сайты на 1С-Битрикс: <b>интернет-магазины, корпоративные сайты и B2B-кабинеты</b>.
+        Собираю интеграции с 1С, Битрикс24, оплатой и доставкой, пишу собственные компоненты и API, привожу в порядок
+        скорость и SEO. Сейчас углубляюсь в <b>Symfony и Doctrine</b>.</p>
+
+      <div class="facts">
+        <div class="fact"><b>8 лет</b><span>на Битриксе</span></div>
+        <div class="fact"><b>30+</b><span>релизнутых сайтов</span></div>
+        <div class="fact"><b>17</b><span>сертификатов</span></div>
+        <div class="fact"><b>2</b><span>open-source проекта</span></div>
+      </div>
+
+      <section>
+        <h2>Чем занимаюсь</h2>
+        <div class="areas">
+          <div class="area">
+            <h3>Разработка на Битрикс</h3>
+            <p>Собственные компоненты, кастомные свойства и валидации, доработки корзины и заказа, B2B-кабинеты.</p>
+          </div>
+          <div class="area">
+            <h3>Битрикс24</h3>
+            <p>Настройка и доработка коробочной версии, REST API, роботы и триггеры CRM, приложения и интеграция с
+              сайтом.</p>
+          </div>
+          <div class="area">
+            <h3>Интеграции</h3>
+            <p>Обмен с 1С, СМС-сервисы, платёжные системы, службы доставки, свои системы доставки.</p>
+          </div>
+          <div class="area">
+            <h3>Данные и импорт</h3>
+            <p>Скрипты импорта товаров из XML, CSV и Excel, парсинг сайтов на PHP и Python, генерация PDF-документов.
+            </p>
+          </div>
+          <div class="area">
+            <h3>SEO и скорость</h3>
+            <p>Формирование SEO-текстов на лету через переменные, техническая оптимизация, ускорение загрузки.</p>
+          </div>
+          <div class="area">
+            <h3>Фронтенд и вёрстка</h3>
+            <p>Адаптивная вёрстка с нуля по макету: HTML, Sass, Gulp, Bootstrap, Tailwind, JavaScript. Интерфейсы на
+              Vue 3 и Nuxt, в том числе SSR и связка с внешним API.</p>
+          </div>
+          <div class="area">
+            <h3>Symfony и Doctrine</h3>
+            <p>Symfony 7 и Doctrine: сервисы и конфигурация, связи сущностей, DQL и QueryBuilder, EasyAdmin,
+              AssetMapper.</p>
+          </div>
+          <div class="area">
+            <h3>ИИ в разработке</h3>
+            <p>Claude, ChatGPT и Cursor в ежедневной работе: рефакторинг, разбор чужого кода, SEO-описания, большие
+              выгрузки. Код проверяю и адаптирую под проект.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Избранные проекты</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Robokassa — конструктор страниц</h3>
+            <span class="tag">компонент</span>
+          </div>
+          <p>Компонент, который собирает страницы из готовых блоков прямо в админке: набор типов блоков, свои свойства
+            и валидации, предпросмотр. Маркетинг перестал ставить задачу на разработку ради каждой новой посадочной.
+          </p>
+          <span class="url"><a href="https://robokassa.com">robokassa.com</a></span>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>ХК Торпедо — API для CRM и приложения</h3>
+            <span class="tag">интеграция</span>
+          </div>
+          <p>API, через которое данные сайта (новости, матчи, составы) доходят до CRM и мобильного приложения. Один
+            источник данных вместо трёх независимых, обновление в реальном времени.</p>
+          <span class="url"><a href="https://hctorpedo.ru">hctorpedo.ru</a></span>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>Sortmet — доставка и обмен с 1С</h3>
+            <span class="tag">логистика и данные</span>
+          </div>
+          <p>Собственная система расчёта доставки со своим калькулятором вместо сторонних служб. Обмен с 1С, импорт
+            товаров из XLSX и автогенерация SEO-свойств для карточек и разделов каталога.</p>
+          <span class="url"><a href="https://sortmet.ru">sortmet.ru</a></span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== Страница 2 ===== -->
+  <div class="page">
+    <aside>
+      <p class="mini-name">Евгений Разживин</p>
+      <p class="mini-role">Разработчик 1С-Битрикс</p>
+
+      <section>
+        <h2>Сертификаты</h2>
+        <p class="cert-title">1С-Битрикс · 7 курсов</p>
+        <ul class="cert-names">
+          <li><a href="https://razzhivine.github.io/certificates/razrabotchik-bitrix-framework.pdf">Разработчик Bitrix Framework</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administarator-bazoviy.pdf">Администратор. Базовый</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administarator-moduli.pdf">Администратор. Модули</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administrator-servisa-bitriks24-korobochnaya-versiya.pdf">Администратор сервиса Битрикс24. Коробочная версия</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/content-manager.pdf">Контент-менеджер</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/ustanovka-i-nastroyka.pdf">Установка и настройка</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/kurs-dlya-hosterov.pdf">Курс для хостеров</a></li>
+        </ul>
+        <p class="cert-title">SymfonyCasts · 10 курсов</p>
+        <ul class="cert-names">
+          <li><a href="https://symfonycasts.com/certificates/F57B0200C155">Cosmic Coding with Symfony 7</a></li>
+          <li><a href="https://symfonycasts.com/certificates/5EF6A6C8C158">Symfony 7 Fundamentals: Services, Config &amp; Environments</a></li>
+          <li><a href="https://symfonycasts.com/certificates/CBA78ED8C161">Doctrine, Symfony 7 &amp; the Database</a></li>
+          <li><a href="https://symfonycasts.com/certificates/F30D088EC164">Symfony, Doctrine Relations &amp; Warp Drive Basics</a></li>
+          <li><a href="https://symfonycasts.com/certificates/481E671DC151">Go Pro with Doctrine Queries</a></li>
+          <li><a href="https://symfonycasts.com/certificates/FA10E71FC160">Dependency Injection Attributes</a></li>
+          <li><a href="https://symfonycasts.com/certificates/A266CCEBC140">Easy Admin 4</a></li>
+          <li><a href="https://symfonycasts.com/certificates/462FDFA8C154">30 Days with LAST Stack</a></li>
+          <li><a href="https://symfonycasts.com/certificates/0779C217C152">AssetMapper: Modern JS with Zero Build System</a></li>
+          <li><a href="https://symfonycasts.com/certificates/36816B5AC167">Going Global: Translate your Site</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Вёрстка</h2>
+        <div class="chip-row">
+          <span><a href="https://razzhivine.github.io/projects/akron-holding/">akron-holding</a></span><span><a href="https://razzhivine.github.io/projects/uzmolkom/">uzmolkom</a></span><span><a href="https://razzhivine.github.io/projects/basistech/">basistech</a></span><span><a href="https://razzhivine.github.io/projects/sortmet/">sortmet</a></span>
+          <span><a href="https://razzhivine.github.io/projects/es-systems/">es-systems</a></span><span><a href="https://razzhivine.github.io/projects/harrows/">harrows</a></span><span><a href="https://razzhivine.github.io/projects/promsale/">promsale</a></span><span><a href="https://razzhivine.github.io/projects/promstroy/">promstroy</a></span>
+          <span><a href="https://razzhivine.github.io/projects/msi-meta/">msi-meta</a></span><span><a href="https://razzhivine.github.io/projects/msi-study/">msi-study</a></span><span><a href="https://razzhivine.github.io/projects/msi-xmas/">msi-xmas</a></span><span><a href="https://razzhivine.github.io/projects/oceangift/">oceangift</a></span><span><a href="https://razzhivine.github.io/projects/medici/">medici</a></span>
+        </div>
+        <p class="note">Адаптивная вёрстка с нуля по макету. Демо открываются на razzhivine.github.io в разделе
+          «Вёрстка».</p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Open-source</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3><a href="https://github.com/razzhivine/bitrixbox">BitrixBox</a></h3>
+            <span class="tag">Shell · Docker · CLI</span>
+          </div>
+          <p>Локальный 1С-Битрикс в Docker одной командой <b>bx</b>: ставит окружение (PHP, nginx, MySQL или MariaDB),
+            включает HTTPS, проходит мастер установки без браузера, убирает демо-данные, делает снимки и откатывает их.
+            Сайт переносится из резервной копии или по SSH, с обезличиванием персональных данных. Автотесты в GitHub
+            Actions на матрице редакций, версий PHP и баз данных.</p>
+          <span class="url"><a href="https://github.com/razzhivine/bitrixbox">github.com/razzhivine/bitrixbox</a></span>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3><a href="https://github.com/razzhivine/custom-rest">custom/rest</a></h3>
+            <span class="tag">PHP · Composer · REST</span>
+          </div>
+          <p>Headless REST API для сайта на Битриксе: контент инфоблоков, поиск, веб-формы, справочники
+            highload-блоков и карта сайта для фронтенда на Vue или Nuxt. Наружу уходит только публичное по белому
+            списку. Кеш с тегами, ETag/304, лимиты, защита форм и описание в OpenAPI. Подключается через Composer.</p>
+          <span class="url"><a href="https://github.com/razzhivine/custom-rest">github.com/razzhivine/custom-rest</a></span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Последние релизы</h2>
+        <ul class="rows">
+          <li><b><a href="https://robokassa.com">robokassa.com</a></b><span>Компонент «Конструктор страниц»: контент-менеджеры собирают лендинги из блоков
+              без разработчика.</span></li>
+          <li><b><a href="https://hctorpedo.ru/">hctorpedo.ru</a></b><span>API, по которому данные с сайта уходят в CRM и мобильное приложение
+              клуба.</span></li>
+          <li><b><a href="https://heddinteriors.ru/">heddinteriors.ru</a></b><span>Интернет-магазин итальянской мебели и света: каталог брендов, товары в
+              наличии и под заказ.</span></li>
+          <li><b><a href="https://www.yorkru.ru/">yorkru.ru</a></b><span>Корпоративный сайт производителя: каталог, формы, интеграции.</span></li>
+          <li><b><a href="https://sortmet.ru">sortmet.ru</a></b><span>Интернет-магазин металлопроката: каталог, расчёты, обмен с 1С.</span></li>
+          <li><b><a href="https://akron-holding.ru">akron-holding.ru</a></b><span>Сайт холдинга: многоуровневая структура разделов и вёрстка под
+              фирстиль.</span></li>
+          <li><b><a href="https://uzmolkom.com">uzmolkom.com</a></b><span>Корпоративный сайт с мультиязычностью и каталогом продукции.</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Интернет-магазины</h2>
+        <ul class="rows">
+          <li><b><a href="https://obogrev.ru">obogrev.ru</a></b><span>Каталог систем обогрева: импорт товаров, свойства, фильтры, доработки
+              заказа.</span></li>
+          <li><b><a href="https://directelectric.ru">directelectric.ru</a></b><span>Электротехника: обмен с 1С, оплата и доставка, поддержка большого
+              каталога.</span></li>
+          <li><b><a href="https://sortmet.ru">sortmet.ru</a></b><span>Металлопрокат: расчёт по размерам и весу, выгрузки, SEO-разделы.</span></li>
+          <li><b><a href="https://krepco.ru">krepco.ru</a></b><span>Крепёж: тысячи позиций, импорт из XML и Excel, ускорение каталога.</span></li>
+          <li><b><a href="https://o-n-r.ru">o-n-r.ru</a></b><span>Магазин с кастомными системами доставки и доработками оформления заказа.</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>

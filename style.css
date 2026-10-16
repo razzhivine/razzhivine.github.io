@@ -2,7 +2,6 @@
       --paper: #F4F5F2;
       --ink: #15181C;
       --pine: #16483A;
-      --lime: #CBE84A;
       --muted: #6E7570;
       --rule: #DFE2DA;
       --card: #FFFFFF;
@@ -220,12 +219,14 @@
     }
 
     .nav a:hover,
-    .nav a:focus-visible {
+    .nav a:focus-visible,
+    .nav a.active {
       color: var(--ink)
     }
 
     .nav a:hover::after,
-    .nav a:focus-visible::after {
+    .nav a:focus-visible::after,
+    .nav a.active::after {
       background: var(--pine)
     }
 
@@ -821,9 +822,26 @@
         grid-row: 2
       }
 
-      .fact {
-        padding-right: 20px;
-        margin-right: 20px
+      .facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+      }
+
+      .fact,
+      .fact:last-child {
+        margin: 0;
+        padding: 14px 0 14px 16px;
+        border-right: 0;
+        border-left: 1px solid var(--rule)
+      }
+
+      .fact:nth-child(odd) {
+        padding-left: 0;
+        border-left: 0
+      }
+
+      .fact:nth-child(-n+2) {
+        border-bottom: 1px solid var(--rule)
       }
     }
 
@@ -906,7 +924,7 @@
       outline: none
     }
 
-    @media (max-width:820px) {
+    @media (max-width:900px) {
       .nav-in {
         flex-wrap: wrap;
         align-items: center;
@@ -944,6 +962,10 @@
       .nav-links a::after {
         display: none
       }
+
+      .nav-links a.active {
+        color: var(--pine)
+      }
     }
 
     /* ---------- переключатель темы ---------- */
@@ -964,6 +986,42 @@
     .theme-toggle:hover,
     .theme-toggle:focus-visible {
       color: var(--ink);
+      border-color: var(--pine);
+      outline: none
+    }
+
+    .skill p a {
+      color: var(--pine)
+    }
+
+    /* ---------- кнопка «наверх» ---------- */
+    .to-top {
+      position: fixed;
+      right: 16px;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      z-index: 15;
+      width: 40px;
+      height: 40px;
+      font-family: var(--mono);
+      font-size: 18px;
+      line-height: 1;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease, border-color .18s ease
+    }
+
+    .to-top.show {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .to-top:hover,
+    .to-top:focus-visible {
       border-color: var(--pine);
       outline: none
     }
