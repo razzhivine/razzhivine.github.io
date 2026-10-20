@@ -1209,16 +1209,7 @@
     }
 
     /* ---------- опыт работы ---------- */
-    .exp-lead {
-      padding-bottom: 28px
-    }
 
-    .exp-lead p {
-      margin: 0;
-      max-width: 62ch;
-      font-size: 17px;
-      color: var(--text-2)
-    }
 
     .exp-groups {
       display: grid;
@@ -1338,4 +1329,8 @@
 
     .exp-group li a:hover {
       text-decoration-thickness: 2px
+    }
+
+    .exp-tools {
+      margin-top: 18px
     }
