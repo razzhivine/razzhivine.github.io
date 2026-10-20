@@ -24,12 +24,16 @@
     (function () {
       var h = document.documentElement;
       h.classList.add('intro-wait');
-      try {
-        var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (!calm && !sessionStorage.getItem('pl')) h.classList.add('has-preloader');
-      } catch (e) { }
-      // страховка: что бы ни случилось, через 3 секунды всё открывается
-      setTimeout(function () { h.classList.remove('intro-wait', 'has-preloader'); }, 3000);
+      var calm = false;
+      try { calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { }
+      // скрытие блоков до появления включаем только если скрипт и анимации точно будут работать
+      if (!calm && 'IntersectionObserver' in window) h.classList.add('js');
+      try { if (!calm && !sessionStorage.getItem('pl')) h.classList.add('has-preloader'); } catch (e) { }
+      // страховка: если скрипт не загрузился, через 3 секунды всё открывается
+      setTimeout(function () {
+        h.classList.remove('intro-wait', 'has-preloader');
+        if (!window.__rz) h.classList.remove('js');
+      }, 3000);
     })();
   </script>
 
@@ -56,9 +60,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261020">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -155,6 +159,8 @@
 
 <body>
 
+  <a class="skip" href="#main">К содержанию</a>
+
   <div class="preloader" id="preloader" aria-hidden="true">
     <div class="pl-mark">ЕР</div>
     <div class="pl-line"><span></span></div>
@@ -195,7 +201,7 @@
     </div>
   </header>
 
-  <nav class="nav">
+  <nav class="nav" aria-label="Разделы">
     <div class="scroll-progress" id="scroll-progress"></div>
     <div class="nav-in">
       <button type="button" class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links"><span class="nav-burger-ico" aria-hidden="true"></span>Меню</button>
@@ -210,13 +216,13 @@
       <a href="#certs">Сертификаты</a>
       <a href="#contacts">Контакты</a>
       </div>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Тема оформления"></button>
+      <button type="button" class="theme-toggle" id="theme-toggle"></button>
     </div>
   </nav>
 
-  <main class="wrap">
+  <main class="wrap" id="main" tabindex="-1">
     <!-- ЧТО ДЕЛАЮ -->
-    <section class="section rise" id="skills">
+    <section class="section" id="skills">
       <div class="s-head">
         <h2 class="s-title">Что делаю</h2>
       </div>
@@ -266,7 +272,7 @@
     </section>
 
     <!-- СТЕК -->
-    <section class="section rise" id="stack">
+    <section class="section" id="stack">
       <div class="s-head">
         <h2 class="s-title">Стек</h2>
       </div>
@@ -313,7 +319,7 @@
     </section>
 
     <!-- ПРОЕКТЫ -->
-    <section class="section rise" id="projects">
+    <section class="section" id="projects">
       <div class="s-head">
         <h2 class="s-title">Последние релизы</h2>
         <span class="s-note">разработка и запуск</span>
@@ -367,7 +373,7 @@
     </section>
 
     <!-- ИЗБРАННОЕ -->
-    <section class="section rise" id="picks">
+    <section class="section" id="picks">
       <div class="s-head">
         <h2 class="s-title">Разбор проектов</h2>
         <span class="s-note">где было больше всего инженерии</span>
@@ -398,7 +404,7 @@
     </section>
 
     <!-- OPEN SOURCE -->
-    <section class="section rise" id="opensource">
+    <section class="section" id="opensource">
       <div class="s-head">
         <h2 class="s-title">Open-source</h2>
         <span class="s-note">свои инструменты для Битрикса, MIT</span>
@@ -425,7 +431,7 @@
     </section>
 
     <!-- МАГАЗИНЫ -->
-    <section class="section rise" id="shops">
+    <section class="section" id="shops">
       <div class="s-head">
         <h2 class="s-title">Интернет-магазины</h2>
         <span class="s-note">разработка, поддержка и развитие</span>
@@ -460,15 +466,15 @@
     </section>
 
     <!-- ВЁРСТКА -->
-    <section class="section rise" id="layout">
+    <section class="section" id="layout">
       <div class="s-head">
         <h2 class="s-title">Вёрстка</h2>
         <span class="s-note">открывается в новой вкладке</span>
       </div>
       <div class="grid">
         <div class="tile tile-drop">
-          <a class="tile-cover" href="projects/akron-holding/" target="_blank" rel="noopener">
-            <img class="tile-img" src="assets/previews/akron-holding.jpg" alt="akron-holding" loading="lazy" width="960"
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/akron-holding/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/akron-holding-960.webp" srcset="assets/previews/akron-holding-480.webp 480w, assets/previews/akron-holding-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
               height="600">
           </a>
           <div class="tile-foot">
@@ -503,8 +509,8 @@
           </div>
         </div>
         <div class="tile tile-drop">
-          <a class="tile-cover" href="projects/uzmolkom/" target="_blank" rel="noopener">
-            <img class="tile-img" src="assets/previews/uzmolkom.jpg" alt="uzmolkom" loading="lazy" width="960"
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/uzmolkom/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/uzmolkom-960.webp" srcset="assets/previews/uzmolkom-480.webp 480w, assets/previews/uzmolkom-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
               height="600">
           </a>
           <div class="tile-foot">
@@ -555,8 +561,8 @@
           </div>
         </div>
         <div class="tile tile-drop">
-          <a class="tile-cover" href="projects/basistech/" target="_blank" rel="noopener">
-            <img class="tile-img" src="assets/previews/basistech.jpg" alt="basistech" loading="lazy" width="960"
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/basistech/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/basistech-960.webp" srcset="assets/previews/basistech-480.webp 480w, assets/previews/basistech-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
               height="600">
           </a>
           <div class="tile-foot">
@@ -605,8 +611,8 @@
           </div>
         </div>
         <div class="tile tile-drop">
-          <a class="tile-cover" href="projects/sortmet/" target="_blank" rel="noopener">
-            <img class="tile-img" src="assets/previews/sortmet.jpg" alt="sortmet" loading="lazy" width="960"
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/sortmet/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/sortmet-960.webp" srcset="assets/previews/sortmet-480.webp 480w, assets/previews/sortmet-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
               height="600">
           </a>
           <div class="tile-foot">
@@ -684,8 +690,8 @@
         </div>
 
         <div class="tile tile-drop">
-          <a class="tile-cover" href="projects/es-systems/" target="_blank" rel="noopener">
-            <img class="tile-img" src="assets/previews/es-systems.jpg" alt="es-systems" loading="lazy" width="960"
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/es-systems/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/es-systems-960.webp" srcset="assets/previews/es-systems-480.webp 480w, assets/previews/es-systems-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
               height="600">
           </a>
           <div class="tile-foot">
@@ -712,38 +718,38 @@
           </div>
         </div>
         <a class="tile" href="projects/harrows/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/harrows.jpg" alt="harrows" loading="lazy"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/harrows-960.webp" srcset="assets/previews/harrows-480.webp 480w, assets/previews/harrows-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy"
               width="960" height="600"></span>
           <div class="tile-foot"><span>harrows</span><em>↗</em></div>
         </a>
         <a class="tile" href="projects/promsale/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/promsale.jpg" alt="promsale"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/promsale-960.webp" srcset="assets/previews/promsale-480.webp 480w, assets/previews/promsale-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>promsale</span><em>↗</em></div>
         </a>
         <a class="tile" href="projects/promstroy/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/promstroy.jpg" alt="promstroy"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/promstroy-960.webp" srcset="assets/previews/promstroy-480.webp 480w, assets/previews/promstroy-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>promstroy</span><em>↗</em></div>
         </a>
 
         <a class="tile" href="projects/msi-meta/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-meta.jpg" alt="msi-meta"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-meta-960.webp" srcset="assets/previews/msi-meta-480.webp 480w, assets/previews/msi-meta-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>msi-meta</span><em>↗</em></div>
         </a>
         <a class="tile" href="projects/msi-study/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-study.jpg" alt="msi-study"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-study-960.webp" srcset="assets/previews/msi-study-480.webp 480w, assets/previews/msi-study-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>msi-study</span><em>↗</em></div>
         </a>
         <a class="tile" href="projects/msi-xmas/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-xmas.jpg" alt="msi-xmas"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/msi-xmas-960.webp" srcset="assets/previews/msi-xmas-480.webp 480w, assets/previews/msi-xmas-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>msi-xmas</span><em>↗</em></div>
         </a>
         <a class="tile" href="projects/oceangift/" target="_blank" rel="noopener">
-          <span class="tile-cover"><img class="tile-img" src="assets/previews/oceangift.jpg" alt="oceangift"
+          <span class="tile-cover"><img class="tile-img" src="assets/previews/oceangift-960.webp" srcset="assets/previews/oceangift-480.webp 480w, assets/previews/oceangift-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt=""
               loading="lazy" width="960" height="600"></span>
           <div class="tile-foot"><span>oceangift</span><em>↗</em></div>
         </a>
@@ -751,7 +757,7 @@
     </section>
 
     <!-- СЕРТИФИКАТЫ -->
-    <section class="section rise" id="certs">
+    <section class="section" id="certs">
       <div class="s-head">
         <h2 class="s-title">Сертификаты</h2>
         <span class="s-note">1С-Битрикс · Битрикс24 · SymfonyCasts</span>
@@ -820,7 +826,7 @@
 
   <button type="button" class="to-top" id="to-top" aria-label="Наверх" hidden>↑</button>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261020"></script>
 
 </body>
 

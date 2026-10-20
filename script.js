@@ -1,23 +1,10 @@
-    (function () {
-      var items = document.querySelectorAll('.rise');
-      if (!('IntersectionObserver' in window)) {
-        items.forEach(function (el) { el.classList.add('on'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
-        });
-      }, { rootMargin: '0px 0px -60px 0px' });
-      items.forEach(function (el) { io.observe(el); });
-    })();
+    window.__rz = true;
 
     (function () {
       var dds = Array.prototype.slice.call(document.querySelectorAll('.tile-drop'));
 
-      function closeAll(except) {
+      function closeAll() {
         dds.forEach(function (dd) {
-          if (dd === except) return;
           dd.classList.remove('open');
           dd.querySelector('.dd-toggle').setAttribute('aria-expanded', 'false');
         });
@@ -39,7 +26,10 @@
         });
       });
 
-      document.addEventListener('click', function () { closeAll(); });
+      // pointerdown, а не click: Safari на iPhone не шлёт click от неинтерактивных элементов
+      document.addEventListener('pointerdown', function (e) {
+        if (!e.target.closest('.tile-drop')) closeAll();
+      });
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeAll();
       });
@@ -103,7 +93,7 @@
       links.addEventListener('click', function (e) {
         if (e.target.closest('a')) setOpen(false);
       });
-      document.addEventListener('click', function (e) {
+      document.addEventListener('pointerdown', function (e) {
         if (!bar.contains(e.target)) setOpen(false);
       });
       document.addEventListener('keydown', function (e) {
@@ -130,6 +120,11 @@
       var navIn = document.querySelector('.nav-in');
       navIn.appendChild(marker);
       var progress = document.getElementById('scroll-progress');
+      var toTopBtn = document.getElementById('to-top');
+
+      function toggleTop() {
+        if (toTopBtn) toTopBtn.classList.toggle('show', window.scrollY > 700);
+      }
 
       function placeMarker() {
         var a = activeId ? map[activeId] : null;
@@ -147,6 +142,7 @@
 
       function updateActive() {
         updateProgress();
+        toggleTop();
         var line = window.innerHeight * 0.35;
         var current = null;
         ids.forEach(function (id) {
@@ -172,13 +168,10 @@
       }
 
       // кнопка «наверх»
-      var top = document.getElementById('to-top');
-      if (top) {
-        top.hidden = false;
-        var onScroll = function () { top.classList.toggle('show', window.scrollY > 700); };
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-        top.addEventListener('click', function () {
+      if (toTopBtn) {
+        toTopBtn.hidden = false;
+        toggleTop();
+        toTopBtn.addEventListener('click', function () {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
@@ -193,9 +186,8 @@
 
       // появление элементов по мере прокрутки: каждый, когда доезжает до экрана;
       // те, что вошли в кадр одновременно, идут с паузой
-      var items = document.querySelectorAll('.skill, .row, .pick, .tile, .cert, .chip');
+      var items = document.querySelectorAll('.s-head, .skill, .row, .pick, .tile, .cert, .chip');
       if (!reduce && 'IntersectionObserver' in window) {
-        document.documentElement.classList.add('js');
         var seen = new IntersectionObserver(function (entries) {
           var batch = entries.filter(function (e) { return e.isIntersecting; })
             .sort(function (a, b) {
@@ -225,7 +217,6 @@
         el.textContent = '';
         el.appendChild(span);
         el.appendChild(document.createTextNode(m[2]));
-        span.style.minWidth = span.offsetWidth + 'px';
         span.textContent = '0';
         jobs.push({ span: span, target: target });
       });
