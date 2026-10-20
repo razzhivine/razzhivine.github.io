@@ -1222,8 +1222,47 @@
 
     .exp-groups {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 16px
+    }
+
+    .exp-group {
+      grid-column: span 2
+    }
+
+    /* крупная карточка: самое важное, занимает две трети ряда */
+    .exp-groups .exp-lg {
+      grid-column: span 4;
+      padding: 32px 34px
+    }
+
+    .exp-groups .exp-lg h3 {
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    .exp-groups .exp-lg ul {
+      gap: 18px
+    }
+
+    .exp-groups .exp-lg li {
+      font-size: 17px;
+      line-height: 1.5;
+      padding-left: 22px
+    }
+
+    .exp-groups .exp-lg li::before {
+      width: 10px
+    }
+
+    /* полоса на всю ширину внизу: пункты в три колонки */
+    .exp-strip {
+      grid-column: 1 / -1
+    }
+
+    .exp-groups .exp-strip ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 9px 32px
     }
 
     .exp-group {
@@ -1278,6 +1317,20 @@
     @media (max-width:900px) {
 
       .exp-groups {
+        grid-template-columns: minmax(0, 1fr)
+      }
+
+      .exp-group,
+      .exp-lg,
+      .exp-strip {
+        grid-column: auto
+      }
+
+      .exp-lg {
+        padding: 24px 26px
+      }
+
+      .exp-strip ul {
         grid-template-columns: minmax(0, 1fr)
       }
     }
