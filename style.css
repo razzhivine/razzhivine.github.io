@@ -1222,47 +1222,8 @@
 
     .exp-groups {
       display: grid;
-      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 16px
-    }
-
-    .exp-group {
-      grid-column: span 2
-    }
-
-    /* крупная карточка: самое важное, занимает две трети ряда */
-    .exp-groups .exp-lg {
-      grid-column: span 4;
-      padding: 32px 34px
-    }
-
-    .exp-groups .exp-lg h3 {
-      font-size: 24px;
-      margin-bottom: 18px
-    }
-
-    .exp-groups .exp-lg ul {
-      gap: 18px
-    }
-
-    .exp-groups .exp-lg li {
-      font-size: 17px;
-      line-height: 1.5;
-      padding-left: 22px
-    }
-
-    .exp-groups .exp-lg li::before {
-      width: 10px
-    }
-
-    /* полоса на всю ширину внизу: пункты в три колонки */
-    .exp-strip {
-      grid-column: 1 / -1
-    }
-
-    .exp-groups .exp-strip ul {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 9px 32px
     }
 
     .exp-group {
@@ -1305,50 +1266,82 @@
       background: var(--pine)
     }
 
-    .exp-accent {
-      border-color: var(--pine)
+    /* три главные карточки: залиты акцентным цветом, разной ширины */
+    .exp-groups .exp-f1 {
+      grid-column: span 5
     }
 
-    .exp-accent h3 {
-      color: var(--pine)
+    .exp-groups .exp-f2 {
+      grid-column: span 4
     }
 
+    .exp-groups .exp-f3 {
+      grid-column: span 3
+    }
+
+    .exp-groups .exp-feat {
+      background: var(--pine-bg);
+      border-color: var(--pine-bg);
+      padding: 30px 32px
+    }
+
+    .exp-groups .exp-feat h3 {
+      color: var(--on-pine);
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    .exp-groups .exp-feat ul {
+      gap: 13px
+    }
+
+    .exp-groups .exp-feat li {
+      color: var(--on-pine-2);
+      font-size: 15.5px;
+      line-height: 1.5
+    }
+
+    .exp-groups .exp-feat li::before {
+      background: var(--on-pine-3);
+      width: 10px
+    }
+
+    /* остальные: спокойные, ряд из широкой и двух узких */
+    .exp-groups .exp-s6 {
+      grid-column: span 6
+    }
+
+    .exp-groups .exp-s3 {
+      grid-column: span 3
+    }
 
     @media (max-width:900px) {
-
       .exp-groups {
         grid-template-columns: minmax(0, 1fr)
       }
 
-      .exp-groups .exp-group,
-      .exp-groups .exp-lg,
-      .exp-groups .exp-strip {
+      .exp-groups .exp-group {
         grid-column: auto
       }
 
-      .exp-groups .exp-lg {
+      .exp-groups .exp-feat {
         padding: 24px 26px
       }
 
-      .exp-groups .exp-lg h3 {
+      .exp-groups .exp-feat h3 {
         font-size: 20px;
         margin-bottom: 14px
       }
 
-      .exp-groups .exp-lg ul {
+      .exp-groups .exp-feat ul {
         gap: 9px
       }
 
-      .exp-groups .exp-lg li {
-        font-size: 14.5px;
-        padding-left: 18px
+      .exp-groups .exp-feat li {
+        font-size: 14.5px
       }
 
-      .exp-groups .exp-lg li::before {
+      .exp-groups .exp-feat li::before {
         width: 8px
-      }
-
-      .exp-groups .exp-strip ul {
-        grid-template-columns: minmax(0, 1fr)
       }
     }
