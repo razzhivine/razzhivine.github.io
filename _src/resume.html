@@ -398,9 +398,61 @@
       background: var(--pine)
     }
 
-    .item h3 .co {
+    .exp-top {
+      display: flex;
+      align-items: baseline;
+      gap: 3mm;
+      margin: -.5mm 0 1.4mm
+    }
+
+    .exp-top b {
+      font-family: "JetBrains Mono", monospace;
       font-weight: 500;
+      font-size: 7pt;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--pine)
+    }
+
+    .exp-top span {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.6pt;
+      letter-spacing: .06em;
+      text-transform: uppercase;
       color: var(--muted)
+    }
+
+    .exp-sum {
+      margin: 0 0 3mm
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.6mm 6mm
+    }
+
+    .eg h3 {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 .8mm
+    }
+
+    .eg-b24 {
+      grid-column: 1 / -1;
+      padding: 2.4mm 0 .2mm 3.4mm;
+      border-left: 1.2mm solid var(--pine)
+    }
+
+    .eg-b24 h3 {
+      color: var(--pine)
+    }
+
+    .duties-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 6mm
     }
   </style>
 </head>
@@ -478,26 +530,14 @@
 
       <section>
         <h2>Опыт работы</h2>
-        <div class="item">
-          <div class="item-head">
-            <h3>Web-разработчик</h3>
-            <span class="tag">окт. 2023 — настоящее время</span>
-          </div>
-          <ul class="duties"><li>Интернет-магазины и корпоративные сайты под ключ: от вёрстки макетов до запуска.</li><li>Посадка вёрстки на CMS (Битрикс, MODX, WordPress), кастомизация компонентов и модулей Битрикс.</li><li>Собственные компоненты, пользовательские свойства и правила валидации.</li><li>Интеграции: обмен с 1С, службы доставки, эквайринг. Техподдержка и тестирование перед релизом.</li></ul>
-        </div>
-        <div class="item">
-          <div class="item-head">
-            <h3>Web-разработчик <span class="co">· Актиком</span></h3>
-            <span class="tag">авг. 2021 — окт. 2023 · 2 г. 3 мес.</span>
-          </div>
-          <ul class="duties"><li>Вёрстка макетов и посадка на CMS (Битрикс, MODX, WordPress).</li><li>Интернет-магазины и корпоративные сайты, интеграции с 1С, доставкой и эквайрингом.</li><li>Техподдержка сайтов (Битрикс, MODX, Simpla, WordPress), тестирование перед релизом.</li></ul>
-        </div>
-        <div class="item">
-          <div class="item-head">
-            <h3>Web-разработчик <span class="co">· ООО ИСТ</span></h3>
-            <span class="tag">июль 2019 — авг. 2021 · 2 г. 2 мес.</span>
-          </div>
-          <ul class="duties"><li>Техподдержка сайтов: наполнение контентом, вёрстка отдельных страниц.</li></ul>
+        <div class="exp-top"><b>июль 2019 — настоящее время</b><span>7 лет в веб-разработке</span></div>
+        <p class="exp-sum">От техподдержки и вёрстки до интернет-магазинов, интеграций и собственных компонентов.</p>
+        <div class="exp-grid">
+        <div class="eg"><h3>Сайты и интернет-магазины</h3><ul class="duties"><li>Интернет-магазины и корпоративные сайты под ключ.</li><li>Вёрстка макетов, посадка на CMS: Битрикс, MODX, WordPress.</li></ul></div>
+        <div class="eg"><h3>1С-Битрикс</h3><ul class="duties"><li>Доработка компонентов и модулей.</li><li>Свои компоненты, свойства и правила валидации.</li><li>Импорт товаров, обновление каталога.</li></ul></div>
+        <div class="eg"><h3>Интеграции</h3><ul class="duties"><li>Обмен с 1С: товары, остатки, цены, заказы.</li><li>Службы доставки и эквайринг.</li><li>СМС-сервисы и сторонние API.</li></ul></div>
+        <div class="eg"><h3>Поддержка и качество</h3><ul class="duties"><li>Поддержка сайтов: Битрикс, MODX, Simpla, WordPress.</li><li>Контент, правки, вёрстка страниц.</li><li>Тестирование перед релизом.</li></ul></div>
+        <div class="eg eg-b24"><h3>Битрикс24</h3><ul class="duties duties-2"><li>Настройка и доработка коробочной версии.</li><li>REST API: обмен данными сайта с CRM.</li><li>Роботы и триггеры CRM.</li><li>Приложения и интеграция с сайтом.</li></ul></div>
         </div>
       </section>
 
