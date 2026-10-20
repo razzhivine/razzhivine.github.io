@@ -1328,3 +1328,14 @@
         grid-template-columns: minmax(0, 1fr)
       }
     }
+
+    .exp-group li a {
+      color: var(--pine);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px
+    }
+
+    .exp-group li a:hover {
+      text-decoration-thickness: 2px
+    }
