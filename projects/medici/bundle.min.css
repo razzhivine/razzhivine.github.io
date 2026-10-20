@@ -43,10 +43,10 @@
     .content__article .article__paragraph {
       margin: 0 30px 35px 31px; }
   .content__article:nth-child(1) {
-    background: url("img/backgroung-image1.png") no-repeat;
+    background: url("img/backgroung-image1.webp") no-repeat;
     background-size: cover; }
   .content__article:nth-child(2) {
-    background: url("img/background-image2.png") no-repeat;
+    background: url("img/background-image2.webp") no-repeat;
     background-size: cover;
     margin: 20px 0; }
   .content__article:nth-child(3) {

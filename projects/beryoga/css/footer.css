@@ -35,7 +35,7 @@
   font-style: normal; }
 
 .footer {
-  background: url("../img/footer-bg.png") no-repeat;
+  background: url("../img/footer-bg.webp") no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center center; }

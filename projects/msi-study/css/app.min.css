@@ -549,7 +549,7 @@ ol li ol li {
   content: "";
   width: 100%;
   height: 300px;
-  background: url(../images/dest/podium.png) center center;
+  background: url(../images/dest/podium.webp) center center;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

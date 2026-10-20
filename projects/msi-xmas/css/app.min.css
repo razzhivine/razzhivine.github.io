@@ -269,12 +269,12 @@ img {
 }
 
 .bg {
-  background: url(../images/dest/bg-1.png);
+  background: url(../images/dest/bg-1.webp);
   background-size: cover;
 }
 
 .bg-2 {
-  background: url(../images/dest/bg-2.png) top center;
+  background: url(../images/dest/bg-2.webp) top center;
   background-size: cover;
 }
 
@@ -356,7 +356,7 @@ img {
   content: "";
   width: 100vw;
   height: 100%;
-  background: url(../images/dest/garland-1.png);
+  background: url(../images/dest/garland-1.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -369,7 +369,7 @@ img {
   content: "";
   width: 100vw;
   height: 100%;
-  background: url(../images/dest/garland-2.png);
+  background: url(../images/dest/garland-2.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -451,7 +451,7 @@ img {
   content: "";
   width: 100vw;
   height: 500px;
-  background: url(../images/dest/garland-3.png);
+  background: url(../images/dest/garland-3.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -466,7 +466,7 @@ img {
   content: "";
   width: 100vw;
   height: 500px;
-  background: url(../images/dest/garland-5.png);
+  background: url(../images/dest/garland-5.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -543,7 +543,7 @@ img {
   content: "";
   width: 100vw;
   height: 300px;
-  background: url(../images/dest/garland-6.png);
+  background: url(../images/dest/garland-6.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
