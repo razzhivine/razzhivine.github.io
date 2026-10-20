@@ -1287,18 +1287,12 @@
       background: var(--pine)
     }
 
-    .exp-b24 {
-      grid-column: 1 / -1;
+    .exp-accent {
       border-color: var(--pine)
     }
 
-    .exp-b24 h3 {
+    .exp-accent h3 {
       color: var(--pine)
-    }
-
-    .exp-b24 ul {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 9px 32px
     }
 
     .exp-cert {
@@ -1317,10 +1311,6 @@
       }
 
       .exp-groups {
-        grid-template-columns: minmax(0, 1fr)
-      }
-
-      .exp-b24 ul {
         grid-template-columns: minmax(0, 1fr)
       }
     }
