@@ -1320,17 +1320,35 @@
         grid-template-columns: minmax(0, 1fr)
       }
 
-      .exp-group,
-      .exp-lg,
-      .exp-strip {
+      .exp-groups .exp-group,
+      .exp-groups .exp-lg,
+      .exp-groups .exp-strip {
         grid-column: auto
       }
 
-      .exp-lg {
+      .exp-groups .exp-lg {
         padding: 24px 26px
       }
 
-      .exp-strip ul {
+      .exp-groups .exp-lg h3 {
+        font-size: 20px;
+        margin-bottom: 14px
+      }
+
+      .exp-groups .exp-lg ul {
+        gap: 9px
+      }
+
+      .exp-groups .exp-lg li {
+        font-size: 14.5px;
+        padding-left: 18px
+      }
+
+      .exp-groups .exp-lg li::before {
+        width: 8px
+      }
+
+      .exp-groups .exp-strip ul {
         grid-template-columns: minmax(0, 1fr)
       }
     }
