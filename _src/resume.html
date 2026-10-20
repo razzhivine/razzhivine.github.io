@@ -422,6 +422,22 @@
       grid-template-columns: 1fr 1fr;
       gap: 0 6mm
     }
+
+    .eg-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 6mm
+    }
+
+    .eg h4 {
+      margin: 0 0 .8mm;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 6.4pt;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
   </style>
 </head>
 
@@ -499,18 +515,79 @@
       <section>
         <h2>Опыт работы</h2>
         <div class="exp-grid">
-        <div class="eg"><h3>Сайты и интернет-магазины</h3><ul class="duties"><li>Магазины и сайты под ключ.</li><li>Вёрстка, посадка на CMS: Битрикс, MODX, WordPress.</li></ul></div>
-        <div class="eg"><h3>1С-Битрикс</h3><ul class="duties"><li>Доработка компонентов и модулей.</li><li>Свои компоненты и свойства.</li><li>Импорт товаров и каталога.</li></ul></div>
-        <div class="eg"><h3>Интеграции</h3><ul class="duties"><li>Обмен с 1С: товары и заказы.</li><li>Доставка и эквайринг.</li><li>СМС-сервисы и сторонние API.</li></ul></div>
-        <div class="eg"><h3>Поддержка и качество</h3><ul class="duties"><li>Поддержка сайтов на четырёх CMS.</li><li>Контент, правки, вёрстка страниц.</li><li>Тестирование перед релизом.</li></ul></div>
-        <div class="eg"><h3>Битрикс24</h3><ul class="duties"><li>Настройка и доработка коробки.</li><li>REST API, роботы CRM.</li><li>Приложения, связка с сайтом.</li></ul></div>
+        <div class="eg eg-wide"><h3>1С-Битрикс и Битрикс24</h3><div class="eg-cols">
+          <div><h4>1С-Битрикс</h4><ul class="duties"><li>Доработка компонентов и модулей.</li><li>Свои компоненты и свойства.</li><li>Импорт товаров и каталога.</li></ul></div>
+          <div><h4>Битрикс24</h4><ul class="duties"><li>Настройка и доработка коробки.</li><li>REST API, роботы CRM.</li><li>Приложения, связка с сайтом.</li></ul></div>
+        </div></div>
         <div class="eg"><h3>Vue и Nuxt</h3><ul class="duties"><li>Vue 3, Nuxt 3, Pinia, Vite.</li><li>SSR и SSG для скорости и SEO.</li><li>Связка с API: headless Битрикс.</li></ul></div>
+        <div class="eg"><h3>Интеграции</h3><ul class="duties"><li>Обмен с 1С: товары и заказы.</li><li>Доставка и эквайринг.</li><li>СМС-сервисы и сторонние API.</li></ul></div>
+        <div class="eg"><h3>Сайты и интернет-магазины</h3><ul class="duties"><li>Магазины и сайты под ключ.</li><li>Вёрстка, посадка на CMS: Битрикс, MODX, WordPress.</li></ul></div>
+        <div class="eg"><h3>Поддержка и качество</h3><ul class="duties"><li>Поддержка сайтов на четырёх CMS.</li><li>Контент, правки, вёрстка страниц.</li><li>Тестирование перед релизом.</li></ul></div>
         <div class="eg eg-wide"><h3>Нейросети в разработке</h3><ul class="duties duties-2"><li>Claude Code, Cursor, ChatGPT в ежедневной работе.</li><li>MCP: ассистент с доступом к файлам и API.</li><li>Автоматизация: SEO-тексты, большие выгрузки.</li><li>Результат проверяю и адаптирую под проект.</li></ul></div>
         </div>
       </section>
+      <section>
+        <h2>Последние релизы</h2>
+        <ul class="rows">
+          <li><b><a href="https://robokassa.com">robokassa.com</a></b><span>Конструктор страниц: лендинги из блоков без разработчика.</span></li>
+          <li><b><a href="https://hctorpedo.ru/">hctorpedo.ru</a></b><span>API: данные сайта идут в CRM и приложение клуба.</span></li>
+          <li><b><a href="https://heddinteriors.ru/">heddinteriors.ru</a></b><span>Магазин итальянской мебели и света.</span></li>
+          <li><b><a href="https://www.yorkru.ru/">yorkru.ru</a></b><span>Сайт производителя: каталог, формы, интеграции.</span></li>
+          <li><b><a href="https://sortmet.ru">sortmet.ru</a></b><span>Магазин металлопроката: каталог, расчёты, обмен с 1С.</span></li>
+          <li><b><a href="https://akron-holding.ru">akron-holding.ru</a></b><span>Сайт холдинга: структура разделов, вёрстка.</span></li>
+          <li><b><a href="https://uzmolkom.com">uzmolkom.com</a></b><span>Мультиязычный сайт с каталогом продукции.</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== Страница 2 ===== -->
+  <div class="page">
+    <aside>
+      <p class="mini-name">Евгений Разживин</p>
+      <p class="mini-role">Разработчик 1С-Битрикс</p>
 
       <section>
-        <h2>Избранные проекты</h2>
+        <h2>Вёрстка</h2>
+        <div class="chip-row">
+          <span><a href="https://razzhivine.github.io/projects/akron-holding/">akron-holding</a></span><span><a href="https://razzhivine.github.io/projects/uzmolkom/">uzmolkom</a></span><span><a href="https://razzhivine.github.io/projects/basistech/">basistech</a></span><span><a href="https://razzhivine.github.io/projects/sortmet/">sortmet</a></span>
+          <span><a href="https://razzhivine.github.io/projects/es-systems/">es-systems</a></span><span><a href="https://razzhivine.github.io/projects/harrows/">harrows</a></span><span><a href="https://razzhivine.github.io/projects/promsale/">promsale</a></span><span><a href="https://razzhivine.github.io/projects/promstroy/">promstroy</a></span>
+          <span><a href="https://razzhivine.github.io/projects/msi-meta/">msi-meta</a></span><span><a href="https://razzhivine.github.io/projects/msi-study/">msi-study</a></span><span><a href="https://razzhivine.github.io/projects/msi-xmas/">msi-xmas</a></span><span><a href="https://razzhivine.github.io/projects/oceangift/">oceangift</a></span>
+        </div>
+        <p class="note">Адаптивная вёрстка с нуля по макету. Демо открываются на razzhivine.github.io в разделе
+          «Вёрстка».</p>
+      </section>
+      <section>
+        <h2>Сертификаты</h2>
+        <p class="cert-title">1С-Битрикс · 7 курсов</p>
+        <ul class="cert-names">
+          <li><a href="https://razzhivine.github.io/certificates/razrabotchik-bitrix-framework.pdf">Разработчик Bitrix Framework</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administarator-bazoviy.pdf">Администратор. Базовый</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administarator-moduli.pdf">Администратор. Модули</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/administrator-servisa-bitriks24-korobochnaya-versiya.pdf">Администратор сервиса Битрикс24. Коробочная версия</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/content-manager.pdf">Контент-менеджер</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/ustanovka-i-nastroyka.pdf">Установка и настройка</a></li>
+          <li><a href="https://razzhivine.github.io/certificates/kurs-dlya-hosterov.pdf">Курс для хостеров</a></li>
+        </ul>
+        <p class="cert-title">SymfonyCasts · 10 курсов</p>
+        <ul class="cert-names">
+          <li><a href="https://symfonycasts.com/certificates/F57B0200C155">Cosmic Coding with Symfony 7</a></li>
+          <li><a href="https://symfonycasts.com/certificates/5EF6A6C8C158">Symfony 7 Fundamentals: Services, Config &amp; Environments</a></li>
+          <li><a href="https://symfonycasts.com/certificates/CBA78ED8C161">Doctrine, Symfony 7 &amp; the Database</a></li>
+          <li><a href="https://symfonycasts.com/certificates/F30D088EC164">Symfony, Doctrine Relations &amp; Warp Drive Basics</a></li>
+          <li><a href="https://symfonycasts.com/certificates/481E671DC151">Go Pro with Doctrine Queries</a></li>
+          <li><a href="https://symfonycasts.com/certificates/FA10E71FC160">Dependency Injection Attributes</a></li>
+          <li><a href="https://symfonycasts.com/certificates/A266CCEBC140">Easy Admin 4</a></li>
+          <li><a href="https://symfonycasts.com/certificates/462FDFA8C154">30 Days with LAST Stack</a></li>
+          <li><a href="https://symfonycasts.com/certificates/0779C217C152">AssetMapper: Modern JS with Zero Build System</a></li>
+          <li><a href="https://symfonycasts.com/certificates/36816B5AC167">Going Global: Translate your Site</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Разбор проектов</h2>
         <div class="item">
           <div class="item-head">
             <h3>Robokassa — конструктор страниц</h3>
@@ -540,55 +617,6 @@
           <span class="url"><a href="https://sortmet.ru">sortmet.ru</a></span>
         </div>
       </section>
-    </main>
-  </div>
-
-  <!-- ===== Страница 2 ===== -->
-  <div class="page">
-    <aside>
-      <p class="mini-name">Евгений Разживин</p>
-      <p class="mini-role">Разработчик 1С-Битрикс</p>
-
-      <section>
-        <h2>Сертификаты</h2>
-        <p class="cert-title">1С-Битрикс · 7 курсов</p>
-        <ul class="cert-names">
-          <li><a href="https://razzhivine.github.io/certificates/razrabotchik-bitrix-framework.pdf">Разработчик Bitrix Framework</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/administarator-bazoviy.pdf">Администратор. Базовый</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/administarator-moduli.pdf">Администратор. Модули</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/administrator-servisa-bitriks24-korobochnaya-versiya.pdf">Администратор сервиса Битрикс24. Коробочная версия</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/content-manager.pdf">Контент-менеджер</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/ustanovka-i-nastroyka.pdf">Установка и настройка</a></li>
-          <li><a href="https://razzhivine.github.io/certificates/kurs-dlya-hosterov.pdf">Курс для хостеров</a></li>
-        </ul>
-        <p class="cert-title">SymfonyCasts · 10 курсов</p>
-        <ul class="cert-names">
-          <li><a href="https://symfonycasts.com/certificates/F57B0200C155">Cosmic Coding with Symfony 7</a></li>
-          <li><a href="https://symfonycasts.com/certificates/5EF6A6C8C158">Symfony 7 Fundamentals: Services, Config &amp; Environments</a></li>
-          <li><a href="https://symfonycasts.com/certificates/CBA78ED8C161">Doctrine, Symfony 7 &amp; the Database</a></li>
-          <li><a href="https://symfonycasts.com/certificates/F30D088EC164">Symfony, Doctrine Relations &amp; Warp Drive Basics</a></li>
-          <li><a href="https://symfonycasts.com/certificates/481E671DC151">Go Pro with Doctrine Queries</a></li>
-          <li><a href="https://symfonycasts.com/certificates/FA10E71FC160">Dependency Injection Attributes</a></li>
-          <li><a href="https://symfonycasts.com/certificates/A266CCEBC140">Easy Admin 4</a></li>
-          <li><a href="https://symfonycasts.com/certificates/462FDFA8C154">30 Days with LAST Stack</a></li>
-          <li><a href="https://symfonycasts.com/certificates/0779C217C152">AssetMapper: Modern JS with Zero Build System</a></li>
-          <li><a href="https://symfonycasts.com/certificates/36816B5AC167">Going Global: Translate your Site</a></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Вёрстка</h2>
-        <div class="chip-row">
-          <span><a href="https://razzhivine.github.io/projects/akron-holding/">akron-holding</a></span><span><a href="https://razzhivine.github.io/projects/uzmolkom/">uzmolkom</a></span><span><a href="https://razzhivine.github.io/projects/basistech/">basistech</a></span><span><a href="https://razzhivine.github.io/projects/sortmet/">sortmet</a></span>
-          <span><a href="https://razzhivine.github.io/projects/es-systems/">es-systems</a></span><span><a href="https://razzhivine.github.io/projects/harrows/">harrows</a></span><span><a href="https://razzhivine.github.io/projects/promsale/">promsale</a></span><span><a href="https://razzhivine.github.io/projects/promstroy/">promstroy</a></span>
-          <span><a href="https://razzhivine.github.io/projects/msi-meta/">msi-meta</a></span><span><a href="https://razzhivine.github.io/projects/msi-study/">msi-study</a></span><span><a href="https://razzhivine.github.io/projects/msi-xmas/">msi-xmas</a></span><span><a href="https://razzhivine.github.io/projects/oceangift/">oceangift</a></span>
-        </div>
-        <p class="note">Адаптивная вёрстка с нуля по макету. Демо открываются на razzhivine.github.io в разделе
-          «Вёрстка».</p>
-      </section>
-    </aside>
-
-    <main>
       <section>
         <h2>Open-source</h2>
         <div class="item">
@@ -613,24 +641,6 @@
           <span class="url"><a href="https://github.com/razzhivine/custom-rest">github.com/razzhivine/custom-rest</a></span>
         </div>
       </section>
-
-      <section>
-        <h2>Последние релизы</h2>
-        <ul class="rows">
-          <li><b><a href="https://robokassa.com">robokassa.com</a></b><span>Компонент «Конструктор страниц»: контент-менеджеры собирают лендинги из блоков
-              без разработчика.</span></li>
-          <li><b><a href="https://hctorpedo.ru/">hctorpedo.ru</a></b><span>API, по которому данные с сайта уходят в CRM и мобильное приложение
-              клуба.</span></li>
-          <li><b><a href="https://heddinteriors.ru/">heddinteriors.ru</a></b><span>Интернет-магазин итальянской мебели и света: каталог брендов, товары в
-              наличии и под заказ.</span></li>
-          <li><b><a href="https://www.yorkru.ru/">yorkru.ru</a></b><span>Корпоративный сайт производителя: каталог, формы, интеграции.</span></li>
-          <li><b><a href="https://sortmet.ru">sortmet.ru</a></b><span>Интернет-магазин металлопроката: каталог, расчёты, обмен с 1С.</span></li>
-          <li><b><a href="https://akron-holding.ru">akron-holding.ru</a></b><span>Сайт холдинга: многоуровневая структура разделов и вёрстка под
-              фирстиль.</span></li>
-          <li><b><a href="https://uzmolkom.com">uzmolkom.com</a></b><span>Корпоративный сайт с мультиязычностью и каталогом продукции.</span></li>
-        </ul>
-      </section>
-
       <section>
         <h2>Интернет-магазины</h2>
         <ul class="rows">
