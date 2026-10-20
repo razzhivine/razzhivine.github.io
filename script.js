@@ -186,7 +186,7 @@
 
       // появление элементов по мере прокрутки: каждый, когда доезжает до экрана;
       // те, что вошли в кадр одновременно, идут с паузой
-      var items = document.querySelectorAll('.s-head, .skill, .row, .pick, .tile, .cert, .chip');
+      var items = document.querySelectorAll('.s-head, .skill, .job, .row, .pick, .tile, .cert, .chip');
       if (!reduce && 'IntersectionObserver' in window) {
         var seen = new IntersectionObserver(function (entries) {
           var batch = entries.filter(function (e) { return e.isIntersecting; })

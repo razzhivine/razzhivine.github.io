@@ -1207,3 +1207,81 @@
     .theme-toggle:empty {
       display: none
     }
+
+    /* ---------- опыт работы ---------- */
+    .jobs {
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .job {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 28px;
+      padding: 28px 0;
+      border-top: 1px solid var(--rule)
+    }
+
+    .job-when b {
+      display: block;
+      font-family: var(--mono);
+      font-size: 12.5px;
+      font-weight: 400;
+      letter-spacing: .04em;
+      color: var(--pine)
+    }
+
+    .job-when span {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--muted)
+    }
+
+    .job h3 {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -.01em;
+      margin: 0
+    }
+
+    .job-co {
+      margin: 4px 0 0;
+      font-family: var(--mono);
+      font-size: 12.5px;
+      color: var(--muted)
+    }
+
+    .job ul {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px
+    }
+
+    .job li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 14.5px;
+      color: var(--text-2)
+    }
+
+    .job li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .72em;
+      width: 8px;
+      height: 1px;
+      background: var(--pine)
+    }
+
+    @media (max-width:600px) {
+      .job {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        padding: 22px 0
+      }
+    }

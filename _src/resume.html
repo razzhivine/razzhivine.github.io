@@ -375,6 +375,33 @@
       color: var(--muted);
       margin: 2.4mm 0 0
     }
+
+    .duties {
+      margin: 1mm 0 0;
+      padding: 0;
+      list-style: none
+    }
+
+    .duties li {
+      position: relative;
+      padding-left: 3.4mm;
+      margin-bottom: .8mm
+    }
+
+    .duties li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.7mm;
+      width: 1.8mm;
+      height: 1px;
+      background: var(--pine)
+    }
+
+    .item h3 .co {
+      font-weight: 500;
+      color: var(--muted)
+    }
   </style>
 </head>
 
@@ -450,45 +477,27 @@
       </div>
 
       <section>
-        <h2>Чем занимаюсь</h2>
-        <div class="areas">
-          <div class="area">
-            <h3>Разработка на Битрикс</h3>
-            <p>Собственные компоненты, кастомные свойства и валидации, доработки корзины и заказа, B2B-кабинеты.</p>
+        <h2>Опыт работы</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Битрикс-разработчик</h3>
+            <span class="tag">окт. 2023 — настоящее время</span>
           </div>
-          <div class="area">
-            <h3>Битрикс24</h3>
-            <p>Настройка и доработка коробочной версии, REST API, роботы и триггеры CRM, приложения и интеграция с
-              сайтом.</p>
+          <ul class="duties"><li>Интернет-магазины и корпоративные сайты под ключ: от вёрстки макетов до запуска.</li><li>Посадка вёрстки на CMS (Битрикс, MODX, WordPress), кастомизация компонентов и модулей Битрикс.</li><li>Собственные компоненты, пользовательские свойства и правила валидации.</li><li>Интеграции: обмен с 1С, службы доставки, эквайринг. Техподдержка и тестирование перед релизом.</li></ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>Web-разработчик <span class="co">· Актиком</span></h3>
+            <span class="tag">авг. 2021 — окт. 2023 · 2 г. 3 мес.</span>
           </div>
-          <div class="area">
-            <h3>Интеграции</h3>
-            <p>Обмен с 1С, СМС-сервисы, платёжные системы, службы доставки, свои системы доставки.</p>
+          <ul class="duties"><li>Вёрстка макетов и посадка на CMS (Битрикс, MODX, WordPress).</li><li>Интернет-магазины и корпоративные сайты, интеграции с 1С, доставкой и эквайрингом.</li><li>Техподдержка сайтов (Битрикс, MODX, Simpla, WordPress), тестирование перед релизом.</li></ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>Web-разработчик <span class="co">· ООО ИСТ</span></h3>
+            <span class="tag">июль 2019 — авг. 2021 · 2 г. 2 мес.</span>
           </div>
-          <div class="area">
-            <h3>Данные и импорт</h3>
-            <p>Скрипты импорта товаров из XML, CSV и Excel, парсинг сайтов на PHP и Python, генерация PDF-документов.
-            </p>
-          </div>
-          <div class="area">
-            <h3>SEO и скорость</h3>
-            <p>Формирование SEO-текстов на лету через переменные, техническая оптимизация, ускорение загрузки.</p>
-          </div>
-          <div class="area">
-            <h3>Фронтенд и вёрстка</h3>
-            <p>Адаптивная вёрстка с нуля по макету: HTML, Sass, Gulp, Bootstrap, Tailwind, JavaScript. Интерфейсы на
-              Vue 3 и Nuxt, в том числе SSR и связка с внешним API.</p>
-          </div>
-          <div class="area">
-            <h3>Symfony и Doctrine</h3>
-            <p>Symfony 7 и Doctrine: сервисы и конфигурация, связи сущностей, DQL и QueryBuilder, EasyAdmin,
-              AssetMapper.</p>
-          </div>
-          <div class="area">
-            <h3>ИИ в разработке</h3>
-            <p>Claude, ChatGPT и Cursor в ежедневной работе: рефакторинг, разбор чужого кода, SEO-описания, большие
-              выгрузки. Код проверяю и адаптирую под проект.</p>
-          </div>
+          <ul class="duties"><li>Техподдержка сайтов: наполнение контентом, вёрстка отдельных страниц.</li></ul>
         </div>
       </section>
 
