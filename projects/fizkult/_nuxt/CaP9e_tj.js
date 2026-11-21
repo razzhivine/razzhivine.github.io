@@ -1,0 +1,1 @@
+import{t as e}from"./CGCbauAN.js";function t(){return e(`/api/form/request`,{key:`form-request`},`$JXpdhS7f4R`)}export{t};

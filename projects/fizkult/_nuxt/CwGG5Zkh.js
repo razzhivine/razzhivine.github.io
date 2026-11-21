@@ -1,0 +1,1 @@
+import{ot as e}from"./CMZZwIsi.js";import{t}from"./CGCbauAN.js";async function n(n,r){let{data:i}=await t(`/api/text-page`,{key:`text-page-${n}`,query:{url:n},default:()=>null},`$F2mEEYtNzo`);return e(()=>i.value?{...r,...i.value}:null)}export{n as t};

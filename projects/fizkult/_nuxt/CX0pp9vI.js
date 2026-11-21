@@ -1,0 +1,1 @@
+import{t as e}from"./CGCbauAN.js";async function t(t=`home`){let{data:n}=await e(`/api/clubs/slides`,{key:`club-slides-${t}`,query:{page:t},default:()=>[]},`$V2aURKQLZA`);return n}export{t};

@@ -1,0 +1,1 @@
+import{St as e,ot as t}from"./CMZZwIsi.js";var n=Symbol(`seo-h1`);function r(r){let i=e(n,null);return t(()=>i?.value||r())}export{r as n,n as t};

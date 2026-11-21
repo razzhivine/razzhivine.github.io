@@ -1,0 +1,1 @@
+import{t as e}from"./CGCbauAN.js";async function t(t){let{data:n}=await e(`/api/club-gallery`,{key:`club-gallery-${t}`,query:{page:t},default:()=>[]},`$6uYbuvVh07`);return n}export{t};

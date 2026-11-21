@@ -98,7 +98,7 @@
           "width": 1200,
           "height": 630
         },
-        "dateModified": "2026-10-20"
+        "dateModified": "2026-11-19"
       },
       {
         "@type": "Person",
@@ -406,46 +406,53 @@
         <span class="s-note">разработка и запуск</span>
       </div>
       <div class="rows">
-        <a class="row" href="https://robokassa.com" target="_blank" rel="noopener">
+        <a class="row" href="https://fizkult.vercel.app/" target="_blank" rel="noopener">
           <span class="r-idx">01</span>
+          <span class="r-name">fizkult.vercel.app</span>
+          <span class="r-desc">Сеть фитнес-клубов: фронт на Nuxt, Битрикс отдаёт контент по REST, расписание и абонементы
+            из 1С.</span>
+          <span class="r-arrow">↗</span>
+        </a>
+        <a class="row" href="https://robokassa.com" target="_blank" rel="noopener">
+          <span class="r-idx">02</span>
           <span class="r-name">robokassa.com</span>
           <span class="r-desc">Компонент «Конструктор страниц»: контент-менеджеры собирают лендинги из блоков без
             разработчика.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://hctorpedo.ru/" target="_blank" rel="noopener">
-          <span class="r-idx">02</span>
+          <span class="r-idx">03</span>
           <span class="r-name">hctorpedo.ru</span>
           <span class="r-desc">API, по которому данные с сайта уходят в CRM и мобильное приложение клуба.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://heddinteriors.ru/" target="_blank" rel="noopener">
-          <span class="r-idx">03</span>
+          <span class="r-idx">04</span>
           <span class="r-name">heddinteriors.ru</span>
           <span class="r-desc">Интернет-магазин итальянской мебели и света: каталог брендов, товары в наличии и под
             заказ.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://www.yorkru.ru/" target="_blank" rel="noopener">
-          <span class="r-idx">04</span>
+          <span class="r-idx">05</span>
           <span class="r-name">yorkru.ru</span>
           <span class="r-desc">Корпоративный сайт производителя: каталог, формы, интеграции.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://sortmet.ru" target="_blank" rel="noopener">
-          <span class="r-idx">05</span>
+          <span class="r-idx">06</span>
           <span class="r-name">sortmet.ru</span>
           <span class="r-desc">Интернет-магазин металлопроката: каталог, расчёты, обмен с 1С.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://akron-holding.ru" target="_blank" rel="noopener">
-          <span class="r-idx">06</span>
+          <span class="r-idx">07</span>
           <span class="r-name">akron-holding.ru</span>
           <span class="r-desc">Сайт холдинга: многоуровневая структура разделов и вёрстка под фирстиль.</span>
           <span class="r-arrow">↗</span>
         </a>
         <a class="row" href="https://uzmolkom.com" target="_blank" rel="noopener">
-          <span class="r-idx">07</span>
+          <span class="r-idx">08</span>
           <span class="r-name">uzmolkom.com</span>
           <span class="r-desc">Корпоративный сайт с мультиязычностью и каталогом продукции.</span>
           <span class="r-arrow">↗</span>
@@ -459,7 +466,16 @@
         <h2 class="s-title">Разбор проектов</h2>
         <span class="s-note">где было больше всего инженерии</span>
       </div>
-      <div class="picks">
+      <div class="picks picks-2">
+        <article class="pick">
+          <div class="pick-k">ФизКульт · Nuxt + Битрикс</div>
+          <h3 class="pick-h"><a href="https://fizkult.vercel.app/" target="_blank" rel="noopener">Новый сайт сети фитнес-клубов</a></h3>
+          <p>Пересобрал сайт с нуля: Битрикс остался админкой для контента, а сам сайт — отдельное быстрое приложение на
+            Nuxt. Данные он получает по REST API, которое я написал для Битрикса: клубы, тренеры, программы, баннеры,
+            формы — наружу отдаётся только публичное. Перенёс со старого сайта весь контент, настроил редиректы со
+            старых адресов. Расписание занятий берётся вживую из клубной 1С, абонемент можно купить онлайн, заявки
+            сразу уходят в отдел продаж.</p>
+        </article>
         <article class="pick">
           <div class="pick-k">Robokassa · компонент</div>
           <h3 class="pick-h"><a href="https://robokassa.com" target="_blank" rel="noopener">Конструктор страниц</a></h3>
@@ -553,6 +569,80 @@
         <span class="s-note">открывается в новой вкладке</span>
       </div>
       <div class="grid">
+        <div class="tile tile-drop">
+          <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/fizkult/" target="_blank" rel="noopener">
+            <img class="tile-img" src="assets/previews/fizkult-960.webp" srcset="assets/previews/fizkult-480.webp 480w, assets/previews/fizkult-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"
+              height="600">
+          </a>
+          <div class="tile-foot">
+            <a class="tile-link" href="projects/fizkult/" target="_blank" rel="noopener"><span>fizkult</span></a>
+            <button type="button" class="dd-toggle" aria-expanded="false"
+              aria-label="Страницы проекта fizkult"><span>страницы</span><svg class="dd-caret" width="9" height="6"
+                viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></button>
+            <em>↗</em>
+          </div>
+          <div class="dd-menu">
+            <a class="dd-item" href="projects/fizkult/about/" target="_blank"
+              rel="noopener">О нас</a>
+            <a class="dd-item" href="projects/fizkult/clubs/" target="_blank"
+              rel="noopener">Клубы</a>
+            <a class="dd-item" href="projects/fizkult/clubs/avtozavodskiy/" target="_blank"
+              rel="noopener">Клуб</a>
+            <a class="dd-item" href="projects/fizkult/fitness/" target="_blank"
+              rel="noopener">Фитнес-программы</a>
+            <a class="dd-item" href="projects/fizkult/fitness/mind-body/" target="_blank"
+              rel="noopener">Направление</a>
+            <a class="dd-item" href="projects/fizkult/fitness/mind-body/pilates-mat/" target="_blank"
+              rel="noopener">Программа</a>
+            <a class="dd-item" href="projects/fizkult/fitness/team/" target="_blank"
+              rel="noopener">Тренеры</a>
+            <a class="dd-item" href="projects/fizkult/fitness/team/gorshenin-ivan/" target="_blank"
+              rel="noopener">Тренер</a>
+            <a class="dd-item" href="projects/fizkult/timetable/avtozavodskiy/" target="_blank"
+              rel="noopener">Расписание</a>
+            <a class="dd-item" href="projects/fizkult/online/" target="_blank"
+              rel="noopener">Покупка абонемента</a>
+            <a class="dd-item" href="projects/fizkult/loyal/" target="_blank"
+              rel="noopener">Программа лояльности</a>
+            <a class="dd-item" href="projects/fizkult/korporativ/" target="_blank"
+              rel="noopener">Корпоративным клиентам</a>
+            <a class="dd-item" href="projects/fizkult/courses/" target="_blank"
+              rel="noopener">Курсы инструкторов</a>
+            <a class="dd-item" href="projects/fizkult/career/" target="_blank"
+              rel="noopener">Карьера</a>
+            <a class="dd-item" href="projects/fizkult/actions/" target="_blank"
+              rel="noopener">Акции</a>
+            <a class="dd-item" href="projects/fizkult/actions/den-otkrytykh-dverey/" target="_blank"
+              rel="noopener">Акция</a>
+            <a class="dd-item" href="projects/fizkult/calendar/" target="_blank"
+              rel="noopener">Мероприятия</a>
+            <a class="dd-item" href="projects/fizkult/calendar/otkrytyy-ring-fk/" target="_blank"
+              rel="noopener">Мероприятие</a>
+            <a class="dd-item" href="projects/fizkult/news/" target="_blank"
+              rel="noopener">Новости</a>
+            <a class="dd-item" href="projects/fizkult/news/fitnes-reyv-v-fizkult/" target="_blank"
+              rel="noopener">Новость</a>
+            <a class="dd-item" href="projects/fizkult/blog/" target="_blank"
+              rel="noopener">Блог</a>
+            <a class="dd-item" href="projects/fizkult/blog/expert/kak-pokhudet-k-letu-za-30-dney/" target="_blank"
+              rel="noopener">Статья</a>
+            <a class="dd-item" href="projects/fizkult/fitness-gid/" target="_blank"
+              rel="noopener">Фитнес-гид</a>
+            <a class="dd-item" href="projects/fizkult/faq/" target="_blank"
+              rel="noopener">FAQ</a>
+            <a class="dd-item" href="projects/fizkult/reklama/" target="_blank"
+              rel="noopener">Реклама</a>
+            <a class="dd-item" href="projects/fizkult/contacts/" target="_blank"
+              rel="noopener">Контакты</a>
+            <a class="dd-item" href="projects/fizkult/personaldata/privacy/" target="_blank"
+              rel="noopener">Текстовая страница</a>
+            <a class="dd-item" href="projects/fizkult/404.html" target="_blank"
+              rel="noopener">404</a>
+          </div>
+        </div>
         <div class="tile tile-drop">
           <a class="tile-cover" tabindex="-1" aria-hidden="true" href="projects/akron-holding/" target="_blank" rel="noopener">
             <img class="tile-img" src="assets/previews/akron-holding-960.webp" srcset="assets/previews/akron-holding-480.webp 480w, assets/previews/akron-holding-960.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 380px" alt="" loading="lazy" width="960"

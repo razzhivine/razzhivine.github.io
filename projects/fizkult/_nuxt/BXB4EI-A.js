@@ -1,0 +1,1 @@
+import{t as e}from"./CGCbauAN.js";async function t(){let{data:t}=await e(`/api/blog-sections`,{key:`blog-sections`,default:()=>[]},`$1rztqz8XzT`);return t}export{t};

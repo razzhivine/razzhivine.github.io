@@ -1,0 +1,1 @@
+import{ot as e}from"./CMZZwIsi.js";import{t}from"./CGCbauAN.js";async function n(n,r,i){let{data:a}=await t(`/api/block/${n}`,{key:`block-${n}-${r}`,query:{page:r}},`$mAAtJes1BG`);return e(()=>a.value?{...i,...a.value}:null)}export{n as t};

@@ -1,0 +1,1 @@
+import{a as e,i as t}from"./ChEBnjyK.js";function n(n,r,i={}){e({title:()=>n.value?.title||r(),description:()=>n.value?.description,ogTitle:()=>n.value?.title||r(),ogDescription:()=>n.value?.description,ogImage:()=>i.image?.()||void 0,ogType:i.type}),t(()=>({meta:n.value?.keywords?[{name:`keywords`,content:n.value.keywords}]:[]}))}export{n as t};

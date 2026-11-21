@@ -1,0 +1,3 @@
+var e=[`/images/listing/gym.webp`,`/images/listing/pool.webp`,`/images/listing/club-1.webp`],t=[`Детские секции
+в ФизКульт`,`Открытие отдела продаж
+клуба в Костово`],n={class:`container`,title:`Новости`,alt:{label:`Блог`,to:`/blog`},link:{label:`Смотреть все`,to:`/news`},cards:Array.from({length:6},(n,r)=>({title:t[+(r%2==1)],date:`14 Августа 2026`,datetime:`2026-08-14`,to:`/news/${r+1}`,image:e[r%3]}))},r={...n,title:`Похожие новости`,alt:void 0};({...r}),r.cards.map((e,t)=>({...e,to:`/blog/food/${t+1}`}));export{n as t};

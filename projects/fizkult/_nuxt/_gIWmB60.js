@@ -1,0 +1,1 @@
+import{On as e,Pt as t,_t as n,jn as r,ut as i}from"./CMZZwIsi.js";var a=Object.assign(n({__name:`Badge`,props:{label:{},gray:{type:Boolean}},setup(n){return(a,o)=>(t(),i(`span`,{class:e([`inline-flex h-8 items-center rounded-full px-[14px] text-caption tracking-[-0.01em] text-black`,n.gray?`bg-surface-strong`:`bg-white`])},r(n.label),3))}}),{__name:`UiBadge`});export{a as t};

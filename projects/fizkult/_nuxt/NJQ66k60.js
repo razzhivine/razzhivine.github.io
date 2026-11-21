@@ -1,0 +1,3 @@
+import{ot as e}from"./CMZZwIsi.js";import{t}from"./DSExsGNq.js";var n={request:{title:`Заявка отправлена!`,text:`Спасибо! Мы свяжемся с вами
+в ближайшее время.`,button:{label:`Ознакомиться с нашими программами`,to:`/fitness`},secondary:{label:`Смотреть расписание`,to:`/timetable`}},subscribe:{title:`Вы подписаны!`,text:`Спасибо! Будем присылать
+новости и акции на почту.`,button:{label:`Смотреть акции`,to:`/actions`},secondary:{label:`Смотреть расписание`,to:`/timetable`}}};function r(){let r=t(`success-modal`,()=>null);return{kind:r,content:e(()=>r.value?n[r.value]:null),show:e=>r.value=e,close:()=>r.value=null}}export{r as t};

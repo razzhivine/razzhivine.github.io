@@ -1,0 +1,1 @@
+import{_t as e,i as t}from"./CMZZwIsi.js";var n=e({__name:`[code]`,setup(e){throw t({status:404,fatal:!0})}});export{n as default};
